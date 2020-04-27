@@ -17,7 +17,7 @@
     },
     "showProfileImage": true,
     "footerLinks": [
-        { "text": "Website", "url": "https://metaanalysis.zajitscehk.net" },
+        { "text": "Website", "url": "https://metaanalysis.zajitschek.net" },
         { "text": "Source", "url": "https://github.com/suszaj/metaanalysis" },
         { "text": "Webdesign based on", "url": "https://github.com/ines/course-starter-r" }
     ],
