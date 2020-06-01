@@ -1,19 +1,12 @@
-# Online course starter: R
+# Meta-analysis for Biologists - an online starter workshop
 
-This is a starter repo based on the
-[course framework](https://github.com/ines/spacy-course) I developed for my
-[spaCy course](https://course.spacy.io). The front-end is powered by
-[Gatsby](http://gatsbyjs.org/) and [Reveal.js](https://revealjs.com) and the
-back-end code execution uses [Binder](https://mybinder.org) 💖
+Hello and welcome! 
+This repository contains the resources for my starter course on meta-analysis, 
+**Meta-analysis for Biologists** which can be found and used here: 
+<http://metaanalysis.zajitschek.net/>
 
-_This repo could use some better code examples. Also, if you have experience
-with R, feel free to suggest improvements to the
-[test logic and template](#adding-tests). It all works as expected, but there
-might be ways to make it more elegant._
+The technical side of this site was developed and made available by <a href='https://ines.io/'>Ines Montani</a>, who created her course [spaCy course](https://course.spacy.io) and made it publicly available, including step-by-step instructions of how to adapt and host the course (https://github.com/ines/course-starter-r). Thanks for that, Ines!
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ines/courser-starter-r)
-
-[![](https://user-images.githubusercontent.com/13643239/56341448-68fe9380-61b5-11e9-816f-5c71ae71b94f.png)](https://course-starter-r.netlify.com)
 
 ## ✅ Quickstart
 
