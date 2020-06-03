@@ -1,7 +1,7 @@
 ---
-title: 'Chapter 1: Getting started: how to use this course'
+title: 'Chapter 1: Getting started: Introduction to Meta-Analysis'
 description:
-  'This chapter will teach you how to best work through this course, including doing the exercises in R, directly on the website.'
+  'This chapter will give you an introduction to meat-analysis, why they are useful and some exapmples.'
 prev: null
 next: /chapter2
 type: chapter
