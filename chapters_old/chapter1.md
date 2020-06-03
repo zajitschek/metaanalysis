@@ -1,7 +1,7 @@
 ---
 title: 'Chapter 1: Getting started: how to use this course'
 description:
-  'This chapter will teach you how to best work through this course, including doing the exercises in R, directly on the website.'
+  'This chapter will teach you how to use this course, including doing the exercises in R, directly on the website.'
 prev: null
 next: /chapter2
 type: chapter
