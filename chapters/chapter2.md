@@ -1,4 +1,3 @@
-
 ---
 title: 'Chapter 2: Step-by-step meta-analysis'
 description:
@@ -7,7 +6,9 @@ prev: /chapter1
 next: /chapter3
 type: chapter
 id: 2
+
 ---
+
 <exercise id="1" title="Step-by-step meta-analysis">
 
 Let's ask some questions about the slides. Whats the correct answer?

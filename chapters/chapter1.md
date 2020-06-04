@@ -42,6 +42,5 @@ Some examples. You can have a glance and see what questions were asked and how t
 
 Meta-analysis and research synthesis: an outlook
 [Research Weaving: Visualizing the Future of Research Synthesis](https://ecoevorxiv.org/ga2qz/)
+
 </exercise>
-
-
