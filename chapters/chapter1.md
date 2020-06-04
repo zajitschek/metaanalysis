@@ -1,7 +1,7 @@
 ---
 title: 'Chapter 1: Getting started: Introduction to Meta-Analysis'
 description:
-  'This chapter will give you an introduction to meta-analysis, some background, why they are useful and examples.'
+  'This chapter will where meta-analysis fits into the scientific method, some background, why meta-analyses are useful and examples.'
 prev: null
 next: /chapter2
 type: chapter
@@ -14,7 +14,7 @@ id: 1
 
 Hi, I'm **[Susi Zajitschek](https://www.ljmu.ac.uk/about-us/staff-profiles/faculty-of-science/school-of-biological-and-environmental-sciences/susanne-zajitschek), a Senior Lecturer in Animal Behaviour at Liverpool John Moores University**. This course is meant as a primer for students who would like to know more about meta-analysis. I will give you an overview on what meta-analyses are and on why they are useful. In later chapters I will include hands-on exercises to conduct meta-analyses, step-by-step (based on material developed by my collaborators **[Shinichi Nakagawa](http://www.i-deel.org/shinichi-nakagawa.html)** and **[Malgorzata  Lagisz](https://mlagisz.weebly.com/)**. The actual statistical analyses will be performed in the [software R](https://www.r-project.org/about.html), and you will have the opportunity to run R software scripts right here, through this website, without the need to install software on your computer.
 
-# What is a Meta-analysis?
+# What is a meta-analysis?
 ## A short side-trip to the roots of knowledge
 Humans strive to understand the world. The organized framework to do this is science, more specifically the *[scientific method](https://en.wikipedia.org/wiki/Scientific_method)*. Science is cumulative in nature. This means that studies and experiments build upon the findings of previous studies and experiments. New scientific insights might be gained by a more or less progressive accumulation of knowledge about a specific question, adding on to existing knowledge. Or, according to [Thomas Kuhn](https://en.wikipedia.org/wiki/Thomas_Kuhn), real progression in science might require [paradigm shifts](https://en.wikipedia.org/wiki/Paradigm_shift) that throw old theories over board and make way for new better theories. These shifts in how we explain the world depend themselves on the accumulation of results, which did not fit the old established theories, but which turned out to be not due to error of any kind (for example methodological mistakes or human error in performing studies).
 
@@ -41,7 +41,7 @@ Some examples. You can have a glance and see, what questions were asked and how 
 
 
 
-<exercise id="2" title="Step-by-step Meta-analysis?">
+<exercise id="2" title="Step-by-step meta-analysis">
 
 Let's ask some questions about the slides. Whats the correct answer?
 
