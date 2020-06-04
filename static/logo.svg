@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="450.58264mm"
-   height="310.73148mm"
-   viewBox="0 0 450.58264 310.73148"
+   width="350.39844mm"
+   height="155.87389mm"
+   viewBox="0 0 350.39844 155.87389"
    version="1.1"
    id="svg8"
    sodipodi:docname="metaanalysis_for_biologists2.svg"
@@ -128,8 +128,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="888.96437"
-     inkscape:cy="755.1525"
+     inkscape:cx="681.72955"
+     inkscape:cy="479.03452"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -154,8 +154,8 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Layer 3"
-     style="display:inline;opacity:0.71100003"
-     transform="translate(114.54431,19.383606)">
+     style="display:none;opacity:0.71100003"
+     transform="translate(59.713431,-62.417771)">
     <rect
        style="opacity:0.41000001;fill:url(#meshgradient14657);fill-opacity:1;stroke:none;stroke-width:11.16499996;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter12549)"
        id="rect12203"
@@ -168,8 +168,8 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Layer 2"
-     style="display:inline"
-     transform="translate(114.54431,19.383606)">
+     style="display:none"
+     transform="translate(59.713431,-62.417771)">
     <path
        sodipodi:type="spiral"
        style="display:inline;opacity:0.37600002;fill:url(#meshgradient14705);fill-opacity:1;fill-rule:evenodd;stroke:#44be12;stroke-width:7.33936262;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -189,7 +189,7 @@
      id="g14703"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1 copy"
-     transform="translate(114.54431,19.383606)">
+     transform="translate(59.713431,-62.417771)">
     <flowRoot
        transform="scale(0.26458333)"
        style="font-style:normal;font-weight:normal;font-size:96px;line-height:10.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -249,7 +249,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      style="display:inline"
-     transform="translate(114.54431,19.383606)">
+     transform="translate(59.713431,-62.417771)">
     <flowRoot
        xml:space="preserve"
        id="flowRoot4518"
