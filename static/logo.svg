@@ -9,14 +9,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="450.58264mm"
+   height="310.73148mm"
+   viewBox="0 0 450.58264 310.73148"
    version="1.1"
    id="svg8"
    sodipodi:docname="metaanalysis_for_biologists2.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   enable-background="new">
+   style="enable-background:new">
   <defs
      id="defs2">
     <meshgradient
@@ -52,9 +52,9 @@
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter12549"
-       x="-0.06337089"
+       x="-0.063370891"
        width="1.1267418"
-       y="-0.09745116"
+       y="-0.097451158"
        height="1.1949023">
       <feGaussianBlur
          inkscape:collect="always"
@@ -90,6 +90,35 @@
         </meshpatch>
       </meshrow>
     </meshgradient>
+    <meshgradient
+       inkscape:collect="always"
+       id="meshgradient14705"
+       gradientUnits="userSpaceOnUse"
+       x="42.711761"
+       y="76.333931">
+      <meshrow
+         id="meshrow14717">
+        <meshpatch
+           id="meshpatch14715">
+          <stop
+             id="stop14707"
+             style="stop-color:#ffffff;stop-opacity:1"
+             path="c 52.0942,-8.71808e-06  118.564,-39.1958  170.657,-39.1965" />
+          <stop
+             id="stop14709"
+             style="stop-color:#800080;stop-opacity:1"
+             path="c -0.00423249,48.7529  23.0632,22.2768  23.0662,71.0305" />
+          <stop
+             id="stop14711"
+             style="stop-color:#ffffff;stop-opacity:1"
+             path="c -52.098,0.00444561  -166.719,63.2335  -218.833,63.2271" />
+          <stop
+             id="stop14713"
+             style="stop-color:#800080;stop-opacity:1"
+             path="c 0.0159191,-48.7464  25.1262,-46.3006  25.1101,-95.0612" />
+        </meshpatch>
+      </meshrow>
+    </meshgradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -99,8 +128,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="456.04099"
-     inkscape:cy="776.51485"
+     inkscape:cx="888.96437"
+     inkscape:cy="755.1525"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -125,7 +154,8 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Layer 3"
-     style="display:inline;opacity:0.71100003">
+     style="display:inline;opacity:0.71100003"
+     transform="translate(114.54431,19.383606)">
     <rect
        style="opacity:0.41000001;fill:url(#meshgradient14657);fill-opacity:1;stroke:none;stroke-width:11.16499996;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter12549)"
        id="rect12203"
@@ -138,10 +168,11 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Layer 2"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(114.54431,19.383606)">
     <path
        sodipodi:type="spiral"
-       style="display:inline;opacity:0.37600002;fill:url(#meshgradient4550);fill-opacity:1;fill-rule:evenodd;stroke:#44be12;stroke-width:7.33936262;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="display:inline;opacity:0.37600002;fill:url(#meshgradient14705);fill-opacity:1;fill-rule:evenodd;stroke:#44be12;stroke-width:7.33936262;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4548"
        sodipodi:cx="132.29167"
        sodipodi:cy="95.160713"
@@ -157,7 +188,8 @@
      style="display:inline"
      id="g14703"
      inkscape:groupmode="layer"
-     inkscape:label="Layer 1 copy">
+     inkscape:label="Layer 1 copy"
+     transform="translate(114.54431,19.383606)">
     <flowRoot
        transform="scale(0.26458333)"
        style="font-style:normal;font-weight:normal;font-size:96px;line-height:10.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -216,7 +248,8 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(114.54431,19.383606)">
     <flowRoot
        xml:space="preserve"
        id="flowRoot4518"
@@ -232,7 +265,7 @@
          id="flowPara4526" /><flowPara
          id="flowPara4528" /></flowRoot>    <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:38.63973236px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:#f9413c;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.89330542;"
+       style="font-style:normal;font-weight:normal;font-size:38.63973236px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:#f9413c;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.8933054"
        x="109.48653"
        y="110.26335"
        id="text4532"
@@ -241,23 +274,23 @@
          id="tspan4530"
          x="109.48652"
          y="110.26335"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.63973236px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.86610878;">Meta-analysis</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.63973236px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.86610879">Meta-analysis</tspan><tspan
          sodipodi:role="line"
          x="113.82595"
          y="161.37096"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.63973236px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.86610878;"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.63973236px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.86610879"
          id="tspan4536"><tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.63975143px;font-family:'Bite Chocolate';-inkscape-font-specification:'Bite Chocolate, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke:none;stroke-opacity:0.86610878;fill:#e82020;fill-opacity:1;"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.63975143px;font-family:'Bite Chocolate';-inkscape-font-specification:'Bite Chocolate, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-opacity:0.86610879"
    id="tspan12196">for</tspan> </tspan><tspan
          sodipodi:role="line"
          x="109.48652"
          y="213.92099"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.63973236px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.86610878;"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.63973236px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.86610879"
          id="tspan4538">Biologists</tspan><tspan
          sodipodi:role="line"
          x="109.48653"
          y="262.22067"
-         style="line-height:1.25;text-align:center;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:#f9413c;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.89330542;"
+         style="line-height:1.25;text-align:center;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:#f9413c;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.8933054"
          id="tspan4534" /></text>
     <flowRoot
        xml:space="preserve"
