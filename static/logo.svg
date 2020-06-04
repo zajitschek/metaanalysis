@@ -15,7 +15,8 @@
    version="1.1"
    id="svg8"
    sodipodi:docname="metaanalysis_for_biologists2.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   enable-background="new">
   <defs
      id="defs2">
     <meshgradient
@@ -47,6 +48,48 @@
         </meshpatch>
       </meshrow>
     </meshgradient>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter12549"
+       x="-0.06337089"
+       width="1.1267418"
+       y="-0.09745116"
+       height="1.1949023">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="10.559142"
+         id="feGaussianBlur12551" />
+    </filter>
+    <meshgradient
+       inkscape:collect="always"
+       id="meshgradient14657"
+       gradientUnits="userSpaceOnUse"
+       x="-89.20237"
+       y="5.9583344">
+      <meshrow
+         id="meshrow14659">
+        <meshpatch
+           id="meshpatch14661">
+          <stop
+             path="c 133.3,0  266.599,0  399.899,0"
+             style="stop-color:#ffffff;stop-opacity:1"
+             id="stop14663" />
+          <stop
+             path="c 0,86.6825  0,173.365  0,260.048"
+             style="stop-color:#fffa25;stop-opacity:1"
+             id="stop14665" />
+          <stop
+             path="c -133.3,0  -266.599,0  -399.899,0"
+             style="stop-color:#ffffff;stop-opacity:1"
+             id="stop14667" />
+          <stop
+             path="c 0,-86.6825  0,-173.365  0,-260.048"
+             style="stop-color:#fffa25;stop-opacity:1"
+             id="stop14669" />
+        </meshpatch>
+      </meshrow>
+    </meshgradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -56,7 +99,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-510"
+     inkscape:cx="456.04099"
      inkscape:cy="776.51485"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -79,6 +122,97 @@
     </rdf:RDF>
   </metadata>
   <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 3"
+     style="display:inline;opacity:0.71100003">
+    <rect
+       style="opacity:0.41000001;fill:url(#meshgradient14657);fill-opacity:1;stroke:none;stroke-width:11.16499996;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter12549)"
+       id="rect12203"
+       width="399.89877"
+       height="260.04761"
+       x="-89.20237"
+       y="5.9583344" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     style="display:inline">
+    <path
+       sodipodi:type="spiral"
+       style="display:inline;opacity:0.37600002;fill:url(#meshgradient4550);fill-opacity:1;fill-rule:evenodd;stroke:#44be12;stroke-width:7.33936262;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4548"
+       sodipodi:cx="132.29167"
+       sodipodi:cy="95.160713"
+       sodipodi:expansion="1"
+       sodipodi:revolution="3"
+       sodipodi:radius="86.191833"
+       sodipodi:argument="-15.974216"
+       sodipodi:t0="0"
+       d="m 132.29167,95.160713 c -4.16924,1.137072 -3.58971,-5.059069 -1.88989,-6.929561 4.60641,-5.068918 12.57581,-1.752996 15.74901,3.149783 5.67612,8.769925 0.43802,20.127685 -8.18945,24.568465 -12.66117,6.51701 -27.80279,-0.85845 -33.38791,-13.22913 -7.444094,-16.48818 2.14356,-35.524357 18.2688,-42.207364 20.29196,-8.409882 43.26873,3.422121 51.02681,23.308474 9.39608,24.08504 -4.69675,51.02609 -28.34815,59.84626 C 117.64854,154.06191 86.729335,137.69876 76.855181,110.27982 65.455078,78.623576 84.094539,43.717379 115.28267,32.794661 150.72061,20.383574 189.6198,41.30334 201.58729,76.261824 215.013,115.47996 191.81012,158.3764 153.08045,171.38589 110.08318,185.82889 63.186348,160.34085 49.136935,117.83938"
+       transform="matrix(1.3742805,-0.65122536,0.65057787,1.3756482,-136.53732,80.769404)" />
+  </g>
+  <g
+     style="display:inline"
+     id="g14703"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1 copy">
+    <flowRoot
+       transform="scale(0.26458333)"
+       style="font-style:normal;font-weight:normal;font-size:96px;line-height:10.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       id="flowRoot14681"
+       xml:space="preserve"><flowRegion
+         id="flowRegion14673"><rect
+           y="248.23398"
+           x="148.57143"
+           height="228.57143"
+           width="540"
+           id="rect14671" /></flowRegion><flowPara
+         id="flowPara14675">Meta-analysis</flowPara><flowPara
+         id="flowPara14677" /><flowPara
+         id="flowPara14679" /></flowRoot>    <text
+       transform="matrix(0.99773202,-0.05915142,0.05908995,0.99876993,0,0)"
+       id="text14693"
+       y="108.51546"
+       x="109.60556"
+       style="font-style:normal;font-weight:normal;font-size:40.48151779px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#f3fb01;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.39591836"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.48151779px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#f3fb01;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.39591836"
+         y="108.51546"
+         x="109.60557"
+         id="tspan14683"
+         sodipodi:role="line">Meta-analysis</tspan><tspan
+         id="tspan14687"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.48151779px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#f3fb01;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.39591836"
+         y="162.05913"
+         x="114.15182"
+         sodipodi:role="line"><tspan
+   id="tspan14685"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.48153687px;font-family:'Bite Chocolate';-inkscape-font-specification:'Bite Chocolate, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#f3fb01;fill-opacity:1;stroke:none;stroke-width:0.26499999">for</tspan> </tspan><tspan
+         id="tspan14689"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.48151779px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#f3fb01;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.39591836"
+         y="217.114"
+         x="109.60556"
+         sodipodi:role="line">Biologists</tspan><tspan
+         id="tspan14691"
+         style="line-height:1.25;text-align:center;text-anchor:middle;fill:#f3fb01;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.39591836"
+         y="267.71591"
+         x="109.60556"
+         sodipodi:role="line" /></text>
+    <flowRoot
+       transform="scale(0.26458333)"
+       style="font-style:normal;font-weight:normal;font-size:96px;line-height:10.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       id="flowRoot14701"
+       xml:space="preserve"><flowRegion
+         id="flowRegion14697"><rect
+           y="285.37683"
+           x="180"
+           height="1922.8572"
+           width="600"
+           id="rect14695" /></flowRegion><flowPara
+         id="flowPara14699"></flowPara></flowRoot>  </g>
+  <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -98,55 +232,43 @@
          id="flowPara4526" /><flowPara
          id="flowPara4528" /></flowRoot>    <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:38.63973236px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#cb3131;fill-opacity:1;stroke:#f81919;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.39591836"
+       style="font-style:normal;font-weight:normal;font-size:38.63973236px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:#f9413c;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.89330542;"
        x="109.48653"
        y="110.26335"
        id="text4532"
        transform="matrix(0.99775447,-0.05915009,0.05909128,0.99874747,0,0)"><tspan
          sodipodi:role="line"
          id="tspan4530"
-         x="109.48653"
+         x="109.48652"
          y="110.26335"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.63973236px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#cb3131;fill-opacity:1;stroke:#f81919;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.39591836">Meta-analysis</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.63973236px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.86610878;">Meta-analysis</tspan><tspan
          sodipodi:role="line"
-         x="113.82594"
+         x="113.82595"
          y="161.37096"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.63973236px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#cb3131;fill-opacity:1;stroke:#f81919;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.39591836"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.63973236px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.86610878;"
          id="tspan4536"><tspan
-   style="-inkscape-font-specification:'Bite Chocolate, Normal';font-family:'Bite Chocolate';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:38.63974957px;text-anchor:middle;text-align:center;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.63975143px;font-family:'Bite Chocolate';-inkscape-font-specification:'Bite Chocolate, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke:none;stroke-opacity:0.86610878;fill:#e82020;fill-opacity:1;"
    id="tspan12196">for</tspan> </tspan><tspan
          sodipodi:role="line"
-         x="109.48653"
-         y="212.47856"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.63973236px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#cb3131;fill-opacity:1;stroke:#f81919;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.39591836"
+         x="109.48652"
+         y="213.92099"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.63973236px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.86610878;"
          id="tspan4538">Biologists</tspan><tspan
          sodipodi:role="line"
          x="109.48653"
-         y="260.77823"
-         style="line-height:1.25;text-align:center;text-anchor:middle;fill:#cb3131;fill-opacity:1;stroke:#f81919;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.39591836"
+         y="262.22067"
+         style="line-height:1.25;text-align:center;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:#f9413c;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.89330542;"
          id="tspan4534" /></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot4540"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:96px;line-height:10.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+       style="font-style:normal;font-weight:normal;font-size:96px;line-height:10.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="scale(0.26458333)"><flowRegion
          id="flowRegion4542"><rect
            id="rect4544"
            width="600"
            height="1922.8572"
            x="180"
            y="285.37683" /></flowRegion><flowPara
-         id="flowPara4546"></flowPara></flowRoot>    <path
-       sodipodi:type="spiral"
-       style="opacity:0.37600002;fill:url(#meshgradient4550);fill-opacity:1;fill-rule:evenodd;stroke:#44be12;stroke-width:7.33936262;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path4548"
-       sodipodi:cx="132.29167"
-       sodipodi:cy="95.160713"
-       sodipodi:expansion="1"
-       sodipodi:revolution="3"
-       sodipodi:radius="86.191833"
-       sodipodi:argument="-15.974216"
-       sodipodi:t0="0"
-       d="m 132.29167,95.160713 c -4.16924,1.137072 -3.58971,-5.059069 -1.88989,-6.929561 4.60641,-5.068918 12.57581,-1.752996 15.74901,3.149783 5.67612,8.769925 0.43802,20.127685 -8.18945,24.568465 -12.66117,6.51701 -27.80279,-0.85845 -33.38791,-13.22913 -7.444094,-16.48818 2.14356,-35.524357 18.2688,-42.207364 20.29196,-8.409882 43.26873,3.422121 51.02681,23.308474 9.39608,24.08504 -4.69675,51.02609 -28.34815,59.84626 C 117.64854,154.06191 86.729335,137.69876 76.855181,110.27982 65.455078,78.623576 84.094539,43.717379 115.28267,32.794661 150.72061,20.383574 189.6198,41.30334 201.58729,76.261824 215.013,115.47996 191.81012,158.3764 153.08045,171.38589 110.08318,185.82889 63.186348,160.34085 49.136935,117.83938"
-       transform="matrix(1.3742805,-0.65122536,0.65057788,1.3756482,-136.53732,80.769405)" />
-  </g>
+         id="flowPara4546"></flowPara></flowRoot>  </g>
 </svg>
