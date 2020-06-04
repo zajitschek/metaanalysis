@@ -1,12 +1,11 @@
 ---
 title: 'Chapter 2: Step-by-step meta-analysis'
 description:
-  'This chapter will explain the structure and rpocesses involved in conducting a meta-analysis.'
+  'This chapter will explain the structure and processes involved in conducting a meta-analysis.'
 prev: /chapter1
 next: /chapter3
 type: chapter
 id: 2
-
 ---
 
 <exercise id="1" title="Step-by-step meta-analysis">

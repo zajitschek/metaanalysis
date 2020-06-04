@@ -35,6 +35,7 @@ This combination of multiple test results can be achieved by qualitatively summa
 </exercise>
 
 <exercise id="2" title="Examples of published meta-analyses and additional literature">
+
 Some examples. You can have a glance and see what questions were asked and how the results are presented.:
 - [The repeatability of behaviour: a meta-analysis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3972767/).
 - [Individual differences in behaviour explain variation in survival: a meta‐analysis](https://royalsocietypublishing.org/doi/10.1098/rspb.2017.2823).
