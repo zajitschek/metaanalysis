@@ -14,7 +14,7 @@
    viewBox="0 0 350.39844 155.87389"
    version="1.1"
    id="svg8"
-   sodipodi:docname="metaanalysis_for_biologists2.svg"
+   sodipodi:docname="metaanalysis_for_biologists3.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    style="enable-background:new">
   <defs
@@ -45,77 +45,6 @@
              path="c 0.0159191,-48.7464  25.1262,-46.3006  25.1101,-95.0612"
              style="stop-color:#800080;stop-opacity:1"
              id="stop12194" />
-        </meshpatch>
-      </meshrow>
-    </meshgradient>
-    <filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
-       id="filter12549"
-       x="-0.063370891"
-       width="1.1267418"
-       y="-0.097451158"
-       height="1.1949023">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="10.559142"
-         id="feGaussianBlur12551" />
-    </filter>
-    <meshgradient
-       inkscape:collect="always"
-       id="meshgradient14657"
-       gradientUnits="userSpaceOnUse"
-       x="-89.20237"
-       y="5.9583344">
-      <meshrow
-         id="meshrow14659">
-        <meshpatch
-           id="meshpatch14661">
-          <stop
-             path="c 133.3,0  266.599,0  399.899,0"
-             style="stop-color:#ffffff;stop-opacity:1"
-             id="stop14663" />
-          <stop
-             path="c 0,86.6825  0,173.365  0,260.048"
-             style="stop-color:#fffa25;stop-opacity:1"
-             id="stop14665" />
-          <stop
-             path="c -133.3,0  -266.599,0  -399.899,0"
-             style="stop-color:#ffffff;stop-opacity:1"
-             id="stop14667" />
-          <stop
-             path="c 0,-86.6825  0,-173.365  0,-260.048"
-             style="stop-color:#fffa25;stop-opacity:1"
-             id="stop14669" />
-        </meshpatch>
-      </meshrow>
-    </meshgradient>
-    <meshgradient
-       inkscape:collect="always"
-       id="meshgradient14705"
-       gradientUnits="userSpaceOnUse"
-       x="42.711761"
-       y="76.333931">
-      <meshrow
-         id="meshrow14717">
-        <meshpatch
-           id="meshpatch14715">
-          <stop
-             id="stop14707"
-             style="stop-color:#ffffff;stop-opacity:1"
-             path="c 52.0942,-8.71808e-06  118.564,-39.1958  170.657,-39.1965" />
-          <stop
-             id="stop14709"
-             style="stop-color:#800080;stop-opacity:1"
-             path="c -0.00423249,48.7529  23.0632,22.2768  23.0662,71.0305" />
-          <stop
-             id="stop14711"
-             style="stop-color:#ffffff;stop-opacity:1"
-             path="c -52.098,0.00444561  -166.719,63.2335  -218.833,63.2271" />
-          <stop
-             id="stop14713"
-             style="stop-color:#800080;stop-opacity:1"
-             path="c 0.0159191,-48.7464  25.1262,-46.3006  25.1101,-95.0612" />
         </meshpatch>
       </meshrow>
     </meshgradient>
@@ -150,40 +79,6 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     inkscape:groupmode="layer"
-     id="layer3"
-     inkscape:label="Layer 3"
-     style="display:none;opacity:0.71100003"
-     transform="translate(59.713431,-62.417771)">
-    <rect
-       style="opacity:0.41000001;fill:url(#meshgradient14657);fill-opacity:1;stroke:none;stroke-width:11.16499996;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter12549)"
-       id="rect12203"
-       width="399.89877"
-       height="260.04761"
-       x="-89.20237"
-       y="5.9583344" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="Layer 2"
-     style="display:none"
-     transform="translate(59.713431,-62.417771)">
-    <path
-       sodipodi:type="spiral"
-       style="display:inline;opacity:0.37600002;fill:url(#meshgradient14705);fill-opacity:1;fill-rule:evenodd;stroke:#44be12;stroke-width:7.33936262;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path4548"
-       sodipodi:cx="132.29167"
-       sodipodi:cy="95.160713"
-       sodipodi:expansion="1"
-       sodipodi:revolution="3"
-       sodipodi:radius="86.191833"
-       sodipodi:argument="-15.974216"
-       sodipodi:t0="0"
-       d="m 132.29167,95.160713 c -4.16924,1.137072 -3.58971,-5.059069 -1.88989,-6.929561 4.60641,-5.068918 12.57581,-1.752996 15.74901,3.149783 5.67612,8.769925 0.43802,20.127685 -8.18945,24.568465 -12.66117,6.51701 -27.80279,-0.85845 -33.38791,-13.22913 -7.444094,-16.48818 2.14356,-35.524357 18.2688,-42.207364 20.29196,-8.409882 43.26873,3.422121 51.02681,23.308474 9.39608,24.08504 -4.69675,51.02609 -28.34815,59.84626 C 117.64854,154.06191 86.729335,137.69876 76.855181,110.27982 65.455078,78.623576 84.094539,43.717379 115.28267,32.794661 150.72061,20.383574 189.6198,41.30334 201.58729,76.261824 215.013,115.47996 191.81012,158.3764 153.08045,171.38589 110.08318,185.82889 63.186348,160.34085 49.136935,117.83938"
-       transform="matrix(1.3742805,-0.65122536,0.65057787,1.3756482,-136.53732,80.769404)" />
-  </g>
   <g
      style="display:inline"
      id="g14703"
@@ -265,31 +160,31 @@
          id="flowPara4526" /><flowPara
          id="flowPara4528" /></flowRoot>    <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:38.63973236px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:#f9413c;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.8933054"
-       x="109.48653"
-       y="110.26335"
+       style="font-style:normal;font-weight:normal;font-size:38.72711182px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:#f9413c;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.8933054"
+       x="109.85974"
+       y="110.3707"
        id="text4532"
-       transform="matrix(0.99775447,-0.05915009,0.05909128,0.99874747,0,0)"><tspan
+       transform="matrix(0.99775336,-0.05915016,0.05909122,0.99874857,0,0)"><tspan
          sodipodi:role="line"
          id="tspan4530"
-         x="109.48652"
-         y="110.26335"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.63973236px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.86610879">Meta-analysis</tspan><tspan
+         x="109.85973"
+         y="110.3707"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.72711182px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.86610879">Meta-analysis</tspan><tspan
          sodipodi:role="line"
-         x="113.82595"
-         y="161.37096"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.63973236px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.86610879"
+         x="114.20898"
+         y="161.59387"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.72711182px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.86610879"
          id="tspan4536"><tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.63975143px;font-family:'Bite Chocolate';-inkscape-font-specification:'Bite Chocolate, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-opacity:0.86610879"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.72712708px;font-family:'Bite Chocolate';-inkscape-font-specification:'Bite Chocolate, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-opacity:0.86610879"
    id="tspan12196">for</tspan> </tspan><tspan
          sodipodi:role="line"
-         x="109.48652"
-         y="213.92099"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.63973236px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.86610879"
+         x="109.85974"
+         y="214.26276"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.72711182px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.86610879"
          id="tspan4538">Biologists</tspan><tspan
          sodipodi:role="line"
-         x="109.48653"
-         y="262.22067"
+         x="109.85974"
+         y="262.67163"
          style="line-height:1.25;text-align:center;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:#f9413c;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.8933054"
          id="tspan4534" /></text>
     <flowRoot
