@@ -3,7 +3,7 @@
 title: 'Chapter 2: Step-by-step meta-analysis'
 description:
   'This chapter will explain the structure and rpocesses involved in conducting a meta-analysis.'
-prev: null
+prev: /chapter1
 next: /chapter3
 type: chapter
 id: 2

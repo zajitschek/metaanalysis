@@ -31,6 +31,7 @@ This course is mainly focussed on research in biological sciences. My own resear
 We established that science works cumulatively. To gain support for specific hypothesis, we do not want to rely on the outcome of single studies. We can try to combine the knowledge gained in multiple studies which tested specific traits of interest. This can be achieved while still taking into account that studies differ in their quality and their size, for example, lending different levels of weights to their results. 
 
 This combination of multiple test results can be achieved by qualitatively summarising previous work on a specific subject. Classically, this was done in a literature review, for example at the beginning of a graduate or postgraduate degree. While this type of review has still its merit, we want to introduce you here to the meta-analytical approach, which can provide a quantitative summary and test of specific research questions.
+
 </exercise>
 
 <exercise id="2" title="Examples of published meta-analyses and additional literature">
