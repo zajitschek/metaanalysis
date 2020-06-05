@@ -21,7 +21,7 @@ Thanks!
 
 # About this course
 
-Hi and welcome, I am **[Susi Zajitschek](https://www.ljmu.ac.uk/about-us/staff-profiles/faculty-of-science/school-of-biological-and-environmental-sciences/susanne-zajitschek), a Senior Lecturer in Animal Behaviour at Liverpool John Moores University**. This course is meant as a primer for students who would like to know more about meta-analysis. I will give you an overview on what meta-analyses are and on why they are useful. In later chapters I will include hands-on exercises to conduct meta-analyses, step-by-step (based on material developed by my collaborators **[Shinichi Nakagawa](http://www.i-deel.org/shinichi-nakagawa.html)** and **[Malgorzata  Lagisz](https://mlagisz.weebly.com/)**. The actual statistical analyses will be performed in the [software R](https://www.r-project.org/about.html), and you will have the opportunity to run R software scripts right here, through this website, without the need to install software on your computer.
+Hi and welcome, I am **[Susi Zajitschek](https://www.ljmu.ac.uk/about-us/staff-profiles/faculty-of-science/school-of-biological-and-environmental-sciences/susanne-zajitschek), a Senior Lecturer in Animal Behaviour at Liverpool John Moores University**. This course is meant as a primer for students who would like to know more about meta-analysis. I will give you an overview on what meta-analyses are and on why they are useful. I will include hands-on exercises to conduct meta-analyses, step-by-step (based on material developed by my collaborators **[Shinichi Nakagawa](http://www.i-deel.org/shinichi-nakagawa.html)** and **[Malgorzata  Lagisz](https://mlagisz.weebly.com/)**). The actual statistical analyses will be performed in the [software R](https://www.r-project.org/about.html), and you will have the opportunity to run R software scripts right here, on this website, without the need to install software on your computer.
 
 # What is a meta-analysis?
 
@@ -66,6 +66,6 @@ This combination of multiple test results can be achieved by qualitatively summa
 
 <exercise id="4" title="Further structure of this course">
 
-In the following chapters (2-7), I will explain the structure and processes involved in conducting a meta-analysis, from conception to write-up. You will also have the opportunity to perform steps directly in R.
+In Chapter 2, I will explain the structure and processes involved in conducting a meta-analysis, from conception to write-up. You will also have the opportunity to perform steps directly in R.
 
 </exercise>
