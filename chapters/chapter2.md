@@ -176,7 +176,6 @@ Outcome type: should we accept any reproduction-related measurements and what th
 **QUESTION 11:**  
 Data type: should we accept any type of data for meta-analysis? (e.g. descriptive statistics, and which ones, or also inferential statistics, and which ones? This will be linked to the effect size you are planning to use!)    
 
-<br>
 
 ********************************************************************************
 ### Making decision trees for the literature screening    
@@ -441,11 +440,9 @@ text(elpos[29, 1] + 0.02, elpos[29, 2] + 0.06, "35")
 
 <exercise id="4" title="Extraction of effect sizes">
 
-# Extraction of effect sizes
-
 Based on material prepared by Malgorzata (Losia) Lagisz, BEES, UNSW, Australia, losialagisz@gmail.com.   
 
-## Introduction   
+## Introduction for extracting effect sizes
 
 Imagine, you quickly got well and decided to carry on the Terminal Investment Meta-analysis Project.   
 After a few weeks you finished searching and screening literature for the relevant papers. You now have a collection of around 30 included full-text papers (relatively manageable; some projects have 300 or more), stored neatly as pdf files and supplementary information, in whatever format available. It is time to start extracting the data (ideally, you should have planned this in detail while writing up your protocol/preregistration, but in this exercise we assume you did not).   
@@ -590,8 +587,8 @@ library(compute.es)
 ```
 
 Let's try to extract data from two selected papers::   
- 1. Figure 2a in the paper by Weil et al. 2006: Immune challenge retards seasonal reproductive regression in rodents: evidence for terminal investment (**[Weil2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/papers/Weil2006.pdf){:target="_blank"}**)
- 2. Figure 2a in the paper by Sadd et al. 2006: Modulation of sexual signalling by immune challenged male mealworm beetles (*Tenebrio molitor*, L.): evidence for terminal investment and dishonesty (**[Sadd2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/Sadd2006.pdf){:target="_blank"}**)   
+ 1. Figure 2a in the paper by Weil et al. 2006: Immune challenge retards seasonal reproductive regression in rodents: evidence for terminal investment (**[Weil2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/papers/Weil2006.pdf)**)
+ 2. Figure 2a in the paper by Sadd et al. 2006: Modulation of sexual signalling by immune challenged male mealworm beetles (*Tenebrio molitor*, L.): evidence for terminal investment and dishonesty (**[Sadd2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/Sadd2006.pdf)**)   
 
 You will need to open the pdf files and take the snapshots of the relevant figures (for Mac OS the keyboard shortcut is easiest: press Command+Shift+4 and then select the screen fragment; for Windows see https://www.windowscentral.com/how-take-windows-10-screenshot-7-best-techniques). Make sure you capture the axes and axes labels. Also, enlarge these figures to fill the screen before taking the snapshot to get a higher resolution image.   
 
