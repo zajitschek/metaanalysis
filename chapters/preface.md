@@ -13,3 +13,4 @@ id: 1
 # Work in progress!
 
 Please have patience with us while we build this online resource - it's brand new and nowhere near finished! Apologies if exercieses and questions may not work (yet), please check back next week :-)
+</exercise>
