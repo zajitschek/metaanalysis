@@ -43,7 +43,7 @@ This combination of multiple test results can be achieved by qualitatively summa
 
 </exercise>
 
-<exercise id="2" title="Examples of published meta-analyses and additional literature">
+<exercise id="3" title="Examples of published meta-analyses and additional literature">
 
 **Some examples**. You can have a glance and see what questions were asked and how the results are presented:
 
@@ -63,7 +63,7 @@ This combination of multiple test results can be achieved by qualitatively summa
 
 </exercise>
 
-<exercise id="3" title="Further structure of this course">
+<exercise id="4" title="Further structure of this course">
 
 In the following chapters (2-7), I will explain the structure and processes involved in conducting a meta-analysis, from conception to write-up. You will also have the opportunity to perform steps directly in R.
 

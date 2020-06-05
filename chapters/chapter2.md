@@ -1,10 +1,12 @@
+---
 title: 'Chapter 2: Step-by-step: The structure of a meta-analysis'
 description:
   'We will work through each specific step in a meta-analysis.'
 prev: /chapter1
 next: /chapter3
 type: chapter
-id: 3
+id: 2
+---
 
 <exercise id=1 ''Overview: the complete meta-analysis">
 
