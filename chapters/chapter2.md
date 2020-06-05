@@ -432,3 +432,32 @@ text(elpos[29, 1] + 0.02, elpos[29, 2] + 0.06, "35")
 
 </exercise>
 
+<exercise id="3" title="Paper selection">
+
+# Paper selection
+
+</exercise>
+
+<exercise id="4" title="Extraction of effect sizes">
+
+# Extraction of effect sizes
+
+</exercise>
+
+<exercise id="5" title="Data analysis">
+
+# Data analysis
+
+</exercise>
+
+<exercise id="6" title="Evidence summary & assessment of certainty">
+
+# Evidence summary & assessment of certainty
+
+</exercise>
+
+<exercise id="7" title="Report and interpret results">
+
+# Report and interpret results
+
+</exercise>
