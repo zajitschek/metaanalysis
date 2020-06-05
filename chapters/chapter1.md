@@ -66,6 +66,6 @@ This combination of multiple test results can be achieved by qualitatively summa
 
 <exercise id="4" title="Further structure of this course">
 
-In the following chapters (2-7), I will explain the structure and processes involved in conducting a meta-analysis, from conception to write-up. You will also have the opportunity to perform steps directly in R.
+In Chapter 2, I will explain the structure and processes involved in conducting a meta-analysis, from conception to write-up. You will also have the opportunity to perform steps directly in R.
 
 </exercise>
