@@ -8,6 +8,7 @@ type: chapter
 id: 1
 ---
 
+
 <exercise id="1" title="Disclaimer">
 
 Please have patience with us while we build this online resource - it's brand new and nowhere near finished!
