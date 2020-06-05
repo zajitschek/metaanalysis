@@ -12,7 +12,8 @@ id: 1
 
 Please have patience with us while we build this online resource - it's brand new and nowhere near finished!
 Apologies if exercises and questions may not work (yet), this is an ongoing project.   
-Please check back next week... Thanks!
+Please check back a little later if things aren't performing as they should... 
+Thanks!
 
 </exercise>
 
