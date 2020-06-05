@@ -8,7 +8,7 @@ type: chapter
 id: 2
 ---
 
-<exercise id=1 ''Overview: the complete meta-analysis">
+<exercise id="1" title="Overview: the complete meta-analysis">
 
 # Overview
 
@@ -28,13 +28,13 @@ The following diagram shows a more in depth overview, starting from the literatu
 
 </exercise>
 
-<exercise id=2 ''Research question and Literature search">
+<exercise id="2" title="Research question and Literature search">
 
 # Literature search
 
 There are different protocols for how to gather the literature for a systematic meta-analysis. We will walk through a specific literature search below, using one established protocol. Please note that this is in itself an active area of research though. For example, I would like to mention the *[metaverse](https://rmetaverse.github.io/)*, a collection of R packages that is aimed at integrating all steps of a meta-analysis. The package *[litsearchR](https://elizagrames.github.io/litsearchr/)* seems especially promising, and you could try it out on your local R installation (right now, I haven't installed it in the R software container you will be using during this course / online).
 
-------
+---
 
 The following exercise was prepared by Malgorzata (Losia) Lagisz, BEES, UNSW, Australia, losialagisz@gmail.com.   
 
