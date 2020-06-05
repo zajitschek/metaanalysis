@@ -17,7 +17,8 @@ We will take the paper [Nakagawa 2017](https://bmcbiol.biomedcentral.com/article
 Here is a graphical overview:
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/metaanalysis_overview.png?raw=true)
-
+   
+   
 
 All of these steps have to be described and laid out in a protocol. We will see that there already exist general protocols for each step, which we can use and adapt to our research questions. The aim of having well defined protocols is for other researchers to be able to reproduce those steps. 
 
