@@ -14,16 +14,16 @@ id: 2
 
 We will take the paper [Nakagawa 2017](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7) as a blueprint to walk you through all the steps of a meta-analysis.
 
-Here is a graphical overview (Figure 1 from Nakagawa 2017):
+Here is a graphical overview:
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/metaanalysis_overview.png?raw=true)
 
 
-All of these steps have to be described and laid out in a protocol. We will see that there already exist general protocols for each step, which we can use and adapt it to our research question. The aim of having a relatively strict protocol is that other researchers have to be able to reproduce those steps. 
+All of these steps have to be described and laid out in a protocol. We will see that there already exist general protocols for each step, which we can use and adapt to our research questions. The aim of having well defined protocols is for other researchers to be able to reproduce those steps. 
 
-Protocols are necessary to minimize any bias that might be introduced - either knowingly, but most often unknowingly - into the decisions that have to be taken at each meta-analysis step. Bias might already be present in how the research question we want to tackle is phrased. Further, bias can originate in the specific way we search for literature, both in where we search (for example, which data bases we use, or whether we only include published results), and how we search (for example our choice of search terms).
+Protocols are necessary to minimize any bias that we might introduce - either knowingly, but most often unknowingly - into the decisions that have to be taken at each meta-analysis step. Bias might already be present in how the research question we want to tackle is phrased. Furthermore, bias can originate in the specific way we search for literature, both in where we search (for example, which databases we use, or whether we only include published results), and how we search (for example our choice of search terms).
 
-The following diagram shows a more in depth overview, starting from the literature search (Nakagawa et al. 2017).
+The following diagram shows a more in depth overview, starting from the literature search (Figure 1 from Nakagawa et al. 2017).
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/Nakagawa_etal_Fig1.gif?raw=true)
 
