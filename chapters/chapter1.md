@@ -54,3 +54,9 @@ This combination of multiple test results can be achieved by qualitatively summa
 [Meta-evaluation of meta-analysis: ten appraisal questions for biologists](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7)
 
 </exercise>
+
+<exercise id="3" title="Further structure of this course">
+
+In the following chapters (2-7), I will explain the structure and processes involved in conducting a meta-analysis, from conception to write-up. You will also have the opportunity to perform steps directly in R.
+
+</exercise>
