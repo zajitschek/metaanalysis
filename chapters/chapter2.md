@@ -16,7 +16,7 @@ We will take the paper [Nakagawa 2017](https://bmcbiol.biomedcentral.com/article
 
 Here is a graphical overview (Figure 1 from Nakagawa 2017):
 
-![](https://github.com/SusZaj/metaanalysis/images/metaanalysis_overview.svg)
+![](https://github.com/SusZaj/metaanalysis/images/metaanalysis_overview.png)
 
 All of these steps have to be described and laid out in a protocol. We will see that there already exist general protocols for each step, which we can use and adapt it to our research question. The aim of having a relatively strict protocol is that other researchers have to be able to reproduce those steps. 
 
