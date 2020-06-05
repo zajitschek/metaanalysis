@@ -5,10 +5,10 @@ description:
 prev: null
 next: /chapter2
 type: chapter
-id: 1
+id: 2
 ---
 
-<exercise id="1" title="Introduction">
+<exercise id="2" title="Introduction">
 
 # About this course
 

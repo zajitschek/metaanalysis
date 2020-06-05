@@ -3,12 +3,12 @@ title: 'Preface'
 description:
   'Disclaimer: This is a work in progress!'
 prev: null
-next: /chapter2
+next: /chapter1
 type: chapter
-id: 0
+id: 1
 ---
 
-<exercise id="0" title="Preface">
+<exercise id="1" title="Preface">
 
 # Work in progress!
 
