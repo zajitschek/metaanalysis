@@ -24,7 +24,7 @@ Protocols are necessary to minimize any bias that might be introduced - either k
 
 The following diagram shows a more in depth overview, starting from the literature search (Nakagawa et al. 2017).
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/Nakagawa_etal_Fig1.gif "Figure 1 from Nakagawa et al. 2017")
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/Nakagawa_etal_Fig1.gif)
 
 </exercise>
 
@@ -324,7 +324,6 @@ knitr::include_graphics("../images/WoS_adv_search.png")
 Both Scopus and WoS allow exporting the found records (with limitations on the max. number per export, **remember to tick the boxes for exporting abstracts!**) - there are multiple file formats you can use, but .ris and .bib are most commonly used ones- you will need to figure out which ones work for your reference manager software. The next step would be downloading all found records from your "final" search into the reference manager of your choice. Combine the references from two databases into a single project/folder and remove duplicates (most reference managers have this function, but it never works perfectly - do a visual check after sorting by titles!) before proceeding to the reference screening stage. An R package *revtools* (https://cran.rstudio.com/web/packages/revtools/ and http://revtools.net/) can act as a reference manager and also has a good de-dupiction function.      
 
 **Note:** This is also a good time to write up your meta-analysis protocol and register your meta-analysis (e.g. on OSF)!
-<br>
 
 ********************************************************************************
 ###  Screening the literature   
@@ -370,7 +369,6 @@ It is time to do the full-text screening for the papers that passed title and ab
 
 **QUESTION 17:**  
 What was your decision about **Nielsen2012** and **Ardia2005** papers?   
-<br>
 
 ********************************************************************************
 ###  PRISMA and other documentation  
@@ -430,6 +428,5 @@ text(elpos[26, 1] + 0.14, elpos[26, 2] + 0.02, "6")
 text(elpos[29, 1] + 0.02, elpos[29, 2] + 0.06, "35")
 ```
 
-
-
 </exercise>
+
