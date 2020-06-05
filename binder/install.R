@@ -1,3 +1,11 @@
 install.packages("tidyverse")
 install.packages("rjson")
 install.packages("metafor")
+install.packages("devtools")
+devtools::install_github("daniel1noble/metaDigitise")
+install.packages("metaDigitise")
+install.packages("compute.es")
+
+library(metaDigitise)
+library(tidyverse)
+library(compute.es)
