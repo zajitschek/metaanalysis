@@ -15,6 +15,7 @@ id: 1
 Hi and welcome, I'm **[Susi Zajitschek](https://www.ljmu.ac.uk/about-us/staff-profiles/faculty-of-science/school-of-biological-and-environmental-sciences/susanne-zajitschek), a Senior Lecturer in Animal Behaviour at Liverpool John Moores University**. This course is meant as a primer for students who would like to know more about meta-analysis. I will give you an overview on what meta-analyses are and on why they are useful. In later chapters I will include hands-on exercises to conduct meta-analyses, step-by-step (based on material developed by my collaborators **[Shinichi Nakagawa](http://www.i-deel.org/shinichi-nakagawa.html)** and **[Malgorzata  Lagisz](https://mlagisz.weebly.com/)**. The actual statistical analyses will be performed in the [software R](https://www.r-project.org/about.html), and you will have the opportunity to run R software scripts right here, through this website, without the need to install software on your computer.
 
 # What is a meta-analysis?
+
 ## A short side-trip to the roots of knowledge
 Humans strive to understand the world. The organized framework to do this is science, more specifically the *[scientific method](https://en.wikipedia.org/wiki/Scientific_method)*. Science is cumulative in nature. This means that studies and experiments build upon the findings of previous studies and experiments. New scientific insights might be gained by a more or less progressive accumulation of knowledge about a specific question, adding on to existing knowledge. Or, according to [Thomas Kuhn](https://en.wikipedia.org/wiki/Thomas_Kuhn), real progression in science might require [paradigm shifts](https://en.wikipedia.org/wiki/Paradigm_shift) that throw old theories over board and make way for new better theories. These shifts in how we explain the world depend themselves on the accumulation of results, which did not fit the old established theories, but which turned out to be not due to error of any kind (for example methodological mistakes or human error in performing studies).
 
@@ -45,6 +46,11 @@ This combination of multiple test results can be achieved by qualitatively summa
 - [The effect of dietary restriction on reproduction: a meta-analytic perspective](https://bmcevolbiol.biomedcentral.com/articles/10.1186/s12862-016-0768-z).
 
 **Meta-analysis and research synthesis: an outlook**
+
 [Research Weaving: Visualizing the Future of Research Synthesis](https://ecoevorxiv.org/ga2qz/)
+
+**Key reference for how to conduct a meta-analysis**
+
+[Meta-evaluation of meta-analysis: ten appraisal questions for biologists](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7)
 
 </exercise>
