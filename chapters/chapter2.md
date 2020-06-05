@@ -598,9 +598,9 @@ Let's try to extract data from two selected papers::
 You will need to open the pdf files and take the snapshots of the relevant figures (for Mac OS the keyboard shortcut is easiest: press Command+Shift+4 and then select the screen fragment; for Windows see https://www.windowscentral.com/how-take-windows-10-screenshot-7-best-techniques). Make sure you capture the axes and axes labels. Also, enlarge these figures to fill the screen before taking the snapshot to get a higher resolution image.   
 
 We did this as well and named the snapshot files, which you can see as little thumbnails below,  as following (this makes it easy to keep track of the figures being digitised)     
-**001_Weil_2006_Fig2a.png**    ![](https://github.com/SusZaj/metaanalysis/blob/master/papers/001_Weil_2006_Fig2a_small.png?raw=true)
+**001_Weil_2006_Fig2a.png**    ![](https://github.com/SusZaj/metaanalysis/blob/master/images/001_Weil_2006_Fig2a_small.png?raw=true)
 and    
-**002_Sadd_2006_Fig2a.png**   ![](https://github.com/SusZaj/metaanalysis/blob/master/papers/002_Sadd_2006_Fig2a_small.png?raw=true)
+**002_Sadd_2006_Fig2a.png**   ![](https://github.com/SusZaj/metaanalysis/blob/master/images/002_Sadd_2006_Fig2a_small.png?raw=true)
 
 We have to place them in a new folder - let's call it **metaDigitise_figures** (read more about organising your extraction directories in the "Setting up directory structures " section of https://cran.r-project.org/web/packages/metaDigitise/vignettes/metaDigitise.html).   
 
@@ -608,7 +608,7 @@ To extract our two figures we need to provide the directory path name of the fol
 
 <codeblock id="ch2_ex4_a">
 
-data <- metaDigitise(dir = "/metaDigitise_figures/") 
+data <- metaDigitise(dir = "data/metaDigitise_figures/") 
 
 </codeblock>
 
