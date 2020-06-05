@@ -1,7 +1,7 @@
 ---
 title: 'Chapter 2: Step-by-step: The structure of a meta-analysis'
 description:
-  'We will work though each specific steps in a meta-analysis.'
+  'We will work through each specific step in a meta-analysis.'
 prev: /chapter1
 next: /chapter3
 type: chapter
