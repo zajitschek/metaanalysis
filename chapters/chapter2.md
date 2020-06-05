@@ -16,6 +16,6 @@ We will take the paper [Nakagawa 2017](https://bmcbiol.biomedcentral.com/article
 
 Here is a graphical overview (Figure 1 from Nakagawa 2017):
 
-<img /images/metaanalysis_overview.svg>
+![alt text](https://github.com/SusZaj/metaanalysis/images/metaanalysis_overview.svg "Meta-analysis overview")
 
 </exercise>
