@@ -2,11 +2,19 @@
 title: 'Chapter 1: Getting started: Introduction to Meta-Analysis'
 description:
   'This chapter will introduce where meta-analysis fits into the scientific method, give some background, and examples.'
-prev: /preface
+prev: null
 next: /chapter2
 type: chapter
-id: 2
+id: 1
 ---
+
+<exercise id="1" title="Preface & Disclaimer">
+
+Please have patience with us while we build this online resource - it's brand new and nowhere near finished!
+Apologies if exercises and questions may not work (yet), this is an ongoing project.   
+Please check back next week... Thanks!
+
+</exercise>
 
 <exercise id="2" title="Introduction">
 
@@ -51,7 +59,7 @@ This combination of multiple test results can be achieved by qualitatively summa
 
 **Key reference for how to conduct a meta-analysis**
 
-[Meta-evaluation of meta-analysis: ten appraisal questions for biologists](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7)
+[Meta-evaluation of meta-analysis: Ten appraisal questions for biologists](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7)
 
 </exercise>
 
