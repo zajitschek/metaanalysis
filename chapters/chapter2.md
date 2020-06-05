@@ -1,4 +1,3 @@
----
 title: 'Chapter 2: Step-by-step: The structure of a meta-analysis'
 description:
   'We will work through each specific step in a meta-analysis.'
@@ -6,7 +5,6 @@ prev: /chapter1
 next: /chapter3
 type: chapter
 id: 3
----
 
 <exercise id=1 ''Overview: the complete meta-analysis">
 
@@ -24,7 +22,7 @@ Protocols are necessary to minimize any bias that might be introduced - either k
 
 The following diagram shows a more in depth overview, starting from the literature search (Nakagawa et al. 2017).
 
-![alt text](https://github.com/SusZaj/metaanalysis/images/Nakagawa_etal_Fig1.gif "Figure 1 from Nakagawa et al. 2017"
+![](https://github.com/SusZaj/metaanalysis/images/Nakagawa_etal_Fig1.gif "Figure 1 from Nakagawa et al. 2017")
 
 </exercise>
 
