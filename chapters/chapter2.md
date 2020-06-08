@@ -89,6 +89,10 @@ Other software useful for exploratory (scoping) and additional searches (check t
  * Semantic Scholar: https://www.semanticscholar.org/
  * Dimensions: https://www.dimensions.ai/
  * CiteHero: https://citehero.com/
+ * R package *[litsearchR](https://elizagrames.github.io/litsearchr/)* (which I haven't tested yet myself)
+<br>
+<br>
+**It seems that the question "What is the evidence for terminal investment happening?" is too general and too broad in scope. Let's try to narrow it down and focus on either *terminal investment in reproduction*, or *terminal investment under immune challenge* (notice the difference between effects *in* reproduction and effects *of* immune challenge*.**
 
 **TASK 3**   
 Run another Google Scholar quick search, including *reproduction* (not in quotes):  
@@ -110,6 +114,14 @@ PICO stands for:
 
 Formulate our meta-analytic question "whether immune challenge can result in terminal investment" using PICO terms (actually this fits really well because we can use experimental data).   
 
+<choice>
+<opt text="Example solution">
+  * P = Population                = animal species   
+  * I = Intervention              = immune challenge   
+  * C = Comparison/Control group  = unchallenged group of animals, otherwise in the same state   
+  * O = Outcome                   = reproduction-related traits 
+</opt>
+</choice>
 
 **RESOURCES:**   
 An extensive list of alternative systematic review formulation question frameworks can be found here:  https://www.networks.nhs.uk/nhs-networks/nwas-library-and-information-service/documents/alternative-question-structures-for-different-types-of-systematic-review    )
