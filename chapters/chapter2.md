@@ -39,7 +39,7 @@ There are different protocols for how to gather the literature for a systematic 
 
 ---
 
-The following exercise was prepared by Malgorzata (Losia) Lagisz, BEES, UNSW, Australia, losialagisz@gmail.com.   
+The following exercise is based on material originally prepared by Malgorzata (Losia) Lagisz, BEES, UNSW, Australia. 
 
 
 ### Purpose of the exercise:   
@@ -52,79 +52,58 @@ In this exercise you get some practice and tips on:
  * Screening the literature  
  * PRISMA and other documentation  
 
-********************************************************************************
-### Introduction   
-
-Imagine, you woke up in the morning feeling rather sick. You decided to work from home to get some rest. You are not feeling energetic enough to crunch numbers or write, so you decide to catch up on scientific reading instead. You pick up the book sitting on top of the "to-read"" pile and open it at a random place. It happens to be **Ecoimmunology** (edited by Gregory Demas, Randy Nelson, Randy Joe Nelson, 2012) and it opens on the following fragment:
-
-```{r TI_book_fragment, echo=FALSE, fig.cap=" ", out.width='50%'}
-knitr::include_graphics("../images/TI_book_fragment.png")
-```
-**Note**: LPS is a lipopolysaccharide that is constituent of the outer membranes of some bacteria and it is commonly used to trigger immune reaction without causing greater harm in animals.   
-
-You find this fragment intriguing and start thinking this might be something (a topic) you could do a meta-analysis on.  *(Ok, this is a hypothetical example of coming up with the topic for a meta-analysis, but it sometimes happens - you read or hear some interesting questions and it sparks desire to put some numbers on some pattern...)*   
-
-Let's use this hypothetical topic for the purpose of the exercise. We hope the topic is quite appealing and quiet easy to understand (we all get sick and most of us reproduce, or at least try to).
-
-In this exercise, we will use a few basic tools to illustrate how to perform the first few steps of a meta-analysis: refining the question, searching the literature, and screening the found studies (these are the same steps as in Systematic Reviews, so the tools are the same and can be usually described as systematic literature/evidence reviewing tools).  
-Note that some R packages (and many other online/software tools) are available (and more are being developed) that can help with some of the tasks during this exercise, but there is no single "perfect" tool for the whole process usable for all disciplines and types of questions (although some attempts have been made). We simply do not have enough time to introduce more tools and the main purpose of this exercise is to familiarize you with the basic principles/issues that apply when you use any tools. You can always try alternative tools in your own time.   
-
-********************************************************************************
+*******************************************************************************
 ###  Formulating the question for a meta-analysis  
 
-The topic is usually broad and vague area of interest, for a meta-analysis we need a much more concrete question.
+A topic of interest is usually rather broad and vague. For a meta-analysis we need a much more concrete question.
 Generally, the more focused the question, the easier and quicker it is to perform the meta-analysis, but the answer becomes less general and there might be less evidence available.
 
-**QUESTION 0:**  
-What is your initial feeling about the meta-analytic question that can be derived from the text fragment cited above?   
 
 
-**QUESTION 1:**  
-What are at least 2 ways of improving this initial question to make it more amenable for a meta-analysis?
-
-These question refinements are leading us gently into deciding which studies to use in a meta-analysis. However, before we move onto inclusion criteria, it is wise to gather more intelligence (unless you are already an expert on the topic).
-
-**QUESTION 2:**  
-What should we do now?    
+Start with these steps:
  a) Check if there already is a good recent meta-analysis on the topic.  
  b) Find and carefully read key reviews on the topic.  
  c) Find and carefully read a few representative empirical papers.  
  d) Further refine the question.  
- e) All of the above.  
 
+For this exercise, we will choose *terminal investment* in animals as a general research topic that we want to explore further, using meta-analytic approaches.
 
-**TASK 1:**  
-Are there any meta-analyses (or similar) on terminal investment in animals?   (you can skip the following few tasks if short of time during the exercise)   
+**TASK 1**  
+Are there any meta-analyses (or similar) on terminal investment in animals?  
+
 In Google Scholar (https://scholar.google.com) run:  
 *"meta-analytic" OR "meta-analysis" "terminal investment"*   
-(you can paste this into search box or use Advanced search; see instructions and other Google Scholar tips here: https://guides.library.ucsc.edu/c.php?g=745384&p=5361954 and https://scholar.google.com/intl/en/scholar/help.html).   
+(you can paste this into search box or use Advanced search (in the Google Scholar menu on the left); see instructions and other Google Scholar tips here: https://guides.library.ucsc.edu/c.php?g=745384&p=5361954 and https://scholar.google.com/intl/en/scholar/help.html).   
 
-You should get around 300 results. By skimming first few pages you can see a few meta-analyses on stress, diet, senescence, parasitism etc., but none probably specifically on terminal investment. There are many empirical papers coming up in this search because they mention meta-analysis in their body text or reference list - note that Google Scholar searches full text by default. Also by default, the returned results are arranged in order of relevance to the search (whatever that means - its a complex algorithm that decides) and a few first pages contain some potentially relevant empirical papers.    
+You should get around 300 results. By skimming the first few pages you can see a few meta-analyses on stress, diet, senescence, parasitism etc., but none probably specifically on terminal investment. There are many empirical papers coming up in this search because they mention meta-analysis in their body text or reference list - note that Google Scholar searches full text by default. Also by default, the returned results are arranged in order of relevance to the search (whatever that means - its a complex algorithm that decides), and only a few first pages contain some potentially relevant empirical papers.    
 
-**TASK 2:**   
-You can restrict the search to titles only using:  
+**TASK 2**   
+You can restrict the search to titles only:  
 *allintitle: "meta analytic" OR "meta analysis" "terminal investment"*   
 Now there are no matching hits; but there is no option for searching just in titles and abstracts.    
 
-Other things you should know about Google Scholar - its search interface is rather simplistic and restrictive, it shows only up to 1,000 results for any particular search query, ranking algorithms are obscured, its hard to export the references, the literature coverage may fluctuate (it is based on web scraping) and the searches may not be reproducible. Because of this it is not really recommended for the main searches in systematic reviews. On the upside, it can be helpful for additional searches and finding grey literature (not published in peer-review journals).  
+It turns out that Google Scholars' search interface is rather simplistic and restrictive. It shows only up to 1,000 results for any particular search query, ranking algorithms are obscured, it is hard to export references, the literature coverage may fluctuate (it is based on web scraping), and the searches may not be reproducible. Therefore, Google Scholar is not recommended for the main searches in meta-analyses and systematic reviews. On the upside, it can be helpful for additional searches and finding grey literature (not published in peer-review journals).  
 
-**RESOURCES:**   
+**RESOURCES**   
 Other software useful for exploratory (scoping) and additional searches (check them out later, and note that they may have similar disadvantages to these of Google Scholar):
  * Semantic Scholar: https://www.semanticscholar.org/
  * Dimensions: https://www.dimensions.ai/
  * CiteHero: https://citehero.com/
+ * R package *[litsearchR](https://elizagrames.github.io/litsearchr/)* (which I haven't tested yet myself)
+<br>
+<br>
+**It seems that the question "What is the evidence for terminal investment happening?" is too general and too broad in scope. Let's try to narrow it down and focus on either *terminal investment in reproduction*, or *terminal investment under immune challenge* (notice the difference between effects *in* reproduction and effects *of* immune challenge*.**
 
-**TASK 3:**   
-Run another Google Scholar quick search:  
+**TASK 3**   
+Run another Google Scholar quick search, including *reproduction* (not in quotes):  
 *"terminal investment" reproduction*   
-This time you should get around 1,900 records (you will be allowed to access only the first 1,000). Note that Google Scholar does so called Automated Query Expansion for terms that are not set to be exact phrases (in quotes) - it uses alternative forms of these terms.  
+This time you should get over 2,000 records (you will be allowed to access only the first 1,000). Note that Google Scholar does so called Automated Query Expansion for terms that are not set to be exact phrases (in quotes) - it uses alternative forms of these terms.  
 
-**TASK 4:**   
+**TASK 4**   
 Try Google Scholar quick search:   
 *"terminal investment" "immune challenge"*  
-This time you should get around 400 records. Skim through the first three pages of the results to get a feel of the diversity of the studies found (e.g. what taxa are present and what they might measure as reproductive investment) and note the wording of their titles.  
+This time you should get just over 400 records. Skim through the first three pages of the results to get a feel of the diversity of the studies found (e.g. what taxa are studied and what traits the studies might measure to evaluate reproductive investment) and note the wording of their titles.  
 
-**QUESTION 3:**  
 In medical sciences, most meta-analyses (and systematic reviews) fit into the PICO (or related) question framework.   
 
 PICO stands for:   
@@ -135,26 +114,50 @@ PICO stands for:
 
 Formulate our meta-analytic question "whether immune challenge can result in terminal investment" using PICO terms (actually this fits really well because we can use experimental data).   
 
+<choice>
+<opt text="Example solution" correct="true">
+  * P = Population                = animal species   
+  * I = Intervention              = immune challenge   
+  * C = Comparison/Control group  = unchallenged group of animals, otherwise in the same state   
+  * O = Outcome                   = reproduction-related traits 
+</opt>
+</choice>
 
 **RESOURCES:**   
 An extensive list of alternative systematic review formulation question frameworks can be found here:  https://www.networks.nhs.uk/nhs-networks/nwas-library-and-information-service/documents/alternative-question-structures-for-different-types-of-systematic-review    )
 
 
-**Note:** you should always be able to justify your question as important, relevant and timely. 
+**Note:** you should always be able to justify your question as important, relevant and timely. This holds true for other research questions as well, and will affect the likelihood of a meta-analysis you propose to perform to gain support (by an academic supervisor, a grant agency, in an academic and a non-academic environment), and its impact on the target audience. 
 <br>
 
-********************************************************************************
+*******************************************************************************
 ###  Deciding on inclusion criteria   
 
 The basic PICO components are usually not sufficient to perform the effective screening of the papers for inclusion in meta-analysis.
 There are additional both technical and biological refinements to be considered for inclusion criteria in our project.
 Most importantly, you always need to be able to justify your inclusion criteria!  
 
-**QUESTION 4:**  
+**QUESTION**  
 Time-span: should we include studies from any year?  
+<choice>
+<opt text="Probably yes, unless you can come up with a reason for not doing so." correct="true">
+Yes
+</opt>
+<opt text="Probably not, because the quality of older studies is not good enough.">
+No, unless you have a very good reason to support this argument.
+</opt>
+</choice>
 
-**QUESTION 5:**  
-Language: should we include studies published in any language?  
+**QUESTION**  
+Language: should we include studies published in any language? 
+<choice>
+<opt text="Yes">
+Possible, but difficult to do and might not yield a lot more additional information.
+</opt>
+<opt text="Not necessarily"  correct="true">
+Most meta-analyses only include studies published in English by default. However, if possible it is recommend to include studies also in other languages (usually not many are found, unless you also perform your searches in other languages). 
+</opt>
+</choice>
 
 **Note:** publication status can be also used as a criterion - are you happy to include some types of grey literature (e.g. conference proceedings, theses)?
 
