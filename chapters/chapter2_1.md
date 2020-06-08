@@ -41,7 +41,7 @@ There are different protocols for how to gather the literature for a systematic 
 
 ---
 
-The following exercise is based on material originally prepared by Malgorzata (Losia) Lagisz, BEES, UNSW, Australia. 
+The following exercise is based on material originally prepared by Malgorzata Lagisz, UNSW, Australia. 
 
 
 ### Purpose of the exercise:   
@@ -59,7 +59,6 @@ In this exercise you get some practice and tips on:
 
 A topic of interest is usually rather broad and vague. For a meta-analysis we need a much more concrete question.
 Generally, the more focused the question, the easier and quicker it is to perform the meta-analysis, but the answer becomes less general and there might be less evidence available.
-
 
 
 Start with these steps:
@@ -106,7 +105,7 @@ Try Google Scholar quick search:
 *"terminal investment" "immune challenge"*  
 This time you should get just over 400 records. Skim through the first three pages of the results to get a feel of the diversity of the studies found (e.g. what taxa are studied and what traits the studies might measure to evaluate reproductive investment) and note the wording of their titles.  
 
-In medical sciences, most meta-analyses (and systematic reviews) fit into the PICO (or related) question framework.   
+In the medical sciences, most meta-analyses (and systematic reviews) fit into the PICO (or related) question framework.   
 
 PICO stands for:   
   * P = Population   
@@ -194,7 +193,8 @@ How many stages there are during literature screening process?
 **QUESTION 13:**  
 How many decision trees do we need, and why, for the literature screening process?   
 
-An example decision tree for abstract screening:  
+An example decision tree for abstract screening: 
+# add the picture here - the code will be in "Chapter"
 
 ```{r diagram decision tree abstracts, fig.width=10, fig.height=6, echo=FALSE, message=FALSE}
 par(mar=c(1,1,1,1))
