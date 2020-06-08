@@ -127,21 +127,37 @@ Formulate our meta-analytic question "whether immune challenge can result in ter
 An extensive list of alternative systematic review formulation question frameworks can be found here:  https://www.networks.nhs.uk/nhs-networks/nwas-library-and-information-service/documents/alternative-question-structures-for-different-types-of-systematic-review    )
 
 
-**Note:** you should always be able to justify your question as important, relevant and timely. 
+**Note:** you should always be able to justify your question as important, relevant and timely. This holds true for other research questions as well, and will affect the likelihood of a meta-analysis you propose to perform to gain support (by an academic supervisor, a grant agency, in an academic and a non-academic environment), and its impact on the target audience. 
 <br>
 
-********************************************************************************
+*******************************************************************************
 ###  Deciding on inclusion criteria   
 
 The basic PICO components are usually not sufficient to perform the effective screening of the papers for inclusion in meta-analysis.
 There are additional both technical and biological refinements to be considered for inclusion criteria in our project.
 Most importantly, you always need to be able to justify your inclusion criteria!  
 
-**QUESTION 4:**  
+**QUESTION**  
 Time-span: should we include studies from any year?  
+<choice>
+<opt text="Probably yes, unless you can come up with a reason for not doing so." correct="true">
+Yes
+</opt>
+<opt text="Probably not, because the quality of older studies is not good enough.">
+No, unless you have a very good reason to support this argument.
+</opt>
+</choice>
 
-**QUESTION 5:**  
-Language: should we include studies published in any language?  
+**QUESTION**  
+Language: should we include studies published in any language? 
+<choice>
+<opt text="Yes">
+Possible, but difficult to do and might not yield a lot more additional information.
+</opt>
+<opt text="Not necessarily"  correct="true">
+Most meta-analyses only include studies published in English by default. However, if possible it is recommend to include studies also in other languages (usually not many are found, unless you also perform your searches in other languages). 
+</opt>
+</choice>
 
 **Note:** publication status can be also used as a criterion - are you happy to include some types of grey literature (e.g. conference proceedings, theses)?
 
