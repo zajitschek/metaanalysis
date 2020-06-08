@@ -26,7 +26,8 @@ Protocols are necessary to minimize any bias that we might introduce - either kn
 The following diagram shows a more in depth overview, starting from the literature search (Figure 1 from Nakagawa et al. 2017).
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/Nakagawa_etal_Fig1.gif?raw=true)
-
+<br>
+<br>
 
 </exercise>
 
