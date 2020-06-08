@@ -17,9 +17,8 @@ We will take the paper [Nakagawa 2017](https://bmcbiol.biomedcentral.com/article
 Here is a graphical overview:
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/metaanalysis_overview.png?raw=true)
-
-   
-
+<br>
+<br>
 All of these steps have to be described and laid out in a protocol. We will see that there already exist general protocols for each step, which we can use and adapt to our research questions. The aim of having well defined protocols is for other researchers to be able to reproduce those steps. 
 
 Protocols are necessary to minimize any bias that we might introduce - either knowingly, but most often unknowingly - into the decisions that have to be taken at each meta-analysis step. Bias might already be present in how the research question we want to tackle is phrased. Furthermore, bias can originate in the specific way we search for literature, both in where we search (for example, which databases we use, or whether we only include published results), and how we search (for example our choice of search terms).
@@ -27,7 +26,8 @@ Protocols are necessary to minimize any bias that we might introduce - either kn
 The following diagram shows a more in depth overview, starting from the literature search (Figure 1 from Nakagawa et al. 2017).
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/Nakagawa_etal_Fig1.gif?raw=true)
-
+<br>
+<br>
 
 </exercise>
 
@@ -175,8 +175,6 @@ Outcome type: should we accept any reproduction-related measurements and what th
 
 **QUESTION 11:**  
 Data type: should we accept any type of data for meta-analysis? (e.g. descriptive statistics, and which ones, or also inferential statistics, and which ones? This will be linked to the effect size you are planning to use!)    
-
-<br>
 
 ********************************************************************************
 ### Making decision trees for the literature screening    
@@ -441,15 +439,12 @@ text(elpos[29, 1] + 0.02, elpos[29, 2] + 0.06, "35")
 
 <exercise id="4" title="Extraction of effect sizes">
 
-# Extraction of effect sizes
-
 Based on material prepared by Malgorzata (Losia) Lagisz, BEES, UNSW, Australia, losialagisz@gmail.com.   
 
-## Introduction   
+## Introduction for extracting effect sizes
 
 Imagine, you quickly got well and decided to carry on the Terminal Investment Meta-analysis Project.   
 After a few weeks you finished searching and screening literature for the relevant papers. You now have a collection of around 30 included full-text papers (relatively manageable; some projects have 300 or more), stored neatly as pdf files and supplementary information, in whatever format available. It is time to start extracting the data (ideally, you should have planned this in detail while writing up your protocol/preregistration, but in this exercise we assume you did not).   
-
 
 *******************************************************************************
 
@@ -551,7 +546,6 @@ Why should we record meta-data when extracting data for a meta-analysis?
 
 **Note:** In your actual extraction sheet/form, try to group related columns together. You can also color-code them in Excel or put them on the same tab/section in a visual database interface, if used. Your extraction form (spreadsheet) should be tested on several papers (pilot extractions) to make sure it is easy to use and captures necessary information.  
 
-
 *******************************************************************************
 
 ###  Extracting and coding
@@ -592,8 +586,8 @@ library(compute.es)
 ```
 
 Let's try to extract data from two selected papers::   
- 1. Figure 2a in the paper by Weil et al. 2006: Immune challenge retards seasonal reproductive regression in rodents: evidence for terminal investment (**[Weil2006.pdf](/papers/Weil2006.pdf)**)
- 2. Figure 2a in the paper by Sadd et al. 2006: Modulation of sexual signalling by immune challenged male mealworm beetles (*Tenebrio molitor*, L.): evidence for terminal investment and dishonesty (**[Sadd2006.pdf](/papers/Sadd2006.pdf)**)   
+ 1. Figure 2a in the paper by Weil et al. 2006: Immune challenge retards seasonal reproductive regression in rodents: evidence for terminal investment (**[Weil2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/papers/Weil2006.pdf)**)
+ 2. Figure 2a in the paper by Sadd et al. 2006: Modulation of sexual signalling by immune challenged male mealworm beetles (*Tenebrio molitor*, L.): evidence for terminal investment and dishonesty (**[Sadd2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/Sadd2006.pdf)**)   
 
 You will need to open the pdf files and take the snapshots of the relevant figures (for Mac OS the keyboard shortcut is easiest: press Command+Shift+4 and then select the screen fragment; for Windows see https://www.windowscentral.com/how-take-windows-10-screenshot-7-best-techniques). Make sure you capture the axes and axes labels. Also, enlarge these figures to fill the screen before taking the snapshot to get a higher resolution image.   
 
@@ -748,7 +742,7 @@ results_ES <- a.fes(f = c(4.6875, 4.6875), n.1 = c(28, 10), n.2 = c(10, 10), R =
 str(results_ES)
 ```
 
- 
+
 **QUESTION 15:**   
 If both descriptive statistics (mean, SE or SD) and test (inferential) statistics are reported, which one should we extract from a paper?
 
@@ -759,7 +753,6 @@ Is the sign of the effect size important? Imagine we use *d*, which represents m
 
 **QUESTION 17:**    
 If we have different traits in the data set (let's say number of eggs laid and probability of nest abandonment) what is the problem with the signs of effect sizes for these traits? What should we do about this?   
-
 
 *******************************************************************************
 
