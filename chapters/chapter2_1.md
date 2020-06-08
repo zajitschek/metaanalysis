@@ -60,9 +60,10 @@ In this exercise you get some practice and tips on:
 A topic of interest is usually rather broad and vague. For a meta-analysis we need a much more concrete question.
 Generally, the more focused the question, the easier and quicker it is to perform the meta-analysis, but the answer becomes less general and there might be less evidence available.
 
+------
 
+**Start with these steps:**
 
-Start with these steps:
  a) Check if there already is a good recent meta-analysis on the topic.  
  b) Find and carefully read key reviews on the topic.  
  c) Find and carefully read a few representative empirical papers.  
@@ -70,8 +71,8 @@ Start with these steps:
 
 For this exercise, we will choose *terminal investment* in animals as a general research topic that we want to explore further, using meta-analytic approaches.
 
-**TASK 1**  
-Are there any meta-analyses (or similar) on terminal investment in animals?  
+:computer:   
+**Are there any meta-analyses (or similar) on terminal investment in animals? **
 
 In Google Scholar (https://scholar.google.com) run:  
 *"meta-analytic" OR "meta-analysis" "terminal investment"*   
@@ -79,7 +80,7 @@ In Google Scholar (https://scholar.google.com) run:
 
 You should get around 300 results. By skimming the first few pages you can see a few meta-analyses on stress, diet, senescence, parasitism etc., but none probably specifically on terminal investment. There are many empirical papers coming up in this search because they mention meta-analysis in their body text or reference list - note that Google Scholar searches full text by default. Also by default, the returned results are arranged in order of relevance to the search (whatever that means - its a complex algorithm that decides), and only a few first pages contain some potentially relevant empirical papers.    
 
-**TASK 2**   
+:computer:   
 You can restrict the search to titles only:  
 *allintitle: "meta analytic" OR "meta analysis" "terminal investment"*   
 Now there are no matching hits; but there is no option for searching just in titles and abstracts.    
@@ -94,14 +95,15 @@ Other software useful for exploratory (scoping) and additional searches (check t
  * R package *[litsearchR](https://elizagrames.github.io/litsearchr/)* (which I haven't tested yet myself)
 <br>
 <br>
+
 **It seems that the question "What is the evidence for terminal investment happening?" is too general and too broad in scope. Let's try to narrow it down and focus on either *terminal investment in reproduction*, or *terminal investment under immune challenge* (notice the difference between effects *in* reproduction and effects *of* immune challenge*.**
 
-**TASK 3**   
+:computer:   
 Run another Google Scholar quick search, including *reproduction* (not in quotes):  
 *"terminal investment" reproduction*   
 This time you should get over 2,000 records (you will be allowed to access only the first 1,000). Note that Google Scholar does so called Automated Query Expansion for terms that are not set to be exact phrases (in quotes) - it uses alternative forms of these terms.  
 
-**TASK 4**   
+:computer:    
 Try Google Scholar quick search:   
 *"terminal investment" "immune challenge"*  
 This time you should get just over 400 records. Skim through the first three pages of the results to get a feel of the diversity of the studies found (e.g. what taxa are studied and what traits the studies might measure to evaluate reproductive investment) and note the wording of their titles.  
@@ -116,11 +118,11 @@ PICO stands for:
 
 Formulate our meta-analytic question "whether immune challenge can result in terminal investment" using PICO terms (actually this fits really well because we can use experimental data).   
 
-<choice>
+<choice id="1">
 <opt text="Example solution" correct="true">
-  * P = Population                = animal species   
-  * I = Intervention              = immune challenge   
-  * C = Comparison/Control group  = unchallenged group of animals, otherwise in the same state   
+  * P = Population                = animal species  --    
+  * I = Intervention              = immune challenge  --  
+  * C = Comparison/Control group  = unchallenged group of animals, otherwise in the same state  --  
   * O = Outcome                   = reproduction-related traits 
 </opt>
 </choice>
@@ -128,8 +130,7 @@ Formulate our meta-analytic question "whether immune challenge can result in ter
 **RESOURCES:**   
 An extensive list of alternative systematic review formulation question frameworks can be found here:  https://www.networks.nhs.uk/nhs-networks/nwas-library-and-information-service/documents/alternative-question-structures-for-different-types-of-systematic-review    )
 
-
-**Note:** you should always be able to justify your question as important, relevant and timely. This holds true for other research questions as well, and will affect the likelihood of a meta-analysis you propose to perform to gain support (by an academic supervisor, a grant agency, in an academic and a non-academic environment), and its impact on the target audience. 
+:pushpin: You should always be able to justify your question as important, relevant and timely. This holds true for other research questions as well, and will affect the likelihood of a meta-analysis you propose to perform to gain support (by an academic supervisor, a grant agency, in an academic and a non-academic environment), and its impact on the target audience. 
 <br>
 
 *******************************************************************************
@@ -137,22 +138,21 @@ An extensive list of alternative systematic review formulation question framewor
 
 The basic PICO components are usually not sufficient to perform the effective screening of the papers for inclusion in meta-analysis.
 There are additional both technical and biological refinements to be considered for inclusion criteria in our project.
-Most importantly, you always need to be able to justify your inclusion criteria!  
+Most importantly, you always need to be able to justify your inclusion criteria!   
 
-**QUESTION**  
-Time-span: should we include studies from any year?  
-<choice>
-<opt text="Probably yes, unless you can come up with a reason for not doing so." correct="true">
+**TIME-SPAN**: Should we include studies from any year?  
+
+<choice id="2" >
+<opt text="Probably yes, unless you can come up with a reason for not doing so" correct="true">
 Yes
 </opt>
-<opt text="Probably not, because the quality of older studies is not good enough.">
+<opt text="Probably not, because the quality of older studies is not good enough">
 No, unless you have a very good reason to support this argument.
 </opt>
 </choice>
 
-**QUESTION**  
-Language: should we include studies published in any language? 
-<choice>
+**LANGUAGE**: Should we include studies published in any language? 
+<choice id="3">
 <opt text="Yes">
 Possible, but difficult to do and might not yield a lot more additional information.
 </opt>
@@ -161,150 +161,87 @@ Most meta-analyses only include studies published in English by default. However
 </opt>
 </choice>
 
-**Note:** publication status can be also used as a criterion - are you happy to include some types of grey literature (e.g. conference proceedings, theses)?
+:pushpin: Publication status can be also used as a criterion - are you happy to include some types of grey literature (e.g. conference proceedings, theses)?
 
-**QUESTION 6:**  
-Study type: should we include any type of study? (e.g. correlational vs experimental, if experimental what type of experiment?)    
+**STUDY TYPE**: Should we include any type of study? (e.g. correlational vs experimental, if experimental, what type of experiment?)    
+> Since we investigate a specific intervention, we should restrict study type to "experimental" (we should explicitly exclude "simulation").  
+<br>
 
-**QUESTION 7:**  
-Taxa: should we include any type of taxa?   
+**TAXA**: Should we include any type of taxa?   
+> That is a difficult one. The animal kingdom is vast and diverse, and some species are especially odd (e.g. humans). Does it make sense to include single-cell animals? Does it make sense to include humans? Probably not.
+How about multicellular animals, except humans? If many studies across multiple taxa exist, we could focus on the most frequently studied taxa or biologically most interesting. Alternatively just vertebrates, except humans? Another thing worth being specific about is that the animals should be wild-type (non-mutant, not disease models) and ideally not subject to any other significant manipulations that could affect their response (e.g. drug treatment; note there is a thin fuzzy line what these manipulations are). There might also be reasons to exclude standard laboratory species (mice, rat, yeast, fruit fly) or maybe focus just on them? But, for now, we will stick to any multicellular animals, except humans.  
+<br>
 
-**QUESTION 8:**   
-Manipulation type: should we include any immune challenge?   
+**MANIPULATION TYPE**: Should we include all types of immune challenge?   
+> There are several established types of experimental immune challenge (blood cells (e.g. SRBC), protein (e.g. PHA), dead or live pathogens or parasites), so its worth including these and similar ones. Non-experimental immune challenge (e.g. natural infestation levels)  should not be included. If something odd comes up later it can come under "exclusion criteria", with justification.   
+<br>
 
-**QUESTION 9:**   
-Control group: should we accept any type of control group?  
+**CONTROL GROUP**: Should we accept any type of control group?  
+> Control group (un-manipulated) should consist of similar individuals, as far as reasonable and not be subject to any other manipulations.  
+<br>
 
-**QUESTION 10:**   
-Outcome type: should we accept any reproduction-related measurements and what that means?   
+**OUTCOME TYPE**: Should we accept any reproduction-related measurements and how do we define "reproduction-related" in the first place?   
+> The definition of a *reproduction-related trait* will depend on the species studied (and may require additional reading or relying on the assertions of the authors). Different taxa will have different suites of reproduction related-traits, but these can be grouped into broader categories (e.g. mate attraction includes vocal signals, visual ornaments, pheromone production etc.; reproductive fitness will include number and quality of offspring) and different specific measurements will be available for different taxa and in different studies - this can be quite messy. If we do not have many studies on the topic and very specific question (e.g. "Is the number of offspring affected?") it is OK to be inclusive and later on try to figure out whether some traits are affected more than others.  
+<br>
 
-**QUESTION 11:**  
-Data type: should we accept any type of data for meta-analysis? (e.g. descriptive statistics, and which ones, or also inferential statistics, and which ones? This will be linked to the effect size you are planning to use!)    
+**DATA TYPE**: Should we accept any type of data for a meta-analysis? (e.g. descriptive statistics (summarising populations), and which ones, or also inferential statistics (based on population samples and used to estimate parameters and test hypotheses), and which ones? This will be linked to the effect size you are planning to use!)   
+> It depends on the effect size we are planning to use. In our project it can be Cohen's *d* (Hedges *g*) or *lnRR*, which are typically calculated from mean, SD or SE and N (sample sizes). However, Cohen's *d* (Hedges *g*) can be also inferred from some of the test statistics, or even proportions, if means and other descriptive statistics are not available. But one cannot get *lnRR* from inhferential statistics. Other considerations include what to do if some data is missing or unclear.   
 
-********************************************************************************
+*******************************************************************************
 ### Making decision trees for the literature screening    
-
-**Note**: this part could be introduced later with the screening, but its closely linked to the inclusion criteria, so it comes here.    
 
 Decision trees are visual representations of our inclusion criteria and decisions we have to make when screening literature. Importantly, good decision trees can make screening the literature faster and more reliable. Briefly, if the initial (most general) questions representing screening criteria are not fulfilled, the study gets excluded and there is no need to evaluate the remaining criteria, so we save some time.    
 
-**QUESTION 12:**  
-How many stages there are during literature screening process?   
+You can make a decision tree on paper, in powerpoint, or in R (see Chapter 3.2), and it should look something like this:
 
-**QUESTION 13:**  
-How many decision trees do we need, and why, for the literature screening process?   
+The screening of literature is usually done in two stages:   
 
-An example decision tree for abstract screening:  
+  1. abstract +  title + keywords  
+  2. full text + supplementary information  
 
-```{r diagram decision tree abstracts, fig.width=10, fig.height=6, echo=FALSE, message=FALSE}
-par(mar=c(1,1,1,1))
-openplotmat() #create an empyty plot
-elpos <- coordinates (pos = c(2, 2, 2, 2, 2))
-fromto <- matrix(ncol = 2, byrow = TRUE, data = c(1,2, 1,3, 3,4, 3,5, 5,6, 5,7, 7,8, 7,9))
-nr <- nrow(fromto)
-arrpos <- matrix(ncol = 2, nrow = nr)
-for (i in 1:nr) (arrpos[i, ] <- straightarrow (to = elpos[fromto[i, 2], ], from = elpos[fromto[i, 1], ], lwd = 2, arr.pos = 0.7, arr.length = 0.4, arr.type = "simple"))
+**Accordingly, we need two decision trees (one for each stage).**
+This is because abstracts, titles and keywords do not contain enough information to conclusively answer all of the inclusion criteria questions - you should be excluding every paper for which you cannot answer "yes"" to all the questions. 
+Thus this first stage of screening has to be more tentative, and we would use a more permissive and simpler decision tree. A good tree starts from the questions that are easiest to answer (if we had any year or language restrictions we would put these on the top). Note that during abstract screening we exclude the records where a definite "no" can be inferred from available information, but we allow for some uncertainty for the "yes" answers by allowing "probably" as an acceptable answer for inclusion, so we can check for more info in the full text. 
 
-textrect (mid = elpos[1,], radx = 0.15, rady = 0.05, lwd = 1, lab = c("Study on non-human","multicellular animal?"), box.col = "white", shadow.col = "grey", shadow.size = 0, cex = 0.6)
-
-textellipse (mid = elpos[2,], radx = 0.15, rady = 0.05, lwd = 1, lab = "EXCLUDE", box.col = "coral1", shadow.col = "grey", shadow.size = 0, cex = 0.8)
-
-textrect (mid = elpos[3,], radx = 0.15, rady = 0.05, lwd = 1, lab = c("Experimental study?"), box.col = "white", shadow.col = "grey", shadow.size = 0, cex = 0.6)
-
-textellipse (mid = elpos[4,], radx = 0.15, rady = 0.05, lwd = 1, lab = "EXCLUDE", box.col = "coral1", shadow.col = "grey", shadow.size = 0.001, cex = 0.8)
-
-textrect (mid = elpos[5,], radx = 0.15, rady = 0.05, lwd = 1, lab = c("Experimental","immune challenge?"), box.col = "white", shadow.col = "grey", shadow.size = 0, cex = 0.6)
-
-textellipse (mid = elpos[6,], radx = 0.15, rady = 0.05, lwd = 1, lab = "EXCLUDE", box.col = "coral1", shadow.col = "grey", shadow.size = 0, cex = 0.8)
-
-textrect (mid = elpos[7,], radx = 0.15, rady = 0.05, lwd = 1, lab = c("Reproduction-related","traits measured?"), box.col = "white", shadow.col = "grey", shadow.size = 0, cex = 0.6)
-
-textellipse (mid = elpos[8,], radx = 0.15, rady = 0.05, lwd = 1, lab = "EXCLUDE", box.col = "coral1", shadow.col = "grey", shadow.size = 0, cex = 0.8)
-
-textellipse (mid = elpos[9,], radx = 0.15, rady = 0.05, lwd = 1, lab = c("INCLUDE", "for full-text screening"), box.col = "light green", shadow.col = "grey", shadow.size = 0, cex = 0.8)
-
-text(arrpos[1, 1] - 0.1, arrpos[1, 2] + 0.02, "no")
-text(arrpos[2, 1] + 0.07, arrpos[2, 2] + 0.03, "yes/probably")
-text(arrpos[3, 1] - 0.1, arrpos[3, 2] + 0.02, "no")
-text(arrpos[4, 1] + 0.07, arrpos[4, 2] + 0.03, "yes/probably")
-text(arrpos[5, 1] - 0.1, arrpos[5, 2] + 0.02, "no")
-text(arrpos[6, 1] + 0.07, arrpos[6, 2] + 0.03, "yes/probably")
-text(arrpos[7, 1] - 0.1, arrpos[7, 2] + 0.02, "no")
-text(arrpos[8, 1] + 0.07, arrpos[8, 2] + 0.03, "yes/probably")
-```
-
-
-**QUESTION 14:**  
-Why in the abstract screening decision tree there is no question about the type of data used to express measurements reported in the study?   
-
-Full-text screening is more strict and we want to have answers to all our inclusion criteria. In principle we only have "yes" and "no" answers to the screening questions. However, in practice, if a study looks very relevant but some information is ambiguous or missing, you may decide to contact the authors to get some extra information or data. in such case, you can provisionally include such papers and make final decision once you get, or not, the replies.   
-
-An example decision tree for full-text screening:    
-
-```{r diagram decision tree fulltexts, fig.width=10, fig.height=6, echo=FALSE, message=FALSE}
-par(mar=c(1,1,1,1))
-openplotmat() #create an empyty plot
-elpos <- coordinates (pos = c(2, 2, 2, 2, 2, 2))
-fromto <- matrix(ncol = 2, byrow = TRUE, data = c(1,2, 1,3, 3,4, 3,5, 5,6, 5,7, 7,8, 7,9, 9,10, 9,11 ))
-nr <- nrow(fromto)
-arrpos <- matrix(ncol = 2, nrow = nr)
-for (i in 1:nr) (arrpos[i, ] <- straightarrow (to = elpos[fromto[i, 2], ], from = elpos[fromto[i, 1], ], lwd = 2, arr.pos = 0.7, arr.length = 0.4, arr.type = "simple"))
-
-textrect (mid = elpos[1,], radx = 0.15, rady = 0.05, lwd = 1, lab = c("Study on non-human","multicellular animal?"), box.col = "white", shadow.col = "grey", shadow.size = 0, cex = 0.6)
-
-textellipse (mid = elpos[2,], radx = 0.15, rady = 0.05, lwd = 1, lab = "EXCLUDE", box.col = "coral1", shadow.col = "grey", shadow.size = 0, cex = 0.8)
-
-textrect (mid = elpos[3,], radx = 0.15, rady = 0.05, lwd = 1, lab = c("Experimental study?"), box.col = "white", shadow.col = "grey", shadow.size = 0, cex = 0.6)
-
-textellipse (mid = elpos[4,], radx = 0.15, rady = 0.05, lwd = 1, lab = "EXCLUDE", box.col = "coral1", shadow.col = "grey", shadow.size = 0.001, cex = 0.8)
-
-textrect (mid = elpos[5,], radx = 0.15, rady = 0.05, lwd = 1, lab = c("Experimental","immune challenge?"), box.col = "white", shadow.col = "grey", shadow.size = 0, cex = 0.6)
-
-textellipse (mid = elpos[6,], radx = 0.15, rady = 0.05, lwd = 1, lab = "EXCLUDE", box.col = "coral1", shadow.col = "grey", shadow.size = 0, cex = 0.8)
-
-textrect (mid = elpos[7,], radx = 0.15, rady = 0.05, lwd = 1, lab = c("Reproduction-related","traits measured?"), box.col = "white", shadow.col = "grey", shadow.size = 0, cex = 0.6)
-
-textellipse (mid = elpos[8,], radx = 0.15, rady = 0.05, lwd = 1, lab = "EXCLUDE", box.col = "coral1", shadow.col = "grey", shadow.size = 0, cex = 0.8)
-
-textrect (mid = elpos[9,], radx = 0.15, rady = 0.05, lwd = 1, lab = c("Reported means with SD (or SE)", "and N (sample sizes) for the treatment", "and control groups or test statistics", "from which effect sizes for the difference","between two groups can be calculated?"), box.col = "white", shadow.col = "grey", shadow.size = 0, cex = 0.6)
-
-textellipse (mid = elpos[10,], radx = 0.15, rady = 0.05, lwd = 1, lab = "EXCLUDE", box.col = "coral1", shadow.col = "grey", shadow.size = 0, cex = 0.8)
-
-textellipse (mid = elpos[11,], radx = 0.15, rady = 0.05, lwd = 1, lab = c("INCLUDE", "for meta-analysis"), box.col = "light green", shadow.col = "grey", shadow.size = 0, cex = 0.8)
-
-text(arrpos[1, 1] - 0.1, arrpos[1, 2] + 0.02, "no")
-text(arrpos[2, 1] + 0.05, arrpos[2, 2] + 0.03, "yes")
-text(arrpos[3, 1] - 0.1, arrpos[3, 2] + 0.02, "no")
-text(arrpos[4, 1] + 0.05, arrpos[4, 2] + 0.03, "yes")
-text(arrpos[5, 1] - 0.1, arrpos[5, 2] + 0.02, "no")
-text(arrpos[6, 1] + 0.05, arrpos[6, 2] + 0.03, "yes")
-text(arrpos[7, 1] - 0.1, arrpos[7, 2] + 0.02, "no")
-text(arrpos[8, 1] + 0.05, arrpos[8, 2] + 0.03, "yes")
-text(arrpos[9, 1] - 0.1, arrpos[9, 2] + 0.02, "no")
-text(arrpos[10, 1] + 0.05, arrpos[10, 2] + 0.03, "yes")
-```
-
-
-**QUESTION 15:**  
-What question is missing on the top of the full-text decision tree?   
-(Tip: what happens between abstract and full text screening?)  
+An example decision tree for abstract screening looks like this:  
+<img src="/decisiontree.png" alt="Descision tree example" />
+<br>
 <br>
 
-********************************************************************************
+In the abstract screening decision tree there is no question about the type of data used to express measurements reported in the study. Why?   
+
+>Full-text screening is more strict and we want to have answers to all our inclusion criteria. In principle we only have "yes" and "no" answers to the screening questions. However, in practice, if a study looks very relevant but some information is ambiguous or missing, you may decide to contact the authors to get some extra information or data. in such case, you can provisionally include such papers and make final decision once you get, or not, the replies.   
+
+In a decision tree for full-text screening, we will include an additional rule:
+  * Are means and SD (or SEs) and N (sample sizes) for treatment and control groups, or test statistics from which effect sizes for the difference between the two groups can be calculated, available?
+
+If the answer is **yes**, the study can be included for meta-analysis.
+
+**What question is missing on the top of the full-text decision tree?  **
+(Tip: what happens between abstract and full text screening?)  
+>The question is **"Is the full text of this study available for our assessment?"**   
+It is often not explicitly stated, but without the full text it is impossible to extract all the necessary information about the study and the data. 
+It is a good practice to keep this in mind and use as one of your potential inclusion/exclusion criteria. 
+<br>
+
+*******************************************************************************
 ###  Performing searches for relevant literature  
 
-Normally, we attempt to do a fairly comprehensive literature search (a full systematic review). The reason is that we want to have as many relevant data points as possible to increase the power of statistical analyses. The other reason is that we make effort to capture obscure studies that potentially are more likely to report non-significant results, and therefore help reduce publication bias in our data set. Search strategy should include using at least two wide-coverage/interdisciplinary databases (we recommend Scopus and Web of Science), and a few additional sources of literature such as forward and backward reference searching (looking at cited and citing papers), publication lists of the key authors or labs, searching for unpublished studies and data sets (we will not cover these here).   
+Normally, we attempt to do a fairly comprehensive literature search (a full systematic review). The reason is that we want to have as many relevant data points as possible to increase the power of statistical analyses. The other reason is that we want to make an effort to capture obscure studies that potentially are more likely to report non-significant results, and therefore help reduce publication bias in our data set. 
 
-In this exercise we only do a bit of the core search using 2 databases:
-Scopus and Web of Science.
+Search strategy should include using at least two wide-coverage/interdisciplinary databases (we recommend **Scopus** and **Web of Science**), and a few additional sources of literature such as forward and backward reference searching (looking at cited and citing papers), publication lists of the key authors or labs, searching for unpublished studies and data sets (we will not cover these here).   
+
+**In this exercise we only do a bit of the core search using 2 databases:
+Scopus and Web of Science.**
 
 **RESOURCES:** 
-Scopus: https://www.scopus.com/   
-Web of Science (WoS): http://apps.webofknowledge.com   
-**Note:** WoS coverage depends on the institutional subscription package purchased, so results of searches can vary among institutions. Also searching just core collection vs. all available databases can make a difference.     
+ * Scopus: https://www.scopus.com/   
+ * Web of Science (WoS): http://apps.webofknowledge.com   
+:pushpin: WoS coverage depends on the institutional subscription package purchased, so results of searches can vary among institutions. Also searching just core collection vs. all available databases can make a difference.     
 
-**TASK 5:**   
+:computer: 
 Using Scopus **Advanced Search** (you can read more about the syntax here: https://dev.elsevier.com/tips/ScopusSearchTips.htm) run these search strings:  
+
  1. *TITLE-ABS-KEY ( "terminal investment"  AND  "immune challenge" )*    
 (approx. 14 hits - search terms too restrictive)   
  2. *TITLE-ABS-KEY ( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*" ) )  *
@@ -316,41 +253,38 @@ Using Scopus **Advanced Search** (you can read more about the syntax here: https
 
 Ideally, we should think and test some more terms for inclusion, after doing some scoping searches, reading reviews and seminal relevant empirical papers. Also, it is important to validate the search by checking how many papers it finds that we know contain useable data. You should also do some pilot abstract screening on papers exported from just one database, to check whether there’s some exclusion words you did not think about, and which could be included in your search string as exclusion terms.   
 
-We stop for now and assume that the string above is our final search string. Note that Scopus Advanced Search stores all your searches and search strings in a neat table at the bottom of the search window - its easy to copy this out and include in the documentation on how you developed your search strategy (same applies to WoS database; you need to register in Scopus and WoS to save searches and alerts across multiple search sessions). The \* symbol stands for wildcard and indicates "any symbols" since these databases do not do Automatic Query Expansion.    
+We stop for now and assume that the string above is our final search string. Note that Scopus Advanced Search stores all your searches and search strings in a neat table at the bottom of the search window - it's easy to copy this out and to include it in the documentation on how you developed your search strategy (same applies to WoS database; you need to register in Scopus and WoS to save searches and alerts across multiple search sessions). The \* symbol stands for wildcard and indicates "any symbols" since these databases do not do Automatic Query Expansion.    
 
-**TASK 6:**    
+:computer:   
 We can easily translate our final search string from Scopus into Web of Science (WoS) **Advanced Search** (you can read more about the syntax here: https://images.webofknowledge.com/images/help/WOS/hs_search_operators.html). Run this search string:    
 *TS = (( ( "terminal investment" OR "reproductive effort" ) AND ( "immune challeng\*"  OR  "immunochalleng\*"  OR  "infect\*"  ) ) NOT ( load OR human OR people ) )*  
 (approx. 249 hits - more than from Scopus).   WoS stores your search history and also which sub-data bases were included in the search: Indexes=SCI-EXPANDED, SSCI, A&HCI, CPCI-S, CPCI-SSH, BKCI-S, BKCI-SSH, ESCI, CCR-EXPANDED, IC Timespan=All years" (you can restrict these in the Advanced Search).   
 
-```{r WoS_adv_search, echo=FALSE, fig.cap=" ", out.width='100%'}
-knitr::include_graphics("../images/WoS_adv_search.png")
-```
 
-Both Scopus and WoS allow exporting the found records (with limitations on the max. number per export, **remember to tick the boxes for exporting abstracts!**) - there are multiple file formats you can use, but .ris and .bib are most commonly used ones- you will need to figure out which ones work for your reference manager software. The next step would be downloading all found records from your "final" search into the reference manager of your choice. Combine the references from two databases into a single project/folder and remove duplicates (most reference managers have this function, but it never works perfectly - do a visual check after sorting by titles!) before proceeding to the reference screening stage. An R package *revtools* (https://cran.rstudio.com/web/packages/revtools/ and http://revtools.net/) can act as a reference manager and also has a good de-dupiction function.      
+Both Scopus and WoS allow exporting the found records (with limitations on the max. number per export, **remember to tick the boxes for exporting abstracts!**) - there are multiple file formats you can use, but .ris and .bib are most commonly used ones- you will need to figure out which ones work for your reference manager software. The next step would be downloading all found records from your "final" search into the reference manager of your choice. Combine the references from two databases into a single project/folder and remove duplicates (most reference managers have this function, but it never works perfectly - do a visual check after sorting by titles!) before proceeding to the reference screening stage. An R package *revtools* (https://cran.rstudio.com/web/packages/revtools/ and http://revtools.net/) can act as a reference manager and also has a good de-duplication function.      
 
-**Note:** This is also a good time to write up your meta-analysis protocol and register your meta-analysis (e.g. on OSF)!
+:pushpin: This is also a good time to write up your meta-analysis protocol and register your meta-analysis (e.g. on OSF)!
 
-********************************************************************************
+*******************************************************************************
 ###  Screening the literature   
 
 Theoretically you could do screening in the database browser or your reference manager, but since it is recommended that 2 people do the screening independently (or at least part of the screening), it is good to use a dedicated tool to manage this process.  
 
 **RESOURCES:** 
-Rayyan: https://rayyan.qcri.org/welcome (free, you can use it in the web browser or as a phone app; for more details see: http://libraryguides.mcgill.ca/rayyan/home)  
-Abstrackr:  http://abstrackr.cebm.brown.edu/account/login (another free tool)
+ * Rayyan: https://rayyan.qcri.org/welcome (free, you can use it in the web browser or as a phone app; for more details see: http://libraryguides.mcgill.ca/rayyan/home)  
+ * Abstrackr:  http://abstrackr.cebm.brown.edu/account/login (another free tool)
 
-**Note:** it is possible that the deduplication algorithms in these are not very good, so it is advisable to deduplicate and check your records in the reference manager before uploading to the screening software.    
+:pushpin: It is possible that the de-duplication algorithms in these are not very good, so it is advisable to de-duplicate and check your records in the reference manager before uploading to the screening software.    
 
+:computer:  
+We prepared a file (for download: [Scopus10.ris](/papers/Scopus10.ris)) with 10 references sampled from the set found using the search string in Scopus database (used *( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*" ) )  *) (same references came up in the equivalent search in WoS).    
 
-**TASK 7:**  
-We prepared a file (*Scopus10.ris*) with 10 references sampled from the set found using the search string in Scopus database (used *( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*" ) )  *) (same references came up in the equivalent search in WoS).    
-
-**Note:** Sometimes the biblio-files with the same extension differ a bit in structure and reference managers, and Rayyan may have problem opening them. Getting your files into exactly the right format can sometimes be frustrating.   
+:pushpin: Sometimes the biblio-files with the same extension differ a bit in structure and reference managers, and Rayyan may have problem opening them. Getting your files into exactly the right format can sometimes be frustrating.   
 
 We will use these ten references to practice title and abstract screening in Rayyan. Screening can be also done in Abstracker, but we find Rayyan a bit more reliable and more user-friendly (could be slow with updating the display).   
 
-If you are working in pairs or small groups, one person should create a new project in Rayyan (see below) and invite another person/people to the project using their email address.  
+:computer:
+Create a new project in Rayyan:
 
  1. Open Rayyan (we assume you already created a free account) and log in.    
  2. My Reviews -> New REVIEW...   
@@ -365,74 +299,41 @@ In the left panels there are several sub-panels.
  9. Using our abstract screening decision tree decide whether include this paper for the next stage of screening and press the "Include" or "Exclude" button accordingly. And do the assessment for the remaining records. As you go you can create and assign new labels to individual records, e.g.: "unsure/check". You could also enter reasons for exclusion, e.g. "human" (we normally don't do this as there are often hundreds or thousands of excluded records per project at this stage).  
 10. Go to "All reviews" and check if other people finished their screening, if applicable. After that you can lift the "blind" mode (when collaborators cannot see each others decisions). For collaborative screens Rayyan will now provide filters to display all consensus included, consensus excluded and records with conflicting decisions. If you have any "conflicts" have a look again and discuss why you couldn't agree on a given record , come to agreement and make final decision. Export the records with final consensus decisions, for documentation, into a .csv file. You can filter the records into “Included” and just export those, also you can export them as a .bib or .ris file into a reference manager where you will collect full texts for the nest stage of the screening.   
 
+How many papers did you exclude? How many conflicts did you have if you collaboratively screened and, if so, what was causing these conflicts? Can the decision tree be improved and how?   
 
-**QUESTION 16:** 
-How many papers did you exclude? How many conflicts did you have, if you collaboratively screened and, if so, what was causing these conflicts? Can the decision tree be improved and how?   
+>We think 4 should have been excluded:    
+**Simmons2009** and **Clancy2013** as human studies, but    
+**Gershman2010** and **Gonzales-Tokman2013** as not likely to have any reproduction-related measurements.   
 
-
-**TASK 8:**  
+:computer:
 It is time to do the full-text screening for the papers that passed title and abstract screening. There are some full-text papers that passed the initial screening in the directory - assess **Nielsen2012** and **Ardia2005** (they are in "pdf" sub-folder) using our full-text screening decision tree. (Tip: do not read the whole paper - just try to skim it and look for the key information.)      
 
-**QUESTION 17:**  
-What was your decision about **Nielsen2012** and **Ardia2005** papers?   
 
-********************************************************************************
+What was your decision about **Nielsen2012** and **Ardia2005** papers?   
+<choice id="4">
+<opt text="Include both"> 
+Not quite.
+</opt>
+<opt text="Exlude both">
+Unfortunately wrong.
+</opt>
+<opt text="Only include **Nielsen2012**" correct="true"> 
+YES! Include **Nielsen2012**, exlude **Ardia2005**. Why? Exclude due to the lack of a good control group. 
+</opt>
+<opt text="Only include **Ardia2005**"> 
+Why exclude **Nielsen2012**?
+</opt>
+</choice>
+
+*******************************************************************************
 ###  PRISMA and other documentation  
 
-It is very important to keep detailed record of the whole searching, screening and data extraction process. Searching and screening are usually represented as some variant of a PRISMA diagram.
+It is very important to keep detailed record of the whole searching, screening and data extraction process (= your protocol). Searching and screening are usually represented as some variant of a PRISMA diagram.
 With our 144 records from Scopus, 249 from WoS (these two databases are our "main search"), and imaginary around 400 records from other searches of other sources of literature we might have done if we had more time, we would probably end up with something like this one:    
 
-
-```{r diagram decision tree PRISMA, fig.width=10, fig.height=6, echo=FALSE, message=FALSE}
-par(mar=c(1,1,1,1))
-openplotmat() #create an empyty plot
-elpos <- coordinates (pos = c(3, 3, 4, 3, 4, 3, 4, 3, 4, 4))
-#text(elpos) #temporary label element positions with numbers
-
-elpos[19,] <- elpos[19,] + c(0.02,0) #shift positions for the "EXCLUDED" element
-elpos[26, ] <- elpos[26,] + c(0.02,0) #shift positions for the "EXCLUDED" element
-
-#draw arrows
-fromto1 <- matrix(ncol = 2, byrow = TRUE, data = c(1,8, 2,8, 8,15, 15,22, 22,29, 29,33, 3,13, 13,20, 20,27, 27,33, 15,19, 22,26)) #first set of arrows
-arrpos1 <- matrix(ncol = 2, nrow = nrow(fromto1)) #set arrow psitions
-for (i in 1:nrow(fromto1)) (arrpos1[i, ] <- straightarrow (to = elpos[fromto1[i, 2], ], from = elpos[fromto1[i, 1], ], lwd = 2, arr.pos = 0.8, arr.length = 0.3, arr.type = "simple")) #draw arrows
-
-fromto2 <- matrix(ncol = 2, byrow = TRUE, data = c(13,19, 27,26)) #second set of arrows
-arrpos2 <- matrix(ncol = 2, nrow = nrow(fromto2)) #set arrow psitions
-for (i in 1:nrow(fromto2)) (arrpos2[i, ] <- straightarrow (to = elpos[fromto2[i, 2], ], from = elpos[fromto2[i, 1], ], lwd = 2, arr.pos = 0.65, arr.length = 0.3, arr.type = "simple")) #draw arrows
-
-#draw rectangles and ellipses
-textrect (mid = elpos[1,], radx = 0.15, rady = 0.04, lwd = 1, lab = c("SCOPUS","N = 144"), box.col = "white", shadow.col = "grey", shadow.size = 0, cex = 0.8)
-
-textrect (mid = elpos[2,], radx = 0.15, rady = 0.04, lwd = 1, lab = c("Web of Science", "N = 249"), box.col = "white", shadow.col = "grey", shadow.size = 0, cex = 0.8)
-
-textrect (mid = elpos[3,], radx = 0.15, rady = 0.04, lwd = 1, lab = c("other sources", "N = approx. 400"), box.col = "white", shadow.col = "grey", shadow.size = 0, cex = 0.8)
-
-textrect (mid = elpos[8,], radx = 0.15, rady = 0.04, lwd = 1, lab = c("After duplicates removed", "N = 310"), box.col = "white", shadow.col = "grey", shadow.size = 0, cex = 0.8)
-
-textrect (mid = elpos[15,], radx = 0.15, rady = 0.04, lwd = 1, lab = c("Deduplicated records screened", "N = 310"), box.col = "white", shadow.col = "grey", shadow.size = 0, cex = 0.8)
-
-textrect (mid = elpos[22,], radx = 0.15, rady = 0.04, lwd = 1, lab = c("Full-text screened", "N = 50"), box.col = "white", shadow.col = "grey", shadow.size = 0, cex = 0.8)
-
-textrect (mid = elpos[13,], radx = 0.15, rady = 0.04, lwd = 1, lab = c("Records screened", "N = approx. 400"), box.col = "white", shadow.col = "grey", shadow.size = 0, cex = 0.8)
-
-textrect (mid = elpos[20,], radx = 0.15, rady = 0.04, lwd = 1, lab = c("Dedupicated against main search", "N = 10"), box.col = "white", shadow.col = "grey", shadow.size = 0, cex = 0.8)
-
-textrect (mid = elpos[27,], radx = 0.15, rady = 0.04, lwd = 1, lab = c("Full-text screened", "N = 10"), box.col = "white", shadow.col = "grey", shadow.size = 0, cex = 0.8)
-
-textellipse (mid = elpos[33,], radx = 0.15, rady = 0.05, lwd = 1, lab = c("INCLUDED", "in meta-analysis", "N = 39"), box.col = "light green", shadow.col = "grey", shadow.size = 0, cex = 0.8)
-
-textellipse (mid = elpos[19,] + c(0.05,0), radx = 0.06, rady = 0.02, lwd = 1, lab = "EXCLUDED", box.col = "coral1", shadow.col = "grey", shadow.size = 0, cex = 0.8)
-
-textellipse (mid = elpos[26,]+ c(0.05,0), radx = 0.06, rady = 0.02, lwd = 1, lab = "EXCLUDED", box.col = "coral1", shadow.col = "grey", shadow.size = 0, cex = 0.8)
-
-#put numbers on exclusion arrows
-text(elpos[19, 1] - 0.07, elpos[19, 2] + 0.02, "260")
-text(elpos[26, 1] - 0.07, elpos[26, 2] + 0.02, "15")
-text(elpos[19, 1] + 0.12, elpos[19, 2] + 0.12, "approx.385")
-text(elpos[26, 1] + 0.14, elpos[26, 2] + 0.02, "6")
-text(elpos[29, 1] + 0.02, elpos[29, 2] + 0.06, "35")
-```
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/prisma.png?raw=true)
+<br>
+<br>
 
 </exercise>
 
