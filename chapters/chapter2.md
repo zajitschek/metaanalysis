@@ -39,7 +39,7 @@ There are different protocols for how to gather the literature for a systematic 
 
 ---
 
-The following exercise is based on material originally prepared by Malgorzata (Losia) Lagisz, BEES, UNSW, Australia, losialagisz@gmail.com.   
+The following exercise is based on material originally prepared by Malgorzata (Losia) Lagisz, BEES, UNSW, Australia. 
 
 
 ### Purpose of the exercise:   
@@ -60,7 +60,7 @@ Generally, the more focused the question, the easier and quicker it is to perfor
 
 
 
-Start with these steps
+Start with these steps:
  a) Check if there already is a good recent meta-analysis on the topic.  
  b) Find and carefully read key reviews on the topic.  
  c) Find and carefully read a few representative empirical papers.  
@@ -115,7 +115,7 @@ PICO stands for:
 Formulate our meta-analytic question "whether immune challenge can result in terminal investment" using PICO terms (actually this fits really well because we can use experimental data).   
 
 <choice>
-<opt text="Example solution">
+<opt text="Example solution" correct="true">
   * P = Population                = animal species   
   * I = Intervention              = immune challenge   
   * C = Comparison/Control group  = unchallenged group of animals, otherwise in the same state   
