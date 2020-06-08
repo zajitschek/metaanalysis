@@ -204,7 +204,11 @@ This is because abstracts, titles and keywords do not contain enough information
 Thus this first stage of screening has to be more tentative, and we would use a more permissive and simpler decision tree. A good tree starts from the questions that are easiest to answer (if we had any year or language restrictions we would put these on the top). Note that during abstract screening we exclude the records where a definite "no" can be inferred from available information, but we allow for some uncertainty for the "yes" answers by allowing "probably" as an acceptable answer for inclusion, so we can check for more info in the full text. 
 
 An example decision tree for abstract screening looks like this:  
-<img src="/decisiontree.png" alt="Descision tree example" />
+
+
+
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/decisiontree.png?raw=true)
+
 <br>
 <br>
 
@@ -499,8 +503,11 @@ You will need to open the pdf files and take the snapshots of the relevant figur
 
 We did this as well and named the snapshot files, which you can see as little thumbnails below,  as following (this makes it easy to keep track of the figures being digitised)     
 **001_Weil_2006_Fig2a.png**    ![](https://github.com/SusZaj/metaanalysis/blob/master/images/001_Weil_2006_Fig2a_small.png?raw=true)
-and    
+<br>
+and   
+<br>
 **002_Sadd_2006_Fig2a.png**   ![](https://github.com/SusZaj/metaanalysis/blob/master/images/002_Sadd_2006_Fig2a_small.png?raw=true)
+<br>
 
 We have to place them in a new folder - let's call it **metaDigitise_figures** (read more about organising your extraction directories in the "Setting up directory structures " section of https://cran.r-project.org/web/packages/metaDigitise/vignettes/metaDigitise.html).   
 
