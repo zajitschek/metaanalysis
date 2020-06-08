@@ -29,17 +29,10 @@ A few things to note:
 
 4. The tree tip labels (representing species) must match **exactly** with the species names in the data set (otherwise MA models will not run with them).  
 
-```{r tree exmaple4, eval=TRUE, echo=FALSE, fig.width=6, fig.height=4, fig.cap=" "}
-par(mfcol=c(1,1))
-plot(read.tree(text = "(((Species4 != SPECIES4, Species3 == Species3), Species2 == Species2), Species1 == Species1);"), main = "rooted")
-```
+5. Trees can be also made and used for higher taxonomic levels than species, e.g. genus-level, following the same logic.   
 
-5. Trees can be also made and used for higher taxonomic levels than species, e.g. genus-level   
-
-```{r tree exmaple5, eval=TRUE, echo=FALSE, fig.width=6, fig.height=3.2, fig.cap=" "}
-par(mfcol=c(1,1))
-plot(read.tree(text = "((GenusC, GenusB), GenusA);"), main = "genus-level tree")
-```
+# Making a Phylogenetic Tree
+----
 
 The general flow of tree-making work is shown in the diagram below.  
 You will usually start with species list from the meta-analytic data set (use binomial Latin names for the species list and in your database). First, check if there is any phylogenetic tree available that already contains all your species (e.g. a super-tree). Currently, the easiest way to build a custom phylogenetic tree usable for meta-analysis is by using an R package called *rotl*, which accesses a synthetic super-tree from Open Tree of Life database (https://	opentreeoflife.org). We will use this approach in our examples below. Most of the time *rotl* will work well, especially with the common species. There are other super-trees available, e.g. for birds - we will use one of these as our example too. Overall, if you can find a tree that contains all your species, you just trim (subset) it down to your species. If a few species is missing, it is sometimes possible to substitute them with closely related species. If no existing phylogeny is readily usable, there are a few non-exclusive options depending on the range of species in the data set:  
@@ -72,38 +65,8 @@ library(treebase, devtools)
 library(rotl)
 ```
 
+![Phylogenetic Tree workflow](https://github.com/SusZaj/metaanalysis/blob/master/images/guide.png)
 
-```{r diagram, fig.width=10, fig.height=10, echo=FALSE, message=FALSE}
-par(mar=c(1,1,1,1))
-openplotmat()
-elpos <- coordinates (pos = c(1, 1, 4, 1, 1, 2, 1))
-
-fromto <- matrix(ncol = 2, byrow = TRUE, data = c(1,2, 2,3, 2,4, 2,5, 2,6, 3,7, 4,7, 5,7, 6,7, 7,8, 8,9, 8,10, 9,11, 10,11, 8,11, 4,3 ))
-nr <- nrow(fromto)
-arrpos <- matrix(ncol = 2, nrow = nr)
-for (i in 1:nr) (arrpos[i, ] <- straightarrow (to = elpos[fromto[i, 2], ],from = elpos[fromto[i, 1], ],lwd = 2, arr.pos = 0.6, arr.length = 0.5))
-
-textrect (mid = elpos[1,], radx = 0.1, rady = 0.05, lwd = 2, lab = "species list", box.col = "white", shadow.col = "grey", shadow.size = 0.005, cex = 1.5)
-textellipse (mid = elpos[2,], radx = 0.1, rady = 0.05, lwd = 1, lab = "supertree or bigger tree exists?", box.col = "white", shadow.col = "grey", shadow.size = 0.005, cex = 1)
-textrect (mid = elpos[3,], radx = 0.1, rady = 0.05, lwd = 1, lab = c("prune","supertree"), box.col = "white", shadow.col = "grey", shadow.size = 0.001, cex = 1.2)
-textrect (mid = elpos[4,], radx = 0.1, rady = 0.05, lwd = 1, lab = c("merge","supertrees"), box.col = "white", shadow.col = "grey", shadow.size = 0.001, cex = 1)
-textrect (mid = elpos[5,], radx = 0.1, rady = 0.05, lwd = 1, lab = c("generate","taxonomic"," tree using NCBI"), box.col = "white", shadow.col = "grey", shadow.size = 0.001, cex = 0.8)
-textrect (mid = elpos[6,], radx = 0.1, rady = 0.05, lwd = 1, lab = c("generate","phylogeny","from sequences"), box.col = "white", shadow.col = "grey", shadow.size = 0.001, cex = 0.8)
-textrect (mid = elpos[7,], radx = 0.1, rady = 0.05, lwd = 1, lab = "preliminary tree", box.col = "white", shadow.col = "grey", shadow.size = 0.005, cex = 1.5)
-textellipse (mid = elpos[8,], radx = 0.1, rady = 0.05, lwd = 1, lab = "resolve polytomies?", box.col = "white", shadow.col = "grey", shadow.size = 0.005, cex = 1)
-textrect (mid = elpos[9,], radx = 0.1, rady = 0.05, lwd = 1, lab = c("using existing","information"), box.col = "white", shadow.col = "grey", shadow.size = 0.001, cex = 1.2)
-textrect (mid = elpos[10,], radx = 0.1, rady = 0.05, lwd = 1, lab = c("at random"), box.col = "white", shadow.col = "grey", shadow.size = 0.001, cex = 1.2)
-textrect (mid = elpos[11,], radx = 0.1, rady = 0.05, lwd = 2, lab = "final tree", box.col = "white", shadow.col = "grey", shadow.size = 0.005, cex = 1.5)
-
-text(arrpos[2, 1] + 0.00, arrpos[2, 2] + 0.02, "yes")
-text(arrpos[3, 1] - 0.01, arrpos[3, 2] + 0.02, "no")
-text(arrpos[4, 1] + 0.01, arrpos[4, 2] + 0.02, "no")
-text(arrpos[5, 1] + 0.01, arrpos[5, 2] + 0.02, "no")
-
-text(arrpos[11, 1] + 0.00, arrpos[11, 2] + 0.02, "yes")
-text(arrpos[12, 1] - 0.01, arrpos[12, 2] + 0.02, "yes")
-text(arrpos[15, 1] + 0.015, arrpos[15, 2] + 0.1, "no") 
-```
 
 
 Examples and exercises
