@@ -17,11 +17,8 @@ We will take the paper [Nakagawa 2017](https://bmcbiol.biomedcentral.com/article
 Here is a graphical overview:
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/metaanalysis_overview.png?raw=true)
-   
-      
-      
-   
-
+&nbsp;
+&nbsp;
 All of these steps have to be described and laid out in a protocol. We will see that there already exist general protocols for each step, which we can use and adapt to our research questions. The aim of having well defined protocols is for other researchers to be able to reproduce those steps. 
 
 Protocols are necessary to minimize any bias that we might introduce - either knowingly, but most often unknowingly - into the decisions that have to be taken at each meta-analysis step. Bias might already be present in how the research question we want to tackle is phrased. Furthermore, bias can originate in the specific way we search for literature, both in where we search (for example, which databases we use, or whether we only include published results), and how we search (for example our choice of search terms).
@@ -177,7 +174,6 @@ Outcome type: should we accept any reproduction-related measurements and what th
 
 **QUESTION 11:**  
 Data type: should we accept any type of data for meta-analysis? (e.g. descriptive statistics, and which ones, or also inferential statistics, and which ones? This will be linked to the effect size you are planning to use!)    
-
 
 ********************************************************************************
 ### Making decision trees for the literature screening    
