@@ -17,18 +17,18 @@ We can add a random factor to multilevel meta-analytic models, which consists of
 To create such a a relatedness matrix among species, we need a phylogenetic tree, specifically for the list of species that are occuring in our data set.  
 
 A few things to note:  
-*1*  We can use a tree with or without branch lengths (divergence measures) although we do need branch lengths for analysis (often making certain assumptions).  
+**1**   We can use a tree with or without branch lengths (divergence measures) although we do need branch lengths for analysis (often making certain assumptions).  
 
-*2*  The tree has to be binary (strictly bifurcating = no polytomies, i.e. only two branches are coming from each node). Here is a simple example: 
+**2**   The tree has to be binary (strictly bifurcating = no polytomies, i.e. only two branches are coming from each node). Here is a simple example: 
 
-*3*  The tree needs to be rooted (has a node representing the most recent common ancestor of all the species in the tree). 
+**3**   The tree needs to be rooted (has a node representing the most recent common ancestor of all the species in the tree). 
 
 ![Phylogenetic Tree examples](https://github.com/SusZaj/metaanalysis/blob/master/images/trees.png?raw=true)
 
 
-*4*  The tree tip labels (representing species) must match **exactly** with the species names in the data set (otherwise MA models will not run with them).  
+**4**   The tree tip labels (representing species) must match **exactly** with the species names in the data set (otherwise MA models will not run with them).  
 
-*5*  Trees can be also made and used for higher taxonomic levels than species, e.g. genus-level, following the same logic.   
+**5**   Trees can be also made and used for higher taxonomic levels than species, e.g. genus-level, following the same logic.   
 
 # Making a Phylogenetic Tree
 
@@ -40,12 +40,12 @@ You will usually start with species list from the meta-analytic data set (use bi
 
 If the resulting tree contains polytomies, these can be resolved at random, or based on information from more detailed trees (e.g. published phylogenies of specific lower taxa). You can also graft missing species on your tree. Be aware of species names problems: typos, scientific name synonyms, subspecies - have to be re-checked / corrected / substituted if generate errors at any stage. Again, your final tree, must contain exactly the same list of species names as your meta-analytic data set.   
 
-
 ![Phylogenetic Tree workflow](https://github.com/SusZaj/metaanalysis/blob/master/images/guide.png?raw=true)
 
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.png?raw=true)
 Copy the code chunks below into your local R script to install the packages that are required to build your tree (it may take 15-20 minutes to install all).   
 
-```{r prepare, message = FALSE, echo = TRUE, eval = FALSE, warning = FALSE}
+```
 install.packages("metafor")
 install.packages("diagram")
 install.packages("tidyverse")
@@ -58,7 +58,7 @@ devtools::install_github("ropensci/rotl", dependencies = TRUE, build_vignette=TR
 install.packages("rotl")
 ```
 
-```{r load packages, message = FALSE, echo = TRUE, eval = TRUE, warning = FALSE}
+```
 library(diagram, tidyverse)
 library(ape, curl)
 library(fulltext, metafor)
@@ -68,28 +68,26 @@ library(rotl)
 
 
 ## Examples and exercises
--------
 
-We will give you some examples on how to use *rotl* package to download sub-trees from the Open Tree of Life super-tree, resolve polytomies, trim and plot trees and deal with some of the most common issues. We will try to do most of theses tasks in R, but doing many of these outside R (using websites, text and tree editors, etc.) is also possible. We hope you get the idea of the main principles of the process.  
+Here are some examples on how to use the *rotl* package to download sub-trees from the Open Tree of Life super-tree, resolve polytomies, trim and plot trees and deal with some of the most common issues. We will try to do most of theses tasks in R, but doing many of these outside R (using websites, text and tree editors, etc.) is also possible. We hope you get the idea of the main principles of the process.  
 
 Now, we start from installing (as required) and loading R packages we will use.  
 
 
 ********************************************************************************
 
-### EXAMPLE 1 - using *rotl* package   
+### EXAMPLE 1 - Using the *rotl* package   
 
 We will try to create a simple tree using 10 commonly used taxa (lab model species) from across the tree of life.  
-[Rotl](https://peerj.com/preprints/1471/)) is an R package  allowing us to access synthetic phylogenetic tree available at [Open Tree of Life database](https://opentreeoflife.org/).   
+[Rotl](https://peerj.com/preprints/1471/) is an R package  allowing us to access synthetic phylogenetic tree available at [Open Tree of Life database](https://opentreeoflife.org/).   
 
 **Important**: use Latin names, not common names.   
 **Notes**: *rotl* crashes on some species lists. Also, Open Tree of Life database gets constantly updated with new info, so you can get different outputs at different time-points.   
 
-
 We use a function *tnrs_match_names*, which returns a data frame that lists the Open Tree identifiers potentially matching our species.  
 The function also returns other information, including alternative species names, to help users ensure that the taxa matched are the correct ones.  
 
-```{r rotl 10species list}
+```
 myspecies <- c("Escherichia colli", 
                "Chlamydomonas reinhardtii", 
                "Drosophila melanogaster",
