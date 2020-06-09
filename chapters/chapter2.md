@@ -70,7 +70,7 @@ Generally, the more focused the question, the easier and quicker it is to perfor
 
 For this exercise, we will choose *terminal investment* in animals as a general research topic that we want to explore further, using meta-analytic approaches.
 
-<Icon icon="/images/computertaskicon.svg" standalone="true" /> 
+<img src="/images/computertaskicon.svg"" alt="Computer task">
 **Are there any meta-analyses (or similar) on terminal investment in animals?**
 
 In [Google Scholar](https://scholar.google.com) run:  
