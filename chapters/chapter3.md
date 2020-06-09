@@ -24,7 +24,7 @@ A few things to note:
 
 3. The tree needs to be rooted (has a node representing the most recent common ancestor of all the species in the tree). 
 
-![Phylogenetic Tree examples](https://github.com/SusZaj/metaanalysis/blob/master/images/trees.png)
+![Phylogenetic Tree examples](https://github.com/SusZaj/metaanalysis/blob/master/images/trees.png?raw=true)
 
 
 4. The tree tip labels (representing species) must match **exactly** with the species names in the data set (otherwise MA models will not run with them).  
@@ -65,7 +65,7 @@ library(treebase, devtools)
 library(rotl)
 ```
 
-![Phylogenetic Tree workflow](https://github.com/SusZaj/metaanalysis/blob/master/images/guide.png)
+![Phylogenetic Tree workflow](https://github.com/SusZaj/metaanalysis/blob/master/images/guide.png?raw=true)
 
 
 

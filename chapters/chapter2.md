@@ -199,9 +199,7 @@ The screening of literature is usually done in two stages:
 This is because abstracts, titles and keywords do not contain enough information to conclusively answer all of the inclusion criteria questions - you should be excluding every paper for which you cannot answer "yes"" to all the questions. 
 Thus this first stage of screening has to be more tentative, and we would use a more permissive and simpler decision tree. A good tree starts from the questions that are easiest to answer (if we had any year or language restrictions we would put these on the top). Note that during abstract screening we exclude the records where a definite "no" can be inferred from available information, but we allow for some uncertainty for the "yes" answers by allowing "probably" as an acceptable answer for inclusion, so we can check for more info in the full text. 
 
-An example decision tree for abstract screening looks like this:  
-
-
+An example decision tree for abstract screening looks like this: 
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/decisiontree.png?raw=true)
 
