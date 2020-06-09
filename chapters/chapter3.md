@@ -53,7 +53,7 @@ If the resulting tree contains polytomies, these can be resolved at random, or b
 
 ![Phylogenetic Tree workflow](https://github.com/SusZaj/metaanalysis/blob/master/images/guide.png?raw=true)
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.png?raw=true)
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)
 Copy the code chunks below into your local R script to install the packages that are required to build your tree (it may take 15-20 minutes to install all).   
 
 ```
@@ -112,6 +112,7 @@ myspecies <- c("Escherichia colli",
 taxa <- tnrs_match_names(names = myspecies)
 taxa
 ```
+This will return a list of species in your console.
 
 Note that two of the species names in our list have typos, and are labelled TRUE in a column "approximate_match". Still, they were matched to correct species names.  
 If typos are detected, it is worth correcting the names in the original data set and re-running tree search.  
@@ -131,13 +132,13 @@ taxa <- tnrs_match_names(names = myspecies_fixed)
 taxa
 ```
 
-When we are happy with the taxa found Open Tree identifiers, we can pass them to the
+When you are happy with the taxa that have been found using Open Tree identifiers, we can pass them to the
 function tol_induced_subtree to retrieve the relationships among these taxa (a trimmed sub-tree from the synthetic phylogenetic tree).  
 
-```{r rotl 10species tree, warning = FALSE, results=FALSE}
+```
 tree <- tol_induced_subtree(ott_ids = taxa[["ott_id"]], label_format = "name") 
 ```
-*it is possible that you will get a Warning meassage about collapsing single nodes
+*it is possible/ quite likely that you will get a Warning meassage about collapsing single nodes
 
 The tree is returned as an ape::phylo object and it can be manipulated, printed and saved easily using functions from the ape package.  
 
@@ -512,11 +513,11 @@ R-based GUI tree viewer: https://klash.shinyapps.io/shinyTreeViewer
 
 </exercise>
 
-<exercise id="2" title="How to make a decision tree in R">
+<exercise id="2" title="Other resources">
 
-# R code
+Drawing a decision tree # R code
 
-Of course you can draw your decision trees by hand, make a flow chart in Power Point or use any MindMapping software (if you go that route - I recommend Visually Understanding the Enviroment, [VUE] (https://vue.tufts.edu/)). However, perhaps you really would like to use R for this, too!
+. However, perhaps you really would like to use R for this, too!
 
 Below is Losia's code for a nice home-made decision tree.
 Change the text to make it fit your own needs!
