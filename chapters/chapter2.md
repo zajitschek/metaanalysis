@@ -185,10 +185,11 @@ Most meta-analyses only include studies published in English by default. However
 <br>
 <br>
 
+#Kuckuuuck
     
 **STUDY TYPE**: Should we include any type of study? (e.g. correlational vs experimental, if experimental, what type of experiment?)    
 
-  ***Since we investigate a specific intervention, we should restrict study type to "experimental" (we should explicitly exclude "simulation").***  
+>Since we investigate a specific intervention, we should restrict study type to "experimental" (we should explicitly exclude "simulation").
 <br>
 <br>
 
