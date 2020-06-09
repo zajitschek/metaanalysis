@@ -13,10 +13,9 @@
    id="Capa_1"
    x="0px"
    y="0px"
-   width="440.001px"
-   height="440.001px"
-   viewBox="0 0 440.001 440.001"
-   style="enable-background:new 0 0 440.001 440.001;"
+   width="43.257301"
+   height="36.763844"
+   viewBox="0 0 43.257301 36.763843"
    xml:space="preserve"
    sodipodi:docname="computertaskicon.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
@@ -37,76 +36,92 @@
    id="namedview43"
    showgrid="false"
    inkscape:zoom="1.0729879"
-   inkscape:cx="219.47123"
-   inkscape:cy="220.0005"
+   inkscape:cx="13.172299"
+   inkscape:cy="-40.293653"
    inkscape:window-x="-11"
    inkscape:window-y="-11"
    inkscape:window-maximized="1"
    inkscape:current-layer="g8" />
 <g
-   id="g10">
+   id="g10"
+   transform="translate(-206.29893,-142.94301)">
 	<g
    id="g8">
 		<g
-   style="stroke-width:2.08214777;stroke-miterlimit:4;stroke-dasharray:none"
+   style="stroke-width:2.08214784;stroke-miterlimit:4;stroke-dasharray:none"
    id="g6"
    transform="matrix(0.62509417,0,0,0.62361731,77.586635,54.045628)">
 			
 			<path
    d="m 273.94822,196.84741 -4.16884,-16.67502 c -0.0648,-0.26009 -0.16672,-0.50294 -0.29593,-0.72611 0.23827,-0.66111 0.36915,-1.37349 0.36915,-2.11561 v -27.48738 c 0,-3.4467 -2.80403,-6.25104 -6.25103,-6.25104 h -46.18742 c -3.4473,0 -6.25134,2.80419 -6.25134,6.25104 v 27.48708 c 0,0.74227 0.13073,1.45464 0.36961,2.11576 -0.12951,0.22332 -0.23186,0.46587 -0.29669,0.72595 l -4.20255,16.80957 c -0.20913,0.83685 -0.021,1.72373 0.50995,2.40346 0.53085,0.68003 1.34543,1.07756 2.20836,1.07756 h 61.51259 c 9.1e-4,0 0.002,0 0.003,0 1.5477,0 2.80175,-1.25466 2.80175,-2.80175 -1.5e-4,-0.28281 -0.0421,-0.55602 -0.12021,-0.81351 z m -26.34042,-0.76485 c -6.1e-4,0 -0.001,3.1e-4 -0.002,0 H 233.41 c -0.16383,0 -0.31942,-0.0728 -0.42422,-0.19845 -0.1051,-0.12539 -0.14918,-0.29136 -0.12005,-0.4529 l 1.10624,-6.13907 c 0.0474,-0.2636 0.27671,-0.45488 0.54427,-0.45488 h 11.98358 c 0.26756,0 0.49683,0.19159 0.54397,0.45488 l 1.09708,6.08995 c 0.013,0.0471 0.02,0.0964 0.02,0.14736 4.5e-4,0.30569 -0.24728,0.55311 -0.55267,0.55311 z m 16.7847,-18.75189 c 0,0.31943 -0.19068,0.59446 -0.46373,0.71955 h -46.84243 c -0.27336,-0.12478 -0.46419,-0.40012 -0.46419,-0.71955 v -27.48738 c 0,-0.43643 0.35527,-0.79139 0.79185,-0.79139 h 46.18726 c 0.43612,0 0.79139,0.35496 0.79139,0.79139 z"
    id="path2"
-   style="fill:#f5f037;fill-opacity:1;stroke:#ea090d;stroke-width:2.08214777;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+   style="fill:#f5f037;fill-opacity:1;stroke:#ea090d;stroke-width:2.08214784;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
    inkscape:connector-curvature="0" /><path
    d="m 251.7611,160.71232 1.74997,-0.4773 c 0.34642,-0.0944 0.59324,-0.40134 0.61017,-0.76027 0.0174,-0.35894 -0.19861,-0.68812 -0.5342,-0.81549 l -8.0692,-3.06062 c -0.30508,-0.11562 -0.64983,-0.0416 -0.88062,0.189 -0.23095,0.2308 -0.30478,0.57539 -0.18916,0.88063 l 3.06062,8.06919 c 0.12752,0.3359 0.45671,0.55175 0.81549,0.53436 0.35908,-0.0172 0.66585,-0.2636 0.76027,-0.61017 l 0.4773,-1.74997 4.08296,4.08249 c 0.32384,0.324 0.84874,0.324 1.17274,0 l 1.02646,-1.0263 c 0.32385,-0.324 0.32385,-0.84905 0,-1.17305 z"
    id="path4"
-   style="fill:#f5f037;fill-opacity:1;stroke:#ea090d;stroke-width:2.08214777;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+   style="fill:#f5f037;fill-opacity:1;stroke:#ea090d;stroke-width:2.08214784;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
    inkscape:connector-curvature="0" />
 		</g>
 	</g>
 </g>
 <g
-   id="g12">
+   id="g12"
+   transform="translate(-206.29893,-142.94301)">
 </g>
 <g
-   id="g14">
+   id="g14"
+   transform="translate(-206.29893,-142.94301)">
 </g>
 <g
-   id="g16">
+   id="g16"
+   transform="translate(-206.29893,-142.94301)">
 </g>
 <g
-   id="g18">
+   id="g18"
+   transform="translate(-206.29893,-142.94301)">
 </g>
 <g
-   id="g20">
+   id="g20"
+   transform="translate(-206.29893,-142.94301)">
 </g>
 <g
-   id="g22">
+   id="g22"
+   transform="translate(-206.29893,-142.94301)">
 </g>
 <g
-   id="g24">
+   id="g24"
+   transform="translate(-206.29893,-142.94301)">
 </g>
 <g
-   id="g26">
+   id="g26"
+   transform="translate(-206.29893,-142.94301)">
 </g>
 <g
-   id="g28">
+   id="g28"
+   transform="translate(-206.29893,-142.94301)">
 </g>
 <g
-   id="g30">
+   id="g30"
+   transform="translate(-206.29893,-142.94301)">
 </g>
 <g
-   id="g32">
+   id="g32"
+   transform="translate(-206.29893,-142.94301)">
 </g>
 <g
-   id="g34">
+   id="g34"
+   transform="translate(-206.29893,-142.94301)">
 </g>
 <g
-   id="g36">
+   id="g36"
+   transform="translate(-206.29893,-142.94301)">
 </g>
 <g
-   id="g38">
+   id="g38"
+   transform="translate(-206.29893,-142.94301)">
 </g>
 <g
-   id="g40">
+   id="g40"
+   transform="translate(-206.29893,-142.94301)">
 </g>
 </svg>
