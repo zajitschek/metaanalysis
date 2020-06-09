@@ -72,7 +72,6 @@ For this exercise, we will choose *terminal investment* in animals as a general 
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)
 
-<img src="/images/computertaskicon.svg" alt="Computer task">
 **Are there any meta-analyses (or similar) on terminal investment in animals?**
 
 In [Google Scholar](https://scholar.google.com) run:  
@@ -81,7 +80,7 @@ In [Google Scholar](https://scholar.google.com) run:
 
 You should get around 300 results. By skimming the first few pages you can see a few meta-analyses on stress, diet, senescence, parasitism etc., but none probably specifically on terminal investment. There are many empirical papers coming up in this search because they mention meta-analysis in their body text or reference list - note that Google Scholar searches full text by default. Also by default, the returned results are arranged in order of relevance to the search (whatever that means - its a complex algorithm that decides), and only a few first pages contain some potentially relevant empirical papers.    
 
-:computer:   
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)  
 You can restrict the search to titles only:  
 *allintitle: "meta analytic" OR "meta analysis" "terminal investment"*   
 Now there are no matching hits; but there is no option for searching just in titles and abstracts.    
@@ -99,12 +98,12 @@ Other software useful for exploratory (scoping) and additional searches (check t
 
 **It seems that the question "What is the evidence for terminal investment happening?" is too general and too broad in scope. Let's try to narrow it down and focus on either *terminal investment in reproduction*, or *terminal investment under immune challenge* (notice the difference between effects *in* reproduction and effects *of* immune challenge*.**
 
-:computer:   
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)  
 Run another Google Scholar quick search, including *reproduction* (not in quotes):  
 *"terminal investment" reproduction*   
 This time you should get over 2,000 records (you will be allowed to access only the first 1,000). Note that Google Scholar does so called Automated Query Expansion for terms that are not set to be exact phrases (in quotes) - it uses alternative forms of these terms.  
 
-:computer:    
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)   
 Try Google Scholar quick search:   
 *"terminal investment" "immune challenge"*  
 This time you should get just over 400 records. Skim through the first three pages of the results to get a feel of the diversity of the studies found (e.g. what taxa are studied and what traits the studies might measure to evaluate reproductive investment) and note the wording of their titles.  
@@ -244,7 +243,7 @@ Scopus and Web of Science.**
  * Web of Science (WoS): http://apps.webofknowledge.com   
 :pushpin: WoS coverage depends on the institutional subscription package purchased, so results of searches can vary among institutions. Also searching just core collection vs. all available databases can make a difference.     
 
-:computer: 
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
 Using Scopus **Advanced Search** (you can read more about the syntax here: https://dev.elsevier.com/tips/ScopusSearchTips.htm) run these search strings:  
 
  1. *TITLE-ABS-KEY ( "terminal investment"  AND  "immune challenge" )*    
@@ -260,11 +259,10 @@ Ideally, we should think and test some more terms for inclusion, after doing som
 
 We stop for now and assume that the string above is our final search string. Note that Scopus Advanced Search stores all your searches and search strings in a neat table at the bottom of the search window - it's easy to copy this out and to include it in the documentation on how you developed your search strategy (same applies to WoS database; you need to register in Scopus and WoS to save searches and alerts across multiple search sessions). The \* symbol stands for wildcard and indicates "any symbols" since these databases do not do Automatic Query Expansion.    
 
-:computer:   
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
 We can easily translate our final search string from Scopus into Web of Science (WoS) **Advanced Search** (you can read more about the syntax here: https://images.webofknowledge.com/images/help/WOS/hs_search_operators.html). Run this search string:    
 *TS = (( ( "terminal investment" OR "reproductive effort" ) AND ( "immune challeng\*"  OR  "immunochalleng\*"  OR  "infect\*"  ) ) NOT ( load OR human OR people ) )*  
 (approx. 249 hits - more than from Scopus).   WoS stores your search history and also which sub-data bases were included in the search: Indexes=SCI-EXPANDED, SSCI, A&HCI, CPCI-S, CPCI-SSH, BKCI-S, BKCI-SSH, ESCI, CCR-EXPANDED, IC Timespan=All years" (you can restrict these in the Advanced Search).   
-
 
 Both Scopus and WoS allow exporting the found records (with limitations on the max. number per export, **remember to tick the boxes for exporting abstracts!**) - there are multiple file formats you can use, but .ris and .bib are most commonly used ones- you will need to figure out which ones work for your reference manager software. The next step would be downloading all found records from your "final" search into the reference manager of your choice. Combine the references from two databases into a single project/folder and remove duplicates (most reference managers have this function, but it never works perfectly - do a visual check after sorting by titles!) before proceeding to the reference screening stage. An R package *revtools* (https://cran.rstudio.com/web/packages/revtools/ and http://revtools.net/) can act as a reference manager and also has a good de-duplication function.      
 
@@ -281,14 +279,14 @@ Theoretically you could do screening in the database browser or your reference m
 
 :pushpin: It is possible that the de-duplication algorithms in these are not very good, so it is advisable to de-duplicate and check your records in the reference manager before uploading to the screening software.    
 
-:computer:  
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
 We prepared a file (for download: [Scopus10.ris](/papers/Scopus10.ris)) with 10 references sampled from the set found using the search string in Scopus database (used *( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*" ) )  *) (same references came up in the equivalent search in WoS).    
 
 :pushpin: Sometimes the biblio-files with the same extension differ a bit in structure and reference managers, and Rayyan may have problem opening them. Getting your files into exactly the right format can sometimes be frustrating.   
 
 We will use these ten references to practice title and abstract screening in Rayyan. Screening can be also done in Abstracker, but we find Rayyan a bit more reliable and more user-friendly (could be slow with updating the display).   
 
-:computer:
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)
 Create a new project in Rayyan:
 
  1. Open Rayyan (we assume you already created a free account) and log in.    
@@ -310,7 +308,7 @@ How many papers did you exclude? How many conflicts did you have if you collabor
 **Simmons2009** and **Clancy2013** as human studies, but    
 **Gershman2010** and **Gonzales-Tokman2013** as not likely to have any reproduction-related measurements.   
 
-:computer:
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)
 It is time to do the full-text screening for the papers that passed title and abstract screening. There are some full-text papers that passed the initial screening in the directory - assess **Nielsen2012** and **Ardia2005** (they are in "pdf" sub-folder) using our full-text screening decision tree. (Tip: do not read the whole paper - just try to skim it and look for the key information.)      
 
 
