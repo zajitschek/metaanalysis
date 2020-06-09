@@ -97,20 +97,18 @@ Other software useful for exploratory (scoping) and additional searches (check t
  * [CiteHero](https://citehero.com/)
  * R package *[litsearchR](https://elizagrames.github.io/litsearchr/)* (which I haven't tested yet myself)
    
-**It seems that the question "What is the evidence for terminal investment happening?" is too general and too broad in scope. Let's try to narrow it down and focus on either *terminal investment in reproduction*, or *terminal investment under immune challenge* (notice the difference between effects *in* reproduction and effects *of* immune challenge*.**
+**It seems that the question "What is the evidence for terminal investment happening?" is too general and too broad in scope. Let's try to narrow it down and focus on either *terminal investment in reproduction*, or *terminal investment under immune challenge* (notice the difference between effects *in* reproduction and effects *of* immune challenge*.**   
 <br>
 <br>
 
-   
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)  
 Run another Google Scholar quick search, including *reproduction* (not in quotes):  
 *"terminal investment" reproduction*   
 
-This time you should get over 2,000 records (you will be allowed to access only the first 1,000). Note that Google Scholar does so called Automated Query Expansion for terms that are not set to be exact phrases (in quotes) - it uses alternative forms of these terms.  
+This time you should get over 2,000 records (you will be allowed to access only the first 1,000). Note that Google Scholar does so called Automated Query Expansion for terms that are not set to be exact phrases (in quotes) - it uses alternative forms of these terms.  .
 <br>
 <br>
 
-   
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)   
 Try Google Scholar quick search:    *"terminal investment" "immune challenge"*    
 
@@ -132,17 +130,15 @@ Frame our meta-analytic question "whether immune challenge can result in termina
  <br> * C = Comparison/Control group  = unchallenged group of animals, otherwise in the same state    
  <br> * O = Outcome                   = reproduction-related traits 
 </opt>
-</choice>
+</choice>   
 <br>
 <br>
 
-   
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) **RESOURCES:**   
-An extensive list of alternative systematic review formulation question frameworks can be found [here](https://www.networks.nhs.uk/nhs-networks/nwas-library-and-information-service/documents/alternative-question-structures-for-different-types-of-systematic-review)
+An extensive list of alternative systematic review formulation question frameworks can be found [here](https://www.networks.nhs.uk/nhs-networks/nwas-library-and-information-service/documents/alternative-question-structures-for-different-types-of-systematic-review)   
 <br>
 <br>
 
-    
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) You should always be able to justify your question as important, relevant and timely. This holds true for other research questions as well, and will affect the likelihood of a meta-analysis you propose to perform to gain support (by an academic supervisor, a grant agency, in an academic and a non-academic environment), and its impact on the target audience. 
 <br>
 <br>
