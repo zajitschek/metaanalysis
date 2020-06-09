@@ -66,7 +66,7 @@ Generally, the more focused the question, the easier and quicker it is to perfor
 
 For this exercise, we will choose *terminal investment* in animals as a general research topic that we want to explore further, using meta-analytic approaches.
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)    
 **Are there any meta-analyses (or similar) on terminal investment in animals?**
 
 In [Google Scholar](https://scholar.google.com) run:  
@@ -108,14 +108,14 @@ PICO stands for:
   * C = Comparison/Control group   
   * O = Outcome   
 
-Formulate our meta-analytic question "whether immune challenge can result in terminal investment" using PICO terms (actually this fits really well because we can use experimental data). Please reflect yourself and try to write down your own ideas of what you would define as "P" (Population), "I" (Intervention), "C" (Comparison/Control) and "O" (outcome 
+Formulate our meta-analytic question "whether immune challenge can result in terminal investment" using PICO terms (actually this fits really well because we can use experimental data). Please reflect yourself and try to write down your own ideas of what you would define as "P" (Population), "I" (Intervention), "C" (Comparison/Control) and "O" (outcome) that fits this question before clicking on the sample solution below.
 
 <choice id="1">
 <opt text="Example solution" correct="true">
-      * P = Population                = animal species     
-  * I = Intervention              = immune challenge   
-  * C = Comparison/Control group  = unchallenged group of animals, otherwise in the same state    
-  * O = Outcome                   = reproduction-related traits 
+ <br> * P = Population                = animal species     
+ <br> * I = Intervention              = immune challenge   
+ <br> * C = Comparison/Control group  = unchallenged group of animals, otherwise in the same state    
+ <br> * O = Outcome                   = reproduction-related traits 
 </opt>
 </choice>
 
