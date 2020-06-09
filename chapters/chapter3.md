@@ -16,7 +16,7 @@ Ecological and evolutionary meta-analyses often aggregate data across multiple s
 We can add a random factor to multilevel meta-analytic models, which consists of a  correlation matrix of phylogenetic relatedness. 
 To create such a a relatedness matrix among species, we need a phylogenetic tree, specifically for the list of species that are occuring in our data set.  
 
-A few things to note:  
+***A few things to note:***
 
 **1**  We can use a tree with or without branch lengths (divergence measures) although we do need branch lengths for analysis (often making certain assumptions).  
 
@@ -135,12 +135,13 @@ When we are happy with the taxa found Open Tree identifiers, we can pass them to
 function tol_induced_subtree to retrieve the relationships among these taxa (a trimmed sub-tree from the synthetic phylogenetic tree).  
 
 ```{r rotl 10species tree, warning = FALSE, results=FALSE}
-tree <- tol_induced_subtree(ott_ids = taxa[["ott_id"]], label_format = "name") #we can get a Warning meassage here about collapsing single nodes
+tree <- tol_induced_subtree(ott_ids = taxa[["ott_id"]], label_format = "name") 
 ```
+*it is possible that you will get a Warning meassage about collapsing single nodes
 
 The tree is returned as an ape::phylo object and it can be manipulated, printed and saved easily using functions from the ape package.  
 
-```{r rotl 10species plot, fig.width=10, fig.height=5, echo=TRUE, message=FALSE}
+```{
 plot(tree, cex=.8, label.offset =.1, no.margin = TRUE)
 ```
 
@@ -155,13 +156,13 @@ tree$tip.label <- gsub("mrcaott616ott617", "Escherichia coli", tree$tip.label) #
 tree$tip.label <- gsub("_"," ", tree$tip.label) #get rid of the underscores
 ```
 
-It is time to plot and tidy up the tree (note no branch lengths are included, they can be created later via simulations).   
+If you have successfully followed the above steps, you should now be able to tidy up the tree (note no branch lengths are included, they can be created later via simulations), and plot it with this code:
 
-```{r rotl 10species tree Ecoli, fig.width=10, fig.height=5, echo=TRUE, message=FALSE}
-# tree #see the tree info
-# tree$node.label <- NULL #you can delete internal node labels
-plot(tree, cex=.8, label.offset =.1, no.margin = TRUE) #plot the tree
 ```
+# tree$node.label <- NULL #you can delete internal node labels
+plot(tree, cex=.8, label.offset =.1, no.margin = TRUE) 
+```
+ADD PICTURE
 
 Do a final check whether the tree is binary and if the tip labels of the tree match exactly our (fixed for typos) list of species.  
 
