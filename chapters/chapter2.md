@@ -88,6 +88,7 @@ You can restrict the search to titles only:    *allintitle: "meta analytic" OR "
 ***Now there are no matching hits; but there is no option for searching just in titles and abstracts.    
 It turns out that Google Scholars' search interface is rather simplistic and restrictive. It shows only up to 1,000 results for any particular search query, ranking algorithms are obscured, it is hard to export references, the literature coverage may fluctuate (it is based on web scraping), and the searches may not be reproducible. Therefore, Google Scholar is not recommended for the main searches in meta-analyses and systematic reviews. On the upside, it can be helpful for additional searches and finding grey literature (not published in peer-review journals).***
 <br>
+<br>
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) **RESOURCES**   
 Other software useful for exploratory (scoping) and additional searches (check them out later, and note that they may have similar disadvantages to these of Google Scholar):
@@ -97,6 +98,8 @@ Other software useful for exploratory (scoping) and additional searches (check t
  * R package *[litsearchR](https://elizagrames.github.io/litsearchr/)* (which I haven't tested yet myself)
    
 **It seems that the question "What is the evidence for terminal investment happening?" is too general and too broad in scope. Let's try to narrow it down and focus on either *terminal investment in reproduction*, or *terminal investment under immune challenge* (notice the difference between effects *in* reproduction and effects *of* immune challenge*.**
+<br>
+<br>
 
    
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)  
@@ -104,6 +107,8 @@ Run another Google Scholar quick search, including *reproduction* (not in quotes
 *"terminal investment" reproduction*   
 
 This time you should get over 2,000 records (you will be allowed to access only the first 1,000). Note that Google Scholar does so called Automated Query Expansion for terms that are not set to be exact phrases (in quotes) - it uses alternative forms of these terms.  
+<br>
+<br>
 
    
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)   
@@ -128,13 +133,19 @@ Frame our meta-analytic question "whether immune challenge can result in termina
  <br> * O = Outcome                   = reproduction-related traits 
 </opt>
 </choice>
+<br>
+<br>
 
    
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) **RESOURCES:**   
 An extensive list of alternative systematic review formulation question frameworks can be found [here](https://www.networks.nhs.uk/nhs-networks/nwas-library-and-information-service/documents/alternative-question-structures-for-different-types-of-systematic-review)
+<br>
+<br>
 
     
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) You should always be able to justify your question as important, relevant and timely. This holds true for other research questions as well, and will affect the likelihood of a meta-analysis you propose to perform to gain support (by an academic supervisor, a grant agency, in an academic and a non-academic environment), and its impact on the target audience. 
+<br>
+<br>
 
    
 ##  Deciding on inclusion criteria   
@@ -142,6 +153,8 @@ An extensive list of alternative systematic review formulation question framewor
 The basic PICO components are usually not sufficient to perform the effective screening of the papers for inclusion in meta-analysis.
 There are additional both technical and biological refinements to be considered for inclusion criteria in our project.
 Most importantly, you always need to be able to justify your inclusion criteria, especially if you're planning on publishing your meta- analysis.  
+<br>
+<br>
 
    
    **TIME-SPAN**: Should we include studies from any year?  
@@ -154,6 +167,8 @@ Yes
 No, unless you have a very good reason to support this argument.
 </opt>
 </choice>
+<br>
+<br>
 
     
 **LANGUAGE**: Should we include studies published in any language? 
@@ -166,40 +181,56 @@ Possible, but difficult to do and might not yield a lot more additional informat
 Most meta-analyses only include studies published in English by default. However, if possible it is recommend to include studies also in other languages (usually not many are found, unless you also perform your searches in other languages). 
 </opt>
 </choice>
+<br>
+<br>
 
     
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Publication status can be also used as a criterion - are you happy to include some types of grey literature (e.g. conference proceedings, theses)?
+<br>
+<br>
 
     
 **STUDY TYPE**: Should we include any type of study? (e.g. correlational vs experimental, if experimental, what type of experiment?)    
 
   ***Since we investigate a specific intervention, we should restrict study type to "experimental" (we should explicitly exclude "simulation").***  
+<br>
+<br>
 
     
 **TAXA**: Should we include any type of taxa?   
 
 ***That is a difficult one. The animal kingdom is vast and diverse, and some species are especially odd (e.g. humans). Does it make sense to include single-cell animals? Does it make sense to include humans? Probably not.
 How about multicellular animals, except humans? If many studies across multiple taxa exist, we could focus on the most frequently studied taxa or biologically most interesting. Alternatively just vertebrates, except humans? Another thing worth being specific about is that the animals should be wild-type (non-mutant, not disease models) and ideally not subject to any other significant manipulations that could affect their response (e.g. drug treatment; note there is a thin fuzzy line what these manipulations are). There might also be reasons to exclude standard laboratory species (mice, rat, yeast, fruit fly) or maybe focus just on them? But, for now, we will stick to any multicellular animals, except humans.***
+<br>
+<br>
 
     
 **MANIPULATION TYPE**: Should we include all types of immune challenge?   
 
 ***There are several established types of experimental immune challenge (blood cells (e.g. SRBC), protein (e.g. PHA), dead or live pathogens or parasites), so its worth including these and similar ones. Non-experimental immune challenge (e.g. natural infestation levels)  should not be included. If something odd comes up later it can come under "exclusion criteria", with justification.*** 
+<br>
+<br>
 
     
 **CONTROL GROUP**: Should we accept any type of control group?  
 
 ***Control group (un-manipulated) should consist of similar individuals, as far as reasonable and not be subject to any other manipulations.***  
+<br>
+<br>
 
     
 **OUTCOME TYPE**: Should we accept any reproduction-related measurements and how do we define "reproduction-related" in the first place?   
 
 ***The definition of a *reproduction-related trait* will depend on the species studied (and may require additional reading or relying on the assertions of the authors). Different taxa will have different suites of reproduction related-traits, but these can be grouped into broader categories (e.g. mate attraction includes vocal signals, visual ornaments, pheromone production etc.; reproductive fitness will include number and quality of offspring) and different specific measurements will be available for different taxa and in different studies - this can be quite messy. If we do not have many studies on the topic and very specific question (e.g. "Is the number of offspring affected?") it is OK to be inclusive and later on try to figure out whether some traits are affected more than others.***
+<br>
+<br>
 
     
 **DATA TYPE**: Should we accept any type of data for a meta-analysis? (e.g. descriptive statistics (summarising populations), and which ones, or also inferential statistics (based on population samples and used to estimate parameters and test hypotheses), and which ones? This will be linked to the effect size you are planning to use!)   
 
 ***It depends on the effect size we are planning to use. In our project it can be Cohen's *d*(Hedges *g*) or *lnRR*, which are typically calculated from mean, SD or SE and N (sample sizes). However, Cohen's *d* (Hedges *g*) can be also inferred from some of the test statistics, or even proportions, if means and other descriptive statistics are not available. But one cannot get *lnRR* from inhferential statistics. Other considerations include what to do if some data is missing or unclear.***   
+<br>
+<br>
 
      
 ## Making decision trees for the literature screening    
