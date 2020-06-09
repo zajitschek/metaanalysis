@@ -83,9 +83,9 @@ It turns out that Google Scholars' search interface is rather simplistic and res
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) **RESOURCES**   
 Other software useful for exploratory (scoping) and additional searches (check them out later, and note that they may have similar disadvantages to these of Google Scholar):
- * Semantic Scholar: https://www.semanticscholar.org/
- * Dimensions: https://www.dimensions.ai/
- * CiteHero: https://citehero.com/
+ * [Semantic Scholar](https://www.semanticscholar.org/)
+ * [Dimensions](https://www.dimensions.ai/)
+ * [CiteHero](https://citehero.com/)
  * R package *[litsearchR](https://elizagrames.github.io/litsearchr/)* (which I haven't tested yet myself)
 <br>
 
@@ -120,7 +120,7 @@ Formulate our meta-analytic question "whether immune challenge can result in ter
 </choice>
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) **RESOURCES:**   
-An extensive list of alternative systematic review formulation question frameworks can be found here:  https://www.networks.nhs.uk/nhs-networks/nwas-library-and-information-service/documents/alternative-question-structures-for-different-types-of-systematic-review    )
+An extensive list of alternative systematic review formulation question frameworks can be found [here](https://www.networks.nhs.uk/nhs-networks/nwas-library-and-information-service/documents/alternative-question-structures-for-different-types-of-systematic-review)
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) You should always be able to justify your question as important, relevant and timely. This holds true for other research questions as well, and will affect the likelihood of a meta-analysis you propose to perform to gain support (by an academic supervisor, a grant agency, in an academic and a non-academic environment), and its impact on the target audience. 
 
