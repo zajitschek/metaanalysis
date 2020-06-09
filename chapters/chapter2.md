@@ -61,7 +61,6 @@ A topic of interest is usually rather broad and vague. For a meta-analysis we ne
 Generally, the more focused the question, the easier and quicker it is to perform the meta-analysis, but the answer becomes less general and there might be less evidence available.
 
 ------
-
 **Start with these steps:**
 
  a) Check if there already is a good recent meta-analysis on the topic.  
@@ -72,14 +71,11 @@ Generally, the more focused the question, the easier and quicker it is to perfor
 For this exercise, we will choose *terminal investment* in animals as a general research topic that we want to explore further, using meta-analytic approaches.
 
 <span role="img" aria-label="computer">
-</span>  
+</span>  **Are there any meta-analyses (or similar) on terminal investment in animals?**
 
-
-**Are there any meta-analyses (or similar) on terminal investment in animals?**
-
-In Google Scholar (https://scholar.google.com) run:  
+In [Google Scholar](https://scholar.google.com) run:  
 *"meta-analytic" OR "meta-analysis" "terminal investment"*   
-(you can paste this into search box or use Advanced search (in the Google Scholar menu on the left); see instructions and other Google Scholar tips here: https://guides.library.ucsc.edu/c.php?g=745384&p=5361954 and https://scholar.google.com/intl/en/scholar/help.html).   
+(you can paste this into search box or use Advanced search (in the Google Scholar menu on the left); see instructions and other Google Scholar tips [here](https://guides.library.ucsc.edu/c.php?g=745384&p=5361954) and [here](https://scholar.google.com/intl/en/scholar/help.html).   
 
 You should get around 300 results. By skimming the first few pages you can see a few meta-analyses on stress, diet, senescence, parasitism etc., but none probably specifically on terminal investment. There are many empirical papers coming up in this search because they mention meta-analysis in their body text or reference list - note that Google Scholar searches full text by default. Also by default, the returned results are arranged in order of relevance to the search (whatever that means - its a complex algorithm that decides), and only a few first pages contain some potentially relevant empirical papers.    
 
