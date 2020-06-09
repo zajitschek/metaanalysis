@@ -11,25 +11,24 @@ id: 3
 <exercise id="1" title="Phylogenies">
 
 # Introduction
-----
 
 Ecological and evolutionary meta-analyses often aggregate data across multiple species. Since species are more or less closely related, depending on evolutionary history, effect sizes of closely related species can be more similar to these of less-related species. This means that the level of relatedness between species will influence outcomes, and their non-independence  needs to be accounted for.
 We can add a random factor to multilevel meta-analytic models, which consists of a  correlation matrix of phylogenetic relatedness. 
 To create such a a relatedness matrix among species, we need a phylogenetic tree, specifically for the list of species that are occuring in our data set.  
 
 A few things to note:  
-1 We can use a tree with or without branch lengths (divergence measures) although we do need branch lengths for analysis (often making certain assumptions).  
+1) We can use a tree with or without branch lengths (divergence measures) although we do need branch lengths for analysis (often making certain assumptions).  
 
-2 The tree has to be binary (strictly bifurcating = no polytomies, i.e. only two branches are coming from each node). Here is a simple example: 
+2) The tree has to be binary (strictly bifurcating = no polytomies, i.e. only two branches are coming from each node). Here is a simple example: 
 
-3 The tree needs to be rooted (has a node representing the most recent common ancestor of all the species in the tree). 
+3) The tree needs to be rooted (has a node representing the most recent common ancestor of all the species in the tree). 
 
 ![Phylogenetic Tree examples](https://github.com/SusZaj/metaanalysis/blob/master/images/trees.png?raw=true)
 
 
-4 The tree tip labels (representing species) must match **exactly** with the species names in the data set (otherwise MA models will not run with them).  
+4) The tree tip labels (representing species) must match **exactly** with the species names in the data set (otherwise MA models will not run with them).  
 
-5 Trees can be also made and used for higher taxonomic levels than species, e.g. genus-level, following the same logic.   
+5) Trees can be also made and used for higher taxonomic levels than species, e.g. genus-level, following the same logic.   
 
 # Making a Phylogenetic Tree
 
