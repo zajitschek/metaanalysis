@@ -172,7 +172,7 @@ How about multicellular animals, except humans? If many studies across multiple 
 > The definition of a *reproduction-related trait* will depend on the species studied (and may require additional reading or relying on the assertions of the authors). Different taxa will have different suites of reproduction related-traits, but these can be grouped into broader categories (e.g. mate attraction includes vocal signals, visual ornaments, pheromone production etc.; reproductive fitness will include number and quality of offspring) and different specific measurements will be available for different taxa and in different studies - this can be quite messy. If we do not have many studies on the topic and very specific question (e.g. "Is the number of offspring affected?") it is OK to be inclusive and later on try to figure out whether some traits are affected more than others.  
 
 **DATA TYPE**: Should we accept any type of data for a meta-analysis? (e.g. descriptive statistics (summarising populations), and which ones, or also inferential statistics (based on population samples and used to estimate parameters and test hypotheses), and which ones? This will be linked to the effect size you are planning to use!)   
-> It depends on the effect size we are planning to use. In our project it can be Cohen's *d* (Hedges *g*) or *lnRR*, which are typically calculated from mean, SD or SE and N (sample sizes). However, Cohen's *d* (Hedges *g*) can be also inferred from some of the test statistics, or even proportions, if means and other descriptive statistics are not available. But one cannot get *lnRR* from inhferential statistics. Other considerations include what to do if some data is missing or unclear.   
+> It depends on the effect size we are planning to use. In our project it can be Cohen's *d*(Hedges *g*) or *lnRR*, which are typically calculated from mean, SD or SE and N (sample sizes). However, Cohen's *d* (Hedges *g*) can be also inferred from some of the test statistics, or even proportions, if means and other descriptive statistics are not available. But one cannot get *lnRR* from inhferential statistics. Other considerations include what to do if some data is missing or unclear.   
 
 *******************************************************************************
 ## Making decision trees for the literature screening    
@@ -198,7 +198,7 @@ An example decision tree for abstract screening looks like this:
 
 In the abstract screening decision tree there is no question about the type of data used to express measurements reported in the study. Why?   
 
->Full-text screening is more strict and we want to have answers to all our inclusion criteria. In principle we only have "yes" and "no" answers to the screening questions. However, in practice, if a study looks very relevant but some information is ambiguous or missing, you may decide to contact the authors to get some extra information or data. in such case, you can provisionally include such papers and make final decision once you get, or not, the replies.   
+>Full-text screening is more strict and we want to have answers to all our inclusion criteria. In >principle we only have "yes" and "no" answers to the screening questions. However, in >practice, if a study looks very relevant but some information is ambiguous or missing, you >may decide to contact the authors to get some extra information or data. in such case, you >can provisionally include such papers and make final decision once you get, or not, the replies.   
 
 In a decision tree for full-text screening, we will include an additional rule:
   * Are means and SD (or SEs) and N (sample sizes) for treatment and control groups, or test statistics from which effect sizes for the difference between the two groups can be calculated, available?
@@ -293,8 +293,8 @@ In the left panels there are several sub-panels.
 How many papers did you exclude? How many conflicts did you have if you collaboratively screened and, if so, what was causing these conflicts? Can the decision tree be improved and how?   
 
 >We think 4 should have been excluded:    
-**Simmons2009** and **Clancy2013** as human studies, but    
-**Gershman2010** and **Gonzales-Tokman2013** as not likely to have any reproduction-related measurements.   
+>**Simmons2009** and **Clancy2013** as human studies, but    
+>**Gershman2010** and **Gonzales-Tokman2013** as not likely to have any reproduction->related measurements.   
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
 
