@@ -3,7 +3,7 @@ title: 'Chapter 1: Getting started: Introduction to Meta-Analysis'
 description:
   'This chapter will introduce where meta-analysis fits into the scientific method, give some background, and examples.'
 prev: null
-next: /chapter2a
+next: /chapter2
 type: chapter
 id: 1
 ---
@@ -15,6 +15,14 @@ Apologies if exercises and questions may not work (yet), this is an ongoing proj
 Please check back a little later if things aren't performing as they should... 
 Thanks!
 
+# How do use this resource
+
+The main content has been split into three Chapters.  Chapter 2 is the most important, guiding you step-by-step through the workflow of a meta-analysis. The Chapter is subdivided into sections that separately go into detail for each of the different steps. 
+
+Each section may contain links to online resources, such as [google scholar](https://scholar.google.com/), Questions to answer, task to do on your own - as indicated by this laptop icon ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true), and useful notes and resources![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true).
+
+
+
 </exercise>
 
 <exercise id="2" title="Introduction">
@@ -22,6 +30,8 @@ Thanks!
 # About this course
 
 Hi and welcome, I am **[Susi Zajitschek](https://www.ljmu.ac.uk/about-us/staff-profiles/faculty-of-science/school-of-biological-and-environmental-sciences/susanne-zajitschek), a Senior Lecturer in Animal Behaviour at Liverpool John Moores University**. This course is meant as a primer for students who would like to know more about meta-analysis. I will give you an overview on what meta-analyses are and on why they are useful. I will include hands-on exercises to conduct meta-analyses, step-by-step (based on material developed by my collaborators **[Shinichi Nakagawa](http://www.i-deel.org/shinichi-nakagawa.html)** and **[Malgorzata  Lagisz](https://mlagisz.weebly.com/)**). The actual statistical analyses will be performed in the [software R](https://www.r-project.org/about.html), and you will have the opportunity to run R software scripts right here, on this website, without the need to install software on your computer.
+
+Please note, if you plan on actually doing a meta-analysis yourself, beyond just going through this exercise, you will have download R or R studio, if you haven't already. 
 
 # What is a meta-analysis?
 
