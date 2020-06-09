@@ -17,18 +17,18 @@ We can add a random factor to multilevel meta-analytic models, which consists of
 To create such a a relatedness matrix among species, we need a phylogenetic tree, specifically for the list of species that are occuring in our data set.  
 
 A few things to note:  
-1 . We can use a tree with or without branch lengths (divergence measures) although we do need branch lengths for analysis (often making certain assumptions).  
+*1*  We can use a tree with or without branch lengths (divergence measures) although we do need branch lengths for analysis (often making certain assumptions).  
 
-2 . The tree has to be binary (strictly bifurcating = no polytomies, i.e. only two branches are coming from each node). Here is a simple example: 
+*2*  The tree has to be binary (strictly bifurcating = no polytomies, i.e. only two branches are coming from each node). Here is a simple example: 
 
-3 . The tree needs to be rooted (has a node representing the most recent common ancestor of all the species in the tree). 
+*3*  The tree needs to be rooted (has a node representing the most recent common ancestor of all the species in the tree). 
 
 ![Phylogenetic Tree examples](https://github.com/SusZaj/metaanalysis/blob/master/images/trees.png?raw=true)
 
 
-4 . The tree tip labels (representing species) must match **exactly** with the species names in the data set (otherwise MA models will not run with them).  
+*4*  The tree tip labels (representing species) must match **exactly** with the species names in the data set (otherwise MA models will not run with them).  
 
-5 . Trees can be also made and used for higher taxonomic levels than species, e.g. genus-level, following the same logic.   
+*5*  Trees can be also made and used for higher taxonomic levels than species, e.g. genus-level, following the same logic.   
 
 # Making a Phylogenetic Tree
 
@@ -40,7 +40,10 @@ You will usually start with species list from the meta-analytic data set (use bi
 
 If the resulting tree contains polytomies, these can be resolved at random, or based on information from more detailed trees (e.g. published phylogenies of specific lower taxa). You can also graft missing species on your tree. Be aware of species names problems: typos, scientific name synonyms, subspecies - have to be re-checked / corrected / substituted if generate errors at any stage. Again, your final tree, must contain exactly the same list of species names as your meta-analytic data set.   
 
-Copy the code chunks below to install these packages earlier (it may take 15-20 minutes to install all).   
+
+![Phylogenetic Tree workflow](https://github.com/SusZaj/metaanalysis/blob/master/images/guide.png?raw=true)
+
+Copy the code chunks below into your local R script to install the packages that are required to build your tree (it may take 15-20 minutes to install all).   
 
 ```{r prepare, message = FALSE, echo = TRUE, eval = FALSE, warning = FALSE}
 install.packages("metafor")
@@ -62,9 +65,6 @@ library(fulltext, metafor)
 library(treebase, devtools)
 library(rotl)
 ```
-
-![Phylogenetic Tree workflow](https://github.com/SusZaj/metaanalysis/blob/master/images/guide.png?raw=true)
-
 
 
 ## Examples and exercises
