@@ -56,6 +56,9 @@ The following exercise is based on material originally prepared by Malgorzata (L
 
 A topic of interest is usually rather broad and vague. For a meta-analysis we need a much more concrete question.
 Generally, the more focused the question, the easier and quicker it is to perform the meta-analysis, but the answer becomes less general and there might be less evidence available.
+<br>
+<br>
+
 
 #### Start with these steps:
 
@@ -65,7 +68,8 @@ Generally, the more focused the question, the easier and quicker it is to perfor
  d) Further refine the question.  
 
 For this exercise, we will choose *terminal investment* in animals as a general research topic that we want to explore further, using meta-analytic approaches.
-<br.
+<br>
+<br>
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)    
 **Are there any meta-analyses (or similar) on terminal investment in animals?**
@@ -75,6 +79,8 @@ In [Google Scholar](https://scholar.google.com) run:   *"meta-analytic" OR "meta
 (you can paste this into search box or use Advanced search (in the Google Scholar menu on the left); see instructions and other Google Scholar tips [here](https://guides.library.ucsc.edu/c.php?g=745384&p=5361954) and [here](https://scholar.google.com/intl/en/scholar/help.html).   
 
 ***You should get around 300 results. By skimming the first few pages you can see a few meta-analyses on stress, diet, senescence, parasitism etc., but none probably specifically on terminal investment. There are many empirical papers coming up in this search because they mention meta-analysis in their body text or reference list - note that Google Scholar searches full text by default. Also by default, the returned results are arranged in order of relevance to the search (whatever that means - its a complex algorithm that decides), and only a few first pages contain some potentially relevant empirical papers.***    
+<br>
+<br>
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)  
 You can restrict the search to titles only:    *allintitle: "meta analytic" OR "meta analysis" "terminal investment"*    
