@@ -15,6 +15,14 @@ Apologies if exercises and questions may not work (yet), this is an ongoing proj
 Please check back a little later if things aren't performing as they should... 
 Thanks!
 
+# How do use this resource
+
+The main content has been split into three Chapters.  Chapter 2 is the most important, guiding you step-by-step through the workflow of a meta-analysis. The Chapter is subdivided into sections that separately go into detail for each of the different steps. 
+
+Each section may contain links to online resources, such as [google scholar](https://scholar.google.com/), Questions to answer, task to do on your own - as indicated by this laptop icon ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertask.svg?raw=true), and useful notes and resources![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true).
+
+
+
 </exercise>
 
 <exercise id="2" title="Introduction">
