@@ -1,5 +1,5 @@
 ---
-title: 'Chapter 2: Step-by-step: The structure of a meta-analysis'
+title: 'Chapter 2: Step-by-step: The structure of a Meta-analysis'
 description:
   'We will work through each specific step in a meta-analysis.'
 prev: /chapter1
@@ -39,13 +39,9 @@ The following diagram shows a more in depth overview, starting from the literatu
 
 There are different protocols for how to gather the literature for a systematic meta-analysis. We will walk through a specific literature search below, using one established protocol. Please note that this is in itself an active area of research though. For example, I would like to mention the *[metaverse](https://rmetaverse.github.io/)*, a collection of R packages that is aimed at integrating all steps of a meta-analysis. The package *[litsearchR](https://elizagrames.github.io/litsearchr/)* seems especially promising, and you could try it out on your local R installation (right now, I haven't installed it in the R software container you will be using during this course / online).
 
----
-
 The following exercise is based on material originally prepared by Malgorzata (Losia) Lagisz, BEES, UNSW, Australia. 
 
-
-### Purpose of the exercise:   
-In this exercise you get some practice and tips on:   
+#### In this exercise you get some practice and tips on:   
 
  * Formulating the question for a meta-analysis   
  * Deciding on inclusion criteria   
@@ -54,14 +50,14 @@ In this exercise you get some practice and tips on:
  * Screening the literature  
  * PRISMA and other documentation  
 
-*******************************************************************************
+
+
 ###  Formulating the question for a meta-analysis  
 
 A topic of interest is usually rather broad and vague. For a meta-analysis we need a much more concrete question.
 Generally, the more focused the question, the easier and quicker it is to perform the meta-analysis, but the answer becomes less general and there might be less evidence available.
 
-------
-**Start with these steps:**
+#### Start with these steps:
 
  a) Check if there already is a good recent meta-analysis on the topic.  
  b) Find and carefully read key reviews on the topic.  
@@ -70,7 +66,9 @@ Generally, the more focused the question, the easier and quicker it is to perfor
 
 For this exercise, we will choose *terminal investment* in animals as a general research topic that we want to explore further, using meta-analytic approaches.
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) **Are there any meta-analyses (or similar) on terminal investment in animals?**
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
+
+**Are there any meta-analyses (or similar) on terminal investment in animals?**
 
 In [Google Scholar](https://scholar.google.com) run:  
 *"meta-analytic" OR "meta-analysis" "terminal investment"*   
@@ -78,10 +76,11 @@ In [Google Scholar](https://scholar.google.com) run:
 
 You should get around 300 results. By skimming the first few pages you can see a few meta-analyses on stress, diet, senescence, parasitism etc., but none probably specifically on terminal investment. There are many empirical papers coming up in this search because they mention meta-analysis in their body text or reference list - note that Google Scholar searches full text by default. Also by default, the returned results are arranged in order of relevance to the search (whatever that means - its a complex algorithm that decides), and only a few first pages contain some potentially relevant empirical papers.    
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)  You can restrict the search to titles only:  
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)  
+
+You can restrict the search to titles only:  
 *allintitle: "meta analytic" OR "meta analysis" "terminal investment"*   
 Now there are no matching hits; but there is no option for searching just in titles and abstracts.    
-
 It turns out that Google Scholars' search interface is rather simplistic and restrictive. It shows only up to 1,000 results for any particular search query, ranking algorithms are obscured, it is hard to export references, the literature coverage may fluctuate (it is based on web scraping), and the searches may not be reproducible. Therefore, Google Scholar is not recommended for the main searches in meta-analyses and systematic reviews. On the upside, it can be helpful for additional searches and finding grey literature (not published in peer-review journals).  
 
 **RESOURCES**   
@@ -91,7 +90,6 @@ Other software useful for exploratory (scoping) and additional searches (check t
  * CiteHero: https://citehero.com/
  * R package *[litsearchR](https://elizagrames.github.io/litsearchr/)* (which I haven't tested yet myself)
 <br>
-<br>
 
 **It seems that the question "What is the evidence for terminal investment happening?" is too general and too broad in scope. Let's try to narrow it down and focus on either *terminal investment in reproduction*, or *terminal investment under immune challenge* (notice the difference between effects *in* reproduction and effects *of* immune challenge*.**
 
@@ -100,12 +98,11 @@ Run another Google Scholar quick search, including *reproduction* (not in quotes
 *"terminal investment" reproduction*   
 This time you should get over 2,000 records (you will be allowed to access only the first 1,000). Note that Google Scholar does so called Automated Query Expansion for terms that are not set to be exact phrases (in quotes) - it uses alternative forms of these terms.  
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)   Try Google Scholar quick search:   
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)   
+Try Google Scholar quick search:   
 *"terminal investment" "immune challenge"*  
 This time you should get just over 400 records. Skim through the first three pages of the results to get a feel of the diversity of the studies found (e.g. what taxa are studied and what traits the studies might measure to evaluate reproductive investment) and note the wording of their titles.  
-
 In medical sciences, most meta-analyses (and systematic reviews) fit into the PICO (or related) question framework.   
-
 PICO stands for:   
   * P = Population   
   * I = Intervention  
@@ -126,11 +123,10 @@ Formulate our meta-analytic question "whether immune challenge can result in ter
 **RESOURCES:**   
 An extensive list of alternative systematic review formulation question frameworks can be found here:  https://www.networks.nhs.uk/nhs-networks/nwas-library-and-information-service/documents/alternative-question-structures-for-different-types-of-systematic-review    )
 
-:pushpin: You should always be able to justify your question as important, relevant and timely. This holds true for other research questions as well, and will affect the likelihood of a meta-analysis you propose to perform to gain support (by an academic supervisor, a grant agency, in an academic and a non-academic environment), and its impact on the target audience. 
-<br>
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) You should always be able to justify your question as important, relevant and timely. This holds true for other research questions as well, and will affect the likelihood of a meta-analysis you propose to perform to gain support (by an academic supervisor, a grant agency, in an academic and a non-academic environment), and its impact on the target audience. 
 
 *******************************************************************************
-###  Deciding on inclusion criteria   
+##  Deciding on inclusion criteria   
 
 The basic PICO components are usually not sufficient to perform the effective screening of the papers for inclusion in meta-analysis.
 There are additional both technical and biological refinements to be considered for inclusion criteria in our project.
@@ -161,37 +157,31 @@ Most meta-analyses only include studies published in English by default. However
 
 **STUDY TYPE**: Should we include any type of study? (e.g. correlational vs experimental, if experimental, what type of experiment?)    
 > Since we investigate a specific intervention, we should restrict study type to "experimental" (we should explicitly exclude "simulation").  
-<br>
 
 **TAXA**: Should we include any type of taxa?   
 > That is a difficult one. The animal kingdom is vast and diverse, and some species are especially odd (e.g. humans). Does it make sense to include single-cell animals? Does it make sense to include humans? Probably not.
 How about multicellular animals, except humans? If many studies across multiple taxa exist, we could focus on the most frequently studied taxa or biologically most interesting. Alternatively just vertebrates, except humans? Another thing worth being specific about is that the animals should be wild-type (non-mutant, not disease models) and ideally not subject to any other significant manipulations that could affect their response (e.g. drug treatment; note there is a thin fuzzy line what these manipulations are). There might also be reasons to exclude standard laboratory species (mice, rat, yeast, fruit fly) or maybe focus just on them? But, for now, we will stick to any multicellular animals, except humans.  
-<br>
 
 **MANIPULATION TYPE**: Should we include all types of immune challenge?   
 > There are several established types of experimental immune challenge (blood cells (e.g. SRBC), protein (e.g. PHA), dead or live pathogens or parasites), so its worth including these and similar ones. Non-experimental immune challenge (e.g. natural infestation levels)  should not be included. If something odd comes up later it can come under "exclusion criteria", with justification.   
-<br>
 
 **CONTROL GROUP**: Should we accept any type of control group?  
 > Control group (un-manipulated) should consist of similar individuals, as far as reasonable and not be subject to any other manipulations.  
-<br>
 
 **OUTCOME TYPE**: Should we accept any reproduction-related measurements and how do we define "reproduction-related" in the first place?   
 > The definition of a *reproduction-related trait* will depend on the species studied (and may require additional reading or relying on the assertions of the authors). Different taxa will have different suites of reproduction related-traits, but these can be grouped into broader categories (e.g. mate attraction includes vocal signals, visual ornaments, pheromone production etc.; reproductive fitness will include number and quality of offspring) and different specific measurements will be available for different taxa and in different studies - this can be quite messy. If we do not have many studies on the topic and very specific question (e.g. "Is the number of offspring affected?") it is OK to be inclusive and later on try to figure out whether some traits are affected more than others.  
-<br>
 
 **DATA TYPE**: Should we accept any type of data for a meta-analysis? (e.g. descriptive statistics (summarising populations), and which ones, or also inferential statistics (based on population samples and used to estimate parameters and test hypotheses), and which ones? This will be linked to the effect size you are planning to use!)   
 > It depends on the effect size we are planning to use. In our project it can be Cohen's *d* (Hedges *g*) or *lnRR*, which are typically calculated from mean, SD or SE and N (sample sizes). However, Cohen's *d* (Hedges *g*) can be also inferred from some of the test statistics, or even proportions, if means and other descriptive statistics are not available. But one cannot get *lnRR* from inhferential statistics. Other considerations include what to do if some data is missing or unclear.   
 
 *******************************************************************************
-### Making decision trees for the literature screening    
+## Making decision trees for the literature screening    
 
 Decision trees are visual representations of our inclusion criteria and decisions we have to make when screening literature. Importantly, good decision trees can make screening the literature faster and more reliable. Briefly, if the initial (most general) questions representing screening criteria are not fulfilled, the study gets excluded and there is no need to evaluate the remaining criteria, so we save some time.    
 
 You can make a decision tree on paper, in powerpoint, or in R (see Chapter 3.2), and it should look something like this:
 
 The screening of literature is usually done in two stages:   
-
   1. abstract +  title + keywords  
   2. full text + supplementary information  
 
@@ -215,7 +205,7 @@ In a decision tree for full-text screening, we will include an additional rule:
 
 If the answer is **yes**, the study can be included for meta-analysis.
 
-**What question is missing on the top of the full-text decision tree?  **
+**What question is missing on the top of the full-text decision tree? **
 (Tip: what happens between abstract and full text screening?)  
 >The question is **"Is the full text of this study available for our assessment?"**   
 It is often not explicitly stated, but without the full text it is impossible to extract all the necessary information about the study and the data. 
@@ -237,7 +227,9 @@ Scopus and Web of Science.**
  * Web of Science (WoS): http://apps.webofknowledge.com   
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  WoS coverage depends on the institutional subscription package purchased, so results of searches can vary among institutions. Also searching just core collection vs. all available databases can make a difference.     
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) Using Scopus **Advanced Search** (you can read more about the syntax here: https://dev.elsevier.com/tips/ScopusSearchTips.htm) run these search strings:  
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
+
+Using Scopus **Advanced Search** (you can read more about the syntax here: https://dev.elsevier.com/tips/ScopusSearchTips.htm) run these search strings:  
 
  1. *TITLE-ABS-KEY ( "terminal investment"  AND  "immune challenge" )*    
 (approx. 14 hits - search terms too restrictive)   
@@ -252,7 +244,9 @@ Ideally, we should think and test some more terms for inclusion, after doing som
 
 We stop for now and assume that the string above is our final search string. Note that Scopus Advanced Search stores all your searches and search strings in a neat table at the bottom of the search window - it's easy to copy this out and to include it in the documentation on how you developed your search strategy (same applies to WoS database; you need to register in Scopus and WoS to save searches and alerts across multiple search sessions). The \* symbol stands for wildcard and indicates "any symbols" since these databases do not do Automatic Query Expansion.    
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) We can easily translate our final search string from Scopus into Web of Science (WoS) **Advanced Search** (you can read more about the syntax here: https://images.webofknowledge.com/images/help/WOS/hs_search_operators.html). Run this search string:    
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
+
+We can easily translate our final search string from Scopus into Web of Science (WoS) **Advanced Search** (you can read more about the syntax here: https://images.webofknowledge.com/images/help/WOS/hs_search_operators.html). Run this search string:    
 *TS = (( ( "terminal investment" OR "reproductive effort" ) AND ( "immune challeng\*"  OR  "immunochalleng\*"  OR  "infect\*"  ) ) NOT ( load OR human OR people ) )*  
 (approx. 249 hits - more than from Scopus).   WoS stores your search history and also which sub-data bases were included in the search: Indexes=SCI-EXPANDED, SSCI, A&HCI, CPCI-S, CPCI-SSH, BKCI-S, BKCI-SSH, ESCI, CCR-EXPANDED, IC Timespan=All years" (you can restrict these in the Advanced Search).   
 
@@ -271,13 +265,17 @@ Theoretically you could do screening in the database browser or your reference m
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) It is possible that the de-duplication algorithms in these are not very good, so it is advisable to de-duplicate and check your records in the reference manager before uploading to the screening software.    
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) We prepared a file (for download: [Scopus10.ris](/papers/Scopus10.ris)) with 10 references sampled from the set found using the search string in Scopus database (used *( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*" ) )  *) (same references came up in the equivalent search in WoS).    
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
+
+We prepared a file (for download: [Scopus10.ris](/papers/Scopus10.ris)) with 10 references sampled from the set found using the search string in Scopus database (used *( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*" ) )  *) (same references came up in the equivalent search in WoS).    
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Sometimes the biblio-files with the same extension differ a bit in structure and reference managers, and Rayyan may have problem opening them. Getting your files into exactly the right format can sometimes be frustrating.   
 
 We will use these ten references to practice title and abstract screening in Rayyan. Screening can be also done in Abstracker, but we find Rayyan a bit more reliable and more user-friendly (could be slow with updating the display).   
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) Create a new project in Rayyan:
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
+
+Create a new project in Rayyan:
 
  1. Open Rayyan (we assume you already created a free account) and log in.    
  2. My Reviews -> New REVIEW...   
@@ -298,7 +296,9 @@ How many papers did you exclude? How many conflicts did you have if you collabor
 **Simmons2009** and **Clancy2013** as human studies, but    
 **Gershman2010** and **Gonzales-Tokman2013** as not likely to have any reproduction-related measurements.   
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) It is time to do the full-text screening for the papers that passed title and abstract screening. There are some full-text papers that passed the initial screening in the directory - assess **Nielsen2012** and **Ardia2005** (they are in "pdf" sub-folder) using our full-text screening decision tree. (Tip: do not read the whole paper - just try to skim it and look for the key information.)      
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
+
+It is time to do the full-text screening for the papers that passed title and abstract screening. There are some full-text papers that passed the initial screening in the directory - assess **Nielsen2012** and **Ardia2005** (they are in "pdf" sub-folder) using our full-text screening decision tree. (Tip: do not read the whole paper - just try to skim it and look for the key information.)      
 
 
 What was your decision about **Nielsen2012** and **Ardia2005** papers?   
