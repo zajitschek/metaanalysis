@@ -18,27 +18,26 @@ We can add a random factor to multilevel meta-analytic models, which consists of
 To create such a a relatedness matrix among species, we need a phylogenetic tree, specifically for the list of species that are occuring in our data set.  
 
 A few things to note:  
-1. We can use a tree with or without branch lengths (divergence measures) although we do need branch lengths for analysis (often making certain assumptions).  
+1 We can use a tree with or without branch lengths (divergence measures) although we do need branch lengths for analysis (often making certain assumptions).  
 
-2. The tree has to be binary (strictly bifurcating = no polytomies, i.e. only two branches are coming from each node). Here is a simple example: 
+2 The tree has to be binary (strictly bifurcating = no polytomies, i.e. only two branches are coming from each node). Here is a simple example: 
 
-3. The tree needs to be rooted (has a node representing the most recent common ancestor of all the species in the tree). 
+3 The tree needs to be rooted (has a node representing the most recent common ancestor of all the species in the tree). 
 
 ![Phylogenetic Tree examples](https://github.com/SusZaj/metaanalysis/blob/master/images/trees.png?raw=true)
 
 
-4. The tree tip labels (representing species) must match **exactly** with the species names in the data set (otherwise MA models will not run with them).  
+4 The tree tip labels (representing species) must match **exactly** with the species names in the data set (otherwise MA models will not run with them).  
 
-5. Trees can be also made and used for higher taxonomic levels than species, e.g. genus-level, following the same logic.   
+5 Trees can be also made and used for higher taxonomic levels than species, e.g. genus-level, following the same logic.   
 
 # Making a Phylogenetic Tree
-----
 
 The general flow of tree-making work is shown in the diagram below.  
 You will usually start with species list from the meta-analytic data set (use binomial Latin names for the species list and in your database). First, check if there is any phylogenetic tree available that already contains all your species (e.g. a super-tree). Currently, the easiest way to build a custom phylogenetic tree usable for meta-analysis is by using an R package called *rotl*, which accesses a synthetic super-tree from Open Tree of Life database (https://	opentreeoflife.org). We will use this approach in our examples below. Most of the time *rotl* will work well, especially with the common species. There are other super-trees available, e.g. for birds - we will use one of these as our example too. Overall, if you can find a tree that contains all your species, you just trim (subset) it down to your species. If a few species is missing, it is sometimes possible to substitute them with closely related species. If no existing phylogeny is readily usable, there are a few non-exclusive options depending on the range of species in the data set:  
- - If the species are very diverged (e.g. mixture of vertebrates and invertebrates), use NCBI Taxonomy Common Tree tool (http://www.ncbi.nlm.nih.gov/Taxonomy/CommonTree/wwwcmt.cgi). At the webpage, use an input box at the top of the page to search each species name or upload list of the species names from a file. This allows to generate a scaffold for a tree (i.e. the pattern of basal branching for the main clades).  
+ - If the species are highly diverged (e.g. mixture of vertebrates and invertebrates), use the [NCBI Taxonomy Common Tree tool](http://www.ncbi.nlm.nih.gov/Taxonomy/CommonTree/wwwcmt.cgi). At the webpage, use an input box at the top of the page to search each species name or upload list of the species names from a file. This allows to generate a scaffold for a tree (i.e. the pattern of basal branching for the main clades).  
  - If few major clades are present, assemble together sub-trees created from bigger trees, if these exist for these clades.    
- - Use phyloGenerator (http://willpearse.github.io/phyloGenerator/) or other phylogenetic software to create phylogeny based on DNA sequences, if a shared sequence set exists for a given set of species (check if the resulting phylogeny makes sense).  
+ - Use [phyloGenerator](http://willpearse.github.io/phyloGenerator/) or other phylogenetic software to create phylogeny based on DNA sequences, if a shared sequence set exists for a given set of species (check if the resulting phylogeny makes sense).  
 
 If the resulting tree contains polytomies, these can be resolved at random, or based on information from more detailed trees (e.g. published phylogenies of specific lower taxa). You can also graft missing species on your tree. Be aware of species names problems: typos, scientific name synonyms, subspecies - have to be re-checked / corrected / substituted if generate errors at any stage. Again, your final tree, must contain exactly the same list of species names as your meta-analytic data set.   
 
@@ -69,7 +68,7 @@ library(rotl)
 
 
 
-Examples and exercises
+## Examples and exercises
 -------
 
 We will give you some examples on how to use *rotl* package to download sub-trees from the Open Tree of Life super-tree, resolve polytomies, trim and plot trees and deal with some of the most common issues. We will try to do most of theses tasks in R, but doing many of these outside R (using websites, text and tree editors, etc.) is also possible. We hope you get the idea of the main principles of the process.  
@@ -81,9 +80,8 @@ Now, we start from installing (as required) and loading R packages we will use.
 
 ### EXAMPLE 1 - using *rotl* package   
 
-
 We will try to create a simple tree using 10 commonly used taxa (lab model species) from across the tree of life.  
-Rotl is an R package (https://peerj.com/preprints/1471/) allowing us to access synthetic phylogenetic tree available at Open Tree of Life database (https://	opentreeoflife.org/).   
+[Rotl](https://peerj.com/preprints/1471/)) is an R package  allowing us to access synthetic phylogenetic tree available at [Open Tree of Life database](https://opentreeoflife.org/).   
 
 **Important**: use Latin names, not common names.   
 **Notes**: *rotl* crashes on some species lists. Also, Open Tree of Life database gets constantly updated with new info, so you can get different outputs at different time-points.   
