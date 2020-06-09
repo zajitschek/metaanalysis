@@ -81,7 +81,7 @@ You can restrict the search to titles only:
 Now there are no matching hits; but there is no option for searching just in titles and abstracts.    
 It turns out that Google Scholars' search interface is rather simplistic and restrictive. It shows only up to 1,000 results for any particular search query, ranking algorithms are obscured, it is hard to export references, the literature coverage may fluctuate (it is based on web scraping), and the searches may not be reproducible. Therefore, Google Scholar is not recommended for the main searches in meta-analyses and systematic reviews. On the upside, it can be helpful for additional searches and finding grey literature (not published in peer-review journals).  
 
-**RESOURCES**   
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) **RESOURCES**   
 Other software useful for exploratory (scoping) and additional searches (check them out later, and note that they may have similar disadvantages to these of Google Scholar):
  * Semantic Scholar: https://www.semanticscholar.org/
  * Dimensions: https://www.dimensions.ai/
@@ -119,7 +119,7 @@ Formulate our meta-analytic question "whether immune challenge can result in ter
 </opt>
 </choice>
 
-**RESOURCES:**   
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) **RESOURCES:**   
 An extensive list of alternative systematic review formulation question frameworks can be found here:  https://www.networks.nhs.uk/nhs-networks/nwas-library-and-information-service/documents/alternative-question-structures-for-different-types-of-systematic-review    )
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) You should always be able to justify your question as important, relevant and timely. This holds true for other research questions as well, and will affect the likelihood of a meta-analysis you propose to perform to gain support (by an academic supervisor, a grant agency, in an academic and a non-academic environment), and its impact on the target audience. 
@@ -143,6 +143,7 @@ No, unless you have a very good reason to support this argument.
 </choice>
 
 **LANGUAGE**: Should we include studies published in any language? 
+
 <choice id="3">
 <opt text="Yes">
 Possible, but difficult to do and might not yield a lot more additional information.
@@ -155,10 +156,10 @@ Most meta-analyses only include studies published in English by default. However
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Publication status can be also used as a criterion - are you happy to include some types of grey literature (e.g. conference proceedings, theses)?
 
 **STUDY TYPE**: Should we include any type of study? (e.g. correlational vs experimental, if experimental, what type of experiment?)    
-> Since we investigate a specific intervention, we should restrict study type to "experimental" (we should explicitly exclude "simulation").  
+>> Since we investigate a specific intervention, we should restrict study type to "experimental" (we should explicitly exclude "simulation").  
 
 **TAXA**: Should we include any type of taxa?   
-> That is a difficult one. The animal kingdom is vast and diverse, and some species are especially odd (e.g. humans). Does it make sense to include single-cell animals? Does it make sense to include humans? Probably not.
+> > That is a difficult one. The animal kingdom is vast and diverse, and some species are especially odd (e.g. humans). Does it make sense to include single-cell animals? Does it make sense to include humans? Probably not.
 How about multicellular animals, except humans? If many studies across multiple taxa exist, we could focus on the most frequently studied taxa or biologically most interesting. Alternatively just vertebrates, except humans? Another thing worth being specific about is that the animals should be wild-type (non-mutant, not disease models) and ideally not subject to any other significant manipulations that could affect their response (e.g. drug treatment; note there is a thin fuzzy line what these manipulations are). There might also be reasons to exclude standard laboratory species (mice, rat, yeast, fruit fly) or maybe focus just on them? But, for now, we will stick to any multicellular animals, except humans.  
 
 **MANIPULATION TYPE**: Should we include all types of immune challenge?   
