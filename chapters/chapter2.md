@@ -156,23 +156,29 @@ Most meta-analyses only include studies published in English by default. However
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Publication status can be also used as a criterion - are you happy to include some types of grey literature (e.g. conference proceedings, theses)?
 
 **STUDY TYPE**: Should we include any type of study? (e.g. correlational vs experimental, if experimental, what type of experiment?)    
->> Since we investigate a specific intervention, we should restrict study type to "experimental" (we should explicitly exclude "simulation").  
+
+  ***Since we investigate a specific intervention, we should restrict study type to "experimental" (we should explicitly exclude "simulation").***  
 
 **TAXA**: Should we include any type of taxa?   
-> > That is a difficult one. The animal kingdom is vast and diverse, and some species are especially odd (e.g. humans). Does it make sense to include single-cell animals? Does it make sense to include humans? Probably not.
-How about multicellular animals, except humans? If many studies across multiple taxa exist, we could focus on the most frequently studied taxa or biologically most interesting. Alternatively just vertebrates, except humans? Another thing worth being specific about is that the animals should be wild-type (non-mutant, not disease models) and ideally not subject to any other significant manipulations that could affect their response (e.g. drug treatment; note there is a thin fuzzy line what these manipulations are). There might also be reasons to exclude standard laboratory species (mice, rat, yeast, fruit fly) or maybe focus just on them? But, for now, we will stick to any multicellular animals, except humans.  
+
+  ***That is a difficult one. The animal kingdom is vast and diverse, and some species are especially odd (e.g. humans). Does it make sense to include single-cell animals? Does it make sense to include humans? Probably not.
+How about multicellular animals, except humans? If many studies across multiple taxa exist, we could focus on the most frequently studied taxa or biologically most interesting. Alternatively just vertebrates, except humans? Another thing worth being specific about is that the animals should be wild-type (non-mutant, not disease models) and ideally not subject to any other significant manipulations that could affect their response (e.g. drug treatment; note there is a thin fuzzy line what these manipulations are). There might also be reasons to exclude standard laboratory species (mice, rat, yeast, fruit fly) or maybe focus just on them? But, for now, we will stick to any multicellular animals, except humans.***
 
 **MANIPULATION TYPE**: Should we include all types of immune challenge?   
-> There are several established types of experimental immune challenge (blood cells (e.g. SRBC), protein (e.g. PHA), dead or live pathogens or parasites), so its worth including these and similar ones. Non-experimental immune challenge (e.g. natural infestation levels)  should not be included. If something odd comes up later it can come under "exclusion criteria", with justification.   
+
+***There are several established types of experimental immune challenge (blood cells (e.g. SRBC), protein (e.g. PHA), dead or live pathogens or parasites), so its worth including these and similar ones. Non-experimental immune challenge (e.g. natural infestation levels)  should not be included. If something odd comes up later it can come under "exclusion criteria", with justification.*** 
 
 **CONTROL GROUP**: Should we accept any type of control group?  
-> Control group (un-manipulated) should consist of similar individuals, as far as reasonable and not be subject to any other manipulations.  
+
+***Control group (un-manipulated) should consist of similar individuals, as far as reasonable and not be subject to any other manipulations.***  
 
 **OUTCOME TYPE**: Should we accept any reproduction-related measurements and how do we define "reproduction-related" in the first place?   
-> The definition of a *reproduction-related trait* will depend on the species studied (and may require additional reading or relying on the assertions of the authors). Different taxa will have different suites of reproduction related-traits, but these can be grouped into broader categories (e.g. mate attraction includes vocal signals, visual ornaments, pheromone production etc.; reproductive fitness will include number and quality of offspring) and different specific measurements will be available for different taxa and in different studies - this can be quite messy. If we do not have many studies on the topic and very specific question (e.g. "Is the number of offspring affected?") it is OK to be inclusive and later on try to figure out whether some traits are affected more than others.  
+
+***The definition of a *reproduction-related trait* will depend on the species studied (and may require additional reading or relying on the assertions of the authors). Different taxa will have different suites of reproduction related-traits, but these can be grouped into broader categories (e.g. mate attraction includes vocal signals, visual ornaments, pheromone production etc.; reproductive fitness will include number and quality of offspring) and different specific measurements will be available for different taxa and in different studies - this can be quite messy. If we do not have many studies on the topic and very specific question (e.g. "Is the number of offspring affected?") it is OK to be inclusive and later on try to figure out whether some traits are affected more than others.***
 
 **DATA TYPE**: Should we accept any type of data for a meta-analysis? (e.g. descriptive statistics (summarising populations), and which ones, or also inferential statistics (based on population samples and used to estimate parameters and test hypotheses), and which ones? This will be linked to the effect size you are planning to use!)   
-> It depends on the effect size we are planning to use. In our project it can be Cohen's *d*(Hedges *g*) or *lnRR*, which are typically calculated from mean, SD or SE and N (sample sizes). However, Cohen's *d* (Hedges *g*) can be also inferred from some of the test statistics, or even proportions, if means and other descriptive statistics are not available. But one cannot get *lnRR* from inhferential statistics. Other considerations include what to do if some data is missing or unclear.   
+
+***It depends on the effect size we are planning to use. In our project it can be Cohen's *d*(Hedges *g*) or *lnRR*, which are typically calculated from mean, SD or SE and N (sample sizes). However, Cohen's *d* (Hedges *g*) can be also inferred from some of the test statistics, or even proportions, if means and other descriptive statistics are not available. But one cannot get *lnRR* from inhferential statistics. Other considerations include what to do if some data is missing or unclear.***   
 
 *******************************************************************************
 ## Making decision trees for the literature screening    
@@ -228,13 +234,13 @@ Scopus and Web of Science.**
 
 Using Scopus **Advanced Search** (you can read more about the syntax here: https://dev.elsevier.com/tips/ScopusSearchTips.htm) run these search strings:  
 
- 1. *TITLE-ABS-KEY ( "terminal investment"  AND  "immune challenge" )*    
+ **1** *TITLE-ABS-KEY ( "terminal investment"  AND  "immune challenge" )*    
 (approx. 14 hits - search terms too restrictive)   
- 2. *TITLE-ABS-KEY ( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*" ) )  *
+ **2** *TITLE-ABS-KEY ( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*" ) )  *
 (approx. 25 hits - a bit better, but still too restrictive)   
- 3. *TITLE-ABS-KEY ( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*"  OR  "infect\*" ) )  *
+ **3** *TITLE-ABS-KEY ( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*"  OR  "infect\*" ) )  *
 (approx. 180 hits - much better number, but we probably now have included many non-experimental studies while still missing relevant ones)    
- 4. *( TITLE-ABS-KEY ( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*"  OR  "infect\*" ) )  AND NOT  TITLE-ABS-KEY ( load  OR  human  OR  people ) )* 
+ **4** *( TITLE-ABS-KEY ( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*"  OR  "infect\*" ) )  AND NOT  TITLE-ABS-KEY ( load  OR  human  OR  people ) )* 
 (approx. 144 hits - by adding a group of exclusion terms (AND NOT) we probably got rid of some irrelevant ones).  
 
 Ideally, we should think and test some more terms for inclusion, after doing some scoping searches, reading reviews and seminal relevant empirical papers. Also, it is important to validate the search by checking how many papers it finds that we know contain useable data. You should also do some pilot abstract screening on papers exported from just one database, to check whether there’s some exclusion words you did not think about, and which could be included in your search string as exclusion terms.   
@@ -243,7 +249,7 @@ We stop for now and assume that the string above is our final search string. Not
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
 
-We can easily translate our final search string from Scopus into Web of Science (WoS) **Advanced Search** (you can read more about the syntax here: https://images.webofknowledge.com/images/help/WOS/hs_search_operators.html). Run this search string:    
+We can easily translate our final search string from Scopus into Web of Science (WoS) **Advanced Search** (you can read more about the syntax [here](https://images.webofknowledge.com/images/help/WOS/hs_search_operators.html). Run this search string:    
 *TS = (( ( "terminal investment" OR "reproductive effort" ) AND ( "immune challeng\*"  OR  "immunochalleng\*"  OR  "infect\*"  ) ) NOT ( load OR human OR people ) )*  
 (approx. 249 hits - more than from Scopus).   WoS stores your search history and also which sub-data bases were included in the search: Indexes=SCI-EXPANDED, SSCI, A&HCI, CPCI-S, CPCI-SSH, BKCI-S, BKCI-SSH, ESCI, CCR-EXPANDED, IC Timespan=All years" (you can restrict these in the Advanced Search).   
 
