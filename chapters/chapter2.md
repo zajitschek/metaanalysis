@@ -8,32 +8,7 @@ type: chapter
 id: 2
 ---
 
-<exercise id="1" title="Overview: the complete meta-analysis">
-
-# Overview
-
-We will take the paper [Nakagawa 2017](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7) as a blueprint to walk you through all the steps of a meta-analysis.
-
-However, as this is meant as a first step to get you started, we will provide some additional resources, exercises and guidelines in Chapter 3. This includes a section on phylogenetic trees (which you may need if the question you're planning on tackling spans across different species. To keep things simple initially, we are concentrating on an example within the same species), how to make a decision tree in R, and other usefull stuff.
-
-Here is a graphical overview of the different parts of a meta analysis:
-
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/metaanalysis_overview.png?raw=true)
-<br>
-<br>
-All of these steps have to be described and laid out in a protocol. We will see that there already exist general protocols for each step, which we can use and adapt to our research questions. The aim of having well defined protocols is for other researchers to be able to reproduce those steps. 
-
-Protocols are necessary to minimize any bias that we might introduce - either knowingly, but most often unknowingly - into the decisions that have to be taken at each meta-analysis step. Bias might already be present in how the research question we want to tackle is phrased. Furthermore, bias can originate in the specific way we search for literature, both in where we search (for example, which databases we use, or whether we only include published results), and how we search (for example our choice of search terms).
-
-The following diagram shows a more in depth overview, starting from the literature search (Figure 1 from Nakagawa et al. 2017). 
-
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/Nakagawa_etal_Fig1.gif?raw=true)
-<br>
-<br>
-
-</exercise>
-
-<exercise id="2" title="Research question and literature search">
+<exercise id="1" title="Research question and literature search">
 
 # Literature search
 
@@ -179,12 +154,9 @@ Most meta-analyses only include studies published in English by default. However
 <br>
 <br>
 
-
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Publication status can be also used as a criterion - are you happy to include some types of grey literature (e.g. conference proceedings, theses)?
 <br>
 <br>
-
-
 
 **STUDY TYPE**  
 **Should we include any type of study? (e.g. correlational vs experimental, if experimental, what type of experiment?)**
@@ -195,30 +167,22 @@ Most meta-analyses only include studies published in English by default. However
 >That is a difficult one. The animal kingdom is vast and diverse, and some species are especially odd (e.g. humans). Does it make sense to include single-cell animals? Does it make sense to include humans? Probably not.
 How about multicellular animals, except humans? If many studies across multiple taxa exist, we could focus on the most frequently studied taxa or biologically most interesting. Alternatively just vertebrates, except humans? Another thing worth being specific about is that the animals should be wild-type (non-mutant, not disease models) and ideally not subject to any other significant manipulations that could affect their response (e.g. drug treatment; note there is a thin fuzzy line what these manipulations are). There might also be reasons to exclude standard laboratory species (mice, rat, yeast, fruit fly) or maybe focus just on them? But, for now, we will stick to any multicellular animals, except humans.
  
-**MANIPULATION TYPE**: Should we include all types of immune challenge?   
-
+**MANIPULATION TYPE**
+**Should we include all types of immune challenge?**
 >There are several established types of experimental immune challenge (blood cells (e.g. SRBC), protein (e.g. PHA), dead or live pathogens or parasites), so its worth including these and similar ones. Non-experimental immune challenge (e.g. natural infestation levels)  should not be included. If something odd comes up later it can come under "exclusion criteria", with justification.
-
-
-​    
-**CONTROL GROUP**: Should we accept any type of control group?  
-
+ 
+**CONTROL GROUP**
+**Should we accept any type of control group?**
 >Control group (un-manipulated) should consist of similar individuals, as far as reasonable and not be subject to any other manipulations.
 
+**OUTCOME TYPE**
+**Should we accept any reproduction-related measurements and how do we define "reproduction-related" in the first place?**
+>The definition of a *reproduction-related trait* will depend on the species studied (and may require additional reading or relying on the assertions of the authors). Different taxa will have different suites of reproduction related-traits, but these can be grouped into broader categories (e.g. mate attraction includes vocal signals, visual ornaments, pheromone production etc.; reproductive fitness will include number and quality of offspring) and different specific measurements will be available for different taxa and in different studies - this can be quite messy. If we do not have many studies on the topic and very specific question (e.g. "Is the number of offspring affected?") it is OK to be inclusive and later on try to figure out whether some traits are affected more than others.
 
-​    
-**OUTCOME TYPE**: Should we accept any reproduction-related measurements and how do we define "reproduction-related" in the first place?   
-
->The definition of a *reproduction-related trait* will depend on the species studied (and may require additional reading or relying on the assertions of the authors). Different taxa will have different suites of reproduction related-traits, but these can be grouped into broader categories (e.g. mate attraction includes vocal signals, visual ornaments, pheromone production etc.; reproductive fitness will include number and quality of offspring) and different specific measurements will be available for different taxa and in different studies - this can be quite messy. If we do not have many studies on the topic and very specific question (e.g. "Is the number of offspring affected?") it is OK to be inclusive and later on try to figure out whether some traits are affected more than others.***
-
-
-​    
-**DATA TYPE**: Should we accept any type of data for a meta-analysis? (e.g. descriptive statistics (summarising populations), and which ones, or also inferential statistics (based on population samples and used to estimate parameters and test hypotheses), and which ones? This will be linked to the effect size you are planning to use!)   
-
+**DATA TYPE**
+**Should we accept any type of data for a meta-analysis? (e.g. descriptive statistics (summarising populations), and which ones, or also inferential statistics (based on population samples and used to estimate parameters and test hypotheses), and which ones? This will be linked to the effect size you are planning to use!)**
 >It depends on the effect size we are planning to use. In our project it can be Cohen's *d*(Hedges *g*) or *lnRR*, which are typically calculated from mean, SD or SE and N (sample sizes). However, Cohen's *d* (Hedges *g*) can be also inferred from some of the test statistics, or even proportions, if means and other descriptive statistics are not available. But one cannot get *lnRR* from inhferential statistics. Other considerations include what to do if some data is missing or unclear.  
 
-
-​     
 ## Making decision trees for the literature screening    
 
 Decision trees are visual representations of our inclusion criteria and decisions we have to make when screening literature. Importantly, good decision trees can make screening the literature faster and more reliable. Briefly, if the initial (most general) questions representing screening criteria are not fulfilled, the study gets excluded and there is no need to evaluate the remaining criteria, so we save some time.    
@@ -237,10 +201,8 @@ Thus this first stage of screening has to be more tentative, and we would use a 
 An example decision tree for abstract screening looks like this:![](https://github.com/SusZaj/metaanalysis/blob/master/images/decisiontree.png?raw=true)
     
 
-In the abstract screening decision tree there is no question about the type of data used to express measurements reported in the study. Why?   
-    
-***Full-text screening is more strict and we want to have answers to all our inclusion criteria. In principle we only have "yes" and "no" answers to the screening questions. However, in practice, if a study looks very relevant but some information is ambiguous or missing, you may decide to contact the authors to get some extra information or data. in such case, you can provisionally include such papers and make final decision once you get, or not, the replies.***   
-
+**In the abstract screening decision tree there is no question about the type of data used to express measurements reported in the study. Why? **
+>Full-text screening is more strict and we want to have answers to all our inclusion criteria. In principle we only have "yes" and "no" answers to the screening questions. However, in practice, if a study looks very relevant but some information is ambiguous or missing, you may decide to contact the authors to get some extra information or data. in such case, you can provisionally include such papers and make final decision once you get, or not, the replies.  
 
 In a decision tree for full-text screening, we will include an additional rule:
   * Are means and SD (or SEs) and N (sample sizes) for treatment and control groups, or test statistics from which effect sizes for the difference between the two groups can be calculated, available?
@@ -249,13 +211,11 @@ If the answer is **yes**, the study can be included for meta-analysis.
 
 
 **What question is missing on the top of the full-text decision tree? **
-(Tip: what happens between abstract and full text screening?)  
+**(Tip: what happens between abstract and full text screening?)**
     
-***The question is*** **"Is the full text of this study available for our assessment?"**   
-***It is often not explicitly stated, but without the full text it is impossible to extract all the necessary information about the study and the data. 
-It is a good practice to keep this in mind and use as one of your potential inclusion/exclusion criteria.*** 
-
-   
+<The missing question is: **"Is the full text of this study available for our assessment?"**   
+It is often not explicitly stated, but without the full text it is impossible to extract all the necessary information about the study and the data. 
+It is a good practice to keep this in mind and use as one of your potential inclusion/exclusion criteria.
 
 ###  Performing searches for relevant literature  
 
@@ -377,15 +337,13 @@ With our 144 records from Scopus, 249 from WoS (these two databases are our "mai
 
 </exercise>
 
-<exercise id="3" title="Paper selection">
+<exercise id="2" title="Paper selection">
 
 # Paper selection
 
 </exercise>
 
-<exercise id="4" title="Extraction of effect sizes">
-
-Based on material prepared by Malgorzata (Losia) Lagisz, BEES, UNSW, Australia, losialagisz@gmail.com.   
+<exercise id="3" title="Extraction of effect sizes">
 
 ## Introduction for extracting effect sizes
 

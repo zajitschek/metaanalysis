@@ -21,15 +21,13 @@ Hi and welcome, I am **[Susi Zajitschek](https://www.ljmu.ac.uk/about-us/staff-p
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Please note, if you plan on actually doing a meta-analysis yourself, beyond just going through this exercise, you will have download R or [R studio](https://rstudio.com/products/rstudio/download/), if you haven't already. 
 
-
-
 # How do use this resource
 
-The main content has been split into three Chapters.  Chapter 2 is the most important, guiding you step-by-step through the workflow of a meta-analysis. The Chapter is subdivided into sections that separately go into detail for each of the different steps. 
+The main content has been split into three Chapters.  In Chapters 2, 3 and 4, I will explain the structure and processes involved in conducting a meta-analysis, from conception to write-up. You will also have the opportunity to perform steps directly in R.
 
-Each section may contain links to online resources, such as [google scholar](https://scholar.google.com/), Questions to answer, task to do on your own - as indicated by this laptop icon  ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) , and useful notes and resources ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true).
+The Chapters are subdivided into sections that separately go into detail for each of the different steps. 
 
-
+Each section may contain links to online resources, such as [google scholar](https://scholar.google.com/), Questions to answer, tasks to do on your own - as indicated by this laptop icon  ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) , and useful notes and resources ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true).
 
 </exercise>
 
@@ -52,32 +50,43 @@ This course is mainly focussed on research in biological sciences. My own resear
 # Meta-analysis can help
 We established that science works cumulatively. To gain support for specific hypothesis, we do not want to rely on the outcome of single studies. We can try to combine the knowledge gained in multiple studies which tested specific traits of interest. This can be achieved while still taking into account that studies differ in their quality and their size, for example, lending different levels of weights to their results. 
 
-This combination of multiple test results can be achieved by qualitatively summarising previous work on a specific subject. Classically, this was done in a literature review, for example at the beginning of a graduate or postgraduate degree. While this type of review has still its merit, we want to introduce you here to the meta-analytical approach, which can provide a quantitative summary and test of specific research questions.
+This combination of multiple test results can be achieved by qualitatively summarising previous work on a specific subject. Classically, this was done in a literature review, for example at the beginning of a graduate or postgraduate degree. While this type of review has still its merit, we want to introduce you here to the meta-analytical approach, which can provide a quantitative summary and test of specific research questions (the Greek prefix *meta* (μετά, "after" or "beyond") means *more comprehensive*).
 
 </exercise>
 
-<exercise id="3" title="Examples of published meta-analyses and additional literature">
+<exercise id="3" title="Overview: the structure of a meta-analysis and some examples">
+
+# Overview
+
+We will take the paper [Nakagawa 2017](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7) as a blueprint to walk you through all the steps of a meta-analysis.
+
+However, as this is meant as a first step to get you started, we will provide some additional resources, exercises and guidelines (Chapters 2, 3 and 4). This includes a section on phylogenetic trees (which you may need if the question you're planning on tackling spans across different species. To keep things simple initially, we are concentrating on an example within the same species), how to make a decision tree in R, and other useful stuff.
+
+Here is a list of the different parts of a meta analysis:
+
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/metaanalysis_overview.png?raw=true)
+<br>
+<br>
+All of these steps have to be described and laid out in a protocol. We will see that there already exist general protocols for each step, which we can use and adapt to our research questions. The aim of having well defined protocols is for other researchers to be able to reproduce those steps. 
+
+Protocols are necessary to minimize any bias that we might introduce - either knowingly, but most often unknowingly - into the decisions that have to be taken at each meta-analysis step. Bias might already be present in how the research question we want to tackle is phrased. Furthermore, bias can originate in the specific way we search for literature, both in where we search (for example, which databases we use, or whether we only include published results), and how we search (for example our choice of search terms).
+
+The following diagram shows a more in depth overview, starting from the literature search (Figure 1 from Nakagawa et al. 2017). 
+
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/Nakagawa_etal_Fig1.gif?raw=true)
+<br>
+<br>
 
 **Some examples**. You can have a glance and see what questions were asked and how the results are presented:
 
 - [The repeatability of behaviour: a meta-analysis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3972767/).
-
 - [Individual differences in behaviour explain variation in survival: a meta‐analysis](https://royalsocietypublishing.org/doi/10.1098/rspb.2017.2823).
-
 - [The effect of dietary restriction on reproduction: a meta-analytic perspective](https://bmcevolbiol.biomedcentral.com/articles/10.1186/s12862-016-0768-z).
 
 **Meta-analysis and research synthesis: an outlook**
-
 [Research Weaving: Visualizing the Future of Research Synthesis](https://ecoevorxiv.org/ga2qz/)
 
 **Key reference for how to conduct a meta-analysis**
-
 [Meta-evaluation of meta-analysis: Ten appraisal questions for biologists](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7)
-
-</exercise>
-
-<exercise id="4" title="Further structure of this course">
-
-In Chapter 2, I will explain the structure and processes involved in conducting a meta-analysis, from conception to write-up. You will also have the opportunity to perform steps directly in R.
 
 </exercise>
