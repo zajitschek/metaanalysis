@@ -488,7 +488,7 @@ In what order would you extract your included studies? Random? Chronological? An
 When numerical data is reported in the text or tables, it is easy to get exact values for your extraction columns. However, often data is reported in the figures. Can we extract such data? Is it always possible?   
 
 
-**TASK 1**:  
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)
 We will practice data extraction on few of the Terminal investment papers. We will use the R package *metaDigitise*.  
 
 Detailed package description and tutorial are available at: https://cran.r-project.org/web/packages/metaDigitise/vignettes/metaDigitise.html or     
@@ -496,7 +496,7 @@ Detailed package description and tutorial are available at: https://cran.r-proje
 https://github.com/daniel1noble/metaDigitise and this publication:  
 https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13118   
 
-I installed the packages and loaded the R packages and libraries beforehand, for you to use below. If you want to do this on your local computer and R, you can use the following code:
+Metadigitise includes functionality that requires a local RStudio installation (i.e. you can't run it on here, only on your computer). If you want to install and load the R packages and libraries on your local computer and in RStudio, you can use the following code:
 
 ```
 install.packages("devtools")
@@ -517,28 +517,29 @@ Let's try to extract data from two selected papers::
 
 You will need to open the pdf files and take the snapshots of the relevant figures (for Mac OS the keyboard shortcut is easiest: press Command+Shift+4 and then select the screen fragment; for Windows see https://www.windowscentral.com/how-take-windows-10-screenshot-7-best-techniques). Make sure you capture the axes and axes labels. Also, enlarge these figures to fill the screen before taking the snapshot to get a higher resolution image.   
 
-We did this as well and named the snapshot files, which you can see as little thumbnails below,  as following (this makes it easy to keep track of the figures being digitised)     
-**001_Weil_2006_Fig2a.png**    ![](https://github.com/SusZaj/metaanalysis/blob/master/images/001_Weil_2006_Fig2a_small.png?raw=true)
+We did this as well and named the snapshot files, which you can see as smaller images below, as following (this makes it easy to keep track of the figures being digitised)     
+**001_Weil_2006_Fig2a.png**    
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/001_Weil_2006_Fig2a_small.png?raw=true)
 <br>
+
 and   
 <br>
-**002_Sadd_2006_Fig2a.png**   ![](https://github.com/SusZaj/metaanalysis/blob/master/images/002_Sadd_2006_Fig2a_small.png?raw=true)
+**002_Sadd_2006_Fig2a.png**
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/002_Sadd_2006_Fig2a_small.png?raw=true)
+<br>
 <br>
 
 We have to place them in a new folder - let's call it **metaDigitise_figures** (read more about organising your extraction directories in the "Setting up directory structures " section of https://cran.r-project.org/web/packages/metaDigitise/vignettes/metaDigitise.html).   
 
 To extract our two figures we need to provide the directory path name of the folder with the images to the *metaDigise()* function, in our case::
 
-<codeblock id="ch2_ex4_a">
 
-data <- metaDigitise(dir = "data/metaDigitise_figures/") 
-
-</codeblock>
+' data <- metaDigitise(dir = "data/metaDigitise_figures/") '
 
 
-Tell *metaDigitise()* you would like to process new images by selecting option "1".   
+Tell *metaDigitise* you would like to process new images by selecting option "1" (type 1 in the console, not in the script; hit the 'Enter'-key to enter input choices to *metaDigitise*).
 
-The next question is whether the plots are different or same - this is about the plot type and since we have a box plot and bar plot with means and SE, we can treat them as the same plot types, so enter "s" and for the next question "m".   
+The next question is whether the plots are different or same - this is about the plot type and since we have a box plot and bar plot with means and SE, we can treat them as the same plot types, so enter "s" and for the next question "m" (for <u>m</u>ean and error).   
 
 The first plot (**001_Weil_2006_Fig2a.png**) should be loaded at this stage. We do not need to rotate the image, so enter "c".   
 
@@ -562,6 +563,8 @@ Once you get a "Congratulations" message, you can look at the extracted data. *m
 data
 ```
 
+
+
 You can add more figures in the directory and add more data to this data table later, or save it and load back later to continue adding more data or merge with other data frames (see "Re-importing previously digitised data and accessing raw data" in the *metaDigitise* tutorial at https://cran.r-project.org/web/packages/metaDigitise/vignettes/metaDigitise.html).   
 
 ```{r save metadigitise, eval=FALSE, message = FALSE}
@@ -576,23 +579,15 @@ As you see, *metaDigitise* guides you gently through the all steps of data extra
 ###  Converting different types of information   
 
 
-Since now we have a few data points extracted we could calculate effect sizes from them. We first need to reshape our data frame.   
-
-**QUESTION 13:**   
-Why do we need to change our data frame (and how)?      
+Since now we have a few data points extracted we could calculate effect sizes from them. Since we compare pairs of measurements for control and treatment groups, it is convenient to have these in the same row in the data frame. Therefore, we first need to reshape our data frame.   
 
 
-**TASK 2**:
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
 Since we have only 2 data points per file, it is easy to reshape the data frame in R.   
 
-```{r reshape data, eval=FALSE, message = FALSE}
-data$group <- c("c","t") #assign rows to control or treatment codes (in this case its easy, but be careful)
-tdata <- filter(data, group == "t") #extract treatment data rows
-cdata <- select(filter(data, group == "c"), filename, group_id, mean, sd, n, se) #extract control data rows
-data_new <- full_join(cdata, tdata, by = "filename") #join data
-data_new <- select (data_new, -c(plot_type, error_type)) #remove unnecessary coumns
-data_new
-```
+<codeblock id="reshape_data_1.R">
+The <- arrow sign is a definition: e.g. if we want to define the variable 'EXAMPLE' by the number 1, we would write EXAMPLE <- 1. Executing 'EXAMPLE' will make R return a '1'.''
+</codeblock>
 
 Now the columns appended with .x contain control groups data values, and these with .y are for the treatment groups (you can rename the columns to make it easier to see, e.g. using the *rename* function https://dplyr.tidyverse.org/reference/select.html).   
 
