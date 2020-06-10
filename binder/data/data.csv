@@ -1,0 +1,5 @@
+"","filename","variable","group_id","mean","sd","n","r","se","error_type","plot_type","group"
+"1","001_Weil_2006_Fig2a.png","testes volume (mm3)","saline",302.843601895735,197.829692484467,10,NA,62.5592417061611,"se","mean_error","c"
+"2","001_Weil_2006_Fig2a.png","testes volume (mm3)","LPS",436.492890995261,195.610049538424,28,NA,36.9668246445497,"se","mean_error","t"
+"3","002_Sadd_2006_Fig2a.png","time (sec)","control",108.664259927798,205.533773246386,15,NA,53.0685920577617,"se","mean_error","c"
+"4","002_Sadd_2006_Fig2a.png","time (sec)","treatment",535.740072202166,303.406998601808,15,NA,78.3393501805053,"se","mean_error","t"

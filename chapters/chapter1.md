@@ -1,61 +1,96 @@
 ---
-title: 'Chapter 1: Getting started'
+title: 'Chapter 1: Getting started: Introduction to Meta-Analysis'
 description:
-  'This chapter will teach you about many cool things and introduce you to the
-  most important concepts of the course.'
+  'This chapter will introduce where meta-analysis fits into the scientific method, give some background, and examples.'
 prev: null
 next: /chapter2
 type: chapter
 id: 1
 ---
 
-<exercise id="1" title="Introduction" type="slides">
+<exercise id="1" title="Preface & Disclaimer">
 
-<slides source="chapter1_01_introduction">
-</slides>
+Please have patience with us while we build this online resource - it's brand new and nowhere near finished!
+Apologies if exercises and questions may not work (yet), this is an ongoing project.   
+Please check back a little later if things aren't performing as they should... 
+Thanks!
 
-</exercise>
+# About this course
 
-<exercise id="2" title="Getting Started">
+Hi and welcome, I am **[Susi Zajitschek](https://www.ljmu.ac.uk/about-us/staff-profiles/faculty-of-science/school-of-biological-and-environmental-sciences/susanne-zajitschek), a Senior Lecturer in Animal Behaviour at Liverpool John Moores University**. This course is meant as a primer for students who would like to know more about meta-analysis. I will give you an overview on what meta-analyses are and on why they are useful. I will include hands-on exercises to conduct meta-analyses, step-by-step (based on material developed by my collaborators **[Shinichi Nakagawa](http://www.i-deel.org/shinichi-nakagawa.html)** and **[Malgorzata  Lagisz](https://mlagisz.weebly.com/)**). The actual statistical analyses will be performed in the [software R](https://www.r-project.org/about.html), and you will have the opportunity to run R software scripts right here, on this website, without the need to install software on your computer.
 
-Let's ask some questions about the slides. Whats the correct answer?
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Please note, if you plan on actually doing a meta-analysis yourself, beyond just going through this exercise, you will have to download R or [R studio](https://rstudio.com/products/rstudio/download/), if you haven't already. 
 
-<choice>
-<opt text="Answer one">
+# How do use this resource
 
-This is not the correct answer.
+The main content has been split into three Chapters.  In Chapters 2, 3 and 4, I will explain the structure and processes involved in conducting a meta-analysis, from conception to write-up. You will also have the opportunity to perform steps directly in R.
 
-</opt>
+The Chapters are subdivided into sections that separately go into detail for each of the different steps. 
 
-<opt text="Answer two" correct="true">
-
-Good job!
-
-</opt>
-
-<opt text="Answer three">
-
-This is not correct either.
-
-</opt>
-</choice>
+Each section may contain links to online resources, such as [google scholar](https://scholar.google.com/), Questions to answer, tasks to do on your own - as indicated by this laptop icon  ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) , and useful notes and resources ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true).
+<br>
 
 </exercise>
 
-<exercise id="3" title="First steps">
+<exercise id="2" title="Introduction">
 
-This is a code exercise. The content can be formatted in simple Markdown – so
-you can have **bold text**, `code` or [links](https://spacy.io) or lists, like
-the one for the instructions below.
+# WHAT IS A META-ANALYSIS and WHY TO META-ANALYSE?
 
-- These are instructions and they can have bullet points.
-- The code block below will look for the files `exc_01_03`, `solution_01_03` and
-  `test_01_03` in `/exercises`.
 
-<codeblock id="01_03">
+## A short side-trip to the roots of knowledge
+Humans strive to understand the world. The organized framework to do this is science, more specifically the *[scientific method](https://en.wikipedia.org/wiki/Scientific_method)*. Science is cumulative in nature. This means that studies and experiments build upon the findings of previous studies and experiments. New scientific insights might be gained by a more or less progressive accumulation of knowledge about a specific question, adding on to existing knowledge. Or, according to [Thomas Kuhn](https://en.wikipedia.org/wiki/Thomas_Kuhn), real progression in science might require [paradigm shifts](https://en.wikipedia.org/wiki/Paradigm_shift) that throw old theories over board and make way for new better theories. These shifts in how we explain the world depend themselves on the accumulation of results, which did not fit the old established theories, but which turned out to be not due to error of any kind (for example methodological mistakes or human error in performing studies).
 
-This is a hint.
+## What makes a successful scientific theory?
+We are talking about empirical research here, meaning results from studies and experiments that are based on observations. But what is the criterion that scientists use to accept a scientific theory as the currently most successful theory to explain observed phenomena?
 
-</codeblock>
+- a successful scientific theory should give a good explanation and make accurate predictions
+- this should be the case in a wide range of circumstances, i.e. it shouldn't be hyper-sensitive to natural variation in traits that are not the direct focus of the studies
+
+Different scientific disciplines will have different criteria for how we define *good explanation*, *accurate prediction*, *sensitive*, and *natural variation* that I used above.
+This course is mainly focussed on research in biological sciences. My own research involves the study of animal behaviour, which often has a high level of noise in the data, especially when compared to some studies in physics or geology (if interested, read up on the colloquial terms of soft and hard sciences, e.g. [here](https://en.wikipedia.org/wiki/Hard_and_soft_science)). 
+
+# Meta-analysis can help
+We established that science works cumulatively. To gain support for specific hypothesis, we do not want to rely on the outcome of single studies. We can try to combine the knowledge gained in multiple studies which tested specific traits of interest. This can be achieved while still taking into account that studies differ in their quality and their size, for example, lending different levels of weights to their results. 
+
+This combination of multiple test results can be achieved by qualitatively summarising previous work on a specific subject. Classically, this was done in a literature review, for example at the beginning of a graduate or postgraduate degree. While this type of review has still its merit, we want to introduce you here to the meta-analytical approach, which can provide a quantitative summary and test of specific research questions (the Greek prefix *meta* (μετά, "after" or "beyond") means *more comprehensive*).
+
+</exercise>
+
+<exercise id="3" title="Overview: the structure of a meta-analysis and some examples">
+
+# Overview
+
+We will take the paper [Nakagawa 2017](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7) as a blueprint to walk you through all the steps of a meta-analysis.
+
+However, as this is meant as a first step to get you started, we will provide some additional resources, exercises and guidelines (Chapters 2, 3 and 4). This includes a section on phylogenetic trees (which you may need if the question you're planning on tackling spans across different species. To keep things simple initially, we are concentrating on an example within the same species), how to make a decision tree in R, and other useful stuff.
+
+Here is a list of the different parts of a meta-analysis:
+
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/metaanalysis_overview.png?raw=true)
+<br>
+<br>
+All of these steps have to be described and laid out in a protocol. We will see that there already exist general protocols for each step, which we can use and adapt to our research questions. The aim of having well defined protocols is for other researchers to be able to reproduce those steps. 
+
+Protocols are necessary to minimize any bias that we might introduce - either knowingly, but most often unknowingly - into the decisions that have to be taken at each meta-analysis step. Bias might already be present in how the research question we want to tackle is phrased. Furthermore, bias can originate in the specific way we search for literature, both in where we search (for example, which databases we use, or whether we only include published results), and how we search (for example our choice of search terms).
+
+The following diagram shows a more in depth overview, starting from the literature search (Figure 1 from Nakagawa et al. 2017). 
+
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/Nakagawa_etal_Fig1.gif?raw=true)
+<br>
+<br>
+
+**Some examples**. You can have a glance and see what questions were asked and how the results are presented:
+
+- [The repeatability of behaviour: a meta-analysis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3972767/).
+- [Individual differences in behaviour explain variation in survival: a meta‐analysis](https://royalsocietypublishing.org/doi/10.1098/rspb.2017.2823).
+- [The effect of dietary restriction on reproduction: a meta-analytic perspective](https://bmcevolbiol.biomedcentral.com/articles/10.1186/s12862-016-0768-z).
+
+**Meta-analysis and research synthesis: an outlook**
+
+- [Research Weaving: Visualizing the Future of Research Synthesis](https://ecoevorxiv.org/ga2qz/)
+
+**Key reference for how to conduct a meta-analysis**
+
+- [Meta-evaluation of meta-analysis: Ten appraisal questions for biologists](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7)
 
 </exercise>

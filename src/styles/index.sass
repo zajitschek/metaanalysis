@@ -54,6 +54,12 @@ sup
 
 sub
     bottom: -0.15em
+    
+blockquote 
+  background: RGBA(249,253,63,0.2)
+  border-left: 7px solid RGBA(243,251,1,0.4)
+  margin: 1.0em 10px
+  padding: 0.5em 10px
 
 img
     border: 0
@@ -91,7 +97,7 @@ table
         vertical-align: top
         padding: 0.5rem
         border-bottom: 1px solid var(--color-subtle-medium)
-
+    
     code
         white-space: nowrap
 
@@ -120,7 +126,8 @@ body
     background: var(--color-back)
 
 p
-    margin-bottom: 3rem
+    margin-top: 1.4rem
+    margin-bottom: 1.5rem
 
 ::selection
     background: var(--color-theme)
@@ -152,32 +159,32 @@ pre code
 
     .CodeMirror-line
         padding: 0
-
+    
     .CodeMirror-selected
         background: var(--syntax-selected-background)
-
+    
     .CodeMirror-cursor
         border-left-color: currentColor
-
+    
     .cm-variable-2
         color: inherit
         font-style: italic
-
+    
     .cm-comment
         color: var(--syntax-comment)
-
+    
     .cm-keyword, .cm-builtin
         color: var(--syntax-keyword)
-
+    
     .cm-operator
         color: var(--syntax-operator)
-
+    
     .cm-string
         color: var(--syntax-selector)
-
+    
     .cm-number
         color: var(--syntax-number)
-
+    
     .cm-def
         color: var(--syntax-function)
 
@@ -187,7 +194,7 @@ pre code
 
     .ansi-green-fg.ansi-green-fg
         color: var(--ansi-green)
-
+    
     .ansi-red-fg.ansi-red-fg
         color: var(--ansi-red)
 

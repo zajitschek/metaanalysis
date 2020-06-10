@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="350.39844mm"
+   height="155.87389mm"
+   viewBox="0 0 350.39844 155.87389"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="metaanalysis_for_biologists3.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   style="enable-background:new">
+  <defs
+     id="defs2">
+    <meshgradient
+       inkscape:collect="always"
+       id="meshgradient4550"
+       gradientUnits="userSpaceOnUse"
+       x="42.711761"
+       y="76.333931">
+      <meshrow
+         id="meshrow12184">
+        <meshpatch
+           id="meshpatch12186">
+          <stop
+             path="c 52.0942,-8.71808e-06  118.564,-39.1958  170.657,-39.1965"
+             style="stop-color:#ffffff;stop-opacity:1"
+             id="stop12188" />
+          <stop
+             path="c -0.00423249,48.7529  23.0632,22.2768  23.0662,71.0305"
+             style="stop-color:#800080;stop-opacity:1"
+             id="stop12190" />
+          <stop
+             path="c -52.098,0.00444561  -166.719,63.2335  -218.833,63.2271"
+             style="stop-color:#ffffff;stop-opacity:1"
+             id="stop12192" />
+          <stop
+             path="c 0.0159191,-48.7464  25.1262,-46.3006  25.1101,-95.0612"
+             style="stop-color:#800080;stop-opacity:1"
+             id="stop12194" />
+        </meshpatch>
+      </meshrow>
+    </meshgradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="681.72955"
+     inkscape:cy="479.03452"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="986"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     style="display:inline"
+     id="g14703"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1 copy"
+     transform="translate(59.713431,-62.417771)">
+    <flowRoot
+       transform="scale(0.26458333)"
+       style="font-style:normal;font-weight:normal;font-size:96px;line-height:10.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       id="flowRoot14681"
+       xml:space="preserve"><flowRegion
+         id="flowRegion14673"><rect
+           y="248.23398"
+           x="148.57143"
+           height="228.57143"
+           width="540"
+           id="rect14671" /></flowRegion><flowPara
+         id="flowPara14675">Meta-analysis</flowPara><flowPara
+         id="flowPara14677" /><flowPara
+         id="flowPara14679" /></flowRoot>    <text
+       transform="matrix(0.99773202,-0.05915142,0.05908995,0.99876993,0,0)"
+       id="text14693"
+       y="108.51546"
+       x="109.60556"
+       style="font-style:normal;font-weight:normal;font-size:40.48151779px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#f3fb01;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.39591836"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.48151779px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#f3fb01;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.39591836"
+         y="108.51546"
+         x="109.60557"
+         id="tspan14683"
+         sodipodi:role="line">Meta-analysis</tspan><tspan
+         id="tspan14687"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.48151779px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#f3fb01;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.39591836"
+         y="162.05913"
+         x="114.15182"
+         sodipodi:role="line"><tspan
+   id="tspan14685"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.48153687px;font-family:'Bite Chocolate';-inkscape-font-specification:'Bite Chocolate, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#f3fb01;fill-opacity:1;stroke:none;stroke-width:0.26499999">for</tspan> </tspan><tspan
+         id="tspan14689"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40.48151779px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#f3fb01;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.39591836"
+         y="217.114"
+         x="109.60556"
+         sodipodi:role="line">Biologists</tspan><tspan
+         id="tspan14691"
+         style="line-height:1.25;text-align:center;text-anchor:middle;fill:#f3fb01;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.39591836"
+         y="267.71591"
+         x="109.60556"
+         sodipodi:role="line" /></text>
+    <flowRoot
+       transform="scale(0.26458333)"
+       style="font-style:normal;font-weight:normal;font-size:96px;line-height:10.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       id="flowRoot14701"
+       xml:space="preserve"><flowRegion
+         id="flowRegion14697"><rect
+           y="285.37683"
+           x="180"
+           height="1922.8572"
+           width="600"
+           id="rect14695" /></flowRegion><flowPara
+         id="flowPara14699"></flowPara></flowRoot>  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline"
+     transform="translate(59.713431,-62.417771)">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4518"
+       style="font-style:normal;font-weight:normal;font-size:96px;line-height:10.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="scale(0.26458333)"><flowRegion
+         id="flowRegion4520"><rect
+           id="rect4522"
+           width="540"
+           height="228.57143"
+           x="148.57143"
+           y="248.23398" /></flowRegion><flowPara
+         id="flowPara4524">Meta-analysis</flowPara><flowPara
+         id="flowPara4526" /><flowPara
+         id="flowPara4528" /></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:38.72711182px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:#f9413c;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.8933054"
+       x="109.85974"
+       y="110.3707"
+       id="text4532"
+       transform="matrix(0.99775336,-0.05915016,0.05909122,0.99874857,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4530"
+         x="109.85973"
+         y="110.3707"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.72711182px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.86610879">Meta-analysis</tspan><tspan
+         sodipodi:role="line"
+         x="114.20898"
+         y="161.59387"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.72711182px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.86610879"
+         id="tspan4536"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.72712708px;font-family:'Bite Chocolate';-inkscape-font-specification:'Bite Chocolate, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-opacity:0.86610879"
+   id="tspan12196">for</tspan> </tspan><tspan
+         sodipodi:role="line"
+         x="109.85974"
+         y="214.26276"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.72711182px;line-height:1.25;font-family:Bungee;-inkscape-font-specification:'Bungee, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.86610879"
+         id="tspan4538">Biologists</tspan><tspan
+         sodipodi:role="line"
+         x="109.85974"
+         y="262.67163"
+         style="line-height:1.25;text-align:center;text-anchor:middle;fill:#e82020;fill-opacity:1;stroke:#f9413c;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.8933054"
+         id="tspan4534" /></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4540"
+       style="font-style:normal;font-weight:normal;font-size:96px;line-height:10.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="scale(0.26458333)"><flowRegion
+         id="flowRegion4542"><rect
+           id="rect4544"
+           width="600"
+           height="1922.8572"
+           x="180"
+           y="285.37683" /></flowRegion><flowPara
+         id="flowPara4546"></flowPara></flowRoot>  </g>
+</svg>
