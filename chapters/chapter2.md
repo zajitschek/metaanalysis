@@ -39,8 +39,6 @@ The following diagram shows a more in depth overview, starting from the literatu
 
 There are different protocols for how to gather the literature for a systematic meta-analysis. We will walk through a specific literature search below, using one established protocol. Please note that this is in itself an active area of research though. For example, I would like to mention the *[metaverse](https://rmetaverse.github.io/)*, a collection of R packages that is aimed at integrating all steps of a meta-analysis. The package *[litsearchR](https://elizagrames.github.io/litsearchr/)* seems especially promising, and you could try it out on your local R installation (right now, I haven't installed it in the R software container you will be using during this course / online).
 
-The following exercise is based on material originally prepared by Malgorzata (Losia) Lagisz, BEES, UNSW, Australia. 
-
 #### In this exercise you get some practice and tips on:   
 
  * Formulating the question for a meta-analysis   
@@ -97,6 +95,7 @@ Other software useful for exploratory (scoping) and additional searches (check t
  * [CiteHero](https://citehero.com/)
  * R package *[litsearchR](https://elizagrames.github.io/litsearchr/)* (which I haven't tested yet myself)
    
+
 **It seems that the question "What is the evidence for terminal investment happening?" is too general and too broad in scope. Let's try to narrow it down and focus on either *terminal investment in reproduction*, or *terminal investment under immune challenge* (notice the difference between effects *in* reproduction and effects *of* immune challenge*.**   
 <br>
 <br>
@@ -112,8 +111,8 @@ This time you should get over 2,000 records (you will be allowed to access only 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)   
 Try Google Scholar quick search:    *"terminal investment" "immune challenge"*    
 
-This time you should get just over 400 records. Skim through the first three pages of the results to get a feel of the diversity of the studies found (e.g. what taxa are studied and what traits the studies might measure to evaluate reproductive investment) and note the wording of their titles.  
-In medical sciences, most meta-analyses (and systematic reviews) fit into the PICO (or related) question framework.
+<p>This time you should get just over 400 records. Skim through the first three pages of the results to get a feel of the diversity of the studies found (e.g. what taxa are studied and what traits the studies might measure to evaluate reproductive investment) and note the wording of their titles.  
+In medical sciences, most meta-analyses (and systematic reviews) fit into the PICO (or related) question framework.</p>
 
 PICO stands for:   
   * P = Population   
@@ -143,7 +142,7 @@ An extensive list of alternative systematic review formulation question framewor
 <br>
 <br>
 
-   
+
 ##  Deciding on inclusion criteria   
 
 The basic PICO components are usually not sufficient to perform the effective screening of the papers for inclusion in meta-analysis.
@@ -152,7 +151,7 @@ Most importantly, you always need to be able to justify your inclusion criteria,
 <br>
 <br>
 
-   
+
    **TIME-SPAN**: Should we include studies from any year?  
 
 <choice id="2" >
@@ -166,7 +165,7 @@ No, unless you have a very good reason to support this argument.
 <br>
 <br>
 
-    
+
 **LANGUAGE**: Should we include studies published in any language? 
 
 <choice id="3">
@@ -180,50 +179,48 @@ Most meta-analyses only include studies published in English by default. However
 <br>
 <br>
 
-    
+
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Publication status can be also used as a criterion - are you happy to include some types of grey literature (e.g. conference proceedings, theses)?
 <br>
 <br>
 
 
-  
-**STUDY TYPE**: Should we include any type of study? (e.g. correlational vs experimental, if experimental, what type of experiment?)    
 
+**STUDY TYPE
+Should we include any type of study? (e.g. correlational vs experimental, if experimental, what type of experiment?)**    
 >Since we investigate a specific intervention, we should restrict study type to "experimental" (we should explicitly exclude "simulation").
 
-
-    
 **TAXA**: Should we include any type of taxa?   
 
 >That is a difficult one. The animal kingdom is vast and diverse, and some species are especially odd (e.g. humans). Does it make sense to include single-cell animals? Does it make sense to include humans? Probably not.
 How about multicellular animals, except humans? If many studies across multiple taxa exist, we could focus on the most frequently studied taxa or biologically most interesting. Alternatively just vertebrates, except humans? Another thing worth being specific about is that the animals should be wild-type (non-mutant, not disease models) and ideally not subject to any other significant manipulations that could affect their response (e.g. drug treatment; note there is a thin fuzzy line what these manipulations are). There might also be reasons to exclude standard laboratory species (mice, rat, yeast, fruit fly) or maybe focus just on them? But, for now, we will stick to any multicellular animals, except humans.
 
 
-    
+​    
 **MANIPULATION TYPE**: Should we include all types of immune challenge?   
 
 >There are several established types of experimental immune challenge (blood cells (e.g. SRBC), protein (e.g. PHA), dead or live pathogens or parasites), so its worth including these and similar ones. Non-experimental immune challenge (e.g. natural infestation levels)  should not be included. If something odd comes up later it can come under "exclusion criteria", with justification.
 
 
-    
+​    
 **CONTROL GROUP**: Should we accept any type of control group?  
 
 >Control group (un-manipulated) should consist of similar individuals, as far as reasonable and not be subject to any other manipulations.
 
 
-    
+​    
 **OUTCOME TYPE**: Should we accept any reproduction-related measurements and how do we define "reproduction-related" in the first place?   
 
 >The definition of a *reproduction-related trait* will depend on the species studied (and may require additional reading or relying on the assertions of the authors). Different taxa will have different suites of reproduction related-traits, but these can be grouped into broader categories (e.g. mate attraction includes vocal signals, visual ornaments, pheromone production etc.; reproductive fitness will include number and quality of offspring) and different specific measurements will be available for different taxa and in different studies - this can be quite messy. If we do not have many studies on the topic and very specific question (e.g. "Is the number of offspring affected?") it is OK to be inclusive and later on try to figure out whether some traits are affected more than others.***
 
 
-    
+​    
 **DATA TYPE**: Should we accept any type of data for a meta-analysis? (e.g. descriptive statistics (summarising populations), and which ones, or also inferential statistics (based on population samples and used to estimate parameters and test hypotheses), and which ones? This will be linked to the effect size you are planning to use!)   
 
 >It depends on the effect size we are planning to use. In our project it can be Cohen's *d*(Hedges *g*) or *lnRR*, which are typically calculated from mean, SD or SE and N (sample sizes). However, Cohen's *d* (Hedges *g*) can be also inferred from some of the test statistics, or even proportions, if means and other descriptive statistics are not available. But one cannot get *lnRR* from inhferential statistics. Other considerations include what to do if some data is missing or unclear.  
 
 
-     
+​     
 ## Making decision trees for the literature screening    
 
 Decision trees are visual representations of our inclusion criteria and decisions we have to make when screening literature. Importantly, good decision trees can make screening the literature faster and more reliable. Briefly, if the initial (most general) questions representing screening criteria are not fulfilled, the study gets excluded and there is no need to evaluate the remaining criteria, so we save some time.    
@@ -246,20 +243,20 @@ In the abstract screening decision tree there is no question about the type of d
     
 ***Full-text screening is more strict and we want to have answers to all our inclusion criteria. In principle we only have "yes" and "no" answers to the screening questions. However, in practice, if a study looks very relevant but some information is ambiguous or missing, you may decide to contact the authors to get some extra information or data. in such case, you can provisionally include such papers and make final decision once you get, or not, the replies.***   
 
-    
+
 In a decision tree for full-text screening, we will include an additional rule:
   * Are means and SD (or SEs) and N (sample sizes) for treatment and control groups, or test statistics from which effect sizes for the difference between the two groups can be calculated, available?
 
 If the answer is **yes**, the study can be included for meta-analysis.
 
-    
+
 **What question is missing on the top of the full-text decision tree? **
 (Tip: what happens between abstract and full text screening?)  
     
 ***The question is*** **"Is the full text of this study available for our assessment?"**   
 ***It is often not explicitly stated, but without the full text it is impossible to extract all the necessary information about the study and the data. 
 It is a good practice to keep this in mind and use as one of your potential inclusion/exclusion criteria.*** 
-   
+
    
 
 ###  Performing searches for relevant literature  
@@ -271,14 +268,14 @@ Search strategy should include using at least two wide-coverage/interdisciplinar
 **In this exercise we only do a bit of the core search using 2 databases:
 Scopus and Web of Science.**
 
-    
+
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  **RESOURCES:** 
  * [Scopus](https://www.scopus.com/)   
  * [Web of Science (WoS)](http://apps.webofknowledge.com)   
- 
+
  WoS coverage depends on the institutional subscription package purchased, so results of searches can vary among institutions (so make sure to log in via your libarry, if working from home). Also searching just core collection vs. all available databases can make a difference.     
 
-   
+
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
 
 Using Scopus **Advanced Search** (you can read more about the syntax [here](https://dev.elsevier.com/tips/ScopusSearchTips.htm) run these search strings:  
@@ -295,8 +292,8 @@ Using Scopus **Advanced Search** (you can read more about the syntax [here](http
 Ideally, we should think and test some more terms for inclusion, after doing some scoping searches, reading reviews and seminal relevant empirical papers. Also, it is important to validate the search by checking how many papers it finds that we know contain useable data. You should also do some pilot abstract screening on papers exported from just one database, to check whether there’s some exclusion words you did not think about, and which could be included in your search string as exclusion terms.   
 
 We stop for now and assume that the string above is our final search string. Note that Scopus Advanced Search stores all your searches and search strings in a neat table at the bottom of the search window - it's easy to copy this out and to include it in the documentation on how you developed your search strategy (same applies to WoS database; you need to register in Scopus and WoS to save searches and alerts across multiple search sessions). The \* symbol stands for wildcard and indicates "any symbols" since these databases do not do Automatic Query Expansion.    
-   
-   
+
+
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
 
 We can easily translate our final search string from Scopus into Web of Science (WoS) **Advanced Search** (you can read more about the syntax [here](https://images.webofknowledge.com/images/help/WOS/hs_search_operators.html). Run this search string:    
