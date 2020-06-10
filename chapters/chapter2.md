@@ -169,19 +169,19 @@ Most meta-analyses only include studies published in English by default. However
 >That is a difficult one. The animal kingdom is vast and diverse, and some species are especially odd (e.g. humans). Does it make sense to include single-cell animals? Does it make sense to include humans? Probably not.
 How about multicellular animals, except humans? If many studies across multiple taxa exist, we could focus on the most frequently studied taxa or biologically most interesting. Alternatively just vertebrates, except humans? Another thing worth being specific about is that the animals should be wild-type (non-mutant, not disease models) and ideally not subject to any other significant manipulations that could affect their response (e.g. drug treatment; note there is a thin fuzzy line what these manipulations are). There might also be reasons to exclude standard laboratory species (mice, rat, yeast, fruit fly) or maybe focus just on them? But, for now, we will stick to any multicellular animals, except humans.
 
-**MANIPULATION TYPE**
+**MANIPULATION TYPE**  
 **Should we include all types of immune challenge?**
 >There are several established types of experimental immune challenge (blood cells (e.g. SRBC), protein (e.g. PHA), dead or live pathogens or parasites), so its worth including these and similar ones. Non-experimental immune challenge (e.g. natural infestation levels)  should not be included. If something odd comes up later it can come under "exclusion criteria", with justification.
 
-**CONTROL GROUP**
+**CONTROL GROUP**  
 **Should we accept any type of control group?**
 >Control group (un-manipulated) should consist of similar individuals, as far as reasonable and not be subject to any other manipulations.
 
-**OUTCOME TYPE**
+**OUTCOME TYPE**  
 **Should we accept any reproduction-related measurements and how do we define "reproduction-related" in the first place?**
 >The definition of a *reproduction-related trait* will depend on the species studied (and may require additional reading or relying on the assertions of the authors). Different taxa will have different suites of reproduction related-traits, but these can be grouped into broader categories (e.g. mate attraction includes vocal signals, visual ornaments, pheromone production etc.; reproductive fitness will include number and quality of offspring) and different specific measurements will be available for different taxa and in different studies - this can be quite messy. If we do not have many studies on the topic and very specific question (e.g. "Is the number of offspring affected?") it is OK to be inclusive and later on try to figure out whether some traits are affected more than others.
 
-**DATA TYPE**
+**DATA TYPE**  
 **Should we accept any type of data for a meta-analysis? (e.g. descriptive statistics (summarising populations), and which ones, or also inferential statistics (based on population samples and used to estimate parameters and test hypotheses), and which ones? This will be linked to the effect size you are planning to use!)**
 >It depends on the effect size we are planning to use. In our project it can be Cohen's *d*(Hedges *g*) or *lnRR*, which are typically calculated from mean, SD or SE and N (sample sizes). However, Cohen's *d* (Hedges *g*) can be also inferred from some of the test statistics, or even proportions, if means and other descriptive statistics are not available. But one cannot get *lnRR* from inhferential statistics. Other considerations include what to do if some data is missing or unclear.  
 
@@ -201,7 +201,7 @@ This is because abstracts, titles and keywords do not contain enough information
 Thus this first stage of screening has to be more tentative, and we would use a more permissive and simpler decision tree. A good tree starts from the questions that are easiest to answer (if we had any year or language restrictions we would put these on the top). Note that during abstract screening we exclude the records where a definite "no" can be inferred from available information, but we allow for some uncertainty for the "yes" answers by allowing "probably" as an acceptable answer for inclusion, so we can check for more info in the full text. 
 
 An example decision tree for abstract screening looks like this:![](https://github.com/SusZaj/metaanalysis/blob/master/images/decisiontree.png?raw=true)
-    
+
 
 **In the abstract screening decision tree there is no question about the type of data used to express measurements reported in the study. Why? **
 >Full-text screening is more strict and we want to have answers to all our inclusion criteria. In principle we only have "yes" and "no" answers to the screening questions. However, in practice, if a study looks very relevant but some information is ambiguous or missing, you may decide to contact the authors to get some extra information or data. in such case, you can provisionally include such papers and make final decision once you get, or not, the replies.  
@@ -235,7 +235,7 @@ Scopus and Web of Science.**
 WoS coverage depends on the institutional subscription package purchased, so results of searches can vary among institutions (so make sure to log in via your libarry, if working from home). Also searching just core collection vs. all available databases can make a difference.     
 
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)   
 Using Scopus **Advanced Search** (you can read more about the syntax [here](https://dev.elsevier.com/tips/ScopusSearchTips.htm) run these search strings:  
 
  **1** *TITLE-ABS-KEY ( "terminal investment"  AND  "immune challenge" )*    
@@ -252,7 +252,7 @@ Ideally, we should think and test some more terms for inclusion, after doing som
 We stop for now and assume that the string above is our final search string. Note that Scopus Advanced Search stores all your searches and search strings in a neat table at the bottom of the search window - it's easy to copy this out and to include it in the documentation on how you developed your search strategy (same applies to WoS database; you need to register in Scopus and WoS to save searches and alerts across multiple search sessions). The \* symbol stands for wildcard and indicates "any symbols" since these databases do not do Automatic Query Expansion.    
 
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)    
 We can easily translate our final search string from Scopus into Web of Science (WoS) **Advanced Search** (you can read more about the syntax [here](https://images.webofknowledge.com/images/help/WOS/hs_search_operators.html). Run this search string:    
 *TS = (( ( "terminal investment" OR "reproductive effort" ) AND ( "immune challeng\*"  OR  "immunochalleng\*"  OR  "infect\*"  ) ) NOT ( load OR human OR people ) )*  
 (approx. 249 hits - more than from Scopus).   WoS stores your search history and also which sub-data bases were included in the search: Indexes=SCI-EXPANDED, SSCI, A&HCI, CPCI-S, CPCI-SSH, BKCI-S, BKCI-SSH, ESCI, CCR-EXPANDED, IC Timespan=All years" (you can restrict these in the Advanced Search).   
@@ -272,14 +272,14 @@ Theoretically you could do screening in the database browser or your reference m
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) It is possible that the de-duplication algorithms in these are not very good, so it is advisable to de-duplicate and check your records in the reference manager before uploading to the screening software.    
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)   
 We prepared a file (for download: [Scopus10.ris](/papers/Scopus10.ris)) with 10 references sampled from the set found using the search string in Scopus database (used *( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*" ) )  *) (same references came up in the equivalent search in WoS).    
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Sometimes the biblio-files with the same extension differ a bit in structure and reference managers, and Rayyan may have problem opening them. Getting your files into exactly the right format can sometimes be frustrating.   
 
 We will use these ten references to practice title and abstract screening in Rayyan. Screening can be also done in Abstracker, but we find Rayyan a bit more reliable and more user-friendly (could be slow with updating the display).   
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)    
 Create a new project in Rayyan:
 
  1. Open Rayyan (we assume you already created a free account) and log in.    
@@ -496,7 +496,7 @@ Detailed package description and tutorial are available at: https://cran.r-proje
 https://github.com/daniel1noble/metaDigitise and this publication:  
 https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13118   
 
-Metadigitise includes functionality that requires a local RStudio installation (i.e. you can't run it on here, only on your computer). If you want to install and load the R packages and libraries on your local computer and in RStudio, you can use the following code:
+Metadigitise includes functionality that requires a local RStudio installation (i.e. you can't run it on here, only on your computer). If you want to install and load the R packages and libraries on your local computer and in RStudio, you can use the code below:
 
 ```
 install.packages("devtools")
@@ -510,6 +510,7 @@ library(metaDigitise)
 library(tidyverse)
 library(compute.es)
 ```
+**We will now guide you through the necessary steps on your local RStudio.**
 
 Let's try to extract data from two selected papers::   
  1. Figure 2a in the paper by Weil et al. 2006: Immune challenge retards seasonal reproductive regression in rodents: evidence for terminal investment (**[Weil2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/papers/Weil2006.pdf)**)
@@ -518,6 +519,7 @@ Let's try to extract data from two selected papers::
 You will need to open the pdf files and take the snapshots of the relevant figures (for Mac OS the keyboard shortcut is easiest: press Command+Shift+4 and then select the screen fragment; for Windows see https://www.windowscentral.com/how-take-windows-10-screenshot-7-best-techniques). Make sure you capture the axes and axes labels. Also, enlarge these figures to fill the screen before taking the snapshot to get a higher resolution image.   
 
 We did this as well and named the snapshot files, which you can see as smaller images below, as following (this makes it easy to keep track of the figures being digitised)     
+
 **001_Weil_2006_Fig2a.png**    
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/001_Weil_2006_Fig2a_small.png?raw=true)
 <br>
@@ -534,7 +536,7 @@ We have to place them in a new folder - let's call it **metaDigitise_figures** (
 To extract our two figures we need to provide the directory path name of the folder with the images to the *metaDigise()* function, in our case::
 
 
-' data <- metaDigitise(dir = "data/metaDigitise_figures/") '
+``` data <- metaDigitise(dir = "data/metaDigitise_figures/") ```
 
 
 Tell *metaDigitise* you would like to process new images by selecting option "1" (type 1 in the console, not in the script; hit the 'Enter'-key to enter input choices to *metaDigitise*).
@@ -557,13 +559,7 @@ Once you extract data for the treatment group, select "Finish plot" (enter "f"),
 
 Now you should be able to extract data from **plot 002_Sadd_2006_Fig2a.png**! (hint: extract "treatment control" and "treatment" groups).
 
-Once you get a "Congratulations" message, you can look at the extracted data. *metaDigitise()* stores and sorts all the summary data for each of the figures in the "data"" object:   
-
-```{r see extractions metadigitise, eval=FALSE, message = FALSE}
-data
-```
-
-
+Once you get a "Congratulations" message, you can look at the extracted data. *metaDigitise()* stores and sorts all the summary data for each of the figures in the "data"" object.  
 
 You can add more figures in the directory and add more data to this data table later, or save it and load back later to continue adding more data or merge with other data frames (see "Re-importing previously digitised data and accessing raw data" in the *metaDigitise* tutorial at https://cran.r-project.org/web/packages/metaDigitise/vignettes/metaDigitise.html).   
 
@@ -585,7 +581,7 @@ Since now we have a few data points extracted we could calculate effect sizes fr
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
 Since we have only 2 data points per file, it is easy to reshape the data frame in R.   
 
-<codeblock id="reshape_data_1.R">
+<codeblock id="exc_reshape_data_1.R">
 The <- arrow sign is a definition: e.g. if we want to define the variable 'EXAMPLE' by the number 1, we would write EXAMPLE <- 1. Executing 'EXAMPLE' will make R return a '1'.''
 </codeblock>
 
