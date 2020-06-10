@@ -112,7 +112,7 @@ This time you should get over 2,000 records (you will be allowed to access only 
 Try Google Scholar quick search:    *"terminal investment" "immune challenge"*    
 
 <p>This time you should get just over 400 records. Skim through the first three pages of the results to get a feel of the diversity of the studies found (e.g. what taxa are studied and what traits the studies might measure to evaluate reproductive investment) and note the wording of their titles.  
-In medical sciences, most meta-analyses (and systematic reviews) fit into the PICO (or related) question framework.</p>
+In medical sciences, most meta-analyses (and systematic reviews) fit into the PICO (or related) question framework.</p>  
 PICO stands for:   
   * P = Population   
   * I = Intervention  
@@ -186,8 +186,9 @@ Most meta-analyses only include studies published in English by default. However
 
 
 **STUDY TYPE**  
-**Should we include any type of study? (e.g. correlational vs experimental, if experimental, what type of experiment?)** 
->Since we investigate a specific intervention, we should restrict study type to "experimental" (we should explicitly exclude "simulation").
+**Should we include any type of study? (e.g. correlational vs experimental, if experimental, what type of experiment?)**
+>Since we investigate a specific intervention, we should restrict study type to "experimental" (we should explicitly exclude "simulation").  
+
 **TAXA**  
 **Should we include any type of taxa?**
 >That is a difficult one. The animal kingdom is vast and diverse, and some species are especially odd (e.g. humans). Does it make sense to include single-cell animals? Does it make sense to include humans? Probably not.
