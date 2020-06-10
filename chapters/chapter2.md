@@ -348,12 +348,12 @@ After a few weeks you finished searching and screening literature for the releva
 
 *******************************************************************************
 
-###  Organising your data set   
+## Organising your data set   
 
-Before you extract actual data for the meta-analysis you need some sort of system to manage data extractions and store the data (we assume by now you already have a system for organising and storing your references and papers, so we don't cover this). For data extractions, many people just stick to Excel spreadsheets, or any other spreadsheets or extraction forms that can be converted into spreadsheets (e.g. Google Forms). Some researchers even build elaborated relational databases (which recoup the high initial investment cost with many benefits later on). Whatever you chose, you need a platform where you can freely add and edit columns and be able to store different types of data, so rigid systems purpose-built for medical trial data are not recommended. In this exercise we will stick to the simplest, but flexible platform - an Excel spreadsheet.    
+Before you extract actual data for the meta-analysis you need some sort of system to manage data extractions and store the data (we assume by now you already have a system for organising and storing your references and papers, so we don't cover this). For data extractions, many people just stick to Excel spreadsheets, or any other spreadsheets or extraction forms that can be converted into spreadsheets (e.g. Google Forms). Some researchers even build elaborated relational databases (which recoup the high initial investment cost with many benefits later on). 
+Whatever you choose, you need a platform where you can freely add and edit columns and be able to store different types of data, so rigid systems purpose-built for medical trial data are not recommended. In this exercise we will stick to the simplest, but flexible platform - an Excel spreadsheet.    
 
 **What would be a minimum set of columns needed in an Excel sheet for a meta-analysis?**
-
 **(Remember, you need a separate column for each data/information type)** 
 
 <choice id="1">
@@ -364,7 +364,7 @@ Unfortunately wrong.
 What would they be? While we might have 6 or more columns in our data set, the minimum set can be smaller.
 </opt>
 <opt text="3"  correct="true"> 
-YES! Study ID (String of characters), effect size and its variance (if we want to run a simple weighted meta-analytic model; both numeric).
+Study ID (String of characters), effect size and its variance (if we want to run a simple weighted meta-analytic model; both numeric).
 </choice>
 
 **What other columns would be useful? Give examples of at least 5 other columns that could be added?** 
@@ -388,11 +388,10 @@ YES! Study ID (String of characters), effect size and its variance (if we want t
 </opt>
 </choice>
 
-**What is the purpose of extracting additional variables?**  
-<Potentially, there can be a lot of information that could and should be extracted from the original papers and sometimes supplemented by information from other sources (databases, publications). Some of the information can be used as effect size moderators in the statistical models. Other information can be used to characterise the data set (e.g., is it dominated by particular taxon or experimental methodology?).
+**What is the purpose of extracting additional variables?**
+>Potentially, there can be a lot of information that could and should be extracted from the original papers and sometimes supplemented by information from other sources (databases, publications). Some of the information can be used as effect size moderators in the statistical models. Other information can be used to characterise the data set (e.g., is it dominated by particular taxon or experimental methodology?).
 
 **What is wrong with this table representing a fragment of an extraction spreadsheet?**
-
 
 
 | StudyID  | Species             | mean1 | SD 1           | N 1   | P       |
@@ -401,9 +400,7 @@ YES! Study ID (String of characters), effect size and its variance (if we want t
 | Sadd2006 | mealworm beetle     | NA    | not reported   | 8 - 9 | < 0.011 |
 
 > - Non-informative column names (which group should be N 1 ?)
-
 > - column names should be one string (word) 
-
 > - second study has non-numerical values in the columns that should be numerical (NA is good for missing values, but should be used consistently)    
 > - species column is a mix of Latin and common names (should be all Latin)   
 > - there is an extra dot in "6.4         .""
