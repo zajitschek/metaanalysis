@@ -173,8 +173,11 @@ How about multicellular animals, except humans? If many studies across multiple 
 **Should we include all types of immune challenge?**
 >There are several established types of experimental immune challenge (blood cells (e.g. SRBC), protein (e.g. PHA), dead or live pathogens or parasites), so its worth including these and similar ones. Non-experimental immune challenge (e.g. natural infestation levels)  should not be included. If something odd comes up later it can come under "exclusion criteria", with justification.
 
+  
+
 **CONTROL GROUP**  
 **Should we accept any type of control group?**
+
 >Control group (un-manipulated) should consist of similar individuals, as far as reasonable and not be subject to any other manipulations.
 
 **OUTCOME TYPE**  
