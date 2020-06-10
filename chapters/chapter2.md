@@ -581,7 +581,7 @@ Since now we have a few data points extracted we could calculate effect sizes fr
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
 Since we have only 2 data points per file, it is easy to reshape the data frame in R.   
 
-<codeblock id="exc_reshape_data_1.R">
+<codeblock id="reshape_data_1">
 The <- arrow sign is a definition: e.g. if we want to define the variable 'EXAMPLE' by the number 1, we would write EXAMPLE <- 1. Executing 'EXAMPLE' will make R return a '1'.''
 </codeblock>
 
