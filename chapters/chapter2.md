@@ -40,7 +40,7 @@ Generally, the more focused the question, the easier and quicker it is to perfor
  c) Find and carefully read a few representative empirical papers.  
  d) Further refine the question.  
 
-For this exercise, we will choose *terminal investment* in animals as a general research topic that we want to explore further, using meta-analytic approaches.
+For this exercise, we will choose **terminal investment in animals** as a general research topic that we want to explore further, using meta-analytic approaches.
 <br>
 <br>
 
@@ -71,7 +71,7 @@ Other software useful for exploratory (scoping) and additional searches (check t
  * R package *[litsearchR](https://elizagrames.github.io/litsearchr/)* (which I haven't tested yet myself)
    
 
-**It seems that the question "What is the evidence for terminal investment happening?" is too general and too broad in scope. Let's try to narrow it down and focus on either *terminal investment in reproduction*, or *terminal investment under immune challenge* (notice the difference between effects *in* reproduction and effects *of* immune challenge*.**   
+**It seems that the question "What is the evidence for terminal investment?" is too general and too broad in scope. Let's try to narrow it down and focus on either *terminal investment in reproduction*, or *terminal investment under immune challenge* (notice the difference between effects *in* reproduction and effects *of* immune challenge.**   
 <br>
 <br>
 
@@ -127,7 +127,8 @@ Most importantly, you always need to be able to justify your inclusion criteria,
 <br>
 
 
-   **TIME-SPAN**: Should we include studies from any year?  
+**TIME-SPAN**
+**Should we include studies from any year?**
 
 <choice id="2" >
 <opt text="Probably yes, unless you can come up with a reason for not doing so" correct="true">
@@ -141,7 +142,8 @@ No, unless you have a very good reason to support this argument.
 <br>
 
 
-**LANGUAGE**: Should we include studies published in any language? 
+**LANGUAGE**
+**Should we include studies published in any language?**
 
 <choice id="3">
 <opt text="Yes">
@@ -166,11 +168,11 @@ Most meta-analyses only include studies published in English by default. However
 **Should we include any type of taxa?**
 >That is a difficult one. The animal kingdom is vast and diverse, and some species are especially odd (e.g. humans). Does it make sense to include single-cell animals? Does it make sense to include humans? Probably not.
 How about multicellular animals, except humans? If many studies across multiple taxa exist, we could focus on the most frequently studied taxa or biologically most interesting. Alternatively just vertebrates, except humans? Another thing worth being specific about is that the animals should be wild-type (non-mutant, not disease models) and ideally not subject to any other significant manipulations that could affect their response (e.g. drug treatment; note there is a thin fuzzy line what these manipulations are). There might also be reasons to exclude standard laboratory species (mice, rat, yeast, fruit fly) or maybe focus just on them? But, for now, we will stick to any multicellular animals, except humans.
- 
+
 **MANIPULATION TYPE**
 **Should we include all types of immune challenge?**
 >There are several established types of experimental immune challenge (blood cells (e.g. SRBC), protein (e.g. PHA), dead or live pathogens or parasites), so its worth including these and similar ones. Non-experimental immune challenge (e.g. natural infestation levels)  should not be included. If something odd comes up later it can come under "exclusion criteria", with justification.
- 
+
 **CONTROL GROUP**
 **Should we accept any type of control group?**
 >Control group (un-manipulated) should consist of similar individuals, as far as reasonable and not be subject to any other manipulations.
@@ -210,12 +212,11 @@ In a decision tree for full-text screening, we will include an additional rule:
 If the answer is **yes**, the study can be included for meta-analysis.
 
 
-**What question is missing on the top of the full-text decision tree? **
+**What question is missing on the top of the full-text decision tree?**
 **(Tip: what happens between abstract and full text screening?)**
-    
 <The missing question is: **"Is the full text of this study available for our assessment?"**   
 It is often not explicitly stated, but without the full text it is impossible to extract all the necessary information about the study and the data. 
-It is a good practice to keep this in mind and use as one of your potential inclusion/exclusion criteria.
+<It is a good practice to keep this in mind and use as one of your potential inclusion/exclusion criteria.
 
 ###  Performing searches for relevant literature  
 
@@ -231,11 +232,10 @@ Scopus and Web of Science.**
  * [Scopus](https://www.scopus.com/)   
  * [Web of Science (WoS)](http://apps.webofknowledge.com)   
 
- WoS coverage depends on the institutional subscription package purchased, so results of searches can vary among institutions (so make sure to log in via your libarry, if working from home). Also searching just core collection vs. all available databases can make a difference.     
+WoS coverage depends on the institutional subscription package purchased, so results of searches can vary among institutions (so make sure to log in via your libarry, if working from home). Also searching just core collection vs. all available databases can make a difference.     
 
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
-
 Using Scopus **Advanced Search** (you can read more about the syntax [here](https://dev.elsevier.com/tips/ScopusSearchTips.htm) run these search strings:  
 
  **1** *TITLE-ABS-KEY ( "terminal investment"  AND  "immune challenge" )*    
@@ -253,7 +253,6 @@ We stop for now and assume that the string above is our final search string. Not
 
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
-
 We can easily translate our final search string from Scopus into Web of Science (WoS) **Advanced Search** (you can read more about the syntax [here](https://images.webofknowledge.com/images/help/WOS/hs_search_operators.html). Run this search string:    
 *TS = (( ( "terminal investment" OR "reproductive effort" ) AND ( "immune challeng\*"  OR  "immunochalleng\*"  OR  "infect\*"  ) ) NOT ( load OR human OR people ) )*  
 (approx. 249 hits - more than from Scopus).   WoS stores your search history and also which sub-data bases were included in the search: Indexes=SCI-EXPANDED, SSCI, A&HCI, CPCI-S, CPCI-SSH, BKCI-S, BKCI-SSH, ESCI, CCR-EXPANDED, IC Timespan=All years" (you can restrict these in the Advanced Search).   
@@ -274,7 +273,6 @@ Theoretically you could do screening in the database browser or your reference m
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) It is possible that the de-duplication algorithms in these are not very good, so it is advisable to de-duplicate and check your records in the reference manager before uploading to the screening software.    
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
-
 We prepared a file (for download: [Scopus10.ris](/papers/Scopus10.ris)) with 10 references sampled from the set found using the search string in Scopus database (used *( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*" ) )  *) (same references came up in the equivalent search in WoS).    
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Sometimes the biblio-files with the same extension differ a bit in structure and reference managers, and Rayyan may have problem opening them. Getting your files into exactly the right format can sometimes be frustrating.   
@@ -282,13 +280,13 @@ We prepared a file (for download: [Scopus10.ris](/papers/Scopus10.ris)) with 10 
 We will use these ten references to practice title and abstract screening in Rayyan. Screening can be also done in Abstracker, but we find Rayyan a bit more reliable and more user-friendly (could be slow with updating the display).   
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
-
 Create a new project in Rayyan:
 
  1. Open Rayyan (we assume you already created a free account) and log in.    
  2. My Reviews -> New REVIEW...   
  3. Enter project title, e.g. "Terminal Investment"" and description, e.g. "test"."   
- 4. Select files -> upload *Scopus10.ris* from the *data* sub-folder and press Continue.     
+ 4. Select files -> upload *Scopus10.ris* from the *data* sub-folder and press Continue.
+
 It may take several minutes for larger files and slower connections, but eventually the uploaded references should appear in the left panel under "Search methods" (you can upload more files with references via "Add new" link). Click on the "Uploaded References [scopus10.ris]" link in this panel to see the references in the right panel. Generally clicking on the links within panels on the left will filter the records in the right panels to include only highlighted sets (to get rid of the filter click on it again to remove highlighting).  
 In the left panels there are several sub-panels.  
  5. In the "Keywords for include" you can add (via "Add new" link) following terms (or at least a few of these): challenge, challenged, injected, injection, infected, infection, PHA, SRBC, vaccine (these terms will be highlighted green in the titles and abstracts to help them find more easily; Rayyan tries to populate this list by itself - but its algorithm is medical-centered so you should adjust this list for your projects).   
@@ -302,12 +300,10 @@ How many papers did you exclude? How many conflicts did you have if you collabor
 
 >We think 4 should have been excluded:    
 >**Simmons2009** and **Clancy2013** as human studies, but    
->**Gershman2010** and **Gonzales-Tokman2013** as not likely to have any reproduction->related measurements.   
+>**Gershman2010** and **Gonzales-Tokman2013** as not likely to have any reproduction-related measurements.   
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
-
 It is time to do the full-text screening for the papers that passed title and abstract screening. There are some full-text papers that passed the initial screening in the directory - assess **Nielsen2012** and **Ardia2005** (they are in "pdf" sub-folder) using our full-text screening decision tree. (Tip: do not read the whole paper - just try to skim it and look for the key information.)      
-
 
 What was your decision about **Nielsen2012** and **Ardia2005** papers?   
 <choice id="4">
@@ -347,7 +343,7 @@ With our 144 records from Scopus, 249 from WoS (these two databases are our "mai
 
 ## Introduction for extracting effect sizes
 
-Imagine, you quickly got well and decided to carry on the Terminal Investment Meta-analysis Project.   
+Imagine, you quickly got well and decided to carry on the *Terminal Investment Meta-analysis Project*.   
 After a few weeks you finished searching and screening literature for the relevant papers. You now have a collection of around 30 included full-text papers (relatively manageable; some projects have 300 or more), stored neatly as pdf files and supplementary information, in whatever format available. It is time to start extracting the data (ideally, you should have planned this in detail while writing up your protocol/preregistration, but in this exercise we assume you did not).   
 
 *******************************************************************************
@@ -356,20 +352,54 @@ After a few weeks you finished searching and screening literature for the releva
 
 Before you extract actual data for the meta-analysis you need some sort of system to manage data extractions and store the data (we assume by now you already have a system for organising and storing your references and papers, so we don't cover this). For data extractions, many people just stick to Excel spreadsheets, or any other spreadsheets or extraction forms that can be converted into spreadsheets (e.g. Google Forms). Some researchers even build elaborated relational databases (which recoup the high initial investment cost with many benefits later on). Whatever you chose, you need a platform where you can freely add and edit columns and be able to store different types of data, so rigid systems purpose-built for medical trial data are not recommended. In this exercise we will stick to the simplest, but flexible platform - an Excel spreadsheet.    
 
-**QUESTION 1:**  
-What would be a minimum set of columns needed in an Excel sheet for a meta-analysis?   
-(Remember, you need a separate column for each data/information type)   
+**What would be a minimum set of columns needed in an Excel sheet for a meta-analysis?**
 
-**QUESTION 2:**   
-What other columns would be useful? Give examples of at least 5 other columns that could be added?   
+**(Remember, you need a separate column for each data/information type)** 
+
+<choice id="1">
+<opt text="No minimum"> 
+Unfortunately wrong.
+</opt>
+<opt text="6">
+What would they be? While we might have 6 or more columns in our data set, the minimum set can be smaller.
+</opt>
+<opt text="3"  correct="true"> 
+YES! Study ID (String of characters), effect size and its variance (if we want to run a simple weighted meta-analytic model; both numeric).
+</choice>
+
+**What other columns would be useful? Give examples of at least 5 other columns that could be added?** 
+**Hint: Think about our previously worked through inclusion criteria and their more fine-scale categories! Try to formulate some examples before pushing the Example solution button.**
+
+<choice id="2">
+<opt text="Example solution" correct="true"> 
+
+  1. More detailed information on each study: author, title, journal, publication year.
+
+  2. Information on the study system or species (e.g. species name, taxonomic group, biological details relevant to the studied question).   
+
+  3. Most papers will not report effect sizes but descriptive and test (inferential) statistics that need to be converted into effect sizes, we need to extract data from which effect sizes can be calculated. For Terminal Investment project, since we want to compare challenged and unchallenged groups, we will need to collect means and standard errors, sample sizes, or test statistic that can be converted into effect sizes. Since each data type needs its own column, that means several columns already, e.g.: mean_contr, SE_contr, SD_contr, N_contr, mean_treat, SE_treat, SD_treat, N_treat, test_stat_type, test_stat_value, df.  
+
+  4. Information on where in the original paper the above data was extracted from, e.g. Figure/Table number, page, raw data; if multiple comparisons were reported in the original paper, which exact groups were compared.     
+
+ 5. Information on study methodology - e.g., where and when manipulations were performed and measurements/data collected.   
+
+ 6. Any comments and additional information related to the extracted data and study. You can have a comment/details column associated with every extracted data column and an overall comment column.  
+
+</opt>
+</choice>
+
+**What is the purpose of extracting additional variables?**   
+
+**What is wrong with this table representing a fragment of an extraction spreadsheet?**
 
 
-**QUESTION 3:**   
-What is the purpose of extracting additional variables?   
+
+| StudyID  | Species             | mean 1 | SD 1         | N 1  | P       |
+| -------- | ------------------- | ------ | ------------ | ---- | ------- |
+| Weil2006 | *Phodopus sungorus* | 45.4   | 6.4          | 10   | 0.023   |
+| Sadd2006 | mealworm beetle     | NA     | not reported | 8-9  | < 0.011 |
 
 
-**QUESTION 4:**   
-What is wrong with this table representing a fragment of an extraction spreadsheet?        
 
 +---------------+--------------------+---------------+-------------+-------------+-------------+   
 | StudyID       | Species            | mean 1        | SD 1        | N 1         | P           |   

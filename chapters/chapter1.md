@@ -19,7 +19,7 @@ Thanks!
 
 Hi and welcome, I am **[Susi Zajitschek](https://www.ljmu.ac.uk/about-us/staff-profiles/faculty-of-science/school-of-biological-and-environmental-sciences/susanne-zajitschek), a Senior Lecturer in Animal Behaviour at Liverpool John Moores University**. This course is meant as a primer for students who would like to know more about meta-analysis. I will give you an overview on what meta-analyses are and on why they are useful. I will include hands-on exercises to conduct meta-analyses, step-by-step (based on material developed by my collaborators **[Shinichi Nakagawa](http://www.i-deel.org/shinichi-nakagawa.html)** and **[Malgorzata  Lagisz](https://mlagisz.weebly.com/)**). The actual statistical analyses will be performed in the [software R](https://www.r-project.org/about.html), and you will have the opportunity to run R software scripts right here, on this website, without the need to install software on your computer.
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Please note, if you plan on actually doing a meta-analysis yourself, beyond just going through this exercise, you will have download R or [R studio](https://rstudio.com/products/rstudio/download/), if you haven't already. 
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Please note, if you plan on actually doing a meta-analysis yourself, beyond just going through this exercise, you will have to download R or [R studio](https://rstudio.com/products/rstudio/download/), if you haven't already. 
 
 # How do use this resource
 
@@ -28,12 +28,14 @@ The main content has been split into three Chapters.  In Chapters 2, 3 and 4, I 
 The Chapters are subdivided into sections that separately go into detail for each of the different steps. 
 
 Each section may contain links to online resources, such as [google scholar](https://scholar.google.com/), Questions to answer, tasks to do on your own - as indicated by this laptop icon  ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) , and useful notes and resources ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true).
+<br>
 
 </exercise>
 
 <exercise id="2" title="Introduction">
 
-# What is a meta-analysis?
+# WHAT IS A META-ANALYSIS and WHY TO META-ANALYSE?
+
 
 ## A short side-trip to the roots of knowledge
 Humans strive to understand the world. The organized framework to do this is science, more specifically the *[scientific method](https://en.wikipedia.org/wiki/Scientific_method)*. Science is cumulative in nature. This means that studies and experiments build upon the findings of previous studies and experiments. New scientific insights might be gained by a more or less progressive accumulation of knowledge about a specific question, adding on to existing knowledge. Or, according to [Thomas Kuhn](https://en.wikipedia.org/wiki/Thomas_Kuhn), real progression in science might require [paradigm shifts](https://en.wikipedia.org/wiki/Paradigm_shift) that throw old theories over board and make way for new better theories. These shifts in how we explain the world depend themselves on the accumulation of results, which did not fit the old established theories, but which turned out to be not due to error of any kind (for example methodological mistakes or human error in performing studies).
@@ -62,7 +64,7 @@ We will take the paper [Nakagawa 2017](https://bmcbiol.biomedcentral.com/article
 
 However, as this is meant as a first step to get you started, we will provide some additional resources, exercises and guidelines (Chapters 2, 3 and 4). This includes a section on phylogenetic trees (which you may need if the question you're planning on tackling spans across different species. To keep things simple initially, we are concentrating on an example within the same species), how to make a decision tree in R, and other useful stuff.
 
-Here is a list of the different parts of a meta analysis:
+Here is a list of the different parts of a meta-analysis:
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/metaanalysis_overview.png?raw=true)
 <br>
@@ -84,9 +86,11 @@ The following diagram shows a more in depth overview, starting from the literatu
 - [The effect of dietary restriction on reproduction: a meta-analytic perspective](https://bmcevolbiol.biomedcentral.com/articles/10.1186/s12862-016-0768-z).
 
 **Meta-analysis and research synthesis: an outlook**
-[Research Weaving: Visualizing the Future of Research Synthesis](https://ecoevorxiv.org/ga2qz/)
+
+- [Research Weaving: Visualizing the Future of Research Synthesis](https://ecoevorxiv.org/ga2qz/)
 
 **Key reference for how to conduct a meta-analysis**
-[Meta-evaluation of meta-analysis: Ten appraisal questions for biologists](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7)
+
+- [Meta-evaluation of meta-analysis: Ten appraisal questions for biologists](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7)
 
 </exercise>
