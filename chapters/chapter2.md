@@ -113,7 +113,6 @@ Try Google Scholar quick search:    *"terminal investment" "immune challenge"*
 
 <p>This time you should get just over 400 records. Skim through the first three pages of the results to get a feel of the diversity of the studies found (e.g. what taxa are studied and what traits the studies might measure to evaluate reproductive investment) and note the wording of their titles.  
 In medical sciences, most meta-analyses (and systematic reviews) fit into the PICO (or related) question framework.</p>
-
 PICO stands for:   
   * P = Population   
   * I = Intervention  
