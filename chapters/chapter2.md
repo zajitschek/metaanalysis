@@ -188,15 +188,13 @@ Most meta-analyses only include studies published in English by default. However
 
 **STUDY TYPE**  
 **Should we include any type of study? (e.g. correlational vs experimental, if experimental, what type of experiment?)**
->Since we investigate a specific intervention, we should restrict study type to "experimental" (we should explicitly exclude "simulation").  
+>Since we investigate a specific intervention, we should restrict study type to "experimental" (we should explicitly exclude "simulation").
 
 **TAXA**  
 **Should we include any type of taxa?**
 >That is a difficult one. The animal kingdom is vast and diverse, and some species are especially odd (e.g. humans). Does it make sense to include single-cell animals? Does it make sense to include humans? Probably not.
 How about multicellular animals, except humans? If many studies across multiple taxa exist, we could focus on the most frequently studied taxa or biologically most interesting. Alternatively just vertebrates, except humans? Another thing worth being specific about is that the animals should be wild-type (non-mutant, not disease models) and ideally not subject to any other significant manipulations that could affect their response (e.g. drug treatment; note there is a thin fuzzy line what these manipulations are). There might also be reasons to exclude standard laboratory species (mice, rat, yeast, fruit fly) or maybe focus just on them? But, for now, we will stick to any multicellular animals, except humans.
-
-
-​    
+ 
 **MANIPULATION TYPE**: Should we include all types of immune challenge?   
 
 >There are several established types of experimental immune challenge (blood cells (e.g. SRBC), protein (e.g. PHA), dead or live pathogens or parasites), so its worth including these and similar ones. Non-experimental immune challenge (e.g. natural infestation levels)  should not be included. If something odd comes up later it can come under "exclusion criteria", with justification.
