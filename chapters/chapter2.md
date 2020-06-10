@@ -388,58 +388,53 @@ YES! Study ID (String of characters), effect size and its variance (if we want t
 </opt>
 </choice>
 
-**What is the purpose of extracting additional variables?**   
+**What is the purpose of extracting additional variables?**  
+<Potentially, there can be a lot of information that could and should be extracted from the original papers and sometimes supplemented by information from other sources (databases, publications). Some of the information can be used as effect size moderators in the statistical models. Other information can be used to characterise the data set (e.g., is it dominated by particular taxon or experimental methodology?).
 
 **What is wrong with this table representing a fragment of an extraction spreadsheet?**
 
 
 
-| StudyID  | Species             | mean 1 | SD 1         | N 1  | P       |
-| -------- | ------------------- | ------ | ------------ | ---- | ------- |
-| Weil2006 | *Phodopus sungorus* | 45.4   | 6.4          | 10   | 0.023   |
-| Sadd2006 | mealworm beetle     | NA     | not reported | 8-9  | < 0.011 |
+| StudyID  | Species             | mean1 | SD 1           | N 1   | P       |
+| -------- | ------------------- | ----- | -------------- | ----- | ------- |
+| Weil2006 | Phodopus sungorus | 45.4  | 6.4          . | 10    | 0.023   |
+| Sadd2006 | mealworm beetle     | NA    | not reported   | 8 - 9 | < 0.011 |
 
+> - Non-informative column names (which group should be N 1 ?)
 
+> - column names should be one string (word) 
 
-+---------------+--------------------+---------------+-------------+-------------+-------------+   
-| StudyID       | Species            | mean 1        | SD 1        | N 1         | P           |   
-+===============+====================+===============+=============+=============+=============+   
-| Weil2006      | Phodopus sungorus  | 45.4          | 6.4      .  | 10          | 0.023       |   
-+---------------+--------------------+---------------+-------------+-------------+-------------+   
-| Sadd2006      | mealworm beetle    | NA            |not reported | 8 - 9       | < 0.011     |   
-+---------------+--------------------+---------------+-------------+-------------+-------------+    
+> - second study has non-numerical values in the columns that should be numerical (NA is good for missing values, but should be used consistently)    
+> - species column is a mix of Latin and common names (should be all Latin)   
+> - there is an extra dot in "6.4         .""
+
 
 
 **QUESTION 5:**    
-What is the use of the CohortID column in the extraction table below (just a fragment of a larger example extraction sheet)?    
+**What is the use of the CohortID column in the extraction table below (just a fragment of a larger example extraction sheet)?**
 
-+----------+----------+------------------+-------+-------+-------------+------------+-----------+
-| StudyID  | CohortID |Species           | sex   | age   | mean_control| SD_control | N_control |
-+==========+==========+==================+=======+=======+=============+============+===========+
-| One2019  | One2019F |Phodopus sungorus | F     | 60    | 3.6         | 1.3        | 10        |
-+----------+----------+------------------+-------+-------+-------------+------------+-----------+
-| One2009  | One2019M |Phodopus sungorus | M     | 60    | 12.1        | 3.1        | 12        |
-+----------+----------+------------------+-------+-------+-------------+------------+-----------+
-| One2019  | One2019F |Phodopus sungorus | F     | 120   | 8.3         | 2.2        | 10        |
-+----------+----------+------------------+-------+-------+-------------+------------+-----------+
-| One2009  | One2019M |Phodopus sungorus | M     | 120   | 14.5        | 4.4        | 12        |
-+----------+----------+------------------+-------+-------+-------------+------------+-----------+
+| StudyID | CohortID | Species           | sex  | age  | mean_control | SD_control | N_control |
+| ------- | -------- | ----------------- | ---- | ---- | ------------ | ---------- | --------- |
+| One2019 | One2019F | Phodopus sungorus | F    | 60   | 3.6  | 1.3  | 10   |
+| One2009 | One2019M | Phodopus sungorus | M    | 60   | 12.1 | 3.1  | 12   |
+| One2019 | One2019F | Phodopus sungorus | F    | 120  | 8.3  | 2.2  | 10   |
+| One2009 | One2019M | Phodopus sungorus | M    | 120  | 14.5 | 4.4  | 12   |
+
+> CohortID is used to indicate that the same cohorts/group of animals, of different sex (F, M), were measured repeatedly at different ages (60 and 120). These are not independent data points, and this is captured by CohortID. For different study question this could be an unique identifier of various study sites or populations that need to be distinguished within and between studies.      
 
 
-**QUESTION 6:**    
-What is the use of the CohortID column in the extraction table below (just a fragment of a larger example extraction sheet)?   
 
-+----------+----------+------------------+-------+-------+-------------+------------+-----------+
+**What is the use of the CohortID column in the extraction table below (just a fragment of a larger example extraction sheet)?**
+
 | StudyID  | CohortID |Species           | trait | age   | mean_control| SD_control | N_control |
-+==========+==========+==================+=======+=======+=============+============+===========+
+| ------- | -------- | ----------------- | ---- | ---- | ------------ | ---------- | --------- |
 | Two2019  | Two2019a1|Phodopus sungorus | calls | 60    | 3.6         | 1.3        | 10        |
-+----------+----------+------------------+-------+-------+-------------+------------+-----------+
 | Two2009  | Two2019a1|Phodopus sungorus | mass  | 60    | 12.1        | 3.1        | 12        |
-+----------+----------+------------------+-------+-------+-------------+------------+-----------+
-| Two2019  | Two2019a2|Phodopus sungorus | calls | 120   | 8.3         | 2.2        | 10        | 
-+----------+----------+------------------+-------+-------+-------------+------------+-----------+
+| Two2019  | Two2019a2|Phodopus sungorus | calls | 120   | 8.3         | 2.2        | 10        |
 | Two2009  | Two2019a2|Phodopus sungorus | mass  | 120   | 14.5        | 4.4        | 12        |
-+----------+----------+------------------+-------+-------+-------------+------------+-----------+
+
+> CohortID is used to indicate that the same cohorts/group of animals were measured repeatedly for different traits (calls, mass) at different ages (60 and 120). These are not independent data points, and this is captured by CohortID.   
+
 
 
 **QUESTION 7:**    
