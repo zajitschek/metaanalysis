@@ -722,22 +722,3 @@ Have a look again at the PRISMA checklist (http://prisma-statement.org/documents
 Although not mentioned in the original PRISMA checklist, it is important to share the collected data, meta-data and analysis code. Think of at least 3 reasons for doing so.
 
 
-</exercise>
-
-<exercise id="5" title="Data analysis">
-
-# Data analysis
-
-</exercise>
-
-<exercise id="6" title="Evidence summary & assessment of certainty">
-
-# Evidence summary & assessment of certainty
-
-</exercise>
-
-<exercise id="7" title="Report and interpret results">
-
-# Report and interpret results
-
-</exercise>
