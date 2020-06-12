@@ -10,27 +10,16 @@ id: 2
 
 <exercise id="1" title="Research question and literature search">
 
-# Literature search
-
-There are different protocols for how to gather the literature for a systematic meta-analysis. We will walk through a specific literature search below, using one established protocol. Please note that this is in itself an active area of research though. For example, I would like to mention the *[metaverse](https://rmetaverse.github.io/)*, a collection of R packages that is aimed at integrating all steps of a meta-analysis. The package *[litsearchR](https://elizagrames.github.io/litsearchr/)* seems especially promising, and you could try it out on your local R installation (right now, I haven't installed it in the R software container you will be using during this course / online).
-
-#### In this exercise you get some practice and tips on:   
-
- * Formulating the question for a meta-analysis   
- * Deciding on inclusion criteria   
- * Making decision trees   
- * Performing searches for relevant literature   
- * Screening the literature  
- * PRISMA and other documentation  
-
-
-
-###  Formulating the question for a meta-analysis  
+# Formulating the question for a meta-analysis  
 
 A topic of interest is usually rather broad and vague. For a meta-analysis we need a much more concrete question.
 Generally, the more focused the question, the easier and quicker it is to perform the meta-analysis, but the answer becomes less general and there might be less evidence available.
 <br>
 <br>
+
+# Literature search
+
+There are different protocols for how to gather the literature for a systematic meta-analysis. We will walk through a specific literature search below, using one established protocol. Please note that this is in itself an active area of research though. For example, I would like to mention the *[metaverse](https://rmetaverse.github.io/)*, a collection of R packages that is aimed at integrating all steps of a meta-analysis. The package *[litsearchR](https://elizagrames.github.io/litsearchr/)* seems especially promising, and you could try it out on your local R installation (right now, I haven't installed it in the R software container you will be using during this course / online).
 
 
 #### Start with these steps:
@@ -115,10 +104,11 @@ An extensive list of alternative systematic review formulation question framewor
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) You should always be able to justify your question as important, relevant and timely. This holds true for other research questions as well, and will affect the likelihood of a meta-analysis you propose to perform to gain support (by an academic supervisor, a grant agency, in an academic and a non-academic environment), and its impact on the target audience. 
 <br>
-<br>
+</exercise>
 
+<exercise id="2" title="Inclusion criteria">
 
-##  Deciding on inclusion criteria   
+#  Deciding on inclusion criteria   
 
 The basic PICO components are usually not sufficient to perform the effective screening of the papers for inclusion in meta-analysis.
 There are additional both technical and biological refinements to be considered for inclusion criteria in our project.
@@ -173,8 +163,6 @@ How about multicellular animals, except humans? If many studies across multiple 
 **Should we include all types of immune challenge?**
 >There are several established types of experimental immune challenge (blood cells (e.g. SRBC), protein (e.g. PHA), dead or live pathogens or parasites), so its worth including these and similar ones. Non-experimental immune challenge (e.g. natural infestation levels)  should not be included. If something odd comes up later it can come under "exclusion criteria", with justification.
 
-  
-
 **CONTROL GROUP**  
 **Should we accept any type of control group?**
 
@@ -187,6 +175,7 @@ How about multicellular animals, except humans? If many studies across multiple 
 **DATA TYPE**  
 **Should we accept any type of data for a meta-analysis? (e.g. descriptive statistics (summarising populations), and which ones, or also inferential statistics (based on population samples and used to estimate parameters and test hypotheses), and which ones? This will be linked to the effect size you are planning to use!)**
 >It depends on the effect size we are planning to use. In our project it can be Cohen's *d*(Hedges *g*) or *lnRR*, which are typically calculated from mean, SD or SE and N (sample sizes). However, Cohen's *d* (Hedges *g*) can be also inferred from some of the test statistics, or even proportions, if means and other descriptive statistics are not available. But one cannot get *lnRR* from inhferential statistics. Other considerations include what to do if some data is missing or unclear.  
+
 
 ## Making decision trees for the literature screening    
 
@@ -265,6 +254,10 @@ Both Scopus and WoS allow exporting the found records (with limitations on the m
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) This is also a good time to write up your meta-analysis protocol and register your meta-analysis (e.g. on OSF)!
 
 *******************************************************************************
+</exercise>
+
+<exercise id="3" title="Screening the literature">
+
 ###  Screening the literature   
 
 Theoretically you could do screening in the database browser or your reference manager, but since it is recommended that 2 people do the screening independently (or at least part of the screening), it is good to use a dedicated tool to manage this process.  
@@ -333,366 +326,4 @@ With our 144 records from Scopus, 249 from WoS (these two databases are our "mai
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/prisma.png?raw=true)
 <br>
 <br>
-
 </exercise>
-
-<exercise id="2" title="Paper selection">
-
-# Paper selection
-
-</exercise>
-
-<exercise id="3" title="Extraction of effect sizes">
-
-## Introduction for extracting effect sizes
-
-Imagine, you quickly got well and decided to carry on the *Terminal Investment Meta-analysis Project*.   
-After a few weeks you finished searching and screening literature for the relevant papers. You now have a collection of around 30 included full-text papers (relatively manageable; some projects have 300 or more), stored neatly as pdf files and supplementary information, in whatever format available. It is time to start extracting the data (ideally, you should have planned this in detail while writing up your protocol/preregistration, but in this exercise we assume you did not).   
-
-*******************************************************************************
-
-## Organising your data set   
-
-Before you extract actual data for the meta-analysis you need some sort of system to manage data extractions and store the data (we assume by now you already have a system for organising and storing your references and papers, so we don't cover this). For data extractions, many people just stick to Excel spreadsheets, or any other spreadsheets or extraction forms that can be converted into spreadsheets (e.g. Google Forms). Some researchers even build elaborated relational databases (which recoup the high initial investment cost with many benefits later on). 
-Whatever you choose, you need a platform where you can freely add and edit columns and be able to store different types of data, so rigid systems purpose-built for medical trial data are not recommended. In this exercise we will stick to the simplest, but flexible platform - an Excel spreadsheet.    
-
-**What would be a minimum set of columns needed in an Excel sheet for a meta-analysis?**
-**(Remember, you need a separate column for each data/information type)** 
-
-<choice id="1">
-<opt text="No minimum"> 
-Unfortunately wrong.
-</opt>
-<opt text="6">
-What would they be? While we might have 6 or more columns in our data set, the minimum set can be smaller.
-</opt>
-<opt text="3"  correct="true"> 
-Study ID (String of characters), effect size and its variance (if we want to run a simple weighted meta-analytic model; both numeric).
-</choice>
-
-**What other columns would be useful? Give examples of at least 5 other columns that could be added?** 
-**Hint: Think about our previously worked through inclusion criteria and their more fine-scale categories! Try to formulate some examples before pushing the Example solution button.**
-
-<choice id="2">
-<opt text="Example solution" correct="true"> 
-
-  1. More detailed information on each study: author, title, journal, publication year.
-
-  2. Information on the study system or species (e.g. species name, taxonomic group, biological details relevant to the studied question).   
-
-  3. Most papers will not report effect sizes but descriptive and test (inferential) statistics that need to be converted into effect sizes, we need to extract data from which effect sizes can be calculated. For Terminal Investment project, since we want to compare challenged and unchallenged groups, we will need to collect means and standard errors, sample sizes, or test statistic that can be converted into effect sizes. Since each data type needs its own column, that means several columns already, e.g.: mean_contr, SE_contr, SD_contr, N_contr, mean_treat, SE_treat, SD_treat, N_treat, test_stat_type, test_stat_value, df.  
-
-  4. Information on where in the original paper the above data was extracted from, e.g. Figure/Table number, page, raw data; if multiple comparisons were reported in the original paper, which exact groups were compared.     
-
- 5. Information on study methodology - e.g., where and when manipulations were performed and measurements/data collected.   
-
- 6. Any comments and additional information related to the extracted data and study. You can have a comment/details column associated with every extracted data column and an overall comment column.  
-
-</opt>
-</choice>
-
-**What is the purpose of extracting additional variables?**
->Potentially, there can be a lot of information that could and should be extracted from the original papers and sometimes supplemented by information from other sources (databases, publications). Some of the information can be used as effect size moderators in the statistical models. Other information can be used to characterise the data set (e.g., is it dominated by particular taxon or experimental methodology?).
-
-**What is wrong with this table representing a fragment of an extraction spreadsheet?**
-
-
-| StudyID  | Species             | mean1 | SD 1           | N 1   | P       |
-| -------- | ------------------- | ----- | -------------- | ----- | ------- |
-| Weil2006 | Phodopus sungorus | 45.4  | 6.4          . | 10    | 0.023   |
-| Sadd2006 | mealworm beetle     | NA    | not reported   | 8 - 9 | < 0.011 |
-
-> - Non-informative column names (which group should be N 1 ?)
-> - column names should be one string (word) 
-> - second study has non-numerical values in the columns that should be numerical (NA is good for missing values, but should be used consistently)    
-> - species column is a mix of Latin and common names (should be all Latin)   
-> - there is an extra dot in "6.4         .""
-
-
-
-**QUESTION 5:**    
-**What is the use of the CohortID column in the extraction table below (just a fragment of a larger example extraction sheet)?**
-
-| StudyID | CohortID | Species           | sex  | age  | mean_control | SD_control | N_control |
-| ------- | -------- | ----------------- | ---- | ---- | ------------ | ---------- | --------- |
-| One2019 | One2019F | Phodopus sungorus | F    | 60   | 3.6  | 1.3  | 10   |
-| One2009 | One2019M | Phodopus sungorus | M    | 60   | 12.1 | 3.1  | 12   |
-| One2019 | One2019F | Phodopus sungorus | F    | 120  | 8.3  | 2.2  | 10   |
-| One2009 | One2019M | Phodopus sungorus | M    | 120  | 14.5 | 4.4  | 12   |
-
-> CohortID is used to indicate that the same cohorts/group of animals, of different sex (F, M), were measured repeatedly at different ages (60 and 120). These are not independent data points, and this is captured by CohortID. For different study question this could be an unique identifier of various study sites or populations that need to be distinguished within and between studies.      
-
-
-
-**What is the use of the CohortID column in the extraction table below (just a fragment of a larger example extraction sheet)?**
-
-| StudyID  | CohortID |Species           | trait | age   | mean_control| SD_control | N_control |
-| ------- | -------- | ----------------- | ---- | ---- | ------------ | ---------- | --------- |
-| Two2019  | Two2019a1|Phodopus sungorus | calls | 60    | 3.6         | 1.3        | 10        |
-| Two2009  | Two2019a1|Phodopus sungorus | mass  | 60    | 12.1        | 3.1        | 12        |
-| Two2019  | Two2019a2|Phodopus sungorus | calls | 120   | 8.3         | 2.2        | 10        |
-| Two2009  | Two2019a2|Phodopus sungorus | mass  | 120   | 14.5        | 4.4        | 12        |
-
-> CohortID is used to indicate that the same cohorts/group of animals were measured repeatedly for different traits (calls, mass) at different ages (60 and 120). These are not independent data points, and this is captured by CohortID.   
-
-
-
-**QUESTION 7:**    
-What is the use of the CohortID column in the extraction table below (just a fragment of a larger example extraction sheet)?   
-
-+----------+------------+------------------+-------+------+-------------+------------+-----------+
-| StudyID  | CohortID   |Species           | trait | age  | mean_control| SD_control | N_control |
-+==========+============+==================+=======+======+=============+============+===========+
-| Three2019| Three2019s1|Phodopus sungorus | calls | 60   | 3.6         | 1.3        | 10        |
-+----------+------------+------------------+-------+------+-------------+------------+-----------+
-| Three2019| Three2019s1|Phodopus sungorus | mass  | 60   | 12.1        | 3.1        | 12        |
-+----------+------------+------------------+-------+------+-------------+------------+-----------+
-| Three2019| Three2019s2|Phodopus campbelli| calls | 60   | 8.3         | 2.2        | 10        |
-+----------+------------+------------------+-------+------+-------------+------------+-----------+
-| Three2019| Three2019s2|Phodopus campbelli| mass  | 60   | 14.5        | 4.4        | 12        |
-+----------+------------+------------------+-------+------+-------------+------------+-----------+
-
-
-**QUESTION 8:**    
-What is the use of the Control_grID column in the extraction table below (just a fragment of a larger example extraction sheet)?   
-
-+----------+----------+-------------+----------+-------------+----------+------------+---------+
-| StudyID  | CohortID | Control_grID| treatment| mean_control| N_control| mean_treatm| N_tratm |
-+==========+==========+=============+==========+=============+==========+============+=========+
-| Four2019 | Four2019a| Four2019c1  | virus    | 4.8         | 20       | 21.1       | 14      |
-+----------+----------+-------------+----------+-------------+----------+------------+---------+
-| Four2009 | Four2019b| Four2019c1  | bacteria | 4.8         | 20       | 11.3       | 16      |
-+----------+----------+-------------+----------+-------------+----------+------------+---------+
-| Four2009 | Four2009a| Four2019c2  | virus    | 6.3         | 19       | 33.3       | 10      |
-+----------+----------+-------------+----------+-------------+----------+------------+---------+
-| Four2009 | Four2009b| Four2019c2  | bacteria | 6.3         | 19       | 14.4       | 12      |
-+----------+----------+-------------+----------+-------------+----------+------------+---------+
-
-
-**QUESTION 9:**   
-Why should we record meta-data when extracting data for a meta-analysis?   
-
-
-**Note:** In your actual extraction sheet/form, try to group related columns together. You can also color-code them in Excel or put them on the same tab/section in a visual database interface, if used. Your extraction form (spreadsheet) should be tested on several papers (pilot extractions) to make sure it is easy to use and captures necessary information.  
-
-*******************************************************************************
-
-###  Extracting and coding
-
-**QUESTION 10:**   
-Is one person sufficient to extract the data? 
-
-
-**QUESTION 11:**   
-In what order would you extract your included studies? Random? Chronological? Any other?
-
-
-**QUESTION 12:**   
-When numerical data is reported in the text or tables, it is easy to get exact values for your extraction columns. However, often data is reported in the figures. Can we extract such data? Is it always possible?   
-
-
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)
-We will practice data extraction on few of the Terminal investment papers. We will use the R package *metaDigitise*.  
-
-Detailed package description and tutorial are available at: https://cran.r-project.org/web/packages/metaDigitise/vignettes/metaDigitise.html or     
-
-https://github.com/daniel1noble/metaDigitise and this publication:  
-https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13118   
-
-Metadigitise includes functionality that requires a local RStudio installation (i.e. you can't run it on here, only on your computer). If you want to install and load the R packages and libraries on your local computer and in RStudio, you can use the code below:
-
-```
-install.packages("devtools")
-devtools::install_github("daniel1noble/metaDigitise")
-install.packages("metaDigitise")
-install.packages("tidyverse") 
-install.packages("compute.es")
-
-# Load the packages:
-library(metaDigitise)
-library(tidyverse)
-library(compute.es)
-```
-**We will now guide you through the necessary steps on your local RStudio.**
-
-Let's try to extract data from two selected papers::   
- 1. Figure 2a in the paper by Weil et al. 2006: Immune challenge retards seasonal reproductive regression in rodents: evidence for terminal investment (**[Weil2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/papers/Weil2006.pdf)**)
- 2. Figure 2a in the paper by Sadd et al. 2006: Modulation of sexual signalling by immune challenged male mealworm beetles (*Tenebrio molitor*, L.): evidence for terminal investment and dishonesty (**[Sadd2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/Sadd2006.pdf)**)   
-
-You will need to open the pdf files and take the snapshots of the relevant figures (for Mac OS the keyboard shortcut is easiest: press Command+Shift+4 and then select the screen fragment; for Windows see https://www.windowscentral.com/how-take-windows-10-screenshot-7-best-techniques). Make sure you capture the axes and axes labels. Also, enlarge these figures to fill the screen before taking the snapshot to get a higher resolution image.   
-
-We did this as well and named the snapshot files, which you can see as smaller images below, as following (this makes it easy to keep track of the figures being digitised)     
-
-**001_Weil_2006_Fig2a.png**    
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/001_Weil_2006_Fig2a_small.png?raw=true)
-<br>
-
-and   
-<br>
-**002_Sadd_2006_Fig2a.png**
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/002_Sadd_2006_Fig2a_small.png?raw=true)
-<br>
-<br>
-
-We have to place them in a new folder - let's call it **metaDigitise_figures** (read more about organising your extraction directories in the "Setting up directory structures " section of https://cran.r-project.org/web/packages/metaDigitise/vignettes/metaDigitise.html).   
-
-To extract our two figures we need to provide the directory path name of the folder with the images to the *metaDigise()* function, in our case::
-
-
-``` data <- metaDigitise(dir = "data/metaDigitise_figures/") ```
-
-
-Tell *metaDigitise* you would like to process new images by selecting option "1" (type 1 in the console, not in the script; hit the 'Enter'-key to enter input choices to *metaDigitise*).
-
-The next question is whether the plots are different or same - this is about the plot type and since we have a box plot and bar plot with means and SE, we can treat them as the same plot types, so enter "s" and for the next question "m" (for <u>m</u>ean and error).   
-
-The first plot (**001_Weil_2006_Fig2a.png**) should be loaded at this stage. We do not need to rotate the image, so enter "c".   
-
-Now we can store the information about y-variable type - enter "testes volume (mm3)".   
-
-First you are asked to calibrate the y-axis. To do this as precisely as possible, enlarge the plot viewer before clicking on the lowest and highest marked values (in this case, 200 and 900). Enter these values as prompted. The program will then show you your calibration and ask if you want to re-calibrate; if it looks accurate enough, click “n” to proceed, otherwise click “y” to try again.      
-
-Its good to enter sample sizes at this point. Since there is no such info in the plot or under the plot, search the full text for the sample sizes (hint: look in "Statistical analysis"). Ideally, to do it efficiently you would already have extracted this and other available information into your spreadsheet, then saved the figures, and then come back at the end to process all the figures at once. This way you have everything at hand when you do data extraction from the figures.   
-
-Once you have the information on the group names and sample sizes, enter an identifier for the control group ("saline") and sample size for this group.    
-
-Since we have multiple data points for each group of animals, we have to decide whether to extract all of them or just one (or some subset) - your decision should be biologically-informed and ideally a priori. For this exercise we will extract just the last one (at 6 weeks). Click on the outer edge of the error bar of the last black point, and then click the middle of the black dot. If it went well you can add the treatment group "LPS" in a similar manner. If something went wrong you can delete and repeat the extraction.  
-
-Once you extract data for the treatment group, select "Finish plot" (enter "f"), select "se" and continue "y" to move to the next image.   
-
-Now you should be able to extract data from **plot 002_Sadd_2006_Fig2a.png**! (hint: extract "treatment control" and "treatment" groups).
-
-Once you get a "Congratulations" message, you can look at the extracted data. *metaDigitise()* stores and sorts all the summary data for each of the figures in the "data"" object.  
-
-You can add more figures in the directory and add more data to this data table later, or save it and load back later to continue adding more data or merge with other data frames (see "Re-importing previously digitised data and accessing raw data" in the *metaDigitise* tutorial at https://cran.r-project.org/web/packages/metaDigitise/vignettes/metaDigitise.html).   
-
-```{r save metadigitise, eval=FALSE, message = FALSE}
-write.csv(data, file = "filename.csv") #adjust the file name and path as needed
-```
-
-
-As you see, *metaDigitise* guides you gently through the all steps of data extraction from figures. It also nicely organises and stores the data for you. You should invest some extra time into learning this handy tool. If you have some time left after this exercise go through the full tutorial at https://cran.r-project.org/web/packages/metaDigitise/vignettes/metaDigitise.html       
-
-*******************************************************************************
-
-###  Converting different types of information   
-
-
-Since now we have a few data points extracted we could calculate effect sizes from them. Since we compare pairs of measurements for control and treatment groups, it is convenient to have these in the same row in the data frame. Therefore, we first need to reshape our data frame.   
-
-
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
-Since we have only 2 data points per file, it is easy to reshape the data frame in R.   
-
-<codeblock id="reshape_data_1">
-The <- arrow sign is a definition: e.g. if we want to define the variable 'EXAMPLE' by the number 1, we would write EXAMPLE <- 1. Executing 'EXAMPLE' will make R return a '1'.''
-</codeblock>
-
-Now the columns appended with .x contain control groups data values, and these with .y are for the treatment groups (you can rename the columns to make it easier to see, e.g. using the *rename* function https://dplyr.tidyverse.org/reference/select.html).   
-
-**TASK 3**:  
-We will now use the *escalc* function from *metafor* package to calculate effect sizes. This function allows to calculate various effect sizes or outcome measures (and the corresponding sampling variances) that are commonly used in meta-analyses, including two effect sizes that are relevant to our data and question:   
- * "SMD" stands for standarised mean difference, i.e. Hedges' *g* (potentially also "SMDH" for heteroscedastic variances).   
- * "ROM" for the log transformed ratio of means (Hedges et al., 1999; Lajeunesse, 2011), also named lnRR.   
-We calculate them as follows:   
-
-```{r calculate SMD , eval=FALSE, message = FALSE}
-SMD <- metafor::escalc(measure = "SMD", data=data_new, m1i=mean.y, m2i = mean.x, sd1i=sd.y, sd2i= sd.x, n1i = n.y, n2i=n.x, append = FALSE) #note we have treatemnt group as 1 and control as 2, so we can get possitive effect size for larger investment in treatment group
-SMD
-```
-
-```{r calculate ROM , eval=FALSE, message = FALSE}
-ROM <- metafor::escalc(measure = "ROM", data=data_new, m1i=mean.y, m2i = mean.x, sd1i=sd.y, sd2i= sd.x, n1i = n.y, n2i=n.x, append = FALSE)
-ROM
-```
-
-
-**QUESTION 14:**   
-What should you do next?   
-
-<br>
-
-With these two papers we just extracted, we had a relatively easy job. There were descriptive statistics values reported in the plots. If we cannot get means and standard errors (or SD) from the text, tables and figures (or already-calculated effect sizes, which is still rare), we can look for test (inferential) statistics. Test statistics that are usable include t-values form t-tests, F-values, Chi-square values, and p-values. These values from simple statistical tests (like independent or paired t-tests) are easily convertible into SMD (*d*, *g*) or r (correlation coefficient). These conversions and some others can be calculated in R if you know the formulas (including conversion from SMD to correlation coefficient), but for the exercise purpose we will use this web-based Practical Meta-Analysis Effect Size Calculator:   
-https://www.campbellcollaboration.org/research-resources/research-for-resources/effect-size-calculator.html   
-
-
-```{r webEScalcualtor, echo=FALSE, fig.cap=" ", out.width='100%'}
-knitr::include_graphics("../images/webEScalcualtor.png")
-```
-
-Open the above webpage. The main menu has an expandable list of types of effect sizes, and statistical tests you can use to calculate these effect sizes (only *d*, *r*, *OR* and *RR*).   
-
-
-**TASK 4**:   
-Weil (2006) reports in the results: "At the end of the experiment saline-injected animals had smaller testes (F 1,27 = 4.6875, p<0.05, figure 2b)" and in the methods it is noted these are calculated using ANOVA.
-Use the web-based effect size calculator sheet selecting "Standarized Mean difference (d)" and "F-test, 2 groups" to calculate *d* from one-way ANOVA (you will need F-value and sample sizes of treatment and control groups).   
-
-You should get *d* for the testes  mass that is close to what we calculated for tests volume from Fig2a. Note that this web calculator provides confidence intervals (CI) and variance for the calculated effect sizes.
-
-**TASK 5**:   
-Using the web-based effect size calculator, estimate a few other effect sizes using test (inferential) statistics reported in **Sadd2006.pdf**.   
-
-In practice, we would prefer to do this in R, rather than in an online app or any other non-scriptable software that cannot document our calculations. Luckily, the R package *compute.es* allows us to not only compute various effect sizes from descriptive statistics, but also from inferential statistics.   
-
-The *compute.es* function inputs and names are as follows:   
- * ANCOVA F-test: "a.fes()""   
- * ANCOVA means: "a.mes()"   
- * ANCOVA means (pooled sd): "a.mes2()"   
- * ANCOVA p-value: "a.pes()"    
- * ANCOVA t-test: "a.tes()"   
- * Chi-squared (1 df): "chies()"   
- * Correlation: "res()"    
- * d-statistic: "des()"    
- * Failure group (binary): "failes()"    
- * F-test: "fes()"   
- * Log odds ratio: "lores()"    
- * Means: "mes()"    
- * Means (pooled sd): "mes2()"   
- * Proportions (binary): "propes()"    
- * p-value: "pes()""    
- * t-test: "tes()""    
-
-To learn more see the package vignette or https://www.rdocumentation.org/packages/compute.es/versions/0.2-4/topics/compute.es-package    
-
-As an example, we will use the F-value from **TASK 4**. Note that functions from the *compute.es* packages automatically calculate all available effect sizes for the given input and if you run it on a data frame it will generate a new data.frame with several effect size estimates. Try:   
-
-```{r use compute.es, eval=TRUE, echo = TRUE, message = FALSE}
-#single calculation:
-a.fes(f = 4.6875, n.1 = 28, n.2 = 10, R = 0, q = 0) #where we enter F-value, sample sizes of treatment and control group, covariate correlation and number of covariates (we have none in ANOVA))
-
-#for vectors of values (like in a data frame):
-results_ES <- a.fes(f = c(4.6875, 4.6875), n.1 = c(28, 10), n.2 = c(10, 10), R = c(0, 0), q = c(0, 0))
-str(results_ES)
-```
-
-
-**QUESTION 15:**   
-If both descriptive statistics (mean, SE or SD) and test (inferential) statistics are reported, which one should we extract from a paper?
-
-
-**QUESTION 16:**    
-Is the sign of the effect size important? Imagine we use *d*, which represents mean_treatment - mean_control group trait values. How we would interpret *d* = 0.5 and how we would interpret *d* = -0.5?
-
-
-**QUESTION 17:**    
-If we have different traits in the data set (let's say number of eggs laid and probability of nest abandonment) what is the problem with the signs of effect sizes for these traits? What should we do about this?   
-
-*******************************************************************************
-
-### Documentation and reporting
-
-
-**QUESTION 18:**   
-As you hopefully remember, the PRISMA checklist is a document that helps ensure you report the key information on how a systematic review (including meta-analysis) was done.    
-
-Have a look again at the PRISMA checklist (http://prisma-statement.org/documents/PRISMA%202009%20checklist.pdf). Find and read the items that are related to what we have covered in this exercise. What are the numbers (in the # column) of these items?    
-
-
-**Note:** worth repeating again, this PRISMA was designed for medical systematic reviews, and some items are not very relevant or useful. Also, it is due to be updated.   
-<br>
-
-
-**QUESTION 19:**   
-Although not mentioned in the original PRISMA checklist, it is important to share the collected data, meta-data and analysis code. Think of at least 3 reasons for doing so.
-
-
