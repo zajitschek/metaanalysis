@@ -75,7 +75,7 @@ This time you should get over 2,000 records (you will be allowed to access only 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)   
 Try Google Scholar quick search:    *"terminal investment" "immune challenge"*    
 
-<p>This time you should get just over 400 records. Skim through the first three pages of the results to get a feel of the diversity of the studies found (e.g. what taxa are studied and what traits the studies might measure to evaluate reproductive investment) and note the wording of their titles.</p>  
+>This time you should get just over 400 records. Skim through the first three pages of the results to get a feel of the diversity of the studies found (e.g. what taxa are studied and what traits the studies might measure to evaluate reproductive investment) and note the wording of their titles. 
 In medical sciences, most meta-analyses (and systematic reviews) fit into the PICO (or related) question framework.  
 
 PICO stands for:   
@@ -103,7 +103,7 @@ An extensive list of alternative systematic review formulation question framewor
 <br>
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) You should always be able to justify your question as important, relevant and timely. This holds true for other research questions as well, and will affect the likelihood of a meta-analysis you propose to perform to gain support (by an academic supervisor, a grant agency, in an academic and a non-academic environment), and its impact on the target audience. 
-<br>
+
 </exercise>
 
 <exercise id="2" title="Inclusion criteria">
@@ -324,5 +324,5 @@ With our 144 records from Scopus, 249 from WoS (these two databases are our "mai
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/prisma.png?raw=true)
 <br>
-<br>
+
 </exercise>
