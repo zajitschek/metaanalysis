@@ -120,7 +120,7 @@ Most importantly, you always need to be able to justify your inclusion criteria,
 **TIME-SPAN**
 **Should we include studies from any year?**
 
-<choice id="2" >
+<choice id="1" >
 <opt text="Probably yes, unless you can come up with a reason for not doing so" correct="true">
 Yes
 </opt>
@@ -135,7 +135,7 @@ No, unless you have a very good reason to support this argument.
 **LANGUAGE**
 **Should we include studies published in any language?**
 
-<choice id="3">
+<choice id="2">
 <opt text="Yes">
 Possible, but difficult to do and might not yield a lot more additional information.
 </opt>
@@ -253,7 +253,6 @@ Both Scopus and WoS allow exporting the found records (with limitations on the m
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) This is also a good time to write up your meta-analysis protocol and register your meta-analysis (e.g. on OSF)!
 
-*******************************************************************************
 </exercise>
 
 <exercise id="3" title="Screening the literature">
@@ -302,7 +301,7 @@ How many papers did you exclude? How many conflicts did you have if you collabor
 It is time to do the full-text screening for the papers that passed title and abstract screening. There are some full-text papers that passed the initial screening in the directory - assess **Nielsen2012** and **Ardia2005** (they are in "pdf" sub-folder) using our full-text screening decision tree. (Tip: do not read the whole paper - just try to skim it and look for the key information.)      
 
 What was your decision about **Nielsen2012** and **Ardia2005** papers?   
-<choice id="4">
+<choice id="1">
 <opt text="Include both"> 
 Not quite.
 </opt>
