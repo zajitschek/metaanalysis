@@ -206,9 +206,9 @@ If the answer is **yes**, the study can be included for meta-analysis.
 
 **What question is missing on the top of the full-text decision tree?**
 **(Tip: what happens between abstract and full text screening?)**
-<The missing question is: **"Is the full text of this study available for our assessment?"**   
+>The missing question is: **"Is the full text of this study available for our assessment?"**   
 It is often not explicitly stated, but without the full text it is impossible to extract all the necessary information about the study and the data. 
-<It is a good practice to keep this in mind and use as one of your potential inclusion/exclusion criteria.
+It is a good practice to keep this in mind and use as one of your potential inclusion/exclusion criteria.
 
 ###  Performing searches for relevant literature  
 
