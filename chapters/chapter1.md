@@ -27,11 +27,12 @@ The main content has been split into three Chapters. In Chapters 2 and 3  I will
 
 Chapter 4 gives an overview over different methods to build your phylogeny, in case your meta analysis spans across different taxa. 
 
-You will also have the opportunity to perform steps directly in R, without having to open it locally. This will look like this: 
+You will also have the opportunity to perform steps directly in R, without having to open it locally. This will look like this grey block below.  
 
 <codeblock id="intro_1">
 Write your name where the dotted line is!
 </codeblock>
+
 Just click on the "Run Code" button and see what happens. 
 You can also use the "Show hints", "Show solution" and "Reset" tabs. Don't worry about doing in anything "wrong" - you will not be breaking these code blocks! You can also use these blocks to calculate whatever else you think of - try for example writing "1+1", and run it again! (For advanced R users - you can't import your own datasets, but of course could add them manually!)
 
