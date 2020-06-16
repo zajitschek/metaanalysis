@@ -23,17 +23,23 @@ Hi and welcome, I am **[Susi Zajitschek](https://www.ljmu.ac.uk/about-us/staff-p
 
 # How do use this resource
 
-The main content has been split into three Chapters. In Chapters 2 and 3  I will explain the structure and processes involved in conducting a meta-analysis from conception to write-up. Chapter 4 gives an overview over different methods to build your phylogeny, in case your meta analysis spans across different taxa. You will also have the opportunity to perform steps directly in R, without having to open it locally. This will look like this: 
+The main content has been split into three Chapters. In Chapters 2 and 3  I will explain the structure and processes involved in conducting a meta-analysis from conception to write-up. 
+
+Chapter 4 gives an overview over different methods to build your phylogeny, in case your meta analysis spans across different taxa. 
+
+You will also have the opportunity to perform steps directly in R, without having to open it locally. This will look like this: 
 
 <codeblock id="intro_1">
 Write your name where the dotted line is!
 </codeblock>
+Just click on the "Run Code" button and see what happens. 
+You can also use the "Show hints", "Show solution" and "Reset" tabs. Don't worry about doing in anything "wrong" - you will not be breaking these code blocks! You can also use these blocks to calculate whatever else you think of - try for example writing "1+1", and run it again! (For advanced R users - you can't import your own datasets, but of course could add them manually!)
 
-Just click on the "Run Code" button and see what happens. You can also use the "Show hints", "Show solution" and "Reset" tabs. Don't worry about doing in anything "wrong" - you will not be breaking these code blocks! you can also use them to calculate whatever else you think of - try for example writing "1+1" .
 
-
-Each section may contain links to online resources, such as this [link to google scholar](https://scholar.google.com/), Questions to answer, tasks to do on your own - as indicated by this laptop icon  ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) , and useful notes and resources ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true).
+Each section may contain links to online resources, such as this [link to google scholar](https://scholar.google.com/), Questions to answer, and tasks to do on your own - as indicated by this laptop icon  ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true). If we think we have a particuarly useful note or resource, you will see this pushpin  ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true).
 <br>
+
+Please note, this is meant as a quick primer to give you some overview of how a meta-analysis is done. Perhaps it may serve as a starting point for you if you're planning on doing your own, publishable meta-analysis. If that's the case, I'd highly recommend to check out some of the additional resources that are out there. For a small collection please see the relevant section in Chapter 4 
 
 </exercise>
 
