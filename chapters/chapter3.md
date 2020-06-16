@@ -162,10 +162,7 @@ It is often easier and quicker to group similar studies together. Especially, gr
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)  
 We will practice data extraction on few of the Terminal investment papers. We will use the R package *metaDigitise*.  
 
-Detailed package description and tutorial are available at: https://cran.r-project.org/web/packages/metaDigitise/vignettes/metaDigitise.html or     
-
-https://github.com/daniel1noble/metaDigitise and this publication:  
-https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13118   
+Detailed package description and tutorial are available on [cran](https://cran.r-project.org/web/packages/metaDigitise/vignettes/metaDigitise.html) or     [github](https://github.com/daniel1noble/metaDigitise).  Read more about it in this [publication](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13118).    
 
 Metadigitise includes functionality that requires a local RStudio installation (i.e. you can't run it on here, only on your computer). If you want to install and load the R packages and libraries on your local computer and in RStudio, you can use the code below:
 
@@ -330,7 +327,7 @@ As an example, we will use the F-value, calculated above from **Weil (2006)**. N
 No hints needed.
 </codeblock>
 
-
+ 
 **If both descriptive statistics (mean, SE or SD) and test (inferential) statistics are reported, which one should we extract from a paper?**   
 > We usually give priority to descriptive statistics (mean, SE or SD), which usually represent raw data, unadjusted for other variables and also can be converted to different units or used to calculate alternative types of effect sizes.   
 
@@ -338,43 +335,15 @@ No hints needed.
 **Is the sign of the effect size important? Imagine we use *d*, which represents mean_treatment - mean_control group trait values. How we would interpret *d* = 0.5 and how we would interpret *d* = -0.5?**   
 > The sign represents direction of the effect on a given trait. *d* = 0.5 means that the trait value in the treatment group is moderately larger than the trait value in the control group, *d* = -0.5 would mean that the trait value in the treatment group is moderately smaller than the trait value in the control group.   
 
-
+   
 **If we have different traits in the data set (let's say number of eggs laid and probability of nest abandonment) what is the problem with the signs of effect sizes for these traits? What should we do about this?**   
 >Larger numbers of eggs indicate increased reproductive effort (and thus reproductive investment), while increased probability to abandon the nest indicates reduced reproductive effort. This would translate to negative effect size sign if treatment group is less likely to abandon the nest. To fix this we need to reverse the sign of the effect sizes for traits where increased trait values represent LESS reproductive investment, so we have consistent biological interpretation over the whole data set.   
-
+    
 </exercise>
 
 <exercise id="2" title="Data analysis">
 
 # Data analysis
-
-We step up the game a little and will get our hands on a subset of the data from one of the examples, mentioned in Chapter 1, Macartney et al. 2019.  This study is a systematic review on the **effects of diet manipulation on sperm traits**. I chose it for this course, because the data, the R code, and the protocols are publicly available on osf.io, and the study is already published.
-
-Since the whole dataset would be quite big, we are going to use a subset of the data. Of course you can try and reproduce the results, including graphs, from Macartney et al. 2019 on your local R installation. We will walk through all the steps for a selected subset now.
-
-First, I downloaded the raw and processed data ([*Processed data.xlsx*](https://osf.io/3vdm4/)). Here, the authors have already included the standardized mean difference (**SMD**, there named by its synonym, ***Cohen's d***) that we calculated in a previous example, using metafor's escalc function (you can try and reproduce the authors calculations, using their provided [raw data](https://osf.io/cznef/), but you have to select the same same observations that are included in our current subset). After downloading, I opened the files in Excel and saved it as a .csv file. **For our exercises, I selected 4 studies: 2 on fish, and 2 on mammals. I only included studies that measured body mass, sperm length, and sperm motility (macartney2019_processed.csv)**.
-
-```
-macartney2019_raw_subset <- read.csv(./binder/data/macartney2019_raw_subset.csv)
-smd1 <- escalc(measure="SMD", m1i=m1i, sd1i=sd1i, n1i=n1i,
-                              m2i=m2i, sd2i=sd2i, n2i=n2i, data= macartney2019_raw_subset)
-smd1
-
-#Run a random effects model
-res1 <- rma(yi, vi, data = smd1)
-res1
-
-```
-
-Have a look at the data:
-
-<codeblock id="macartney2019_processed">
-
-</codeblock>
-
-
-
-
 
 </exercise>
 
