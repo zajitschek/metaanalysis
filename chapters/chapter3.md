@@ -158,6 +158,9 @@ It is often easier and quicker to group similar studies together. Especially, gr
 
 > There are several pieces of software that helps digitising various types of plots and extracting the data (you can find a list here: https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13118, so it is often possible.  However, sometimes plot resolution can be too low, or data points / lines are overlapping and obscuring some of the values. In such case, you can try to contact the authors for the actual numbers or raw data used to make the plot.   
 
+</exercise>
+
+<exercise id="2" title="Extracting data from the literature">
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)  
 We will practice data extraction on few of the Terminal investment papers. We will use the R package *metaDigitise*.  
@@ -238,7 +241,9 @@ write.csv(data, file = "filename.csv") #adjust the file name and path as needed
 
 As you see, *metaDigitise* guides you gently through the all steps of data extraction from figures. It also nicely organises and stores the data for you. You should invest some extra time into learning this handy tool. If you have some time left after this exercise go through the full tutorial at https://cran.r-project.org/web/packages/metaDigitise/vignettes/metaDigitise.html       
 
-*******************************************************************************
+</exercise>
+
+<exercise id="3" title="Data analysis">
 
 ###  Converting different types of information   
 
@@ -341,19 +346,13 @@ No hints needed.
     
 </exercise>
 
-<exercise id="2" title="Data analysis">
-
-# Data analysis
-
-</exercise>
-
-<exercise id="3" title="Evidence summary & assessment of certainty">
+<exercise id="4" title="Evidence summary & assessment of certainty">
 
 # Evidence summary & assessment of certainty
 
 </exercise>
 
-<exercise id="4" title="Report and interpret results">
+<exercise id="5" title="Report and interpret results">
 
 # Documentation and reporting
 
@@ -361,7 +360,7 @@ As you hopefully remember, the PRISMA checklist is a document that helps ensure 
 
 Have a look again at the PRISMA checklist (http://prisma-statement.org/documents/PRISMA%202009%20checklist.pdf). **Find and read the items that are related to what we have covered in this exercise. What are the numbers (in the # column) of these items?**      
 
-<choice id="4">
+<choice id="1">
 <opt text="Answer" correct="true"> 
 Items 10, 11 and 18
 </opt>
