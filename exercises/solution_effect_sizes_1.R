@@ -1,6 +1,6 @@
 #Load libraries
 library(metafor)
-library(tidyverse)
+library(dplyr)
 
 #We quickly re-create our 'new-data' object from above
 data <- read.csv("./binder/data/data.csv") 

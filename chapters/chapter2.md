@@ -233,13 +233,16 @@ WoS coverage depends on the institutional subscription package purchased, so res
 Using Scopus **Advanced Search** (you can read more about the syntax [here](https://dev.elsevier.com/tips/ScopusSearchTips.htm) run these search strings:  
 
  **1** *TITLE-ABS-KEY ( "terminal investment"  AND  "immune challenge" )*    
-(approx. 14 hits - search terms too restrictive)   
+>(you'll likely only get a few hits - search terms too restrictive)   
+
  **2** *TITLE-ABS-KEY ( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*" ) )  *
-(approx. 25 hits - a bit better, but still too restrictive)   
+>(a bit better, but still too restrictive)   
+
  **3** *TITLE-ABS-KEY ( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*"  OR  "infect\*" ) )  *
-(approx. 180 hits - much better number, but we probably now have included many non-experimental studies while still missing relevant ones)    
+>(the number of hits has improved, but we probably now have included many non-experimental studies while still missing relevant experimental ones)   
+
  **4** *( TITLE-ABS-KEY ( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*"  OR  "infect\*" ) )  AND NOT  TITLE-ABS-KEY ( load  OR  human  OR  people ) )* 
-(approx. 144 hits - by adding a group of exclusion terms (AND NOT) we probably got rid of some irrelevant ones).  
+>(by adding a group of exclusion terms (AND NOT) we probably got rid of some irrelevant ones).  
 
 Ideally, we should think and test some more terms for inclusion, after doing some scoping searches, reading reviews and seminal relevant empirical papers. Also, it is important to validate the search by checking how many papers it finds that we know contain useable data. You should also do some pilot abstract screening on papers exported from just one database, to check whether there’s some exclusion words you did not think about, and which could be included in your search string as exclusion terms.   
 

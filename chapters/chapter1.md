@@ -37,10 +37,10 @@ Just click on the "Run Code" button and see what happens.
 You can also use the "Show hints", "Show solution" and "Reset" tabs. Don't worry about doing in anything "wrong" - you will not be breaking these code blocks! You can also use these blocks to calculate whatever else you think of - try for example writing "1+1", and run it again! (For advanced R users - you can't import your own datasets, but of course could add them manually!)
 
 
-Each section may contain links to online resources, such as this [link to google scholar](https://scholar.google.com/), Questions to answer, and tasks to do on your own - as indicated by this laptop icon  ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true). If we think we have a particuarly useful note or resource, you will see this pushpin  ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true).
+Each section may contain links to online resources, such as this [link to google scholar](https://scholar.google.com/), Questions to answer (including feedback on getting it right or wrong), and tasks to do on your own - as indicated by this laptop icon  ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true). If we think we have a particuarly useful note or resource, you will see this pushpin  ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true).
 <br>
 
-Please note, this is meant as a quick primer to give you some overview of how a meta-analysis is done. Perhaps it may serve as a starting point for you if you're planning on doing your own, publishable meta-analysis. If that's the case, I'd highly recommend to check out some of the additional resources that are out there. For a small collection please see the relevant section in Chapter 4 
+Please note, this is meant as a quick primer to give you some overview of how a meta-analysis is done. Perhaps it will be a student project, but  perhaps it may serve as a starting point for you if you're planning on doing your own, publishable and solid meta-analysis. If that's the case, I'd highly recommend to check out some of the additional resources that are out there. For a small collection of free resources please see the relevant section in Chapter 4.
 
 </exercise>
 
@@ -52,21 +52,24 @@ Please note, this is meant as a quick primer to give you some overview of how a 
 
 
 ## A short side-trip to the roots of knowledge
+
 Humans strive to understand the world. The organized framework to do this is science, more specifically the *[scientific method](https://en.wikipedia.org/wiki/Scientific_method)*. Science is cumulative in nature. This means that studies and experiments build upon the findings of previous studies and experiments. New scientific insights might be gained by a more or less progressive accumulation of knowledge about a specific question, adding on to existing knowledge. Or, according to [Thomas Kuhn](https://en.wikipedia.org/wiki/Thomas_Kuhn), real progression in science might require [paradigm shifts](https://en.wikipedia.org/wiki/Paradigm_shift) that throw old theories over board and make way for new better theories. These shifts in how we explain the world depend themselves on the accumulation of results, which did not fit the old established theories, but which turned out to be not due to error of any kind (for example methodological mistakes or human error in performing studies).
 
 ## What makes a successful scientific theory?
+
 We are talking about empirical research here, meaning results from studies and experiments that are based on observations. But what is the criterion that scientists use to accept a scientific theory as the currently most successful theory to explain observed phenomena?
 
-- a successful scientific theory should give a good explanation and make accurate predictions
-- this should be the case in a wide range of circumstances, i.e. it shouldn't be hyper-sensitive to natural variation in traits that are not the direct focus of the studies
+- A successful scientific theory should give a good explanation and make accurate predictions
+- This should be the case in a wide range of circumstances, i.e. it shouldn't be hyper-sensitive to natural variation in traits that are not the direct focus of the studies
 
 Different scientific disciplines will have different criteria for how we define *good explanation*, *accurate prediction*, *sensitive*, and *natural variation* that I used above.
-This course is mainly focussed on research in biological sciences. My own research involves the study of animal behaviour, which often has a high level of noise in the data, especially when compared to some studies in physics or geology (if interested, read up on the colloquial terms of soft and hard sciences, e.g. [here](https://en.wikipedia.org/wiki/Hard_and_soft_science)). 
+This self-guided course is mainly focussed on research in biological sciences. My own research involves the study of animal behaviour, which often has a high level of noise in the data, especially when compared to some studies in physics or geology (if interested, read up on the colloquial terms of soft and hard sciences, e.g. [here](https://en.wikipedia.org/wiki/Hard_and_soft_science)). 
 
 # Meta-analysis can help
+
 We established that science works cumulatively. To gain support for specific hypothesis, we do not want to rely on the outcome of single studies. We can try to combine the knowledge gained in multiple studies which tested specific traits of interest. This can be achieved while still taking into account that studies differ in their quality and their size, for example, lending different levels of weights to their results. 
 
-This combination of multiple test results can be achieved by qualitatively summarising previous work on a specific subject. Classically, this was done in a literature review, for example at the beginning of a graduate or postgraduate degree. While this type of review has still its merit, we want to introduce you here to the meta-analytical approach, which can provide a quantitative summary and test of specific research questions (the Greek prefix *meta* (μετά, "after" or "beyond") means *more comprehensive*).
+This combination of multiple test results can be achieved by qualitatively summarising previous work on a specific subject. Classically, this was done in a literature review, for example at the beginning of a graduate or postgraduate degree. While this type of review has still its merit (especially if it is done ***systematically***), we want to introduce you here to the meta-analytical approach (which sctrictly specaking is a **quantitative systematic review**), which can provide a quantitative summary and test of specific research questions (the Greek prefix *meta* (μετά, "after" or "beyond") means *more comprehensive*).
 
 </exercise>
 
@@ -76,11 +79,13 @@ This combination of multiple test results can be achieved by qualitatively summa
 
 We will take the paper [Nakagawa 2017](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7) as a blueprint to walk you through all the steps of a meta-analysis.
 
-However, as this is meant as a first step to get you started, we will provide some additional resources, exercises and guidelines (Chapters 2, 3 and 4). This includes a section on phylogenetic trees (which you may need if the question you're planning on tackling spans across different species. To keep things simple initially, we are concentrating on an example within the same species), how to make a decision tree in R, and other useful stuff.
+However, as this is meant as a first step to get you started, we will provide some additional resources, exercises and guidelines (Chapters 2, 3 and 4). This includes a section on phylogenetic trees (which you may need if the question you're planning on tackling spans across different species - quite likely to happen if you're a evolutinary biologist, and the "question" more important than a particular taxon. This will be covered in Chapter 4). To keep things simple initially, we will leave the phylogenies aside and go over the first steps: how  to narrow your question, how to find relevant literature, how to make decisions on which studies to include, how to extract the relevant info from your selected papers, and run the actual meta-analysis. We'll explain how to interpret the output and plot your results. 
 
-Here is a list of the different parts of a meta-analysis:
+We hope to also help to improve your organisational skills - as for all of the above it will be really important to carefully keep track & record of all your steps and decisions. This is necessary to make your meta-analysis reproducible and understandable, for whoever will be reading the resulting work. 
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/metaanalysis_overview.png?raw=true)
+Here is a list of the different parts of a meta-analysis, and where to find the respcetive bits in this book:
+
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/overview.png?raw=true)
 <br>
 <br>
 All of these steps have to be described and laid out in a protocol. We will see that there already exist general protocols for each step, which we can use and adapt to our research questions. The aim of having well defined protocols is for other researchers to be able to reproduce those steps. 
