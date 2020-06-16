@@ -17,17 +17,19 @@ Thanks!
 
 # About this course
 
-Hi and welcome, I am **[Susi Zajitschek](https://www.ljmu.ac.uk/about-us/staff-profiles/faculty-of-science/school-of-biological-and-environmental-sciences/susanne-zajitschek), a Senior Lecturer in Animal Behaviour at Liverpool John Moores University**. This course is meant as a primer for students who would like to know more about meta-analysis. I will give you an overview on what meta-analyses are and on why they are useful. I will include hands-on exercises to conduct meta-analyses, step-by-step (based on material developed by my collaborators **[Shinichi Nakagawa](http://www.i-deel.org/shinichi-nakagawa.html)** and **[Malgorzata  Lagisz](https://mlagisz.weebly.com/)**). The actual statistical analyses will be performed in the [software R](https://www.r-project.org/about.html), and you will have the opportunity to run R software scripts right here, on this website, without the need to install software on your computer.
+Hi and welcome, I am **[Susi Zajitschek](https://www.ljmu.ac.uk/about-us/staff-profiles/faculty-of-science/school-of-biological-and-environmental-sciences/susanne-zajitschek), a Senior Lecturer in Animal Behaviour at Liverpool John Moores University**. This course is meant mainly as a primer for students who would like to know more about meta-analysis. I will give you an overview on what meta-analyses are and on why they are useful. I will include hands-on exercises to conduct meta-analyses, step-by-step (based on material developed by my collaborators **[Shinichi Nakagawa](http://www.i-deel.org/shinichi-nakagawa.html)** and **[Malgorzata  Lagisz](https://mlagisz.weebly.com/)**). The actual statistical analyses will be performed in the [software R](https://www.r-project.org/about.html), and you will have the opportunity to run R software scripts right here, on this website, without the need to install software on your computer.
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Please note, if you plan on actually doing a meta-analysis yourself, beyond just going through this exercise, you will have to download R or [R studio](https://rstudio.com/products/rstudio/download/), if you haven't already. 
 
 # How do use this resource
 
-The main content has been split into three Chapters.  In Chapters 2, 3 and 4, I will explain the structure and processes involved in conducting a meta-analysis, from conception to write-up. You will also have the opportunity to perform steps directly in R.
+The main content has been split into three Chapters. In Chapters 2 and 3  I will explain the structure and processes involved in conducting a meta-analysis from conception to write-up. Chapter 4 gives an overview over different methods to build your phylogeny, in case your meta analysis spans across different taxa. You will also have the opportunity to perform steps directly in R, without having to open it locally. This will look like this: 
 
-The Chapters are subdivided into sections that separately go into detail for each of the different steps. 
+CONTAINER
 
-Each section may contain links to online resources, such as [google scholar](https://scholar.google.com/), Questions to answer, tasks to do on your own - as indicated by this laptop icon  ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) , and useful notes and resources ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true).
+
+
+Each section may contain links to online resources, such as this [link to google scholar](https://scholar.google.com/), Questions to answer, tasks to do on your own - as indicated by this laptop icon  ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) , and useful notes and resources ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true).
 <br>
 
 </exercise>

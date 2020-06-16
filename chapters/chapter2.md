@@ -210,6 +210,8 @@ If the answer is **yes**, the study can be included for meta-analysis.
 It is often not explicitly stated, but without the full text it is impossible to extract all the necessary information about the study and the data. 
 It is a good practice to keep this in mind and use as one of your potential inclusion/exclusion criteria.
 
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  You can read more about how to come up with good decsicion trees on **[Losia's blog](http://www.i-deel.org/blog/around-meta-analysis-12-decision-trees)**
+
 ###  Performing searches for relevant literature  
 
 Normally, we attempt to do a fairly comprehensive literature search (a full systematic review). The reason is that we want to have as many relevant data points as possible to increase the power of statistical analyses. The other reason is that we want to make an effort to capture obscure studies that potentially are more likely to report non-significant results, and therefore help reduce publication bias in our data set. 
@@ -249,9 +251,9 @@ We can easily translate our final search string from Scopus into Web of Science 
 *TS = (( ( "terminal investment" OR "reproductive effort" ) AND ( "immune challeng\*"  OR  "immunochalleng\*"  OR  "infect\*"  ) ) NOT ( load OR human OR people ) )*  
 (approx. 249 hits - more than from Scopus).   WoS stores your search history and also which sub-data bases were included in the search: Indexes=SCI-EXPANDED, SSCI, A&HCI, CPCI-S, CPCI-SSH, BKCI-S, BKCI-SSH, ESCI, CCR-EXPANDED, IC Timespan=All years" (you can restrict these in the Advanced Search).   
 
-Both Scopus and WoS allow exporting the found records (with limitations on the max. number per export, **remember to tick the boxes for exporting abstracts!**) - there are multiple file formats you can use, but .ris and .bib are most commonly used ones- you will need to figure out which ones work for your reference manager software. The next step would be downloading all found records from your "final" search into the reference manager of your choice. Combine the references from two databases into a single project/folder and remove duplicates (most reference managers have this function, but it never works perfectly - do a visual check after sorting by titles!) before proceeding to the reference screening stage. An R package *revtools* (https://cran.rstudio.com/web/packages/revtools/ and http://revtools.net/) can act as a reference manager and also has a good de-duplication function.      
+Both Scopus and WoS allow exporting the found records (with limitations on the max. number per export, **remember to tick the boxes for exporting abstracts!**) - there are multiple file formats you can use, but .ris and .bib are most commonly used ones- you will need to figure out which ones work for your reference manager software. The next step would be downloading all found records from your "final" search into the reference manager of your choice. Combine the references from two databases into a single project/folder and remove duplicates (most reference managers have this function, but it never works perfectly - do a visual check after sorting by titles!) before proceeding to the reference screening stage. An R package *[revtools]* available [on cran](https://cran.rstudio.com/web/packages/revtools/) or [revtools.net](http://revtools.net/) can act as a reference manager and also has a good de-duplication function.      
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) This is also a good time to write up your meta-analysis protocol and register your meta-analysis (e.g. on OSF)!
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) As we're aiming for maximum reprocicibility and transparancy, the gold standard would be to upload your meta-analysis protocol and pre-register your meta-analysis around this stage. If you want to know more about pre-registration, see XXX (e.g. on OSF)!
 
 </exercise>
 
@@ -259,11 +261,16 @@ Both Scopus and WoS allow exporting the found records (with limitations on the m
 
 ###  Screening the literature   
 
-Theoretically you could do screening in the database browser or your reference manager, but since it is recommended that 2 people do the screening independently (or at least part of the screening), it is good to use a dedicated tool to manage this process.  
+Theoretically you could do screening in the database browser or your reference manager, but since it is recommended that 2 people do the screening independently (or at least part of the screening), it is good to use a dedicated tool to manage this process. 
+
+**Why two?**
+>To avoid bias - we all have preferences and biases, so having two people to independently think about which studies should or should not be included - and importanly, discuss the discrepancies - is considered good practise. 
+
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  For more insight on gold standards take a looks at the *Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)* [resources](http://prisma-statement.org/).
 
 **RESOURCES:** 
- * Rayyan: https://rayyan.qcri.org/welcome (free, you can use it in the web browser or as a phone app; for more details see: http://libraryguides.mcgill.ca/rayyan/home)  
- * Abstrackr:  http://abstrackr.cebm.brown.edu/account/login (another free tool)
+ * [Rayyan](https://rayyan.qcri.org/welcome) (free, you can use it in the web browser or as a phone app; for more details [see](http://libraryguides.mcgill.ca/rayyan/home)  
+ * [Abstrackr](http://abstrackr.cebm.brown.edu/account/login) (another free tool)
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) It is possible that the de-duplication algorithms in these are not very good, so it is advisable to de-duplicate and check your records in the reference manager before uploading to the screening software.    
 
@@ -283,12 +290,18 @@ Create a new project in Rayyan:
  4. Select files -> upload *Scopus10.ris* from the *data* sub-folder and press Continue.
 
 It may take several minutes for larger files and slower connections, but eventually the uploaded references should appear in the left panel under "Search methods" (you can upload more files with references via "Add new" link). Click on the "Uploaded References [scopus10.ris]" link in this panel to see the references in the right panel. Generally clicking on the links within panels on the left will filter the records in the right panels to include only highlighted sets (to get rid of the filter click on it again to remove highlighting).  
-In the left panels there are several sub-panels.  
+In the left panels there are several sub-panels.   
+
  5. In the "Keywords for include" you can add (via "Add new" link) following terms (or at least a few of these): challenge, challenged, injected, injection, infected, infection, PHA, SRBC, vaccine (these terms will be highlighted green in the titles and abstracts to help them find more easily; Rayyan tries to populate this list by itself - but its algorithm is medical-centered so you should adjust this list for your projects).   
+ 
  6. "Keywords for exclude" - " set to: review, reviewed, model, human, people, women, men (these terms will be highlighted red in the titles and abstracts to help them find more easily; again, Rayyan tries to populate this list by itself).    
- 7. Click on "All reviews" button in the top right corner to go to the project lists, then open your project again by choosing it from the list. A view with a pie chart (your screening progress) and a few buttons will appear. If you need to invite other people to do screening in parallel with you, do that by clicking on the "Invite" button. Stick with "Collaborator" selection and enter the email and message (e.g. "help me!"). Open your project again - you should see your collaborators added with some info on their work so far. Press on "Show" button to see the references view.  
+ 
+ 7. Click on "All reviews" button in the top right corner to go to the project lists, then open your project again by choosing it from the list. A view with a pie chart (your screening progress) and a few buttons will appear. If you need to invite other people to do screening in parallel with you, do that by clicking on the "Invite" button. Stick with "Collaborator" selection and enter the email and message (e.g. "help me!"). Open your project again - you should see your collaborators added with some info on their work so far. Press on "Show" button to see the references view.   
+ 
  8. Click on the first review from the top - an abstract and other record info will appear in the bottom panel.  
+ 
  9. Using our abstract screening decision tree decide whether include this paper for the next stage of screening and press the "Include" or "Exclude" button accordingly. And do the assessment for the remaining records. As you go you can create and assign new labels to individual records, e.g.: "unsure/check". You could also enter reasons for exclusion, e.g. "human" (we normally don't do this as there are often hundreds or thousands of excluded records per project at this stage).  
+ 
 10. Go to "All reviews" and check if other people finished their screening, if applicable. After that you can lift the "blind" mode (when collaborators cannot see each others decisions). For collaborative screens Rayyan will now provide filters to display all consensus included, consensus excluded and records with conflicting decisions. If you have any "conflicts" have a look again and discuss why you couldn't agree on a given record , come to agreement and make final decision. Export the records with final consensus decisions, for documentation, into a .csv file. You can filter the records into “Included” and just export those, also you can export them as a .bib or .ris file into a reference manager where you will collect full texts for the nest stage of the screening.   
 
 How many papers did you exclude? How many conflicts did you have if you collaboratively screened and, if so, what was causing these conflicts? Can the decision tree be improved and how?   
