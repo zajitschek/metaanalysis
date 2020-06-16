@@ -181,7 +181,7 @@ How about multicellular animals, except humans? If many studies across multiple 
 
 Decision trees are visual representations of our inclusion criteria and decisions we have to make when screening literature. Importantly, good decision trees can make screening the literature faster and more reliable. Briefly, if the initial (most general) questions representing screening criteria are not fulfilled, the study gets excluded and there is no need to evaluate the remaining criteria, so we save some time.    
 
-You can make your decision trees by hand, make a flow chart in Power Point or use any MindMapping software (if you want to go that route - I recommend Visually Understanding the Enviroment, [VUE] (https://vue.tufts.edu/)). 
+You can make your decision trees by hand, make a flow chart in Power Point or use any MindMapping software (if you want to go that route - I recommend Visually Understanding the Enviroment, [VUE](https://vue.tufts.edu/). 
 
 The screening of literature is usually done in two stages:   
   1. abstract +  title + keywords  
@@ -193,9 +193,9 @@ This is because abstracts, titles and keywords do not contain enough information
 Thus this first stage of screening has to be more tentative, and we would use a more permissive and simpler decision tree. A good tree starts from the questions that are easiest to answer (if we had any year or language restrictions we would put these on the top). Note that during abstract screening we exclude the records where a definite "no" can be inferred from available information, but we allow for some uncertainty for the "yes" answers by allowing "probably" as an acceptable answer for inclusion, so we can check for more info in the full text. 
 
 An example decision tree for abstract screening looks like this:![](https://github.com/SusZaj/metaanalysis/blob/master/images/decisiontree.png?raw=true)
+   
 
-
-**In the abstract screening decision tree there is no question about the type of data used to express measurements reported in the study. Why? **
+**In the abstract screening decision tree there is no question about the type of data used to express measurements reported in the study. Why?**
 >Full-text screening is more strict and we want to have answers to all our inclusion criteria. In principle we only have "yes" and "no" answers to the screening questions. However, in practice, if a study looks very relevant but some information is ambiguous or missing, you may decide to contact the authors to get some extra information or data. in such case, you can provisionally include such papers and make final decision once you get, or not, the replies.  
 
 In a decision tree for full-text screening, we will include an additional rule:
