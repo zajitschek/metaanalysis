@@ -368,7 +368,22 @@ No hints needed.
 <br>
 **If we have different traits in the data set (let's say number of eggs laid and probability of nest abandonment) what is the problem with the signs of effect sizes for these traits? What should we do about this?**   
 >Larger numbers of eggs indicate increased reproductive effort (and thus reproductive investment), while increased probability to abandon the nest indicates reduced reproductive effort. This would translate to negative effect size sign if treatment group is less likely to abandon the nest. To fix this we need to reverse the sign of the effect sizes for traits where increased trait values represent LESS reproductive investment, so we have consistent biological interpretation over the whole data set.   
-    
+  .
+  
+# Exercise / Example
+
+Using a subset of data (we decided to only go for fish) from a recent meta anlysis that investigated the relationship of dietary intervention on sperm traits across the animal kingdom (MacCartney et al. 2018), we will go through the steps explained perviously.
+
+We are using the fish data that Erin had already collected - i.e. all relevant data have already been either extracted from the figures, or calculated from inferential statistics. This means we have a detailed datasheet available that contains a lot of information, but most importantly sample sizes,means and variances for control and treatment groups, for a quite a range of different sperm traits.
+
+## 1. Calculating effect sizes
+
+
+## 2. Run a meta analysis
+
+
+### Plotting results: see next section
+
 </exercise>
 
 <exercise id="4" title="Evidence summary & assessment of certainty">
