@@ -29,6 +29,7 @@ There are different protocols for how to gather the literature for a systematic 
  c) Find and carefully read a few representative empirical papers (hint: papers that attract a lot of citations may count as key paper)  
  d) Further refine the question (particularly important if your search returns many thousands of hits on your topic).  
 
+## Example / Exercise
 To show you how those steps can be done, we are doing this as a step-by-step exercise, using **terminal investment in animals** as a general research topic that we want to explore further, using meta-analytic approaches.
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)   What is [terminal investment?](https://en.wikipedia.org/wiki/Terminal_investment_hypothesis)
@@ -52,7 +53,7 @@ You can restrict the search to titles only:    *allintitle: "meta analytic" OR "
 Unfortunately, Google Scholars' search interface is rather simplistic and restrictive. It shows only up to 1,000 results for any particular search query, ranking algorithms are obscured and it is hard to export references. In addition, the literature coverage may fluctuate (it is based on web scraping), and the searches may not be reproducible. Therefore, Google Scholar is not recommended for the main searches in meta-analyses and systematic reviews. On the upside, it can be helpful for additional searches and finding grey literature (not published in peer-review journals).
 
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) **RESOURCES**   
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) ### Resources
 Other software useful for exploratory (scoping) and additional searches (check them out later, and note that they may have similar disadvantages to these of Google Scholar):
 
  * [Semantic Scholar](https://www.semanticscholar.org/)
@@ -80,7 +81,7 @@ Try Google Scholar quick search:    *"terminal investment" "immune challenge"*
 >This time you should get just over 400 records. Skim through the first three pages of the results to get a feel of the diversity of the studies found (e.g. what taxa are studied and what traits the studies might measure to evaluate reproductive investment) and note the wording of their titles. 
 In medical sciences, most meta-analyses (and systematic reviews) fit into the PICO (or related) question framework.  
 
-##PICO stands for:   
+## PICO stands for:   
   * P = Population   
   * I = Intervention  
   * C = Comparison/Control group   
@@ -99,15 +100,15 @@ Frame our meta-analytic question "whether immune challenge can result in termina
 <br>
 <br>
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) **RESOURCES:**   
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) ### Resources  
 An extensive list of alternative systematic review formulation question frameworks can be found [here](https://www.networks.nhs.uk/nhs-networks/nwas-library-and-information-service/documents/alternative-question-structures-for-different-types-of-systematic-review)   
 <br>
 
-However, for your question framework you should in general define
-•	Variables of interest
-•	research designs
-•	historical, geographical, theoretical context
-You will need to know what you're after and what you're not interested in, in order to discriminate relevant from irrelevant studies
+However, for your question framework you should in general define   
+•	Variables of interest   
+•	research designs   
+•	historical, geographical, theoretical context   
+You will need to know what you're after and what you're not interested in, in order to discriminate relevant from irrelevant studies   
 
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) You should always be able to justify your question as important, relevant and timely. This holds true for other research questions as well, and will affect the likelihood of a meta-analysis you propose to perform to gain support (by an academic supervisor, a grant agency, in an academic and a non-academic environment), and its impact on the target audience. 
@@ -163,6 +164,7 @@ Most meta-analyses only include studies published in English by default. However
 **Should we include any type of study? (e.g. correlational vs experimental, if experimental, what type of experiment?)**
 >Since we investigate a specific intervention, we should restrict study type to "experimental" (we should explicitly exclude "simulation").
 
+
 **TAXA**  
 **Should we include any type of taxa?**
 <choice id="3">
@@ -180,32 +182,35 @@ This would probably be our answer for the here posed topic: How about multicellu
 >Another thing worth being specific about is that the animals should be wild-type (non-mutant, not disease models) and ideally not subject to any other significant manipulations that could affect their response (e.g. drug treatment; note there is a thin fuzzy line what these manipulations are). There might also be reasons to exclude standard laboratory species (mice, rat, yeast, fruit fly), or conversely just focus entirely on this group. 
 
 
-**MANIPULATION TYPE**  
+**MANIPULATION TYPE**   
 **Should we include all types of immune challenge?**
 >There are several established types of experimental immune challenge (blood cells (e.g. SRBC), protein (e.g. PHA), dead or live pathogens or parasites), so its worth including these and similar procedures. Non-experimental immune challenge (e.g. natural infestation levels) should not be included. If something odd comes up later it can be listed under "exclusion criteria", with justification.
 
-**CONTROL GROUP**  
+
+**CONTROL GROUP**   
 **Should we accept any type of control group?**
 > The control group (un-manipulated) should consist of similar individuals compared to the "treatment group", as far as reasonable. The "controls" should not be subject to any other manipulation.
 
-**OUTCOME TYPE**  
+
+**OUTCOME TYPE**   
 **Should we accept any reproduction-related measurements and how do we define "reproduction-related" in the first place?**
 >The definition of a *reproduction-related trait* will depend on the species studied (and may require additional reading or relying on the assertions of the authors). Different taxa will have different suites of reproduction related-traits, but these can be grouped into broader categories (e.g. mate attraction includes vocal signals, visual ornaments, pheromone production etc.; reproductive fitness will include number and quality of offspring) and different specific measurements will be available for different taxa and in different studies - this can be quite messy. If we do not have many studies on the topic and very specific question (e.g. "Is the number of offspring affected?") it is OK to be inclusive and later on try to figure out whether some traits are affected more than others.
+
 
 **DATA TYPE**  
 **Should we accept any type of data for a meta-analysis? (e.g. descriptive statistics (summarising populations), and which ones, or also inferential statistics (based on population samples and used to estimate parameters and test hypotheses), and which ones? This will be linked to the effect size you are planning to use!)**
 >It depends on the effect size we are planning to use. In our project it can be Cohen's *d*(Hedges *g*) or *lnRR*, which are typically calculated from mean, SD or SE and N (sample sizes). However, Cohen's *d* (Hedges *g*) can be also inferred from some of the test statistics, or even proportions, if means and other descriptive statistics are not available. But one cannot get *lnRR* from inhferential statistics. Other considerations include what to do if some data is missing or unclear.  
 
 
-## Making decision trees for the literature screening    
+## Making decision trees for literature screening    
 
 Decision trees are visual representations of our inclusion criteria and decisions we have to make when screening literature. Importantly, good decision trees can make screening the literature faster and more reliable. How does that work? Briefly, if the initial (most general) questions representing screening criteria are not fulfilled, the study gets excluded and there is no need to evaluate the remaining criteria, so we save some time.    
 
 You can make your decision trees by hand, make a flow chart in Power Point or use any MindMapping software (if you want to go that route - I recommend Visually Understanding the Enviroment, [VUE](https://vue.tufts.edu/). 
 
 The screening of literature is usually done in two stages:   
-  1. abstract + title + keywords (this will be done on the bulk of the papers found in your search)
-  2. full text + supplementary information (this requires that you carefully go through your list of "included" studies obtained in step 1 and more details in the "bottom branches"" of your decison tree)
+  1. abstract + title + keywords    **(this will be done on the bulk of the papers found in your search)**
+  2. full text + supplementary information   ** (this requires that you carefully go through your list of "included" studies obtained in step 1 and more details in the "bottom branches"" of your decison tree)**
 
 **Accordingly, we need two decision trees (one for each stage).**
 This is because abstracts, titles and keywords do not contain enough information to conclusively answer all of the inclusion criteria questions - you should be excluding every paper for which you cannot answer "yes" to all the questions. 
@@ -217,6 +222,7 @@ An example decision tree for abstract screening looks like this:![](https://gith
 
 **In the abstract screening decision tree there is no question about the type of data used to express measurements reported in the study. Why?**
 >Full-text screening is more strict and we want answers to all our inclusion criteria. In principle, we only have "yes" and "no" answers to the screening questions. However, in practice, if a study looks very relevant but some information is ambiguous or missing, you may decide to contact the authors to get some extra information or data. In such case, you can provisionally include such papers and make final decision once you get, or not, the author's replies.  
+
 
 ### In a decision tree for full-text screening, we will include an additional rule:
   * Are means and SD (or SEs) and N (sample sizes) for treatment and control groups, or test statistics from which effect sizes for the difference between the two groups can be calculated, available?
@@ -245,7 +251,7 @@ You should conduct your literature search on at least two wide-coverage/interdis
 Scopus and Web of Science.**
 
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  **RESOURCES:** 
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  ### Resources
  * [Scopus](https://www.scopus.com/)   
  * [Web of Science (WoS)](http://apps.webofknowledge.com)   
 
@@ -256,13 +262,13 @@ WoS coverage depends on the institutional subscription package purchased, so res
 Using Scopus **Advanced Search** (you can read more about the syntax [here](https://dev.elsevier.com/tips/ScopusSearchTips.htm) run these search strings:  
 
  **1** *TITLE-ABS-KEY ( "terminal investment"  AND  "immune challenge" )*    
->(you'll likely only get a few hits - search terms too restrictive)   
+>you'll likely only get a few hits - search terms too restrictive)  
 
  **2** *TITLE-ABS-KEY ( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*" OR  "immunochalleng\*" ) )*
->(a bit better, but still too restrictive)   
+> a bit better, but still too restrictive   
 
  **3** *TITLE-ABS-KEY ( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*"  OR  "infect\*" ) )*
->(the number of hits has improved, but we probably now have included many non-experimental studies while still missing relevant experimental ones)   
+> the number of hits has improved, but we probably now have included many non-experimental studies while still missing relevant experimental ones   
 
  **4** *( TITLE-ABS-KEY ( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*"  OR  "infect\*" ) )  AND NOT  TITLE-ABS-KEY ( load  OR  human  OR  people ) )* 
 >(by adding a group of exclusion terms (AND NOT) we probably got rid of some irrelevant ones).  
@@ -305,7 +311,7 @@ Theoretically you could do screening in the database browser or your reference m
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  For more insight on gold standards take a looks at the *Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)* [resources](http://prisma-statement.org/).
 
-**RESOURCES:** 
+### Resources
  * [Rayyan](https://rayyan.qcri.org/welcome) (free, you can use it in the web browser or as a phone app; for more details [see](http://libraryguides.mcgill.ca/rayyan/home)  
  * [Abstrackr](http://abstrackr.cebm.brown.edu/account/login) (another free tool)
 

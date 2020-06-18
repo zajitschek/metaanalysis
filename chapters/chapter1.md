@@ -76,7 +76,7 @@ This combination of multiple test results can be achieved by qualitatively summa
 
 # Overview
 
-We will take the paper [Nakagawa 2017](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7) as a blueprint to walk you through all the steps of a meta-analysis.
+We will take the paper [Nakagawa et al. 2017](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7) as a blueprint to walk you through all the steps of a meta-analysis.
 
 However, as this is meant as a first step to get you started, we will provide some additional resources, exercises and guidelines (Chapters 2, 3 and 4). This includes a section on phylogenetic trees (which you may need if the question you're planning on tackling spans across different species - quite likely to happen if you're a evolutinary biologist, and the "question" is more important to you than a particular taxon. This will be covered in Chapter 4). To keep things simple initially, we will leave the phylogenies aside and go over the first steps: how  to narrow down your question, how to find relevant literature, how to make decisions on which studies to include, how to extract the relevant info from your selected papers, and run the actual meta-analysis. We'll explain how to interpret the output and plot your results. 
 
@@ -97,7 +97,8 @@ The following diagram (Figure 1 from Nakagawa et al. 2017) shows a more in depth
 <br>
 <br>
 
-**Some examples**. If you haven't lloked at many menta analyses yet, you can have a glance and see what questions were asked and how the results are presented in the examples below. Especially the first in the list (Macartney et al. 2019) is a very good example, with protocols, data, and R code published and made freely available (see *Data & R Code* below):
+## Some examples 
+If you haven't looked at many meta-analyses yet, you can have a glance and see what questions were asked and how the results are presented in the examples below. Especially the first in the list (Macartney et al. 2019) is a very good example, with protocols, data, and R code published and made freely available (see *Data & R Code* below):
 
 - [Effects of nutrient limitation on sperm and seminal fluid: a systematic review and meta‐analysis (Macartney et al. 2019)](http://www.bonduriansky.net/Macartney_et_a_2019_Biological_Reviews.pdf) [Data & R code on osf.io](https://osf.io/aqw8u/)
 - [The repeatability of behaviour: a meta-analysis (Bell et al. 2009)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3972767/).
