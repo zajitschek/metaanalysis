@@ -130,7 +130,7 @@ Meta-data are an essential part of the documentation of your meta-analysis and e
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) In your actual extraction sheet/form, try to group related columns together. You can also color-code them in Excel or put them on the same tab/section in a visual database interface, if used. Your extraction form (spreadsheet) should be tested on several papers (pilot extractions) to make sure it is easy to use and captures necessary information.  
 
 
-###  Extracting and coding
+##  Background: Extracting and coding
 
 **Is one person sufficient to extract the data?**  
 
@@ -158,6 +158,7 @@ Exactly! Read on in the next section how to do this...
 <opt text="No">
 Don't worry, even if the reults don't appear numerically but are represented in a figure we can extract them.
 </choice>
+    
 
 *Is it always possible?*
 
@@ -189,6 +190,7 @@ library(compute.es)
 
 You do not absolutely need to use metadigitise - at the most basic, you can enlage the figure on your screen and measure means and SE's with a ruler (don't forget to convert your measurements according to the Figures axes!). This may be suffiencent for the exercise here, but assuming that you will have many Figures from many studies, for your own meta analysis we recommend to follow the steps below.
 
+## Extracting means and variances from plots: METADIGITIZE
 **We will now guide you through the necessary steps on your local RStudio.**
 
 Let's try to extract data from two selected papers::   
@@ -211,7 +213,7 @@ and
 <br>
 
 
-We're back to orgainsational skills - and are placing our picture shots into a new folder - let's call it **metaDigitise_figures** (read more about organising your extraction directories in the "Setting up directory structures" [section](https://cran.r-project.org/web/packages/metaDigitise/vignettes/metaDigitise.html).   
+We're back to organisational skills - and are placing our picture shots into a new folder - let's call it **metaDigitise_figures** (read more about organising your extraction directories in the "Setting up directory structures" [section](https://cran.r-project.org/web/packages/metaDigitise/vignettes/metaDigitise.html).   
 
 To extract our two figures we need to provide the directory path name of the folder with the images to the *metaDigise()* function, in our case:
 
@@ -299,13 +301,17 @@ data_new
 ```
 <br>
 
+## What if I can't get means & variances from plots?
+
 With these two papers we just extracted, we had a relatively easy job. There were descriptive statistics values reported in the plots. If we cannot get means and standard errors (or SD) from the text, tables and figures (or already-calculated effect sizes, which is still rare), we can look for test (inferential) statistics.   
 
 Test statistics that are usable include t-values (from t-tests), F-values, Chi-square values, and p-values. These values from simple statistical tests (like independent or paired t-tests) are easily convertible into SMD (*d*, *g*) or r (correlation coefficient).   
 
 These conversions and some others can be calculated in R if you know the formula (including conversion from SMD to correlation coefficient), but for the exercise purpose we will use this web-based **[Practical Meta-Analysis Effect Size Calculator](https://campbellcollaboration.org/research-resources/effect-size-calculator.html)**
 
-Open the above webpage. You see the available effect sizes (*d*, *r*, *OR* and *RR*). When you click on them, the type of data available for computing the effect size is shown.
+### Calculating effect sizes from inferential statistics: online calculator
+
+Open the just mentioned [webpage](https://campbellcollaboration.org/research-resources/effect-size-calculator.html). You see the available effect sizes (*d*, *r*, *OR* and *RR*). When you click on them, the type of data available for computing the effect size is shown.
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)    
 [Weil (2006)](https://github.com/SusZaj/metaanalysis/blob/master/papers/Weil2006.pdf) reports in the results: "At the end of the experiment saline-injected animals had smaller testes (F 1,27 = 4.6875, p<0.05, figure 2b)" and in the methods it is noted these are calculated using ANOVA.   
@@ -317,25 +323,26 @@ You should get *d* for the testes mass that is close to what we calculated for t
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)    
 Using the web-based **[Effect Size Calculator](https://campbellcollaboration.org/research-resources/effect-size-calculator.html)**, estimate a few other effect sizes using test (inferential) statistics reported in **[Sadd2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/papers/Sadd2006.pdf)**.   
 
-In practice, we would prefer to do this in R, rather than in an online app or any other non-scriptable software that cannot document our calculations. Luckily, the R package *compute.es* allows us to not only compute various effect sizes from descriptive statistics, but also from inferential statistics.   
+### Calculating effect sizes from inferential statistics: using compute.es in R
+If you are comfortable with R, then it is preferable to calculate your effect sizes here, because the online app cannot document our calculations. The R package *compute.es* allows us to not only compute various effect sizes from descriptive statistics, but also from inferential statistics.   
 
 The *compute.es* function inputs and names are as follows:   
 > * ANCOVA F-test: "a.fes()""   
- * ANCOVA means: "a.mes()"   
- * ANCOVA means (pooled sd): "a.mes2()"   
- * ANCOVA p-value: "a.pes()"    
- * ANCOVA t-test: "a.tes()"   
- * Chi-squared (1 df): "chies()"   
- * Correlation: "res()"    
- * d-statistic: "des()"    
- * Failure group (binary): "failes()"    
- * F-test: "fes()"   
- * Log odds ratio: "lores()"    
- * Means: "mes()"    
- * Means (pooled sd): "mes2()"   
- * Proportions (binary): "propes()"    
- * p-value: "pes()""    
- * t-test: "tes()""    
+> * ANCOVA means: "a.mes()"   
+> * ANCOVA means (pooled sd): "a.mes2()"   
+> * ANCOVA p-value: "a.pes()"    
+> * ANCOVA t-test: "a.tes()"   
+> * Chi-squared (1 df): "chies()"   
+> * Correlation: "res()"    
+> * d-statistic: "des()"    
+> * Failure group (binary): "failes()"    
+> * F-test: "fes()"   
+> * Log odds ratio: "lores()"    
+> * Means: "mes()"    
+> * Means (pooled sd): "mes2()"   
+> * Proportions (binary): "propes()"    
+> * p-value: "pes()""    
+> * t-test: "tes()""    
 
 To learn more see the package vignette or [R documentation](https://www.rdocumentation.org/packages/compute.es/versions/0.2-5/topics/compute.es-package)    
 
@@ -346,15 +353,19 @@ As an example, we will use the F-value, calculated above from [Weil2006.pdf](htt
 No hints needed.
 </codeblock>
 
- 
+<br>
+<br>
+
 **If both descriptive statistics (mean, SE or SD) and test (inferential) statistics are reported, which one should we extract from a paper?**   
 > We usually give priority to descriptive statistics (mean, SE or SD), which usually represent raw data, unadjusted for other variables and also can be converted to different units or used to calculate alternative types of effect sizes.   
 
-
+<br>
+<br>
 **Is the sign of the effect size important? Imagine we use *d*, which represents mean_treatment - mean_control group trait values. How we would interpret *d* = 0.5 and how we would interpret *d* = -0.5?**   
 > The sign represents direction of the effect on a given trait. *d* = 0.5 means that the trait value in the treatment group is moderately larger than the trait value in the control group, *d* = -0.5 would mean that the trait value in the treatment group is moderately smaller than the trait value in the control group.   
 
-   
+<br>
+<br>
 **If we have different traits in the data set (let's say number of eggs laid and probability of nest abandonment) what is the problem with the signs of effect sizes for these traits? What should we do about this?**   
 >Larger numbers of eggs indicate increased reproductive effort (and thus reproductive investment), while increased probability to abandon the nest indicates reduced reproductive effort. This would translate to negative effect size sign if treatment group is less likely to abandon the nest. To fix this we need to reverse the sign of the effect sizes for traits where increased trait values represent LESS reproductive investment, so we have consistent biological interpretation over the whole data set.   
     
@@ -362,7 +373,9 @@ No hints needed.
 
 <exercise id="4" title="Evidence summary & assessment of certainty">
 
-# Evidence summary & assessment of certainty
+## Visualisation: Forest plots
+
+
 
 ## Heterogeneity
 
@@ -389,7 +402,10 @@ Have a look again at the [PRISMA checklist](http://prisma-statement.org/document
 <choice id="1">
 <opt text="Answer" correct="true"> 
 Items 10: Data collection process: Describe method of data extraction from reports (e.g., piloted forms, independently, in duplicate) and any processes for obtaining and confirming data from investigators.   
-11: Data items: List and define all variables for which data were sought (e.g., PICOS, funding sources) and any assumptions and simplifications made;    18: Study characteristics: For each study, present characteristics for which data were extracted (e.g., study size, PICOS, follow-up period) and provide the citations;    and we start started to have a stab at     20: Results of individual studies: For all outcomes considered (benefits or harms), present, for each study: (a) simple summary data for each intervention group (b) effect estimates and confidence intervals, ideally with a forest plot.
+   
+11: Data items: List and define all variables for which data were sought (e.g., PICOS, funding sources) and any assumptions and simplifications made;    
+18: Study characteristics: For each study, present characteristics for which data were extracted (e.g., study size, PICOS, follow-up period) and provide the citations; and we start started to have a stab at     
+20: Results of individual studies: For all outcomes considered (benefits or harms), present, for each study: (a) simple summary data for each intervention group (b) effect estimates and confidence intervals, ideally with a forest plot.
 </opt>
 </choice>
 
@@ -399,5 +415,10 @@ Items 10: Data collection process: Describe method of data extraction from repor
 
 Although not mentioned in the original PRISMA checklist, it is important to share the collected data, meta-data and analysis code. Generally speaking, this is for transparency, reproducibility and giving back to the community.   
 <br>
+
+The full-text screening of your includes studies should have given you a very solid overview over the general background of your research question - so summarising this into a polished paper should be easy
+<U+1F609>
+
+:wink:
 
 </exercise>
