@@ -63,8 +63,10 @@ Other software useful for exploratory (scoping) and additional searches (check t
   * [CiteHero](https://citehero.com/)   
   * R package *[litsearchR](https://elizagrames.github.io/litsearchr/)* (which I haven't tested yet myself)
    
-
-**It seems that the question "What is the evidence for terminal investment?" is too general and too broad in scope.**   
+<br>
+<br>
+   
+***It seems that the question "What is the evidence for terminal investment?" is too general and too broad in scope.***   
 
 Let's try to narrow it down and focus on either *terminal investment in reproduction*, or *terminal investment under immune challenge* (notice the difference between effects *in* reproduction and effects *of* immune challenge.
 <br>
@@ -77,12 +79,15 @@ Run another Google Scholar quick search, including *reproduction* (not in quotes
 >This time you should get over 2,000 records (you will be allowed to access only the first 1,000). Note that Google Scholar does so called Automated Query Expansion for terms that are not set to be exact phrases (in quotes) - it uses alternative forms of these terms.  .
 
 <br>
+<br>
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)   
 Try Google Scholar quick search:    *"terminal investment" "immune challenge"*    
 
 >This time you should get just over 400 records. Skim through the first three pages of the results to get a feel of the diversity of the studies found (e.g. what taxa are studied and what traits the studies might measure to evaluate reproductive investment) and note the wording of their titles. 
-In medical sciences, most meta-analyses (and systematic reviews) fit into the PICO (or related) question framework.  
+In medical sciences, most meta-analyses (and systematic reviews) fit into the PICO (or related) question framework.   
+
+<br>
 
 ## PICO stands for:   
   * P = Population   
@@ -103,7 +108,7 @@ Frame our meta-analytic question "whether immune challenge can result in termina
 <br>
 <br>
 
-### Resources 
+## Resources 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  
 An extensive list of alternative systematic review formulation question frameworks can be found [here](https://www.networks.nhs.uk/nhs-networks/nwas-library-and-information-service/documents/alternative-question-structures-for-different-types-of-systematic-review)   
 <br>
@@ -165,13 +170,14 @@ Most meta-analyses only include studies published in English by default. However
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Publication status can be also used as a criterion - are you happy to include some types of grey literature (e.g. conference proceedings, theses)?
 <br>
 <br>
-
+   
 **STUDY TYPE**  
 **Should we include any type of study? (e.g. correlational vs experimental, if experimental, what type of experiment?)**
 >Since we investigate a specific intervention, we should restrict study type to "experimental" (we should explicitly exclude "simulation").
 
 <br>
 <br>
+   
 **TAXA**  
 **Should we include any type of taxa?**
 <choice id="3">
@@ -189,30 +195,31 @@ This would probably be our answer for the here posed topic: How about multicellu
 >Another thing worth being specific about is that the animals should be wild-type (non-mutant, not disease models) and ideally not subject to any other significant manipulations that could affect their response (e.g. drug treatment; note there is a thin fuzzy line what these manipulations are). There might also be reasons to exclude standard laboratory species (mice, rat, yeast, fruit fly), or conversely just focus entirely on this group. 
 
 <br>
+   
 **MANIPULATION TYPE**   
 **Should we include all types of immune challenge?**
 >There are several established types of experimental immune challenge (blood cells (e.g. SRBC), protein (e.g. PHA), dead or live pathogens or parasites), so its worth including these and similar procedures. Non-experimental immune challenge (e.g. natural infestation levels) should not be included. If something odd comes up later it can be listed under "exclusion criteria", with justification.
 
 <br>
-<br>
+   
 **CONTROL GROUP**   
 **Should we accept any type of control group?**
 > The control group (un-manipulated) should consist of similar individuals compared to the "treatment group", as far as reasonable. The "controls" should not be subject to any other manipulation.
 
 <br>
-<br>
+   
 **OUTCOME TYPE**   
 **Should we accept any reproduction-related measurements and how do we define "reproduction-related" in the first place?**
 >The definition of a *reproduction-related trait* will depend on the species studied (and may require additional reading or relying on the assertions of the authors). Different taxa will have different suites of reproduction related-traits, but these can be grouped into broader categories (e.g. mate attraction includes vocal signals, visual ornaments, pheromone production etc.; reproductive fitness will include number and quality of offspring) and different specific measurements will be available for different taxa and in different studies - this can be quite messy. If we do not have many studies on the topic and very specific question (e.g. "Is the number of offspring affected?") it is OK to be inclusive and later on try to figure out whether some traits are affected more than others.
 
 <br>
-<br>
+   
 **DATA TYPE**  
 **Should we accept any type of data for a meta-analysis? (e.g. descriptive statistics (summarising populations), and which ones, or also inferential statistics (based on population samples and used to estimate parameters and test hypotheses), and which ones? This will be linked to the effect size you are planning to use!)**
 >It depends on the effect size we are planning to use. In our project it can be Cohen's *d*(Hedges *g*) or *lnRR*, which are typically calculated from mean, SD or SE and N (sample sizes). However, Cohen's *d* (Hedges *g*) can be also inferred from some of the test statistics, or even proportions, if means and other descriptive statistics are not available. But one cannot get *lnRR* from inhferential statistics. Other considerations include what to do if some data is missing or unclear.  
 
 <br>
-<br>
+   
 ## Making decision trees for literature screening    
 
 Decision trees are visual representations of our inclusion criteria and decisions we have to make when screening literature. Importantly, good decision trees can make screening the literature faster and more reliable. How does that work? Briefly, if the initial (most general) questions representing screening criteria are not fulfilled, the study gets excluded and there is no need to evaluate the remaining criteria, so we save some time.    
@@ -230,14 +237,15 @@ This is because abstracts, titles and keywords do not contain enough information
 This first step of screening requires a relatively simple decision tree. A good tree starts from the questions that are easiest to answer (e.g., if we had any year or language restrictions we would put these on the top). During abstract screening, we exclude the records where a definite "no" can be inferred from available information. At the same time we allow for some uncertainty for the "yes" answers by allowing "probably" as an acceptable answer for inclusion. This will be doble checked in full text screening. 
 
 An example decision tree for abstract screening looks like this:![](https://github.com/SusZaj/metaanalysis/blob/master/images/decisiontree.png?raw=true)
-   
+
+<br>   
 
 **In the abstract screening decision tree there is no question about the type of data used to express measurements reported in the study. Why?**
 >Full-text screening is more strict and we want answers to all our inclusion criteria. In principle, we only have "yes" and "no" answers to the screening questions. However, in practice, if a study looks very relevant but some information is ambiguous or missing, you may decide to contact the authors to get some extra information or data. In such case, you can provisionally include such papers and make final decision once you get, or not, the author's replies.  
 
 
-### In a decision tree for full-text screening, we will include an additional rule:...
-...
+### In a decision tree for full-text screening, we will include an additional rule:   
+   
 > Are means and SD (or SEs) and N (sample sizes) for treatment and control groups, or test statistics from which effect sizes for the difference between the two groups can be calculated, available?
 
 If the answer is **yes**, the study can be included for meta-analysis.
@@ -251,19 +259,22 @@ It is a good practice to keep this in mind and use as one of your potential incl
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  You can read more about how to come up with good decsicion trees on **[Losia's blog](http://www.i-deel.org/blog/around-meta-analysis-12-decision-trees)**
 
+<br>
+
 ##  Performing searches for relevant literature  
 
 Ideally, we attempt to do a fairly comprehensive literature search (a full systematic review). The reason for this is to gather as many relevant data points as possible, to increase the power of statistical analyses. In addition, we are making an effort to capture obscure studies that potentially are more likely to report non-significant results. This is importnat as it may help to reduce publication bias in our data set. 
-
+<br>
 
 ### Search strategy
 
 You should conduct your literature search on at least two wide-coverage/interdisciplinary databases (we recommend **Scopus** and **Web of Science**), and a few additional sources of literature such as forward and backward reference searching (looking at cited and citing papers), publication lists of the key authors or labs. In addition, one could also search for unpublished studies and data sets (this will not be covered here).   
-
+<br>
+    
 ** For this exercise we recommend some core search using 2 databases:
 Scopus and Web of Science.**
 
-### Resources
+## Resources
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  
  * [Scopus](https://www.scopus.com/)   
  * [Web of Science (WoS)](http://apps.webofknowledge.com)   
@@ -277,32 +288,37 @@ Using Scopus **Advanced Search** (you can read more about the syntax [here](http
  **1** *TITLE-ABS-KEY ( "terminal investment"  AND  "immune challenge" )*    
 > you'll likely only get a few hits - search terms too restrictive    
    
+ <br>   
 
  **2** *TITLE-ABS-KEY ( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*" OR  "immunochalleng\*" ) )*
 > a bit better, but still too restrictive    
    
+ <br>   
 
  **3** *TITLE-ABS-KEY ( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*"  OR  "infect\*" ) )*
 > the number of hits has improved, but we probably now have included many non-experimental studies while still missing relevant experimental ones   
-
+   
+ <br>
+   
  **4** *( TITLE-ABS-KEY ( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*"  OR  "infect\*" ) )  AND NOT  TITLE-ABS-KEY ( load  OR  human  OR  people ) )* 
 >by adding a group of exclusion terms (AND NOT) we probably got rid of some irrelevant studies.   
     
 
 Ideally, you run some scoping searchers, read some reviews and relevant papers and then test some more terms for inclusion. You should also do some pilot abstract screening on papers exported from just one database, to help you figure out additional exclusion terms which should be included in your search string.
-
+   
+   
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  When you to register in Scopus and WoS, you can searches and alerts across multiple search sessions.
-
-
+   
+   
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  The \* symbol stands for wildcard and indicates "any symbols" since these databases do not do Automatic Query Expansion.    
-
-
+    
+    
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)    
 We can easily translate our final search string from Scopus into Web of Science (WoS) **Advanced Search** (you can read more about the syntax [here](https://images.webofknowledge.com/images/help/WOS/hs_search_operators.html). 
 
-#### Run this search string:    
+### Run this search string:    
 *TS = (( ( "terminal investment" OR "reproductive effort" ) AND ( "immune challeng\*"  OR  "immunochalleng\*"  OR  "infect\*"  ) ) NOT ( load OR human OR people ) )*  
->(you may find that you get more in WoS than from Scopus).   
+> you may find that you get more in WoS than from Scopus   
 
 Both Scopus and WoS allow exporting the found records (with limitations on the max. number per export, **remember to tick the boxes for exporting abstracts!**).  There are multiple file formats you can use, but .ris and .bib are most commonly used ones. You will need to figure out which ones work for your reference manager software \.
 
@@ -325,12 +341,12 @@ An R package *[revtools]* available [on cran](https://cran.rstudio.com/web/packa
 Theoretically you could do screening in the database browser or your reference manager, but since it is recommended that 2 people do the screening independently (or at least part of the screening), it is good to use a dedicated tool to manage this process. 
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  
-### Why two?
+## Why two?
 >To avoid bias - we all have preferences and biases, so having two people to independently think about which studies should or should not be included - and importanly, discuss the discrepancies - is considered good practise. The effect of single vs double screening has even been tested in a [study](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-019-0782-0)
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  For more insight on gold standards take a looks at the *Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)* [resources](http://prisma-statement.org/).
 
-### Resources
+## Resources
  * [Rayyan](https://rayyan.qcri.org/welcome) (free, you can use it in the web browser or as a phone app; for more details [see](http://libraryguides.mcgill.ca/rayyan/home)  
  * [Abstrackr](http://abstrackr.cebm.brown.edu/account/login) (another free tool)
     
@@ -358,17 +374,17 @@ Create a new project in Rayyan:
 It may take several minutes for larger files and slower connections, but eventually the uploaded references should appear in the left panel under "Search methods" (you can upload more files with references via "Add new" link). Click on the "Uploaded References [scopus10.ris]" link in this panel to see the references in the right panel. Generally clicking on the links within panels on the left will filter the records in the right panels to include only highlighted sets (to get rid of the filter click on it again to remove highlighting).  
 In the left panels there are several sub-panels.   
 
-5. In the "Keywords for include" you can add (via "Add new" link) following terms (or at least a few of these): challenge, challenged, injected, injection, infected, infection, PHA, SRBC, vaccine (these terms will be highlighted green in the titles and abstracts to help them find more easily; Rayyan tries to populate this list by itself - but its algorithm is medical-centered so you should adjust this list for your projects).   
+a) In the "Keywords for include" you can add (via "Add new" link) following terms (or at least a few of these): challenge, challenged, injected, injection, infected, infection, PHA, SRBC, vaccine (these terms will be highlighted green in the titles and abstracts to help them find more easily; Rayyan tries to populate this list by itself - but its algorithm is medical-centered so you should adjust this list for your projects).   
  
-6. "Keywords for exclude" - set to: review, reviewed, model, human, people, women, men (these terms will be highlighted red in the titles and abstracts to help them find more easily; again, Rayyan tries to populate this list by itself).    
+b) "Keywords for exclude" - set to: review, reviewed, model, human, people, women, men (these terms will be highlighted red in the titles and abstracts to help them find more easily; again, Rayyan tries to populate this list by itself).    
  
-7. Click on "All reviews" button in the top right corner to go to the project lists, then open your project again by choosing it from the list. A view with a pie chart (your screening progress) and a few buttons will appear. If you need to invite other people to do screening in parallel with you, do that by clicking on the "Invite" button. Stick with "Collaborator" selection and enter the email and message (e.g. "help me!"). Open your project again - you should see your collaborators added with some info on their work so far. Press on "Show" button to see the references view.   
+c) Click on "All reviews" button in the top right corner to go to the project lists, then open your project again by choosing it from the list. A view with a pie chart (your screening progress) and a few buttons will appear. If you need to invite other people to do screening in parallel with you, do that by clicking on the "Invite" button. Stick with "Collaborator" selection and enter the email and message (e.g. "help me!"). Open your project again - you should see your collaborators added with some info on their work so far. Press on "Show" button to see the references view.   
  
-8. Click on the first review from the top - an abstract and other record info will appear in the bottom panel.  
+d) Click on the first review from the top - an abstract and other record info will appear in the bottom panel.  
  
-9. Using our abstract screening decision tree decide whether include this paper for the next stage of screening and press the "Include" or "Exclude" button accordingly. And do the assessment for the remaining records. As you go you can create and assign new labels to individual records, e.g.: "unsure/check". You could also enter reasons for exclusion, e.g. "human" (we normally don't do this as there are often hundreds or thousands of excluded records per project at this stage).  
+e) Using our abstract screening decision tree decide whether include this paper for the next stage of screening and press the "Include" or "Exclude" button accordingly. And do the assessment for the remaining records. As you go you can create and assign new labels to individual records, e.g.: "unsure/check". You could also enter reasons for exclusion, e.g. "human" (we normally don't do this as there are often hundreds or thousands of excluded records per project at this stage).  
  
-10. Go to "All reviews" and check if other people finished their screening, if applicable. After that you can lift the "blind" mode (when collaborators cannot see each others decisions). For collaborative screens Rayyan will now provide filters to display all consensus included, consensus excluded and records with conflicting decisions. If you have any "conflicts" have a look again and discuss why you couldn't agree on a given record , come to agreement and make final decision. Export the records with final consensus decisions, for documentation, into a .csv file. You can filter the records into “Included” and just export those, also you can export them as a .bib or .ris file into a reference manager where you will collect full texts for the nest stage of the screening.   
+f) Go to "All reviews" and check if other people finished their screening, if applicable. After that you can lift the "blind" mode (when collaborators cannot see each others decisions). For collaborative screens Rayyan will now provide filters to display all consensus included, consensus excluded and records with conflicting decisions. If you have any "conflicts" have a look again and discuss why you couldn't agree on a given record , come to agreement and make final decision. Export the records with final consensus decisions, for documentation, into a .csv file. You can filter the records into “Included” and just export those, also you can export them as a .bib or .ris file into a reference manager where you will collect full texts for the nest stage of the screening.   
 
 How many papers did you exclude? How many conflicts did you have if you collaboratively screened and, if so, what was causing these conflicts? Can the decision tree be improved and how?   
 
