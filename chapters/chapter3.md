@@ -9,7 +9,8 @@ id: 3
 ---
 
 <exercise id="1" title="Data extraction">
-
+***Based on Losia's data_extration workshop material*** 
+     
 Once you have have a good collection of (neatly orgaised and stored) full-text papers (aim for at least 20 but no more than 200 to keep it manageable), you can start extracting the data. 
 
 

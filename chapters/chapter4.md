@@ -11,7 +11,8 @@ id: 4
 <exercise id="1" title="Phylogenies">
 
 # Introduction
-
+***based on Losia's "Trees - making" workshop***   
+   
 Ecological and evolutionary meta-analyses often aggregate data across multiple species. Since species are more or less closely related, depending on evolutionary history, effect sizes of closely related species can be more similar to these of less-related species. This means that the level of relatedness between species will influence outcomes, and their non-independence  needs to be accounted for.
 We can add a random factor to multilevel meta-analytic models, which consists of a  correlation matrix of phylogenetic relatedness. 
 To create such a a relatedness matrix among species, we need a phylogenetic tree, specifically for the list of species that are occuring in our data set.  
@@ -175,8 +176,6 @@ No hints needed.
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) **Note**: In this example all species had matches on the super-tree. Quite often there are no matches for some of the species, which could be due to typos or synonymous names. If no match can be found, a sister species may be used when a species is truly missing. [Remember to match the names on the final tree back to the original species list from the data set - see the E. coli example above in the rotl example!].
 
 
-********************************************************************************
-
 
 ### EXAMPLE 3 - using the *rotl* package again  
 
@@ -213,7 +212,7 @@ dim(taxa) #36 species
 
 You will be running into a few issues with these data, including alternative species names, true hypbrids, etc, leading to polytomies in the tree. 
 
-### Some approaches for resolving polytomies:  
+## Some approaches for resolving polytomies:  
 
 1. at random, using rotl
 
@@ -232,10 +231,13 @@ We can try to find some relevant trees using Treebase database and *treebase* pa
 As an exercise, we will try to find more resolved phylogeny for the four species from genus 'Acer' that were included in Curtis1998 from R. You can try search Treebase directly at www.treebase.org, but it can be slow. Try to find a tree via [Treebase website search](https://treebase.org/treebase-web/search/studySearch.html) and enter "Acer" in the search box, then select "Title" from the drop-down menu next to it, press "Search" button.   
 
 
-Of the 57 studies, ### CONTINUE HERE
-but most of them were selected because they contain word "spaACER" (we are a bit unlucky with the taxon name). There are a few study titles that mention Acer which potentially may contain relevant trees and species: S2155, S2157 and S342. You can tick boxes next to them and then press button "Discard unchecked items" at the bottom of the window. Now, if you select just one of the remaining 3 studies and then go to the Taxa tab, you will see the list of taxa associated with a given study.  
+Of the 57 studies that we end up with not may contain relevant trees and species: S2155, S2157 and S342. Tick boxes next to these and  "Discard unchecked items" at the bottom.
 
-In this exercise we will use study S342 Ackerly D., Donoghue M.J.	1998, so check the box next to it and then "Discard unchecked items" button at the bottom. Then, go to the "Trees"" tab where you will see 2 trees from this study. We pick Tr418 (consensus, i.e. made from collapsing multiple possible similar single trees). You can download it as a Nexus file by clicking the icons on the right. Note: you can also start the search from Tree tab, by searching tree titles and then look at the studies from which these trees are, or even start the search for the most obscure species in the Species tab - sometimes these approaches may work better.   
+Select just one of the remaining 3 studies and go to the 'Taxa' tab, which shows the list of taxa associated with this study.  
+
+Here we will use study S342 Ackerly D., Donoghue M.J.	1998, so check the box next to it and discard the rest. Go to the "Trees" tab : there are 2 trees from this study. 
+
+We have done this already, and pick Tr418 (consensus, i.e. made from collapsing multiple possible similar single trees).   
 
 Now we will try to do similar work from R. First, we create a custom search string with our four Acer species names from Curtis1998 data set.  
 
@@ -322,21 +324,15 @@ plot(tree_grafted, cex=.8, label.offset =.1, no.margin = TRUE)
 ### EXAMPLE 5 - try it yourself - rotl
 
 
-Use *rotl* to create a tree for the bunch of reptiles.   
-**Remember**: Make sure that species names match exactly tree tip labels.
+Use *rotl* to create a tree for this list of reptiles.   
+**Remember**: Double check that species names match tree tip labels.
 
-Here is the species list:    
-
-```{r rotl exercise, echo = TRUE, eval = TRUE}
+```
 myspecies2 <- c("Gekko japonicus", "Geochelone sulcata", "Gopherus agassizii", "Gopherus polyphemus", "Graptemys ouachitensis", "Graptemys pseudogeographica", "Hemidactylus bowringii", "Heterodon platirhinos", "Heteronotia binoei", "Iberolacerta cyeni", "Lacerta schreiberi", "Lampropholis delicata", "Lampropholis guichenoti", "Liasis fuscus")
 ```
 
 
-********************************************************************************
-
-
 ### EXAMPLE 6 - try it yourself- treebase
-
 
 
 Use *treebase* to create a tree for the three Quercus species from dat.Curtis1998. You can try to graft them on the Curtis 1998 tree.
@@ -344,30 +340,24 @@ Use *treebase* to create a tree for the three Quercus species from dat.Curtis199
 **Hint**: Quercus prinus is also called Quercus montana (https://en.wikipedia.org/wiki/Quercus_montana).   
 Once you substitute, all three species can be found on Tree 113123 of Study 22057, and also in several other studies and trees.
 
-
-Here is the species list:    
-
-```{r treebase exercise, echo = TRUE, eval = TRUE, warning = FALSE}
+```
 Quercus3sp <- species_Curtis1998[grep("Quercus ", species_Curtis1998)]
 ```
 
 
 
-********************************************************************************
 
 
-### DISCUSSION
-W hope you learn a few tricks on how to make phylogenetic-like trees of species that can be used in meta-analytic models. There is much more to learn, especially dealing with missing or rare species names, grafting trees together, resolving polytomies, plotting cool trees etc. In some cases getting "perfect" tree may not be possible - but phylogenies are always just estimates of the species relationships, and as long as you get the key features right, the tree will be OK, and so your analyses (in most cases).
+## RESOURCES
 
+In some cases getting "perfect" tree may not be possible - but phylogenies are always just estimates of the species relationships, and as long as you get the key features right, the tree will be OK, and usually so will your analyses. Remember, the phylogeny will be added as a moderator - helping to explain differences across taxa. However, if the phenomenon you're interested in is highly conserved across taxa (i.e. the species react similarly to the treatment) the phylogeny will probably not play a significant role.
 
-OTHER RESOURCES
----------------
+### Further help
+- discussion list [R-sig-phylo archive](http://www.mail-archive.com/r-sig-phylo@r-project.org/)
 
-Search for help: discussion list R-sig-phylo archive at http://www.mail-archive.com/r-sig-phylo@r-project.org/
+- [Tree manipulation in R](http://www.r-phylo.org/wiki/HowTo/DataTreeManipulation)
 
-Tree manipulation in R: http://www.r-phylo.org/wiki/HowTo/DataTreeManipulation
-
-R-based GUI tree viewer: https://klash.shinyapps.io/shinyTreeViewer
+- R-based [GUI tree viewer](https://klash.shinyapps.io/shinyTreeViewer)
 
 
 
@@ -398,8 +388,7 @@ All of the freely available resources listed here provide much more detail, spec
 - Stephanie Kovalchik's [2013 tutorial](http://edii.uclm.es/~useR-2013/Tutorials/kovalchik/kovalchik_meta_tutorial.pdf)
 
 
+## Some links to how to use R
 
-## Some links to "how to use R?
-"
 
 </exercise>
