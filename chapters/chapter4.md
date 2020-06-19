@@ -41,7 +41,14 @@ To create such a a relatedness matrix among species, we need a phylogenetic tree
 The general flow of tree-making work is shown in the diagram below.  
 You will usually start with species list from the meta-analytic data set (use binomial Latin names for the species list and in your database). 
 
-First, check if there is any phylogenetic tree available that already contains all your species (e.g. a super-tree). Currently, the easiest way to build a custom phylogenetic tree usable for meta-analysis is by using an R package called *rotl*, which accesses a synthetic super-tree from Open Tree of Life database (https://	opentreeoflife.org). We will guide you through this approach in our examples below. Most of the time *rotl* will work well, especially with the common species. There are other super-trees available, e.g. for birds - we will use one of these as our example too. Overall, if you can find a tree that contains all your species, you just trim (subset) it down to your species. If only a few species are missing, it is sometimes possible to substitute them with closely related species. If no existing phylogeny is readily usable, there are a few non-exclusive options depending on the range of species in the data set:  
+First, check if there is any phylogenetic tree available that already contains all your species (e.g. a super-tree). Currently, the easiest way to build a custom phylogenetic tree usable for meta-analysis is by using an R package called *rotl*, which accesses a synthetic super-tree from [Open Tree of Life database](https://	opentreeoflife.org). 
+
+However, we currently can't provide the pre-installation here on this website, but as before for metaDigitize, we will guide you through how this is done in your local environment in our example below. 
+   
+   
+# Different Tools 
+
+Most of the time *rotl* will work well, especially with the common species. There are other super-trees available, e.g. for birds - we will use one of these as our example too. Overall, if you can find a tree that contains all your species, you just trim (subset) it down to your species. If only a few species are missing, it is sometimes possible to substitute them with closely related species. If no existing phylogeny is readily usable, there are a few non-exclusive options depending on the range of species in the data set:  
 
  - If the species are highly diverged (e.g. mixture of vertebrates and invertebrates), use the [NCBI Taxonomy Common Tree tool](http://www.ncbi.nlm.nih.gov/Taxonomy/CommonTree/wwwcmt.cgi). On the webpage, use the input box at the top of the page to search for each species name. Alternatively, you can upload your list of species names from a file. This list allows to generate a scaffold for a tree (i.e. the pattern of basal branching for the main clades).  
  
@@ -80,12 +87,9 @@ library(rotl)
 
 ## Examples and exercises
 
-Here are some examples on how to use the *rotl* package to download sub-trees from the Open Tree of Life super-tree, resolve polytomies, trim and plot trees and deal with some of the most common issues. We will try to do most of theses tasks in R, but doing many of these outside R (using websites, text and tree editors, etc.) is also possible. We hope you get the idea of the main principles of the process.  
-
-Now, we start from installing (as required) and loading R packages we will use.  
+Here are some examples on how to use the *rotl* package to download sub-trees from the Open Tree of Life super-tree, resolve polytomies, trim and plot trees and deal with some of the most common issues. This resource covers how to  do most of theses tasks in R, but many of these steps may be done outside R (using websites, text and tree editors, etc.). However, this is not covered here.
 
 
-********************************************************************************
 
 ### EXAMPLE 1 - Using the *rotl* package   
 
@@ -99,7 +103,7 @@ We use a function *tnrs_match_names*, which returns a data frame that lists the 
 The function also returns other information, including alternative species names, to help users ensure that the taxa matched are the correct ones.  
 
 ```
-myspecies <- c("Escherichia colli", 
+myspecies <- c("Escherichia coli", 
                "Chlamydomonas reinhardtii", 
                "Drosophila melanogaster",
                "Arabidopsis thaliana",
@@ -107,81 +111,50 @@ myspecies <- c("Escherichia colli",
                "Mus musculus",
                "Cavia porcellus",
                "Xenopus laevis",
-               "Saccharomyces cervisae",
+               "Saccharomyces cerevisae",
                "Danio rerio")
 taxa <- tnrs_match_names(names = myspecies)
 taxa
 ```
-This will return a list of species in your console.
-
-Note that two of the species names in our list have typos, and are labelled TRUE in a column "approximate_match". Still, they were matched to correct species names.  
-If typos are detected, it is worth correcting the names in the original data set and re-running tree search.  
-
-```{r rotl 10species corrected}
-myspecies_fixed <- c("Escherichia coli", 
-               "Chlamydomonas reinhardtii", 
-               "Drosophila melanogaster",
-               "Arabidopsis thaliana",
-               "Rattus norvegicus",
-               "Mus musculus",
-               "Cavia porcellus",
-               "Xenopus laevis",
-               "Saccharomyces cerevisiae",
-               "Danio rerio")
-taxa <- tnrs_match_names(names = myspecies_fixed)
-taxa
-```
-
-When you are happy with the taxa that have been found using Open Tree identifiers, we can pass them to the
-function tol_induced_subtree to retrieve the relationships among these taxa (a trimmed sub-tree from the synthetic phylogenetic tree).  
+This will return a list of species in your console. If you have introduced typos, this will be labelled "TRUE" in a column named "approximate_match". Correct mistakes and re-run the tree search.  
+You can then can pass your file to the function tol_induced_subtree to retrieve the relationships among these taxa (a trimmed sub-tree from the synthetic phylogenetic tree).  
 
 ```
 tree <- tol_induced_subtree(ott_ids = taxa[["ott_id"]], label_format = "name") 
+#it is possible/ quite likely that you will get a Warning meassage about collapsing single nodes
 ```
-*it is possible/ quite likely that you will get a Warning meassage about collapsing single nodes
 
-The tree is returned as an ape::phylo object and it can be manipulated, printed and saved easily using functions from the ape package.  
 
-```{
+The tree is returned as an ape::phylo object and it can be manipulated, printed and saved easily using functions from the ape package. This is how you call the plot:  
+
+```
 plot(tree, cex=.8, label.offset =.1, no.margin = TRUE)
 ```
+and you should be getting something that looks like this:
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/rotl.png?raw=true)
 
-Note that the species names have the Open Tree identifiers appended to them and *E.coli* was replaced with "mrcaott616ott617", which is non-taxon node within Bacteria. Given we don't have any other bacteria in the data set, and the position on the tree is correct, that's fine, we just need to rename the tree tip back to "Escherichia coli". 
 
-```{r rotl 10species names}
-tree$tip.label #see the current tree tip labels
+Note that the species names have the Open Tree identifiers appended to them and *E.coli* was replaced with "mrcaott616ott617", which is non-taxon node within Bacteria. Below some code to help you convert this back.
+
+```
+tree$tip.label #shows you the current tree tip labels
 ecoli <- tol_node_info(ott_id=474506, include_lineage=TRUE)
-tax_lineage(ecoli) #domain within Bacteria
-tnrs_match_names(names = ("Escherichia")) #we can see what info is available for this genus - not much, ooks like a messy bit of a tree flagged as "INCONSISTENT"
-tree$tip.label <- gsub("mrcaott616ott617", "Escherichia coli", tree$tip.label) #replace the tip label back with our species name
-tree$tip.label <- gsub("_"," ", tree$tip.label) #get rid of the underscores
-```
+tax_lineage(ecoli) #defines the  domain within Bacteria
+tnrs_match_names(names = ("Escherichia")) # shows that the available info is flagged "INCONSISTENT"
+tree$tip.label <- gsub("mrcaott616ott617", "Escherichia coli", tree$tip.label) # replace the tip label with species name
+tree$tip.label <- gsub("_"," ", tree$tip.label) #getting rid of underscores
 
-If you have successfully followed the above steps, you should now be able to tidy up the tree (note no branch lengths are included, they can be created later via simulations), and plot it with this code:
-
-```
-# tree$node.label <- NULL #you can delete internal node labels
-plot(tree, cex=.8, label.offset =.1, no.margin = TRUE) 
-```
-ADD PICTURE
-
-Do a final check whether the tree is binary and if the tip labels of the tree match exactly our (fixed for typos) list of species.  
-
-```{r rotl 10species check}
-#check if the tree is really binary 
+# Final checks:  is the tree really binary 
 is.binary.tree(tree) #TRUE (i.e. there are no polytomies)
-
-#check the overlap between the species names from the data set (our species list) nad the final tree
-intersect(as.character(tree$tip.label), myspecies_fixed) #10 matching names
+#check overlap between the species names 
+intersect(as.character(tree$tip.label), myspecies_fixed) #10 matching names (i.e. data set matches tree)
 setdiff(myspecies_fixed, as.character(tree$tip.label)) #0 mismatches
 setdiff(as.character(tree$tip.label), myspecies_fixed) #0 mismatches
 ```
 
-That was hopefully easy! We can move to a different set of species and method...   
+Please note: this tree contains no branch lenghts - this would have to be added via simulations, and is not covered here.    
 
 
-
-********************************************************************************
 
 ### EXAMPLE 2 - using a supertree from a file   
 
@@ -191,187 +164,76 @@ We will now create a phylogenetic tree for 65 bird species used in Rutkowska, J.
 There are a few main existing and established super-trees for birds, so they can be used to create a sub-tree containing only the species from the list.  
 Here we will use on of these super-trees called "Ericson backbone", which is downloadable from http://birdtree.org/ (Jetz, W., G. H. Thomas, J. B. Joy, K. Hartmann, and A. O. Mooers. 2012. The global diversity of birds in space and time. Nature 491:444-448.). The website http://birdtree.org/ also has an online tool for subsetting their super-trees generating distribution of trees rather than one tree. For simplicity and demonstration purposes we will use R to subset (prune) a single bird super-tree down to a smaller list of species.  
 
-We have our custom list of bird species stored in a file *bird_list.csv* as a simple string factor and we have downloaded Ercison tree stored in a file *Ericson.tre*, in Newick format with branch lengths included. Load these files and check the species overlap.    
+We have provided a custom list of bird species stored in a file *bird_list.csv* as a simple string factor, as well as the Ercison tree stored in a file *Ericson.tre*, in Newick format with branch lengths included. Load these files can be loaded in the code block below. First, we will check the species overlap.    
 
-```{r list birds load} 
-birds <- unique(read.csv("../data/bird_list.csv")$species_name) #load our list of bird species and make the names unique
-birds_stree <- read.tree("../data/Ericson.tre") #load bird supertree
-birds_stree #9993 tips = species
-# str(birds_stree) # ypu can see this tree has edge (branch) lengths
 
-###check the overlap between species name from our list  and the bird supertree
-intersect(as.character(birds_stree$tip.label), birds) #51 - all our species matching - they are contained in the tree
-setdiff(birds, as.character(birds_stree$tip.label)) #0 mismatches - just making sure we have all our species included in the supertree, if you get any mismatches here look for typos or name synonyms!
-```
+<codeblock id="birds">
+No hints needed.
+</codeblock>
 
-Prune super-tree tree to a list of taxa from our list.   
 
-```{r list birds prune} 
-pruned_birds_stree <- drop.tip(birds_stree,birds_stree$tip.label[-match(birds, birds_stree$tip.label)]) #pruning
-#check the pruned tree
-is.binary.tree(pruned_birds_stree) #TRUE
-is.ultrametric(pruned_birds_stree) #TRUE
-has.singles(pruned_birds_stree) #check for singles - the single nodes (i.e., with a single descendant) in a tree
-# pruned_birds_stree <- collapse.singles(pruned_birds_stree) #if singles are preset, you can clean them up using collapse.singles function
-
-# intersect(as.character(pruned_birds_stree$tip.label), birds) #51 - all our species matching - they are contained in the tree
-setdiff(birds, as.character(pruned_birds_stree$tip.label)) #0 mismatches - just making sure we have all our species included in the tree
-# write.tree(pruned_birds_stree, file = "birds_51sp_tree.tre", append = FALSE, digits = 10, tree.names = FALSE) #save, if needed
-```
-
-Plot the tree.   
-
-```{r plot tree birds, fig.width=10, fig.height=8, message=FALSE}
-plot(pruned_birds_stree, cex=0.8) #plots with branch lengths when available
-```
-
-**Notes**: We were lucky that all our species had matches on the super-tree. Quite often there are no matches for some of the species names. In such cases, first check the names for typos or unnecessary characters, then try to find synonymous names and check if these are included in the super-tree. Finally, a sister species can be used when a species is truly missing. Remember to match the names on the final tree back to the original species list from the data set.
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) **Note**: In this example all species had matches on the super-tree. Quite often there are no matches for some of the species, which could be due to typos or synonymous names. If no match can be found, a sister species may be used when a species is truly missing. [Remember to match the names on the final tree back to the original species list from the data set - see the E. coli example above in the rotl example!].
 
 
 ********************************************************************************
 
 
-### EXAMPLE 3 - using *rotl* package again  
+### EXAMPLE 3 - using the *rotl* package again  
 
+If you're still keen to have another go on your locally enstalled R version, you can try to handle a larger set of more closely related taxa, from a real data set.  
+The data set for this is the data set *dat.curtis1998* (contains studies on the Effects of Elevated CO2 Levels on Woody Plant Mass), which is included in the *metafor* package.  
 
-We will now handle a larger set of more closely related taxa, from a real data set.  
-The data set we use the data set *dat.curtis1998* (contains studies on the Effects of Elevated CO2 Levels on Woody Plant Mass) included in the *metafor* package.  
-
-```{r load Curtis1998 data}
+```
 dat <- metafor::dat.curtis1998
 str(dat) #102 rows, many columns including various data
 ```
 
-Extract and clean the list of species included. Note that genus and species name are stored in separate columns. Also, same species name can appear several times in the data set, but since we need a species list, we need each name to appear only once (i.e. unique names), and capitalisation to be consistent (letter case matters when matching strings).   
+With the below code you extract and clean the list of species. Note that genus and species name are stored in separate columns. Also, same species name can appear several times in the data set, but since we need a species list, we need each name to appear only once (i.e. unique names), and capitalisation to be consistent (letter case matters when matching strings).   
 
-```{r create Curtis1998 species list}
-species_Curtis1998 <- paste(dat$genus, dat$species, sep=" ") 
-# str(species_Curtis1998)
+```
+species_Curtis1998 <- paste(dat$genus, dat$species, sep=" ")
+# str(species_Curtis1998) # if you want to see what the dataframe structure loks like
 species_Curtis1998 <- unique(tolower(species_Curtis1998)) #make species name unique
-length(species_Curtis1998) #37
+length(species_Curtis1998) # should be 37
 species_Curtis1998 #note: "populusx euramericana" should be same as "populus euramericana"
-species_Curtis1998 <- gsub("populusx euramericana", "populus euramericana", species_Curtis1998) #merge 2 partially overlapping names (typo? or hybrid?) - remember to fix this in the main data set!
+species_Curtis1998 <- gsub("populusx euramericana", "populus euramericana", species_Curtis1998) #merge, # but potentially fix in the main data set!
+
 species_Curtis1998 <- unique(tolower(species_Curtis1998)) #make the names unique again
 length(species_Curtis1998) #36
 species_Curtis1998 <- paste(toupper(substr(species_Curtis1998, 1, 1)), substr(species_Curtis1998, 2, nchar(species_Curtis1998)), sep="") #capitalise first letters
-species_Curtis1998 #looks better
+species_Curtis1998 # shows your list
 ```
 
-We now have 36 unique species_Curtis1998 names. We try to run *rotl* search with them.  
+You can now run your 36 unique species_Curtis1998 names in a *rotl* search  
 
-```{r match Curtis1998 species_Curtis1998 list to otl taxa list}
+```
 taxa <- tnrs_match_names(names = species_Curtis1998)
 dim(taxa) #36 species
-# taxa
 ```
 
-If you display the names (taxa), note that some alternative names were found. We assume these are correct ones for now.  
-Now that the taxon names are matched to the Open Tree identifiers, we can pass them to the function tol_induced_subtree to retrieve the relationships among these taxa.  
+You will be running into a few issues with these data, including alternative species names, true hypbrids, etc, leading to polytomies in the tree. 
 
-**Note:** populus deltoides  
+### Some approaches for resolving polytomies:  
 
-```{r get Curtis1998 tree}
-tree <- tol_induced_subtree(ott_ids= taxa[["ott_id"]], label_format = "name") 
-#We get an error message that one OTT id was not found: [3915043].
-taxa[taxa$ott_id==3915043,] #populus euramericana Populus x canadensis             FALSE 3915043       TRUE HYBRID
-#note: Populus × canadensis, known as Canadian poplar or Carolina poplar, is a naturally occurring hybrid of Populus nigra and Populus deltoides
-```
+1. at random, using rotl
 
-So, we run into a problem with one of the Populus names - need to fix this by using an alternative name. Populus euramericana, is a naturally occurring hybrid of Populus deltoides, so we can replace it with this name for the search (given its closely related and we don't have this species on our species list).      
+2. Resolving one or more multifurcations (i.e. polytomies) in all possible ways, as outlined on this [blog](http://blog.phytools.org/2016/08/resolving-one-or-more-multifurcations.html)  
 
-```{r fix Curtis1998 species_Curtis1998 list}
-populus <- tnrs_match_names(names = ("populus canadensis"))
-populus #looks ok
-species_Curtis1998 <- gsub("Populus euramericana", "Populus deltoides", species_Curtis1998) #replace populus euramericana with populus canadensis
-```
+3. Package for resolving by known discrete characters of the [species_Curtis1998](https://www.rdocumentation.org/packages/paleotree/versions/3.1.3/topics/resolveTreeChar)  
 
-Re-run *rotl* tree search.   
-
-```{r get Curtis1998 tree again, warning = FALSE}
-taxa <- tnrs_match_names(names = species_Curtis1998)
-dim(taxa) #36
-tree <- tol_induced_subtree(ott_ids= taxa[["ott_id"]], label_format = "name")  #we can get a Warning meassage here about collapsing single nodes
-str(tree)
-```
-
-Plot the tree:
-
-```{r plot tree Curtis1998, fig.width=10, fig.height=8, echo=TRUE, message=FALSE}
-plot(tree, cex=.8, label.offset =.1, no.margin = TRUE)
-```
-
-Replace back "Populus euramericana" with "Populus deltoides" and save the tree in the Newick format.
-
-```{r check replace back populus hybrid }
-tree$tip.label <- gsub("_"," ", tree$tip.label) #get rid of underscores
-# tree$node.label <- NULL #delete node labels
-
-#check the tree match
-# intersect(as.character(tree$tip.label), species_Curtis1998) #matches - they are contained in the tree and our species list
-setdiff(species_Curtis1998, as.character(tree$tip.label)) #1 mismatch - these are only in species_Curtis1998
-setdiff(as.character(tree$tip.label), species_Curtis1998) #1 mismatch - these are only in tree$tip.label
-
-#amend the tip labels on the tree to match the species names from Curtis1998
-tree$tip.label <- gsub("Fuscospora fusca", "Nothofagus fusca", tree$tip.label) #replace the tip label back with our species name
-
-#check the tree match again
-# intersect(as.character(tree$tip.label), species_Curtis1998) #matches - they are contained in the tree and our species list
-setdiff(species_Curtis1998, as.character(tree$tip.label)) #0 mismatches 
-setdiff(as.character(tree$tip.label), species_Curtis1998) #0 mismatches
-
-# write.tree(tree, file="../data/tree_curtis1998.tre") #save the tree in Newick format, if needed
-# read.tree(file="../data/tree_curtis1998.tre") #if you need to read it
-```
-
-Check if our tree is binary (you can see in the plot that there are a few polytomies).
-
-```{r check Curtis1998 tree binary}
-is.binary.tree(tree) #FALSE (i.e. there are polytomies)
-# is.ultrametric(tree) #the tree has no branch lengths, so cant be checked
-#write.tree(tree, file="../data/tree_curtis1998.tre") #save the tree
-# tree <- read.tree(file="../data/tree_curtis1998.tre") #if you need to read it
-```
-
-Its not binary -  polytomies are present within genera: Acer, Betula, Quercus and Fraxinus.
-We will resolve them at random.
-
-```{r resolve Curtis1998 polytomies at random}
-set.seed(111) #making it replicable
-tree_random <- multi2di(tree,random=TRUE)
-is.binary.tree(tree_random) #TRUE
-#write.tree(tree_random, file="../data/tree_curtis1998_random.tre") #save the tree
-# tree_random <- read.tree(file="../data/tree_curtis1998_random.tre") #if you need to read it
-```
-
-Plot the tree now - with randomly resolved polytomies.   
-
-```{r plot Curtis1998 tree_random, fig.width=10, fig.height=8, echo=TRUE, message=FALSE}
-plot(tree_random, cex=.8, label.offset =.1, no.margin = TRUE)
-```
-
-Other, more involved approaches for resolving polytomies:  
-
-1. Resolving one or more multifurcations (i.e. polytomies) in all possible ways: http://blog.phytools.org/2016/08/resolving-one-or-more-multifurcations.html  
-
-2. Package for resolving by known discrete characters of the species_Curtis1998: https://www.rdocumentation.org/packages/paleotree/versions/3.1.3/topics/resolveTreeChar  
-
-3. Resolving manually by using information from known more specialized published phylogeny without polytomies (see next exercise for how to try to find these).  
+4. Resolving manually by using information from known more specialized published phylogeny without polytomies (see next exercise for how to try to find these).  
 
 
-
-********************************************************************************
-
-
-### EXAMPLE 4 - using *treebase* package  
+### EXAMPLE 4 - using the *treebase* package  
 
 
-We can try to find some relevant trees using Treebase database and *treebase* package (Treebase package tutorial: https://cran.r-project.org/web/packages/treebase/vignettes/vignette.html and https://www.carlboettiger.info/2011/05/16/treebase-in-r-a-first-tutorial.html).  
+We can try to find some relevant trees using Treebase database and *treebase* package (see [Treebase package tutorial](https://cran.r-project.org/web/packages/treebase/vignettes/vignette.html) and [here](https://www.carlboettiger.info/2011/05/16/treebase-in-r-a-first-tutorial.html).  
 
-As an exercise, we will try to find more resolved phylogeny for the four species from genus Acer that were included in Curtis1998 from R. 
-However, Treebase sometimes may not connect or run the search string correctly. You can try search Treebase directly at www.treebase.org, but sometimes its quite slow or not working.
-So, just in case we also provide the full tree files downloaded from there, which can be used in this exercise. To see more easily what is in the Treebase database, we first try to find a tree via Treebase website search - you can go to https://treebase.org/treebase-web/search/studySearch.html and enter "Acer" in the search box, then select "Title" from the drop-down menu next to it, press "Search" button.   
+As an exercise, we will try to find more resolved phylogeny for the four species from genus 'Acer' that were included in Curtis1998 from R. You can try search Treebase directly at www.treebase.org, but it can be slow. Try to find a tree via [Treebase website search](https://treebase.org/treebase-web/search/studySearch.html) and enter "Acer" in the search box, then select "Title" from the drop-down menu next to it, press "Search" button.   
 
-There are 57 studies, but most of them were selected because they contain word "spaACER" (we are a bit unlucky with the taxon name). There are a few study titles that mention Acer which potentially may contain relevant trees and species: S2155, S2157 and S342. You can tick boxes next to them and then press button "Discard unchecked items" at the bottom of the window. Now, if you select just one of the remaining 3 studies and then go to the Taxa tab, you will see the list of taxa associated with a given study.  
+
+Of the 57 studies, ### CONTINUE HERE
+but most of them were selected because they contain word "spaACER" (we are a bit unlucky with the taxon name). There are a few study titles that mention Acer which potentially may contain relevant trees and species: S2155, S2157 and S342. You can tick boxes next to them and then press button "Discard unchecked items" at the bottom of the window. Now, if you select just one of the remaining 3 studies and then go to the Taxa tab, you will see the list of taxa associated with a given study.  
 
 In this exercise we will use study S342 Ackerly D., Donoghue M.J.	1998, so check the box next to it and then "Discard unchecked items" button at the bottom. Then, go to the "Trees"" tab where you will see 2 trees from this study. We pick Tr418 (consensus, i.e. made from collapsing multiple possible similar single trees). You can download it as a Nexus file by clicking the icons on the right. Note: you can also start the search from Tree tab, by searching tree titles and then look at the studies from which these trees are, or even start the search for the most obscure species in the Species tab - sometimes these approaches may work better.   
 
@@ -455,7 +317,6 @@ tree_grafted <- bind.tree(tree_pruned, Acers4sp_tree, where=which(tree_pruned$ti
 plot(tree_grafted, cex=.8, label.offset =.1, no.margin = TRUE)
 ```
 
-********************************************************************************
 
 
 ### EXAMPLE 5 - try it yourself - rotl
