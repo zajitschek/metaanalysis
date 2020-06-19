@@ -38,26 +38,25 @@ Study ID (String of characters), effect size and its variance (if we want to run
 ***Hint: Think about our previously worked through inclusion criteria and their more fine-scale categories! Try to formulate some examples before pushing the Example solution button.***
 <choice id="2">
 <opt text="Example solution" correct="true"> 
-
-  1. More detailed information on each study: author, title, journal, publication year.
-
-  2. Information on the study system or species (e.g. species name, taxonomic group, biological details relevant to the studied question, such as age or reproductive status of the study subjects).   
-
-  3. Most papers will not report effect sizes but descriptive and test (inferential) statistics that need to be converted into effect sizes. We need to extract data from which effect sizes can be calculated. For the Terminal Investment project, since we want to compare challenged and unchallenged groups, we will need to collect means and standard errors, sample sizes, or test statistic that can be converted into effect sizes. Each data type needs its own column, therefore we would need several colums, e.g.: mean_control, SE_control, SD_control, N_control, mean_treat, SE_treat, SD_treat, N_treat, test_stat_type, test_stat_value, df.  
-
-  4. Information on where in the original paper the above data was extracted from, e.g. Figure/Table number, page, raw data; if multiple comparisons were reported in the original paper, which exact groups were compared. This will help you find it again should you need to double-check.     
-
- 5. Information on study methodology - e.g., where and when manipulations were performed and measurements/data collected, specific procedures, etc.   
-
- 6. Any comments and additional information related to the extracted data and study. You can have a comment/details column associated with every extracted data column and an overall comment column.  
-
+  1. More detailed information on each study: author, title, journal, publication year.    
+  2. Information on the study system or species (e.g. species name, taxonomic group, biological details relevant to the studied question, such as age or reproductive status of the study subjects).    
+  3. Descriptive and test statistics for conversion into effect sizes.    
+  4. Where did the information come from? e.g. Figure/Table number, page, raw data, etc. ; if multiple comparisons were reported in the original paper, which exact groups were compared. This will help you find it again should you need to double-check.     
+ 5. Methodology - when / where / which measurements/data collected, specific procedures, etc.   
+ 6. Comments and additional information 
 </opt>
 </choice>
+
+This referes to point 3 in the above exercise: Most papers will not report effect sizes but descriptive and test (inferential) statistics that need to be converted into effect sizes. This means we need to extract data from which effect sizes can be calculated. For the Terminal Investment project, since we want to compare challenged and unchallenged groups, we will need to collect means and standard errors, sample sizes, or test statistic that can be converted into effect sizes. Each data type needs its own column, therefore we would need several colums, e.g.: mean_control, SE_control, SD_control, N_control, mean_treat, SE_treat, SD_treat, N_treat, test_stat_type, test_stat_value, df. 
+
+We will show later on some different ways on how you may convert SEs to SDs, and Means and SEs (or SDs) to effect sizes, and how to covert information from test statistics into effect sizes.   
 
 
 **What is the purpose of extracting additional variables?**
 >Potentially, there can be a lot of information that could and should be extracted from the original papers and sometimes supplemented by information from other sources (databases, publications). Some of the information can be used as effect size moderators in the statistical models. Other information can be used to characterise the data set (e.g., is it dominated by particular taxon or experimental methodology?).
-
+   
+   
+   
 
 **What is wrong with this table representing a fragment of an extraction spreadsheet?**
 
@@ -71,7 +70,9 @@ Study ID (String of characters), effect size and its variance (if we want to run
 > - second study has non-numerical values in the columns that should be numerical (NA is good for missing values, but should be used consistently - avoid "not reported")    
 > - the "Species"" column is a mix of Latin and common names (should be all Latin)   
 > - there is an extra dot in "6.4         .""
-
+    
+     
+     
 
 **What is the use of the CohortID column in the extraction table below (just a fragment of a larger example extraction sheet)?**
 
@@ -83,7 +84,9 @@ Study ID (String of characters), effect size and its variance (if we want to run
 | One2009 | One2019M | Phodopus sungorus | M    | 120  | 14.5         | 4.4        | 12        |
 
 > CohortID is used to indicate that the same cohorts/group of animals, of different sex (F, M), were measured repeatedly at different ages (60 and 120). These are not independent data points, and this is captured by CohortID. For different study question this could be an unique identifier of various study sites or populations that need to be distinguished within and between studies.      
-
+   
+      
+      
 
 **What is the use of the CohortID column in the extraction table below [no, this is not the exact same as above!]?**
 
@@ -108,7 +111,9 @@ Study ID (String of characters), effect size and its variance (if we want to run
 | Three2009 | Three2019s2 | Phodopus sungorus | mass  | 120  | 14.5         | 4.4        | 12        |
 
 > CohortID is used to indicate that the same cohorts/group of animals representing two species were measured once for different traits (calls, mass). We can also use combination of StudyID and Species columns to take this into account during statistical analyses. 
-
+    
+    
+    
 
 **What is the use of the Control_grID column in the extraction table below (just a fragment of a larger example extraction sheet)?**   
 
@@ -121,6 +126,9 @@ Study ID (String of characters), effect size and its variance (if we want to run
 
 > Control_grID is used to indicate that the same control group was used as a comparator to two different cohorts/group that were subject to different types of (could also be levels) of experimental treatment (virus, bacteria). This can be visually confrmed by the identical values of means and sample sizes for the control group, but different ones for the treatment groups. The resulting effect sizes are not independent, but in a different way than if the same animals were measured for different traits or more than once for the same trait (rows 3 and 4). This non-independence is captured by combination of CohortID and Control_grID and could be taken into account in statistical models.   
 
+    
+    
+    
 **Why should we record meta-data when extracting data for a meta-analysis?**  
 
 Meta-data are the detailed description of all extracted variables/columns and all other variables/columns derived from them. More specifically, they describe how the data were coded (e.g. the measurement units, how conversions were made,  e.g. whether sex was coded as "F" and "M" and "B" [and what these values/letters mean], how missing values were coded, and anything else that would allow you or somebody to extract and code the same data). 
@@ -135,7 +143,9 @@ Meta-data are an essential part of the documentation of your meta-analysis and e
 **Is one person sufficient to extract the data?**  
 
 > Ideally, two people would be extracting the data in parallel (independently, in duplicate), to minimise errors. However it is often not practical. In such case one person could be extracting and another person checking the extractions for mistakes.
-
+   
+   
+   
 **In what order would you extract your included studies? Random? Chronological? Any other?**  
 
 <choice id="3">
@@ -149,6 +159,9 @@ Possible, but might introduce some bias.
 It is often easier and quicker to group similar studies together. Especially, grouping the studies by study/system and research group helps find overlapping studies (e.g. where the same experiment was reported in separate publications, but focusing on different aspects) or collect more details on how studies were done. Also leaving complicated and odd studies for later on might be a good idea.   
 </choice>
 
+   
+   
+   
 **When numerical data are reported in the text or tables, it is easy to get exact values for your extraction columns. However, often data are reported in the figures. Can we extract such data? **
 
 <choice id="4">
@@ -158,6 +171,8 @@ Exactly! Read on in the next section how to do this...
 <opt text="No">
 Don't worry, even if the reults don't appear numerically but are represented in a figure we can extract them.
 </choice>
+    
+    
     
 
 *Is it always possible?*
@@ -243,7 +258,7 @@ Once you get a "Congratulations" message, you can look at the extracted data. *m
 
 You can add more figures in the directory and add more data to this data table later, or save it and load back later to continue adding more data or merge with other data frames (see "Re-importing previously digitised data and accessing raw data" in the *metaDigitise* [tutorial](https://cran.r-project.org/web/packages/metaDigitise/vignettes/metaDigitise.html).   
 
-```{r save metadigitise, eval=FALSE, message = FALSE}
+```
 write.csv(data, file = "filename.csv") #adjust the file name and path as needed
 ```
 
@@ -270,7 +285,8 @@ Since we have only 2 data points per file, it is easy to reshape the data frame 
 <codeblock id="reshape_data_1">
 The <- arrow sign specifies a definition: e.g. if we want to define the variable 'EXAMPLE' by the number 1, we would write EXAMPLE <- 1. Executing 'EXAMPLE' will make R return a '1'. If you write 'data' and press enter on your local R (or the 'Run Code' button above on this website), the information stored under 'data' will be displayed.
 </codeblock>
-
+   
+   
 Now the columns appended with .x contain control groups data values, and these with .y are for the treatment groups (you can rename the columns to make it easier to see, e.g. using the *rename* [function](https://dplyr.tidyverse.org/reference/select.html).   
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)  
@@ -286,8 +302,10 @@ No hints needed.
 
 The metafor code on its own looks like this:
 ```
-SMD <- metafor::escalc(measure = "SMD", data=data_new, m1i=mean.y, m2i = mean.x, sd1i=sd.y, sd2i= sd.x, n1i = n.y, n2i=n.x, append = FALSE) 
-ROM <- metafor::escalc(measure = "ROM", data=data_new, m1i=mean.y, m2i = mean.x, sd1i=sd.y, sd2i= sd.x, n1i = n.y, n2i=n.x, append = FALSE)
+SMD <- metafor::escalc(measure = "SMD", data=data_new, m1i=mean.y, m2i = mean.x, 
+            sd1i=sd.y, sd2i= sd.x, n1i = n.y, n2i=n.x, append = FALSE) 
+ROM <- metafor::escalc(measure = "ROM", data=data_new, m1i=mean.y, m2i = mean.x, 
+            sd1i=sd.y, sd2i= sd.x, n1i = n.y, n2i=n.x, append = FALSE)
 ```
 
 
@@ -309,13 +327,14 @@ Test statistics that are usable include t-values (from t-tests), F-values, Chi-s
 
 These conversions and some others can be calculated in R if you know the formula (including conversion from SMD to correlation coefficient), but for the exercise purpose we will use this web-based **[Practical Meta-Analysis Effect Size Calculator](https://campbellcollaboration.org/research-resources/effect-size-calculator.html)**
 
-### Calculating effect sizes from inferential statistics: online calculator
+## Calculating effect sizes from inferential statistics: online calculator
 
 Open the just mentioned [webpage](https://campbellcollaboration.org/research-resources/effect-size-calculator.html). You see the available effect sizes (*d*, *r*, *OR* and *RR*). When you click on them, the type of data available for computing the effect size is shown.
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)    
 [Weil (2006)](https://github.com/SusZaj/metaanalysis/blob/master/papers/Weil2006.pdf) reports in the results: "At the end of the experiment saline-injected animals had smaller testes (F 1,27 = 4.6875, p<0.05, figure 2b)" and in the methods it is noted these are calculated using ANOVA.   
-
+   
+   
 Use the web-based **[Effect Size Calculator](https://campbellcollaboration.org/research-resources/effect-size-calculator.html)** sheet and selecting "Standarized Mean difference (d)" and "F-test, 2 groups" to calculate *d* from one-way ANOVA (you will need F-value and sample sizes of treatment and control groups).   
 
 You should get *d* for the testes mass that is close to what we calculated for testes volume from Fig2a. Note that this web calculator provides confidence intervals (CI) and variance for the calculated effect sizes. 
@@ -323,7 +342,7 @@ You should get *d* for the testes mass that is close to what we calculated for t
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)    
 Using the web-based **[Effect Size Calculator](https://campbellcollaboration.org/research-resources/effect-size-calculator.html)**, estimate a few other effect sizes using test (inferential) statistics reported in **[Sadd2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/papers/Sadd2006.pdf)**.   
 
-### Calculating effect sizes from inferential statistics: using compute.es in R
+## Calculating effect sizes from inferential statistics: using compute.es in R
 If you are comfortable with R, then it is preferable to calculate your effect sizes here, because the online app cannot document our calculations. The R package *compute.es* allows us to not only compute various effect sizes from descriptive statistics, but also from inferential statistics.   
 
 The *compute.es* function inputs and names are as follows:   
@@ -432,8 +451,6 @@ Although not mentioned in the original PRISMA checklist, it is important to shar
 <br>
 
 The full-text screening of your includes studies should have given you a very solid overview over the general background of your research question - so summarising this into a polished paper should be easy
-<U+1F609>
-
-:wink:
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/wink.png?raw=true) 
 
 </exercise>

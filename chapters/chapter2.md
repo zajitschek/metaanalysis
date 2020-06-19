@@ -63,8 +63,7 @@ Other software useful for exploratory (scoping) and additional searches (check t
   * [CiteHero](https://citehero.com/)   
   * R package *[litsearchR](https://elizagrames.github.io/litsearchr/)* (which I haven't tested yet myself)
    
-<br>
-<br>
+   
    
 ***It seems that the question "What is the evidence for terminal investment?" is too general and too broad in scope.***   
 
@@ -176,7 +175,7 @@ Most meta-analyses only include studies published in English by default. However
 >Since we investigate a specific intervention, we should restrict study type to "experimental" (we should explicitly exclude "simulation").
 
 <br>
-<br>
+
    
 **TAXA**  
 **Should we include any type of taxa?**
@@ -194,7 +193,7 @@ This would probably be our answer for the here posed topic: How about multicellu
 
 >Another thing worth being specific about is that the animals should be wild-type (non-mutant, not disease models) and ideally not subject to any other significant manipulations that could affect their response (e.g. drug treatment; note there is a thin fuzzy line what these manipulations are). There might also be reasons to exclude standard laboratory species (mice, rat, yeast, fruit fly), or conversely just focus entirely on this group. 
 
-<br>
+   
    
 **MANIPULATION TYPE**   
 **Should we include all types of immune challenge?**
@@ -202,11 +201,13 @@ This would probably be our answer for the here posed topic: How about multicellu
 
 <br>
    
+   
 **CONTROL GROUP**   
 **Should we accept any type of control group?**
 > The control group (un-manipulated) should consist of similar individuals compared to the "treatment group", as far as reasonable. The "controls" should not be subject to any other manipulation.
 
 <br>
+   
    
 **OUTCOME TYPE**   
 **Should we accept any reproduction-related measurements and how do we define "reproduction-related" in the first place?**
@@ -214,11 +215,13 @@ This would probably be our answer for the here posed topic: How about multicellu
 
 <br>
    
+   
 **DATA TYPE**  
 **Should we accept any type of data for a meta-analysis? (e.g. descriptive statistics (summarising populations), and which ones, or also inferential statistics (based on population samples and used to estimate parameters and test hypotheses), and which ones? This will be linked to the effect size you are planning to use!)**
 >It depends on the effect size we are planning to use. In our project it can be Cohen's *d*(Hedges *g*) or *lnRR*, which are typically calculated from mean, SD or SE and N (sample sizes). However, Cohen's *d* (Hedges *g*) can be also inferred from some of the test statistics, or even proportions, if means and other descriptive statistics are not available. But one cannot get *lnRR* from inhferential statistics. Other considerations include what to do if some data is missing or unclear.  
 
 <br>
+   
    
 ## Making decision trees for literature screening    
 
@@ -227,8 +230,10 @@ Decision trees are visual representations of our inclusion criteria and decision
 You can make your decision trees by hand, make a flow chart in Power Point or use any MindMapping software (if you want to go that route - I recommend Visually Understanding the Enviroment, [VUE](https://vue.tufts.edu/). 
 
 The screening of literature is usually done in two stages:   
-  1. abstract + title + keywords    **(this will be done on the bulk of the papers found in your search)**
-  2. full text + supplementary information   **(this requires that you carefully go through your list of "included" studies obtained in step 1 and more details in the "bottom branches"" of your decison tree)**
+  1. abstract + title + keywords    
+  **(this will be done on the bulk of the papers found in your search)**
+  2. full text + supplementary information   
+  **(this requires that you carefully go through your list of "included" studies obtained in step 1 and more details in the "bottom branches"" of your decison tree)**
 
 ### We need two decision trees!
 #### one for each stage: Abstract / Full text
@@ -239,7 +244,8 @@ This first step of screening requires a relatively simple decision tree. A good 
 An example decision tree for abstract screening looks like this:![](https://github.com/SusZaj/metaanalysis/blob/master/images/decisiontree.png?raw=true)
 
 <br>   
-
+   
+   
 **In the abstract screening decision tree there is no question about the type of data used to express measurements reported in the study. Why?**
 >Full-text screening is more strict and we want answers to all our inclusion criteria. In principle, we only have "yes" and "no" answers to the screening questions. However, in practice, if a study looks very relevant but some information is ambiguous or missing, you may decide to contact the authors to get some extra information or data. In such case, you can provisionally include such papers and make final decision once you get, or not, the author's replies.  
 
@@ -271,8 +277,8 @@ Ideally, we attempt to do a fairly comprehensive literature search (a full syste
 You should conduct your literature search on at least two wide-coverage/interdisciplinary databases (we recommend **Scopus** and **Web of Science**), and a few additional sources of literature such as forward and backward reference searching (looking at cited and citing papers), publication lists of the key authors or labs. In addition, one could also search for unpublished studies and data sets (this will not be covered here).   
 <br>
     
-** For this exercise we recommend some core search using 2 databases:
-Scopus and Web of Science.**
+#### For this exercise we recommend some core search using 2 databases:
+Scopus and Web of Science.
 
 ## Resources
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  
