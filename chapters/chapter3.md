@@ -1,22 +1,22 @@
 ---
 title: 'Chapter 3: Meta-analysis'
 description:
-  'Data extraction & organisation, meta anyalysis & quality checks'
+  'Data organisation & extraction, meta analysis & quality checks'
 prev: /chapter2
 next: /chapter4
 type: chapter
 id: 3
 ---
 
-<exercise id="1" title="Data extraction">
-***Based on Losia's data_extration workshop material*** 
+<exercise id="1" title="Preparation & organisation">
+***Based on Losia's data_extraction workshop material*** 
      
-Once you have have a good collection of (neatly orgaised and stored) full-text papers (aim for at least 20 but no more than 200 to keep it manageable), you can start extracting the data. 
+Once you have have a good collection of (neatly organised and stored) full-text papers (aim for at least 20 but no more than 200 to keep it manageable), you can start extracting the data. 
 
 
 ## Organising your data set   
 
-Before you start extracting actual data for the meta-analysis you needa system to manage data extractions and store the data. For data extractions, many people just stick to Excel spreadsheets, or any other spreadsheets or extraction forms that can be converted into spreadsheets (e.g. Google Forms). 
+Before you start extracting actual data for the meta-analysis you need a system to manage data extractions and store the data. For data extractions, many people just stick to Excel spreadsheets, or any other spreadsheets or extraction forms that can be converted into spreadsheets (e.g. Google Forms). 
 
 Whatever you choose, you need a platform where you can easily add and edit columns and be able to store different types of data, so rigid systems purpose-built for medical trial data are not recommended. In this exercise we will stick an Excel spreadsheet.    
 
@@ -26,7 +26,7 @@ We will be using two papers from our literature search in Chapter 2, as examples
 **(Remember, you need a separate column for each data/information type)** 
 <choice id="1">
 <opt text="No minimum"> 
-Good thought,  and potentially what you'll be aiming for - but here we're thinking "what is the absolute mimum of colums that we need to be able to run a meta analysis?"
+Good thought,  and potentially what you'll be aiming for - but here we're thinking "what is the absolute minimum of columns that we need to be able to run a meta analysis?"
 </opt>
 <opt text="6">
 What would they be? While we might have 6 or more columns in our data set, the minimum set can be smaller.
@@ -48,16 +48,16 @@ Study ID (String of characters), effect size and its variance (if we want to run
 </opt>
 </choice>
 
-This referes to point 3 in the above exercise: Most papers will not report effect sizes but descriptive and test (inferential) statistics that need to be converted into effect sizes. This means we need to extract data from which effect sizes can be calculated. For the Terminal Investment project, since we want to compare challenged and unchallenged groups, we will need to collect means and standard errors, sample sizes, or test statistic that can be converted into effect sizes. Each data type needs its own column, therefore we would need several colums, e.g.: mean_control, SE_control, SD_control, N_control, mean_treat, SE_treat, SD_treat, N_treat, test_stat_type, test_stat_value, df. 
+This refers to point 3 in the above exercise: Most papers will not report effect sizes but descriptive and test (inferential) statistics that need to be converted into effect sizes. This means we need to extract data from which effect sizes can be calculated. For the Terminal Investment project, since we want to compare challenged and unchallenged groups, we will need to collect means and standard errors, sample sizes, or test statistic that can be converted into effect sizes. Each data type needs its own column, therefore we would need several columns, e.g.: mean_control, SE_control, SD_control, N_control, mean_treat, SE_treat, SD_treat, N_treat, test_stat_type, test_stat_value, df. 
 
 We will show later on some different ways on how you may convert SEs to SDs, and Means and SEs (or SDs) to effect sizes, and how to covert information from test statistics into effect sizes.   
 
 
 **What is the purpose of extracting additional variables?**
 >Potentially, there can be a lot of information that could and should be extracted from the original papers and sometimes supplemented by information from other sources (databases, publications). Some of the information can be used as effect size moderators in the statistical models. Other information can be used to characterise the data set (e.g., is it dominated by particular taxon or experimental methodology?).
+
    
-   
-   
+
 
 **What is wrong with this table representing a fragment of an extraction spreadsheet?**
 
@@ -71,9 +71,9 @@ We will show later on some different ways on how you may convert SEs to SDs, and
 > - second study has non-numerical values in the columns that should be numerical (NA is good for missing values, but should be used consistently - avoid "not reported")    
 > - the "Species"" column is a mix of Latin and common names (should be all Latin)   
 > - there is an extra dot in "6.4         .""
-    
-     
-     
+
+
+​     
 
 **What is the use of the CohortID column in the extraction table below (just a fragment of a larger example extraction sheet)?**
 
@@ -85,9 +85,9 @@ We will show later on some different ways on how you may convert SEs to SDs, and
 | One2009 | One2019M | Phodopus sungorus | M    | 120  | 14.5         | 4.4        | 12        |
 
 > CohortID is used to indicate that the same cohorts/group of animals, of different sex (F, M), were measured repeatedly at different ages (60 and 120). These are not independent data points, and this is captured by CohortID. For different study question this could be an unique identifier of various study sites or populations that need to be distinguished within and between studies.      
-   
-      
-      
+
+
+​      
 
 **What is the use of the CohortID column in the extraction table below [no, this is not the exact same as above!]?**
 
@@ -112,9 +112,9 @@ We will show later on some different ways on how you may convert SEs to SDs, and
 | Three2009 | Three2019s2 | Phodopus sungorus | mass  | 120  | 14.5         | 4.4        | 12        |
 
 > CohortID is used to indicate that the same cohorts/group of animals representing two species were measured once for different traits (calls, mass). We can also use combination of StudyID and Species columns to take this into account during statistical analyses. 
-    
-    
-    
+
+
+​    
 
 **What is the use of the Control_grID column in the extraction table below (just a fragment of a larger example extraction sheet)?**   
 
@@ -125,11 +125,11 @@ We will show later on some different ways on how you may convert SEs to SDs, and
 | Four2009 | Four2009a | Four2019c2   | virus     | 6.3          | 19        | 33.3        | 10       |
 | Four2009 | Four2009b | Four2019c2   | bacteria  | 6.3          | 19        | 14.4        | 12       |
 
-> Control_grID is used to indicate that the same control group was used as a comparator to two different cohorts/group that were subject to different types of (could also be levels) of experimental treatment (virus, bacteria). This can be visually confrmed by the identical values of means and sample sizes for the control group, but different ones for the treatment groups. The resulting effect sizes are not independent, but in a different way than if the same animals were measured for different traits or more than once for the same trait (rows 3 and 4). This non-independence is captured by combination of CohortID and Control_grID and could be taken into account in statistical models.   
+> Control_grID is used to indicate that the same control group was used as a comparator to two different cohorts/group that were subject to different types of (could also be levels) of experimental treatment (virus, bacteria). This can be visually confirmed by the identical values of means and sample sizes for the control group, but different ones for the treatment groups. The resulting effect sizes are not independent, but in a different way than if the same animals were measured for different traits or more than once for the same trait (rows 3 and 4). This non-independence is captured by combination of CohortID and Control_grID and could be taken into account in statistical models.   
 
-    
-    
-    
+
+​    
+​    
 **Why should we record meta-data when extracting data for a meta-analysis?**  
 
 Meta-data are the detailed description of all extracted variables/columns and all other variables/columns derived from them. More specifically, they describe how the data were coded (e.g. the measurement units, how conversions were made,  e.g. whether sex was coded as "F" and "M" and "B" [and what these values/letters mean], how missing values were coded, and anything else that would allow you or somebody to extract and code the same data). 
@@ -144,9 +144,9 @@ Meta-data are an essential part of the documentation of your meta-analysis and e
 **Is one person sufficient to extract the data?**  
 
 > Ideally, two people would be extracting the data in parallel (independently, in duplicate), to minimise errors. However it is often not practical. In such case one person could be extracting and another person checking the extractions for mistakes.
+
    
-   
-   
+
 **In what order would you extract your included studies? Random? Chronological? Any other?**  
 
 <choice id="3">
@@ -161,8 +161,8 @@ It is often easier and quicker to group similar studies together. Especially, gr
 </choice>
 
    
-   
-   
+
+
 **When numerical data are reported in the text or tables, it is easy to get exact values for your extraction columns. However, often data are reported in the figures. Can we extract such data? **
 
 <choice id="4">
@@ -182,14 +182,18 @@ Don't worry, even if the reults don't appear numerically but are represented in 
 
 </exercise>
 
+
+
+
+
 <exercise id="2" title="Extracting data from the literature">
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)  
 We will practice data extraction on few of the Terminal investment papers. We will use the R package *metaDigitise*.  
 
-Detailed package description and tutorial are available on [cran](https://cran.r-project.org/web/packages/metaDigitise/vignettes/metaDigitise.html) or     [github](https://github.com/daniel1noble/metaDigitise).  Read more about it in this [publication](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13118).    
+Detailed package description and tutorial are available on [cran](https://cran.r-project.org/web/packages/metaDigitise/vignettes/metaDigitise.html) or [github](https://github.com/daniel1noble/metaDigitise).  Read more about it in this [publication](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13118).    
 
-Even though we promised no local R environment is needed - Metadigitise includes functionality that requires a local RStudio installation (i.e. you can't run it on here, only on your computer). If you want to install and load the R packages and libraries on your local computer and in RStudio, you can use the code below:
+Even though we promised no local R environment is needed - *metaDigitise* includes functionality that requires a local RStudio installation (i.e. you can't run it on here, only on your computer). If you want to install and load the R packages and libraries on your local computer and in RStudio, you can use the code below:
 
 ```
 install.packages("devtools")
@@ -204,9 +208,9 @@ library(tidyverse)
 library(compute.es)
 ```
 
-You do not absolutely need to use metadigitise - at the most basic, you can enlage the figure on your screen and measure means and SE's with a ruler (don't forget to convert your measurements according to the Figures axes!). This may be suffiencent for the exercise here, but assuming that you will have many Figures from many studies, for your own meta analysis we recommend to follow the steps below.
+You do not absolutely need to use *metaDigitise* - at the most basic, you can enlarge the figure on your screen and measure means and SE's with a ruler (don't forget to convert your measurements according to the Figure's axes!). This may be sufficient for the exercise here, but assuming that you will have many Figures from many studies, for your own meta analysis we recommend to follow the steps below.
 
-## Extracting means and variances from plots: METADIGITIZE
+## Extracting means and variances from plots: metaDigitise
 **We will now guide you through the necessary steps on your local RStudio.**
 
 Let's try to extract data from two selected papers::   
@@ -216,7 +220,7 @@ Let's try to extract data from two selected papers::
 You will need to open the pdf files and take the snapshots of the relevant figures (for Mac OS the keyboard shortcut is easiest: press Command+Shift+4 and then select the screen fragment; for Windows see [here](https://www.windowscentral.com/how-take-windows-10-screenshot-7-best-techniques). Make sure you capture the axes and axes labels. Also, enlarge these figures to fill the screen before taking the snapshot to get a higher resolution image.   
 
 We did this as well and named the snapshot files, which you can see as smaller images below, as following (the numbering makes it easy to keep track of the figures being digitised)     
-  
+
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/001_Weil_2006_Fig2a_small.png?raw=true)   
 <br>
 **001_Weil_2006_Fig2a.png** .   
@@ -231,7 +235,7 @@ and
 
 We're back to organisational skills - and are placing our picture shots into a new folder - let's call it **metaDigitise_figures** (read more about organising your extraction directories in the "Setting up directory structures" [section](https://cran.r-project.org/web/packages/metaDigitise/vignettes/metaDigitise.html).   
 
-To extract our two figures we need to provide the directory path name of the folder with the images to the *metaDigise()* function, in our case:
+To extract our two figures we need to provide the directory path name of the folder with the images to the *metaDigitise()* function, in our case:
 
 ``` data <- metaDigitise(dir = "data/metaDigitise_figures/") ```
 
@@ -268,17 +272,22 @@ As you see, *metaDigitise* guides you gently through the all steps of data extra
 
 </exercise>
 
-<exercise id="3" title="Data analysis">
+
+
+
+
+<exercise id="3" title="Calculating effect sizes">
 
 ###  Converting different types of information   
 
 We now have a few data points extracted, and could calculate effect sizes. What do we mean by that?
 
-#### What is a "effect size"?
->'Effect size' is a way to quantify the size of the difference between two groups. It is particularly valuable for quantifying the effectiveness of a particular intervention or treatment, relative to some comparison. It looks at the relative outcome of the treatment, and allows us to use this (and the associated measures of uncertainty) as the basis to compare multiple studies, and to make generalisations even across different methodologies and taxa possible. 
+#### What is an "effect size"?
+>'Effect size' is a way to quantify the size of the difference between two groups. It is particularly valuable for quantifying the effectiveness of a particular intervention or treatment. It looks at the relative outcome of the treatment, and allows us to use this (and the associated measures of uncertainty) as the basis to compare multiple studies. This can make generalisations even across different methodologies and taxa possible. 
+>
+>A common effect size measure is the <u>s</u>tandardized <u>m</u>ean <u>d</u>ifference (SMD), calculated as the difference in means, standardized (divided) most commonly by the pooled SD of the two compared sets of data values (treatment and control). SMD comes in two versions: *Cohen's d* and *Hedges' g*. *Hedges' g* is an unbiased version of *Cohen's d*, but gives very similar results. If you have small sample sizes, use of  *Hedges' g* might be recommended.
 
-But let's back off a bit again, we need to prepare our dataset first. In our example case, we compare pairs of measurements for control and treatment groups.It is convenient to have these in the same row in the data frame. Therefore, we first need to reshape our data frame.   
-
+But let's back off a bit again, we need to prepare our dataset first. In our example case, we compare pairs of measurements for control and treatment groups. It is convenient to have these in the same row in the data frame. Therefore, we first need to reshape our data frame.   
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)  
 Since we have only 2 data points per file, it is easy to reshape the data frame in R.   
@@ -286,13 +295,14 @@ Since we have only 2 data points per file, it is easy to reshape the data frame 
 <codeblock id="reshape_data_1">
 The <- arrow sign specifies a definition: e.g. if we want to define the variable 'EXAMPLE' by the number 1, we would write EXAMPLE <- 1. Executing 'EXAMPLE' will make R return a '1'. If you write 'data' and press enter on your local R (or the 'Run Code' button above on this website), the information stored under 'data' will be displayed.
 </codeblock>
-   
-   
+
+
 Now the columns appended with .x contain control groups data values, and these with .y are for the treatment groups (you can rename the columns to make it easier to see, e.g. using the *rename* [function](https://dplyr.tidyverse.org/reference/select.html).   
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)  
-We will now use the *escalc* function from **metafor** package to calculate effect sizes. This function allows to calculate various effect sizes or outcome measures (and the corresponding sampling variances) that are commonly used in meta-analyses, including two effect sizes that are relevant to our data and question:   
- * "SMD" stands for standarised mean difference, i.e. Hedges' *g* (potentially also "SMDH" for heteroscedastic variances).   
+We will now use the *escalc* function from the **metafor** package to calculate effect sizes. This function allows to calculate various effect sizes or outcome measures (and the corresponding sampling variances) that are commonly used in meta-analyses, including two effect sizes that are relevant to our data and question:   
+
+ * "SMD" stands for standardised mean difference, in *metafor* only available as Hedges' *g* (potentially also "SMDH" for heteroscedastic variances).   
  * "ROM" for the log transformed ratio of means (Hedges et al., 1999; Lajeunesse, 2011), also named lnRR.   
 
 We calculate them as follows:   
@@ -326,7 +336,7 @@ With these two papers we just extracted, we had a relatively easy job. There wer
 
 Test statistics that are usable include t-values (from t-tests), F-values, Chi-square values, and p-values. These values from simple statistical tests (like independent or paired t-tests) are easily convertible into SMD (*d*, *g*) or r (correlation coefficient).   
 
-These conversions and some others can be calculated in R if you know the formula (including conversion from SMD to correlation coefficient), but for the exercise purpose we will use this web-based **[Practical Meta-Analysis Effect Size Calculator](https://campbellcollaboration.org/research-resources/effect-size-calculator.html)**
+These conversions and some others can be calculated in R (see below), but we will start with this web-based **[Practical Meta-Analysis Effect Size Calculator](https://campbellcollaboration.org/research-resources/effect-size-calculator.html)**.
 
 ## Calculating effect sizes from inferential statistics: online calculator
 
@@ -334,8 +344,8 @@ Open the just mentioned [webpage](https://campbellcollaboration.org/research-res
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)    
 [Weil (2006)](https://github.com/SusZaj/metaanalysis/blob/master/papers/Weil2006.pdf) reports in the results: "At the end of the experiment saline-injected animals had smaller testes (F 1,27 = 4.6875, p<0.05, figure 2b)" and in the methods it is noted these are calculated using ANOVA.   
-   
-   
+
+
 Use the web-based **[Effect Size Calculator](https://campbellcollaboration.org/research-resources/effect-size-calculator.html)** sheet and selecting "Standarized Mean difference (d)" and "F-test, 2 groups" to calculate *d* from one-way ANOVA (you will need F-value and sample sizes of treatment and control groups).   
 
 You should get *d* for the testes mass that is close to what we calculated for testes volume from Fig2a. Note that this web calculator provides confidence intervals (CI) and variance for the calculated effect sizes. 
@@ -343,7 +353,7 @@ You should get *d* for the testes mass that is close to what we calculated for t
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)    
 Using the web-based **[Effect Size Calculator](https://campbellcollaboration.org/research-resources/effect-size-calculator.html)**, estimate a few other effect sizes using test (inferential) statistics reported in **[Sadd2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/papers/Sadd2006.pdf)**.   
 
-## Calculating effect sizes from inferential statistics: using compute.es in R
+## Calculating effect sizes from inferential statistics: using *compute.es* in R
 If you are comfortable with R, then it is preferable to calculate your effect sizes here, because the online app cannot document our calculations. The R package *compute.es* allows us to not only compute various effect sizes from descriptive statistics, but also from inferential statistics.   
 
 The *compute.es* function inputs and names are as follows:   
@@ -388,43 +398,91 @@ No hints needed.
 <br>
 **If we have different traits in the data set (let's say number of eggs laid and probability of nest abandonment) what is the problem with the signs of effect sizes for these traits? What should we do about this?**   
 >Larger numbers of eggs indicate increased reproductive effort (and thus reproductive investment), while increased probability to abandon the nest indicates reduced reproductive effort. This would translate to negative effect size sign if treatment group is less likely to abandon the nest. To fix this we need to reverse the sign of the effect sizes for traits where increased trait values represent LESS reproductive investment, so we have consistent biological interpretation over the whole data set.   
-  .
-  
-# Exercise / Example
 
-Using a subset of data (we decided to only go for fish) from a recent meta anlysis that investigated the relationship of dietary intervention on sperm traits across the animal kingdom (MacCartney et al. 2018), we will go through the steps explained perviously.
-
-We are using the fish data that Erin had already collected - i.e. all relevant data have already been either extracted from the figures, or calculated from inferential statistics. This means we have a detailed datasheet available that contains a lot of information, but most importantly sample sizes,means and variances for control and treatment groups, for a quite a range of different sperm traits.
-
-## 1. Calculating effect sizes
-
-
-## 2. Run a meta analysis
-
-
-### Plotting results: see next section
+## 
 
 </exercise>
 
-<exercise id="4" title="Evidence summary & assessment of certainty">
-
-## Visualisation: Forest plots
 
 
+<exercise id="4" title="Meta-analysis, evidence summary & assessment of certainty">
 
-## Heterogeneity
+Once all the data are prepared, we can run our first meta-analytical model and assess the overall effect that we are interested in, across studies. We will assess the effect based on the model summary and, visually,  with forest plots. Since we probably have other variables that could potentially explain variation in our data, we will try to account and test some of these other variables in slightly more complex models. 
+
+We are most interested in being able to make a statement on differences between treatment and control which are based on differences in biological response, and not on methodological or other technical differences between studies or study types, for example. We will go through some ways of assessing the influence of heterogeneity in our data, and whether we have any indication of publication bias in our data set. 
+
+This is all best done hands-on:
+
+# Worked Example
+
+Using a subset of data (we decided to only go for fish) from a recent meta-analysis that investigated the relationship of dietary intervention on sperm traits across the animal kingdom (MacCartney et al. 2018), we will go through the steps explained previously.
+
+We are using the fish data that Erin had already collected - i.e. all relevant data have already been either extracted from the figures, or calculated from inferential statistics. This means we have a detailed datasheet available that contains a lot of information, but most importantly sample sizes,means and variances for control and treatment groups, for quite a range of different sperm traits.
+
+​    
+
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)  
+We downloaded the two deposited data files from osf.io and created a file that we will use here: 
+
+<codeblock id="fish_1">
+Most of the variables will be self explanatory. Some aren't. We describe the ones that are important for our analysis below in more detail.
+</codeblock>
+
+Some variables are artefacts and we will leave them in the data set, but won't explain them further. 
+
+| Variable name                          | Description                                        |
+| -------------------------------------- | -------------------------------------------------- |
+| *author* to *volume*                   | Publication information of specific studies        |
+| *commonname_species* to *species_name* | Study organism identification                      |
+| *trait_measured* and *trait_unit*      | Trait information                                  |
+| *trait_category*                       | (see description below this table)                 |
+| *mean_low* to *n_high*                | Descriptive statistics (extracted from literature) |
+| *f* and *t*                | Inferential statistics (extracted from literature) |
+| *es_method*                | Descriptive / inferential |
+| *effect_size_id*                | Consecutive numbers for data manipulation (1 to 37)|
+   
+***Trait category* description**
+
+| ID number | Category                   |
+| --------- | ------------------------------- |
+| 1|    bodysize      |
+| 2|    sperm length      |
+| 3|    spermatophore/testis size      |
+| 4|    sperm movement (velocity, % motile)      |
+| 5|    sperm number      |
+| 6|    sperm viability (alive vs dead, normal vs abnormal)      |
+| 7|    seminal protein quantity and accessory gland size    |
+
+Before we can analyse these data, we have to calculate the effect sizes. We will use the library *compute.es* to calculate SMD as *Cohen's d*. We have four different types of data to base our calulations on: 1) Descriptive statistics with SD, 2) Descriptive statistics with SE, 3) F-values (inferential statistic), and 4) t-values (inferential statistic). 
+
+Different packages have different requirements in input variables and in syntax. *compute.es* requires SD and doesn't take SE. That's why we have to calculate SD from SE in one of the steps (you can find the simple formula in the code below). 
+It also turns out that *compute.es* needs an id variable to do calculations for more than one provided value, which we provide (id= effect_size_id). You'll find yourselves in situations where something might not work immediately. Even the R package manual might not be able to help. Due to the huge R user base, you can often find solutions to very specific problems by googling them. Sometimes you have to find the solution yourself, by trying out possible versions. This was the case for us with the need to provide the id-argument in the following code (you can try what happens when you leave it out).
+
+<codeblock id="fish_2">
+No hints or solution necessary here.
+</codeblock>
+
+Let's run a first model. This is called a random effects model (in contrast to a fixed effects model, which is unlikely to be used by you and will therefore not be discussed here).
+
+<codeblock id="fish_3">
+No hints or solution necessary here.
+</codeblock>
 
 
 
 
 
-## Publication bias
 
 
+
+
+## 
 
 
 
 </exercise>
+
+
 
 <exercise id="5" title="Report and interpret results">
 
@@ -437,7 +495,7 @@ Have a look again at the [PRISMA checklist](http://prisma-statement.org/document
 <choice id="1">
 <opt text="Answer" correct="true"> 
 Items 10: Data collection process: Describe method of data extraction from reports (e.g., piloted forms, independently, in duplicate) and any processes for obtaining and confirming data from investigators.   
-   
+
 11: Data items: List and define all variables for which data were sought (e.g., PICOS, funding sources) and any assumptions and simplifications made;    
 18: Study characteristics: For each study, present characteristics for which data were extracted (e.g., study size, PICOS, follow-up period) and provide the citations; and we start started to have a stab at     
 20: Results of individual studies: For all outcomes considered (benefits or harms), present, for each study: (a) simple summary data for each intervention group (b) effect estimates and confidence intervals, ideally with a forest plot.
