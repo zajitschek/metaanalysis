@@ -160,7 +160,7 @@ Possible, but might introduce some bias.
 It is often easier and quicker to group similar studies together. Especially, grouping the studies by study/system and research group helps find overlapping studies (e.g. where the same experiment was reported in separate publications, but focusing on different aspects) or collect more details on how studies were done. Also leaving complicated and odd studies for later on might be a good idea.   
 </choice>
 
-    
+
 **When numerical data are reported in the text or tables, it is easy to get exact values for your extraction columns. However, often data are reported in the figures. Can we extract such data?**
 
 <choice id="4">
@@ -411,7 +411,7 @@ Once all the data are prepared, we can run our first meta-analytical model and a
 
 We are most interested in being able to make a statement on differences between treatment and control which are based on differences in biological response, and not on methodological or other technical differences between studies or study types, for example. We will go through some ways of assessing the influence of heterogeneity in our data, and whether we have any indication of publication bias in our data set.    
 
-    
+​    
 
 This is all best done hands-on:
 
@@ -441,7 +441,7 @@ Some variables are artefacts and we will leave them in the data set, but won't e
 | *mean_low* to *n_high*                | Descriptive statistics (extracted from literature) |
 | *f* and *t*                | Inferential statistics (extracted from literature) |
 | *es_method*                | Descriptive / inferential |
-| *effect_size_id*                | Consecutive numbers for data manipulation (1 to 37)|
+| *effect_size_id*              | Consecutive numbers for data manipulation (1 to 37)  |
 
 ***Trait category* description**
 
@@ -455,10 +455,10 @@ Some variables are artefacts and we will leave them in the data set, but won't e
 | 6|    sperm viability (alive vs dead, normal vs abnormal)      |
 | 7|    seminal protein quantity and accessory gland size    |
 
-Before we can analyse these data, we have to calculate the effect sizes. We will use the library *compute.es* to calculate SMD as *Cohen's d*. We have four different types of data to base our calulations on: 1) Descriptive statistics with SD, 2) Descriptive statistics with SE, 3) F-values (inferential statistic), and 4) t-values (inferential statistic). 
+Before we can analyse these data, we have to calculate the effect sizes. We will use the library *compute.es* to calculate SMD as *Cohen's d*. We have four different types of data to base our calculations on: 1) Descriptive statistics with SD, 2) Descriptive statistics with SE, 3) F-values (inferential statistic), and 4) t-values (inferential statistic). 
 
 Different packages have different requirements in input variables and in syntax. *compute.es* requires SD and doesn't take SE. That's why we have to calculate SD from SE in one of the steps (you can find the simple formula in the code below). 
-It also turns out that *compute.es* needs an id variable to do calculations for more than one provided value, which we provide (id= effect_size_id). You'll find yourselves in situations where something might not work immediately. Even the R package manual might not be able to help. Due to the huge R user base, you can often find solutions to very specific problems by googling them. Sometimes you have to find the solution yourself, by trying out possible versions. This was the case for us with the need to provide the id-argument in the following code (you can try what happens when you leave it out).
+It also turns out that *compute.es* needs an id variable to do calculations for more than one provided value, which we provide (<pre>`id= effect_size_id`</pre>). You'll find yourselves in situations where something might not work immediately. Even the R package manual might not be able to help. Due to the huge R user base, you can often find solutions to very specific problems by googling them. Sometimes you have to find the solution yourself, by trying out possible versions. This was the case for us with the need to provide the id-argument in the following code (you can try what happens when you leave it out).
 
 <codeblock id="fish_2">
 No hints or solution necessary here.
@@ -470,7 +470,64 @@ Let's run a first model. This is called a random effects model (in contrast to a
 No hints or solution necessary here.
 </codeblock>
 
+Nice, but before we go further: what about that value around 3? Whenever there seem to be outliers, always check. Sometimes it's biological,
+but very often outliers turn out as errors (e.g. through mistakes in data entry or data re-coding)
+Let's look at this data point, labelled (wrongly so far) study 23 then:
 
+<codeblock id="fish_4">
+No hints or solution necessary here.
+</codeblock>
+
+This is the only study with a provided F-value test statistic. Since F values are the ratios of two variances, they have to be positive.
+This means we wouldn't be able to see a negative effect size for this statistic. We have to go back and see what was exactly done, and then tested in this study to add information to the F-value on whether it refers to a increase or a decrease in trait size (here: body mass).
+
+O'Dea did xxx, so to have the same direction of effect as in the other studies that used means and SD/SE, we have to change sign.
+Before we do that, what about the other effect sizes that we calculated based on inferential test statistics?
+
+<codeblock id="fish_5">
+No hints or solution necessary here.
+</codeblock>
+
+*t*-values can be negative (they are the difference between treatment and control means, divided by SE). However, are the means ordered in the same way as are our other mean to calculate teh difference, i.e. mean(low treatment) - mean(high/control treatment)? We have to check in Evans 2017.
+It turns out that we have to change the sign of those effect sizes as well.
+
+We can do this like this:
+
+<codeblock id="fish_6">
+No hints or solution necessary here.
+</codeblock>
+
+Now, let's start again and re-run the first meta-analysis. Let's also correct the labels (using the *slab* argument in the *rma* function call.
+
+<codeblock id="fish_7">
+No hints or solution necessary here.
+</codeblock>
+
+To see the results grouped by trait, instead of grouped by study, we can re-order the data and print (here without saving the data in the other format)
+
+<codeblock id="fish_8">
+No hints or solution necessary here.
+</codeblock>
+
+Add predictor / moderator variables. Here, we want to know whether traits in different *trait categories* respond differently to diet manipulation. We simply add: <code>mods = ~ trait_category</code>.
+
+<codeblock id="fish_9">
+No hints or solution necessary here.
+</codeblock>
+
+Add nested random effects to account for non-independence of data, here due to traits having been measured in the same study. We add <code>random = ~ 1 | study_id</code>.
+
+<codeblock id="fish_10">
+No hints or solution necessary here.
+</codeblock>
+
+Publication bias is commonly observed in academic research. This is due to the fact that studies with significant results are often more likely to be published than studies with null results (despite equal quality of execution and design).
+
+Publication bias can be assessed visually with funnel plots. If there is no indication of publication bias, studies (shown as single dots) will be plotted in a funnel shaped distribution. A deviation from this shape can indicate publication bias.
+
+<codeblock id="fish_11">
+No hints or solution necessary here.
+</codeblock>
 
 
 

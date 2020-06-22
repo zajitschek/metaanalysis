@@ -1,3 +1,5 @@
+#Load data, including calculated effect sizes
+fish.all <- read.csv("./binder/data/Macartney2019_effectsize_fish.csv")
 
 #Run the first meta-analysis (a random-effects model using rma.uni() via rma())
 
