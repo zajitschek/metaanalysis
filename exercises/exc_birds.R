@@ -21,5 +21,5 @@ has.singles(pruned_birds_stree) #check for singles - the single nodes (i.e., wit
 #if singles are preset, you can clean them up using collapse.singles function
 #if you want to run this, delete the "#" in front of and pruned_birds_stree <- ... & run code!
 
-# And FINALLY: Plote the tree
+# And FINALLY: Plot the tree
 plot(pruned_birds_stree, cex=1.2) #plots with branch lengths, when available
