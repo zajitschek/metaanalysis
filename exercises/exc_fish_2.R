@@ -1,4 +1,4 @@
-## Load libarries and data
+## Load libaries and data
 library(magrittr)
 library(dplyr)
 library(compute.es)
