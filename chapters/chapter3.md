@@ -8,7 +8,7 @@ type: chapter
 id: 3
 ---
 
-<exercise id="1" title="Preparation & organisation">
+<exercise id="1" title="Preparation & organisation">   
 ***Based on Losia's data_extraction workshop material*** 
      
 Once you have have a good collection of (neatly organised and stored) full-text papers (aim for at least 20 but no more than 200 to keep it manageable), you can start extracting the data. 
@@ -160,10 +160,8 @@ Possible, but might introduce some bias.
 It is often easier and quicker to group similar studies together. Especially, grouping the studies by study/system and research group helps find overlapping studies (e.g. where the same experiment was reported in separate publications, but focusing on different aspects) or collect more details on how studies were done. Also leaving complicated and odd studies for later on might be a good idea.   
 </choice>
 
-   
-
-
-**When numerical data are reported in the text or tables, it is easy to get exact values for your extraction columns. However, often data are reported in the figures. Can we extract such data? **
+    
+**When numerical data are reported in the text or tables, it is easy to get exact values for your extraction columns. However, often data are reported in the figures. Can we extract such data?**
 
 <choice id="4">
 <opt text="Yes"  correct="true">  
@@ -176,7 +174,7 @@ Don't worry, even if the reults don't appear numerically but are represented in 
     
     
 
-*Is it always possible?*
+**Is it always possible?**
 
 > There are several pieces of software that helps digitising various types of plots and extracting the data (you can find a list [here](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13118), so it is often possible.  However, sometimes plot resolution can be too low, or data points / lines are overlapping and obscuring some of the values. In such case, you can try to contact the authors for the actual numbers or raw data used to make the plot.   
 
@@ -223,7 +221,7 @@ We did this as well and named the snapshot files, which you can see as smaller i
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/001_Weil_2006_Fig2a_small.png?raw=true)   
 <br>
-**001_Weil_2006_Fig2a.png** .   
+**001_Weil_2006_Fig2a.png**     
 
 and   
 <br>
@@ -387,15 +385,17 @@ No hints needed.
 <br>
 
 **If both descriptive statistics (mean, SE or SD) and test (inferential) statistics are reported, which one should we extract from a paper?**   
-> We usually give priority to descriptive statistics (mean, SE or SD), which usually represent raw data, unadjusted for other variables and also can be converted to different units or used to calculate alternative types of effect sizes.   
+>We usually give priority to descriptive statistics (mean, SE or SD), which usually represent raw data, unadjusted for other variables and also can be converted to different units or used to calculate alternative types of effect sizes.   
 
 <br>
 <br>
+
 **Is the sign of the effect size important? Imagine we use *d*, which represents mean_treatment - mean_control group trait values. How we would interpret *d* = 0.5 and how we would interpret *d* = -0.5?**   
-> The sign represents direction of the effect on a given trait. *d* = 0.5 means that the trait value in the treatment group is moderately larger than the trait value in the control group, *d* = -0.5 would mean that the trait value in the treatment group is moderately smaller than the trait value in the control group.   
+>The sign represents direction of the effect on a given trait. *d* = 0.5 means that the trait value in the treatment group is moderately larger than the trait value in the control group, *d* = -0.5 would mean that the trait value in the treatment group is moderately smaller than the trait value in the control group.   
 
 <br>
 <br>
+
 **If we have different traits in the data set (let's say number of eggs laid and probability of nest abandonment) what is the problem with the signs of effect sizes for these traits? What should we do about this?**   
 >Larger numbers of eggs indicate increased reproductive effort (and thus reproductive investment), while increased probability to abandon the nest indicates reduced reproductive effort. This would translate to negative effect size sign if treatment group is less likely to abandon the nest. To fix this we need to reverse the sign of the effect sizes for traits where increased trait values represent LESS reproductive investment, so we have consistent biological interpretation over the whole data set.   
 
@@ -409,7 +409,9 @@ No hints needed.
 
 Once all the data are prepared, we can run our first meta-analytical model and assess the overall effect that we are interested in, across studies. We will assess the effect based on the model summary and, visually,  with forest plots. Since we probably have other variables that could potentially explain variation in our data, we will try to account and test some of these other variables in slightly more complex models. 
 
-We are most interested in being able to make a statement on differences between treatment and control which are based on differences in biological response, and not on methodological or other technical differences between studies or study types, for example. We will go through some ways of assessing the influence of heterogeneity in our data, and whether we have any indication of publication bias in our data set. 
+We are most interested in being able to make a statement on differences between treatment and control which are based on differences in biological response, and not on methodological or other technical differences between studies or study types, for example. We will go through some ways of assessing the influence of heterogeneity in our data, and whether we have any indication of publication bias in our data set.    
+
+    
 
 This is all best done hands-on:
 
@@ -440,7 +442,7 @@ Some variables are artefacts and we will leave them in the data set, but won't e
 | *f* and *t*                | Inferential statistics (extracted from literature) |
 | *es_method*                | Descriptive / inferential |
 | *effect_size_id*                | Consecutive numbers for data manipulation (1 to 37)|
-   
+
 ***Trait category* description**
 
 | ID number | Category                   |
