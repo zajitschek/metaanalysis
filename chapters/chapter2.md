@@ -22,11 +22,11 @@ Generally, the more focused the question, the easier and quicker it is to perfor
 There are different protocols for how to gather the literature for a systematic meta-analysis. We will walk through a specific literature search below, using one established protocol. Please note that this is in itself an active area of research though. For example, I would like to mention the *[metaverse](https://rmetaverse.github.io/)*, a collection of R packages that is aimed at integrating all steps of a meta-analysis. The package *[litsearchR](https://elizagrames.github.io/litsearchr/)* seems especially promising, and you could try it out on your local R installation (right now, I haven't installed it in the R software container you will be using during this course / online).
 
 
-#### How to get started:
+### How to get started:
 
  a) Check if there already is a good recent meta-analysis on the topic.  
  b) Find and carefully read key reviews on the topic.  
- c) Find and carefully read a few representative empirical papers (hint: papers that attract a lot of citations may count as key paper)  
+ c) Find and read a few representative empirical papers (hint: papers that attract a lot of citations may count as key paper)  
  d) Further refine the question (particularly important if your search returns many thousands of hits on your topic).  
 
 ## Example / Exercise
@@ -75,7 +75,7 @@ Let's try to narrow it down and focus on either *terminal investment in reproduc
 Run another Google Scholar quick search, including *reproduction* (not in quotes):   
 *"terminal investment" reproduction*   
 
->This time you should get over 2,000 records (you will be allowed to access only the first 1,000). Note that Google Scholar does so called Automated Query Expansion for terms that are not set to be exact phrases (in quotes) - it uses alternative forms of these terms.  .
+>This time you should get over 2,000 records (you will be allowed to access only the first 1,000 - a limitation of Google Scholar). Note that Google Scholar does so-called 'Automated Query Expansion' for terms that are not set to be exact phrases (in quotes) - it uses alternative forms of these terms.  .
 
 <br>
 <br>
@@ -94,7 +94,21 @@ In medical sciences, most meta-analyses (and systematic reviews) fit into the PI
   * C = Comparison/Control group   
   * O = Outcome   
 
-Frame our meta-analytic question "whether immune challenge can result in terminal investment" using PICO terms (actually this fits really well because we can use experimental data). Please reflect yourself and try to write down your own ideas of what you would define as "P" (Population), "I" (Intervention), "C" (Comparison/Control) and "O" (outcome) that fits this question before clicking on the sample solution below.
+Broadly, this should help you identify the key paremeters that you will be working with. You can use the PICO framework for any research outset, even though we might be used to slighly different terminology:  "Population" defines the group  or species of interest, "Intervention" is your "treatment", "Comparision" is the "control" and "Outcome" refers to the traits that you are investigating. In the current situation for example you might like to know if hand washing helps to prevent the spread of COVID19. Here you may define PICO as follows:
+
+P = humans in COVID affected areas
+I = hand washing
+C = no wand washing
+O = reduced infection rates
+
+To frame this in a biological context, perhaps using the (Macartney et al. 2019)](http://www.bonduriansky.net/Macartney_et_a_2019_Biological_Reviews.pdf) study we have mentioned in Chapter 1, the question if interest was to investigate if different diet interventions affect sperm traits. Here, a possible PICO would be 
+
+P = animal species
+I = dietary treatment (either over- or underfeeding)
+C = normal / control diet
+O = sperm traits (swimming velocity, number, motility)
+
+Now try to frame our meta-analytic question "whether immune challenge can result in terminal investment" using PICO terms. Please reflect yourself and try to write down your own ideas of what you would define as "P" (Population), "I" (Intervention), "C" (Comparison/Control) and "O" (outcome) that fits this question before clicking on the sample solution below.
 
 <choice id="1">
 <opt text="Example solution" correct="true">
@@ -129,7 +143,7 @@ You will need to know what you're after and what you're not interested in, in or
 
 #  Deciding on inclusion criteria   
 
-The basic PICO components are usually not sufficient to perform the effective screening of the papers for inclusion in meta-analysis.
+The basic PICO components are a good start to frame your question, but usually not sufficient to perform the effective screening of the papers for inclusion in meta-analysis.
 There are additional technical and biological refinements to be considered for inclusion criteria in our project.
 
 Most importantly, you always need to be able to justify your inclusion criteria, especially if you're planning on publishing your meta-analysis. Think about what you would do (particularly in the context of our "terminal investment" question) for the following questions. You can check what our opinion is by selecting the different options and clicking "submit".
@@ -211,14 +225,14 @@ This would probably be our answer for the here posed topic: How about multicellu
    
 **OUTCOME TYPE**   
 **Should we accept any reproduction-related measurements and how do we define "reproduction-related" in the first place?**
->The definition of a *reproduction-related trait* will depend on the species studied (and may require additional reading or relying on the assertions of the authors). Different taxa will have different suites of reproduction related-traits, but these can be grouped into broader categories (e.g. mate attraction includes vocal signals, visual ornaments, pheromone production etc.; reproductive fitness will include number and quality of offspring) and different specific measurements will be available for different taxa and in different studies - this can be quite messy. If we do not have many studies on the topic and very specific question (e.g. "Is the number of offspring affected?") it is OK to be inclusive and later on try to figure out whether some traits are affected more than others.
+>The definition of a *reproduction-related trait* will depend on the species studied (and may require additional reading or relying on the assertions of the authors), and possible refining. Different taxa will have different suites of reproduction related-traits, but these can be grouped into broader categories (e.g. mate attraction includes vocal signals, visual ornaments, pheromone production etc.; reproductive fitness will include number and quality of offspring) and different specific measurements will be available for different taxa and in different studies - this can be quite messy. If we do not have many studies on the topic and very specific question (e.g. "Is the number of offspring affected?") it is OK to be inclusive and later on try to figure out whether some traits are affected more than others.
 
 <br>
    
    
 **DATA TYPE**  
 **Should we accept any type of data for a meta-analysis? (e.g. descriptive statistics (summarising populations), and which ones, or also inferential statistics (based on population samples and used to estimate parameters and test hypotheses), and which ones? This will be linked to the effect size you are planning to use!)**
->It depends on the effect size we are planning to use. In our project it can be Cohen's *d*(Hedges *g*) or *lnRR*, which are typically calculated from mean, SD or SE and N (sample sizes). However, Cohen's *d* (Hedges *g*) can be also inferred from some of the test statistics, or even proportions, if means and other descriptive statistics are not available. But one cannot get *lnRR* from inhferential statistics. Other considerations include what to do if some data is missing or unclear.  
+>It depends on the effect size we are planning to use. In our project it can be Cohen's *d*(Hedges *g*) or *lnRR*, which are typically calculated from mean, SD or SE and N (sample sizes). However, Cohen's *d* (Hedges *g*) can be also inferred from some of the test statistics, or even proportions, if means and other descriptive statistics are not available. But one cannot calculate *lnRR* from inferential statistics. Other considerations include what to do if some data is missing or unclear.  
 
 <br>
    
@@ -244,9 +258,9 @@ This first step of screening requires a relatively simple decision tree. A good 
 An example decision tree for abstract screening looks like this:![](https://github.com/SusZaj/metaanalysis/blob/master/images/decisiontree.png?raw=true)
 
 <br>   
+
    
-   
-**In the abstract screening decision tree there is no question about the type of data used to express measurements reported in the study. Why?**
+**In the abstract screening decision tree there is no question about the type of data used to express measurements reported in the study. Why?**   
 >Full-text screening is more strict and we want answers to all our inclusion criteria. In principle, we only have "yes" and "no" answers to the screening questions. However, in practice, if a study looks very relevant but some information is ambiguous or missing, you may decide to contact the authors to get some extra information or data. In such case, you can provisionally include such papers and make final decision once you get, or not, the author's replies.  
 
 
@@ -304,8 +318,8 @@ Using Scopus **Advanced Search** (you can read more about the syntax [here](http
  **3** *TITLE-ABS-KEY ( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*"  OR  "infect\*" ) )*
 > the number of hits has improved, but we probably now have included many non-experimental studies while still missing relevant experimental ones   
    
- <br>
-   
+ <br>   
+
  **4** *( TITLE-ABS-KEY ( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*"  OR  "infect\*" ) )  AND NOT  TITLE-ABS-KEY ( load  OR  human  OR  people ) )* 
 >by adding a group of exclusion terms (AND NOT) we probably got rid of some irrelevant studies.   
     

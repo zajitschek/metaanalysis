@@ -98,18 +98,21 @@ The following diagram (Figure 1 from Nakagawa et al. 2017) shows a more in depth
 <br>
 
 ## Some examples 
-If you haven't looked at many meta-analyses yet, you can have a glance and see what questions were asked and how the results are presented in the examples below. Especially the first in the list (Macartney et al. 2019) is a very good example, with protocols, data, and R code published and made freely available (see *Data & R Code* below):
+If you haven't looked at many meta-analyses yet, you can have a glance and see what questions were asked and how the results are presented in the examples below. Especially the first in the list (Macartney et al. 2019) is a very good example, with protocols, data, and R code published and made freely available (see *Data & R Code* below). In fact, we'll use a subset of their data in our guided example in the data analysis parts in Chapter 3:
 
 - [Effects of nutrient limitation on sperm and seminal fluid: a systematic review and meta‐analysis (Macartney et al. 2019)](http://www.bonduriansky.net/Macartney_et_a_2019_Biological_Reviews.pdf) [Data & R code on osf.io](https://osf.io/aqw8u/)
+
 - [The repeatability of behaviour: a meta-analysis (Bell et al. 2009)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3972767/).
+
 - [Individual differences in behaviour explain variation in survival: a meta‐analysis (Niemelä & Dingemanse 2018)](https://royalsocietypublishing.org/doi/10.1098/rspb.2017.2823).
+
 - [The effect of dietary restriction on reproduction: a meta-analytic perspective (Moatt et al. 2016)](https://bmcevolbiol.biomedcentral.com/articles/10.1186/s12862-016-0768-z).
 
 **Meta-analysis and research synthesis: an outlook**
 
 - [Research Weaving: Visualizing the Future of Research Synthesis (Nakagawa et al., 2018)](https://ecoevorxiv.org/ga2qz/)
 
-**Our key reference for how to conduct a meta-analysis**
+**A key reference for how to conduct a meta-analysis**
 
 - [Meta-evaluation of meta-analysis: Ten appraisal questions for biologists (Nakagawa et al. 2017)](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7)
 
