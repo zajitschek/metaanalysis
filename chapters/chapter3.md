@@ -8,9 +8,19 @@ type: chapter
 id: 3
 ---
 
+<<<<<<< HEAD
+<exercise id="1" title="Preparation & organisation">   
+
+***Based on Losia's data_extraction workshop material*** 
+=======
 <exercise id="1" title="Preparation & organisation"> 
 
+<<<<<<< HEAD
 ### _Based on Losia's data-extraction workshop material_
+=======
+### _Based on Losia's data_extraction workshop material_
+>>>>>>> 7e05da8726b3ffa7b475953bee2884596fe74eef
+>>>>>>> 52fbd7df22b9c1fb994c5da5a46b248343bb977f
      
 Once you have have a good collection of (neatly organised and stored) full-text papers (aim for at least 20 but no more than 200 to keep it manageable), you can start extracting the data. 
 
@@ -218,11 +228,17 @@ library(compute.es)
 
 Let's try to extract data from two of the selected papers:   
 
+<<<<<<< HEAD
  1.Figure 2a in the paper by Weil et al. 2006: Immune challenge retards seasonal reproductive regression in rodents: evidence for terminal investment (**[Weil2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/papers/Weil2006.pdf)**)
  
  2.Figure 2a in the paper by Sadd et al. 2006: Modulation of sexual signalling by immune challenged male mealworm beetles (*Tenebrio molitor*, L.): evidence for terminal investment and dishonesty (**[Sadd2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/Sadd2006.pdf)**)   
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  *Snapshots of Figures*   
+=======
+ 1. Figure 2a in the paper by Weil et al. 2006: Immune challenge retards seasonal reproductive regression in rodents: evidence for terminal investment (**[Weil2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/papers/Weil2006.pdf)**)
+
+ 2. Figure 2a in the paper by Sadd et al. 2006: Modulation of sexual signalling by immune challenged male mealworm beetles (*Tenebrio molitor*, L.): evidence for terminal investment and dishonesty (**[Sadd2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/Sadd2006.pdf)**)   
+>>>>>>> 52fbd7df22b9c1fb994c5da5a46b248343bb977f
 
 You will need to open the pdf files and take the snapshots of the relevant figures (for Mac OS the keyboard shortcut is easiest: press Command+Shift+4 and then select the screen fragment; for Windows see [here](https://www.windowscentral.com/how-take-windows-10-screenshot-7-best-techniques). Make sure you capture the axes and axes labels. Also, enlarge these figures to fill the screen before taking the snapshot to get a higher resolution image.   
 
@@ -314,7 +330,7 @@ Now the columns appended with .x contain control groups data values, and these w
 We will now use the *escalc* function from the **metafor** package to calculate effect sizes. This function allows to calculate various effect sizes or outcome measures (and the corresponding sampling variances) that are commonly used in meta-analyses, including two effect sizes that are relevant to our data and question:   
 
  * "SMD" stands for standardised mean difference, in *metafor* only available as Hedges' *g* (potentially also "SMDH" for heteroscedastic variances).   
- 
+
  * "ROM" for the log transformed ratio of means (Hedges et al., 1999; Lajeunesse, 2011), also named lnRR.   
 
 We calculate these as follows:   
@@ -421,7 +437,7 @@ Remember: F = 4.6875, N treat = 28, N control = 10. "R"" is the covariate correl
 
 <exercise id="4" title="Meta-analysis, evidence summary & assessment of certainty">
 
-Once all the data are prepared, we can run our first meta-analytical model and assess the overall effect that we are interested in, across studies. We will assess the effect based on the model summary and, visually,  with forest plots. Since we probably have other variables that could potentially explain variation in our data, we will try to account and test some of these other variables in slightly more complex models. 
+Once all the data are prepared, we can run our first meta-analytical model and assess the overall effect that we are interested in, across studies: the mean effect size, weighted by the precision of the observed effect sizes. We will assess the effect based on the model summary and, visually,  with forest plots. Since we probably have other variables that could potentially explain variation in our data, we will try to account and test some of these other variables in slightly more complex models. 
 
 We are most interested in being able to make a statement on differences between treatment and control which are based on differences in biological response, and not on methodological or other technical differences between studies or study types, for example. We will go through some ways of assessing the influence of heterogeneity in our data, and whether we have any indication of publication bias in our data set.    
 
@@ -438,13 +454,12 @@ We are using the fish data that Erin had already collected - i.e. all relevant d
 ​    
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)  
-We downloaded the two deposited data files from osf.io and created a file that we will use here ([click here](https://github.com/SusZaj/metaanalysis/blob/master/binder/data/Macartney2019_processed_fish.csv) to see / download the source .csv from github). Alternatively, run the code block - but that may look a little messy, especially if you are not used to investigating the data structure of files in R yet
+We downloaded the two deposited data files from osf.io](https://osf.io/aqw8u/) and created a file that we will use here ([click here](https://github.com/SusZaj/metaanalysis/blob/master/binder/data/Macartney2019_processed_fish.csv) to see / download the source .csv from github). Alternatively, run the code block - but that may look a little messy, due to the width of the data frame (the number of variables / columns and their length), especially if you are not used to investigating the data structure of files in R yet.
 
 <codeblock id="fish_1">
 Most of the variables will be self explanatory. Some aren't. We describe the ones that are important for our analysis below in more detail.
 </codeblock>
 
-Some variables are artefacts and we will leave them in the data set, but won't explain them further. 
 
 | Variable name                          | Description                                        |
 | -------------------------------------- | -------------------------------------------------- |
@@ -455,7 +470,7 @@ Some variables are artefacts and we will leave them in the data set, but won't e
 | *mean_low* to *n_high*                | Descriptive statistics (extracted from literature) |
 | *f* and *t*                | Inferential statistics (extracted from literature) |
 | *es_method*                | Descriptive / inferential |
-| *effect_size_id*              | Consecutive numbers for data manipulation (1 to 37)  |
+| *effectsize_id*              | Consecutive numbers for data manipulation (1 to 37)  |
 
 ** *Trait category* description**
 
@@ -472,15 +487,26 @@ Some variables are artefacts and we will leave them in the data set, but won't e
 As said above, before we can analyse these data, we have to calculate the effect sizes. We will use the library *compute.es* to calculate SMD as *Cohen's d*. We have four different types of data to base our calculations on: 1) Descriptive statistics with SD, 2) Descriptive statistics with SE, 3) F-values (inferential statistic), and 4) t-values (inferential statistic). 
 
 Different packages have different requirements in input variables and in syntax. *compute.es* requires SD and doesn't take SE. That's why we have to calculate SD from SE in one of the steps (you can find the simple formula in the code below - ). 
-It also turns out that *compute.es* needs an id variable to do calculations for more than one provided value, which we provide (<pre>`id= effect_size_id`</pre>). You'll find yourselves in situations where something might not work immediately. Even the R package manual might not be able to help. Due to the huge R user base, you can often find solutions to very specific problems by googling them. Sometimes you have to find the solution yourself, by trying out possible versions. This was the case for us with the need to provide the id-argument in the following code (you can try what happens when you leave it out).
+It also turns out that *compute.es* needs an id variable to do calculations for more than one provided value, which we provide (id= effectsize_id). You'll find yourselves in situations where something might not work immediately. Even the R package manual might not be able to help. Due to the huge R user base, you can often find solutions to very specific problems by googling them. Sometimes you have to find the solution yourself, by trying out possible versions. This was the case for us with the need to provide the id-argument in the following code (you can try what happens when you leave it out).
 
 <codeblock id="fish_2">
 No hints or solution necessary here.
 </codeblock>
 
-You will notice that you will not get any "output" here - that is because we haven't asked for any. You could look at the data by adding a last line: "str(fish.all)" or just call: "fish.all"
+You will notice that you will not get the complete data set printed here - that is because we haven't asked for it. You could look at the data by adding a last line: "str(fish.all)" or just call: "fish.all" and see what happens.
 
-Let's run a first model. This is called a random effects model (in contrast to a fixed effects model, which is unlikely to be used by you and will therefore not be discussed here).
+Notice also that we added a quick plot of the data and calculated the number of studies, traits per study organism, and also the mean / average of all effect sizes. So why can't we in theory stop here, with the overall mean effect size in hand, maybe calculate confidence intervals and that's it? 
+
+<choice id="1">
+<opt text="In theory, we could stop here, as any additional steps won't have a huge impact on the value of the mean."> 
+That would be very easy, but would disregard all the other information we have on the data underlying the observed effect sizes. 
+</opt>
+<opt text="The whole point of a meta-analysis is to not only calculate the mean of the effect sizes, but to take precision of the underlying effect size estimates into account and produce a more meaningful weighted mean effect size." correct="true"> 
+Correct.
+</opt>
+</choice>
+
+**Let's run a first model.** This is called a random effects model (in contrast to a fixed effects model, which is unlikely to be used by you and will therefore not be discussed here).
 
 <codeblock id="fish_3">
 No hints or solution necessary here.

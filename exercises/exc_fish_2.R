@@ -52,3 +52,13 @@ fish.t <- fish %>%
 fish.all <- left_join(fish,  
                       (bind_rows(fish.sd, fish.se, fish.f, fish.t) %>%   #combine all data
                       arrange(., effect_size_id)) )  #order by effect_size_id
+
+#How many studies?
+length(unique(fish.all$study_id))
+
+#Which species and how many traits per species?
+table(fish.all$commonname_species)
+
+#Overall mean of effect sizes
+mean(fish.all$effect_size)
+
