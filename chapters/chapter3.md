@@ -463,7 +463,9 @@ Most of the variables will be self explanatory. Some aren't. We describe the one
 | *es_method*                | Descriptive / inferential |
 | *effectsize_id*              | Consecutive numbers for data manipulation (1 to 37)  |
 
-** *Trait category* description**
+
+
+***Trait category* description**
 
 | ID number | Category                   |
 | --------- | ------------------------------- |
