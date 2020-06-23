@@ -550,14 +550,14 @@ To see the results grouped by trait category, instead of grouped by study, we ca
 No hints or solution necessary here.
 </codeblock>
 
-This may be a more logical way to present our results. On top we the traits related to body size, then sperm length, followed by sperm swimming speed, number, and viability. 
+This may be a more logical way to present our results. On top we see the traits related to body size, then sperm length, followed by sperm swimming speed, number, and viability. 
 
 ###Making a more meaningful model
 
-To account for non-independence of data, we add random effects for:
-* between different studies (<code>random = ~ 1 | study_id</code>), 
-* between different traits measured within the same study (<code>random = ~ 1 | effectsize_id</code>), and 
-* traits measured in different species (phylogenetic effects); we use *genus* as a simpler substitute (<code>random = ~ 1 | effectsize_id</code>)
+Because of non-independence of data, we add random effects:
+* between-study effects (<code>random = ~ 1 | study_id</code>), 
+* within-study effects (<code>random = ~ 1 | effectsize_id</code>), and 
+* phylogenetic effects; we use *genus* as a simpler substitute here (<code>random = ~ 1 | genus</code>)
   
     
 
@@ -569,7 +569,7 @@ No hints or solution necessary here.
 
 ###Effects of moderators
 
-In a next analysis,w e can ask whether potential predictor / moderator variables have an effect. Here, we want to know whether traits in different *trait categories* respond differently to diet manipulation. We simply add: <code>mods = ~ trait_category</code>.
+In a next analysis,w e can ask whether potential predictor / moderator variables have an effect. Here, we want to know whether traits in different *trait categories* respond differently to diet manipulation. We simply add: <code>mods = ~ factor(trait_category)-1</code>.
 
 <codeblock id="fish_10">
 No hints or solution necessary here.
