@@ -213,28 +213,24 @@ This would probably be our answer for the here posed topic: How about multicellu
 **Should we include all types of immune challenge?**
 >There are several established types of experimental immune challenge (blood cells (e.g. SRBC), protein (e.g. PHA), dead or live pathogens or parasites), so its worth including these and similar procedures. Non-experimental immune challenge (e.g. natural infestation levels) should not be included. If something odd comes up later it can be listed under "exclusion criteria", with justification.
 
-<br>
    
    
 **CONTROL GROUP**   
 **Should we accept any type of control group?**
 > The control group (un-manipulated) should consist of similar individuals compared to the "treatment group", as far as reasonable. The "controls" should not be subject to any other manipulation.
 
-<br>
    
    
 **OUTCOME TYPE**   
 **Should we accept any reproduction-related measurements and how do we define "reproduction-related" in the first place?**
 >The definition of a *reproduction-related trait* will depend on the species studied (and may require additional reading or relying on the assertions of the authors), and possible refining. Different taxa will have different suites of reproduction related-traits, but these can be grouped into broader categories (e.g. mate attraction includes vocal signals, visual ornaments, pheromone production etc.; reproductive fitness will include number and quality of offspring) and different specific measurements will be available for different taxa and in different studies - this can be quite messy. If we do not have many studies on the topic and very specific question (e.g. "Is the number of offspring affected?") it is OK to be inclusive and later on try to figure out whether some traits are affected more than others.
 
-<br>
    
    
 **DATA TYPE**  
 **Should we accept any type of data for a meta-analysis? (e.g. descriptive statistics (summarising populations), and which ones, or also inferential statistics (based on population samples and used to estimate parameters and test hypotheses), and which ones? This will be linked to the effect size you are planning to use!)**
 >It depends on the effect size we are planning to use. In our project it can be Cohen's *d*(Hedges *g*) or *lnRR*, which are typically calculated from mean, SD or SE and N (sample sizes). However, Cohen's *d* (Hedges *g*) can be also inferred from some of the test statistics, or even proportions, if means and other descriptive statistics are not available. But one cannot calculate *lnRR* from inferential statistics. Other considerations include what to do if some data is missing or unclear.  
 
-<br>
    
    
 ## Making decision trees for literature screening    
@@ -257,7 +253,6 @@ This first step of screening requires a relatively simple decision tree. A good 
 
 An example decision tree for abstract screening looks like this:![](https://github.com/SusZaj/metaanalysis/blob/master/images/decisiontree.png?raw=true)
 
-<br>   
 
    
 **In the abstract screening decision tree there is no question about the type of data used to express measurements reported in the study. Why?**   
@@ -375,7 +370,7 @@ Theoretically you could do screening in the database browser or your reference m
    
    
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)   
-We prepared a file (for download: [Scopus10.ris](/papers/Scopus10.ris)) with 10 references sampled from the set found using the search string in Scopus database (used *( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*" ) )  *) (same references came up in the equivalent search in WoS).    
+We prepared a file (for download: [Scopus10.ris](https://github.com/SusZaj/metaanalysis/blob/master/papers/Scopus10.ris)) with 10 references sampled from the set found using the search string in Scopus database (used *( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*" ) )  *) (same references came up in the equivalent search in WoS).    
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Sometimes the biblio-files with the same extension differ slightly in structure and across reference managers, which means that Rayyan may have problem opening them. Be aware that getting your files into exactly the right format may require some tweaking.   
 
@@ -413,7 +408,7 @@ How many papers did you exclude? How many conflicts did you have if you collabor
 >**Gershman2010** and **Gonzales-Tokman2013** as not likely to have any reproduction-related measurements.   
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true) 
-It is time to do the full-text screening for the papers that passed title and abstract screening. There are some full-text papers that passed the initial screening in the directory - assess (**[Nielsen2012.pdf](https://github.com/SusZaj/metaanalysis/blob/master/papers/Nielsen2012.pdf)**) and (**[Ardia2005.pdf](https://github.com/SusZaj/metaanalysis/blob/master/papers/Ardia2005.pdf)**)using our full-text screening decision tree. (Tip: do not read the whole paper - just try to skim it and look for the key information.)      
+It is time to do the full-text screening for the papers that passed title and abstract screening. There are some full-text papers that passed the initial screening in the directory - assess (**[Nielsen2012.pdf](https://github.com/SusZaj/metaanalysis/blob/master/papers/Nielsen2012.pdf)**) and (**[Ardia2005.pdf](https://github.com/SusZaj/metaanalysis/blob/master/papers/Ardia2005.pdf)**) using our full-text screening decision tree. (Tip: do not read the whole paper - just try to skim it and look for the key information.)      
 
 What is your decision about **Nielsen2012** and **Ardia2005** papers?   
 <choice id="1">
@@ -426,8 +421,8 @@ Unfortunately wrong.
 <opt text="Only include **Nielsen2012**" correct="true"> 
 YES! Include **Nielsen2012**, exlude **Ardia2005**. Why? Exclude due to the lack of a good control group.
 </opt>
-<opt text="Only include **Ardia2005**"> 
-Why exclude **Nielsen2012**?
+<opt text="Only include _Ardia2005_"> 
+Why exclude _Nielsen2012_?
 </opt>
 </choice>
 
