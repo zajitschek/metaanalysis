@@ -12,7 +12,7 @@ id: 3
 
 ### _Based on Losia's data-extraction workshop material_
 
-     
+
 Once you have have a good collection of (neatly organised and stored) full-text papers (aim for at least 20 but no more than 200 to keep it manageable), you can start extracting the data. 
 
 
@@ -221,7 +221,7 @@ Let's try to extract data from two of the selected papers:
 
 <<<<<<< HEAD
  1.Figure 2a in the paper by Weil et al. 2006: Immune challenge retards seasonal reproductive regression in rodents: evidence for terminal investment (**[Weil2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/papers/Weil2006.pdf)**)
- 
+
  2.Figure 2a in the paper by Sadd et al. 2006: Modulation of sexual signalling by immune challenged male mealworm beetles (*Tenebrio molitor*, L.): evidence for terminal investment and dishonesty (**[Sadd2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/Sadd2006.pdf)**)   
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  *Snapshots of Figures*   
@@ -445,7 +445,7 @@ We are using the fish data that Erin had already collected - i.e. all relevant d
 ​    
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)  
-We downloaded the two deposited data files from osf.io](https://osf.io/aqw8u/) and created a file that we will use here ([click here](https://github.com/SusZaj/metaanalysis/blob/master/binder/data/Macartney2019_processed_fish.csv) to see / download the source .csv from github). Alternatively, run the code block - but that may look a little messy, due to the width of the data frame (the number of variables / columns and their length), especially if you are not used to investigating the data structure of files in R yet.
+We downloaded the two deposited data files from [osf.io](https://osf.io/aqw8u/) and created a file that we will use here ([click here](https://github.com/SusZaj/metaanalysis/blob/master/binder/data/Macartney2019_processed_fish.csv) to see / download the source .csv from github). Alternatively, run the code block - but that may look a little messy, due to the width of the data frame (the number of variables / columns and their length), especially if you are not used to investigating the data structure of files in R yet.
 
 <codeblock id="fish_1">
 Most of the variables will be self explanatory. Some aren't. We describe the ones that are important for our analysis below in more detail.
