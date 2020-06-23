@@ -495,7 +495,6 @@ Notice also that we added a quick plot of the data and calculated the number of 
 That would be very easy, but would disregard all the other information we have on the data underlying the observed effect sizes. 
 </opt>
 <opt text="The whole point of a meta-analysis is to not only calculate the mean of the effect sizes, but to take precision of the underlying effect size estimates into account and produce a more meaningful weighted mean effect size." correct="true"> 
-Correct.
 </opt>
 </choice>
 
