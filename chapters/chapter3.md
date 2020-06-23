@@ -504,8 +504,12 @@ That would be very easy, but would disregard all the other information we have o
 No hints or solution necessary here.
 </codeblock>
 
-Nice, but before we go further: what about that value around 3? Whenever there seem to be outliers, always check. Sometimes it's biological,
-but very often outliers turn out as errors (e.g. through mistakes in data entry or data re-coding)
+What does this output mean?
+
+First, we get a few estimates related to heterogeneity (tau^2, ...). Heterogeneity in meta-analysis is important, but right now, this model does not account for potential effects due to different traits, species, and studies. This is why we will only look at the plot and discuss heterogeneity further down. 
+
+We produced a forest plot. Nice, but before we go further: what about that value around 3? Whenever there seem to be outliers, always check. Indeed, we may have gotten some clue to double-check study 6 in the plot **Effect sizes within study** above. Sometimes it's biological, but very often outliers turn out as errors (e.g. through mistakes in data entry or data re-coding).
+
 Let's look at this data point, labelled (wrongly so far) study 23 then:
 
 <codeblock id="fish_4">
@@ -513,9 +517,9 @@ No hints or solution necessary here.
 </codeblock>
 
 This is the only study with a provided F-value test statistic. Since F values are the ratios of two variances, they have to be positive.
-This means we wouldn't be able to see a negative effect size for this statistic. We have to go back and see what was exactly done, and then tested in this study to add information to the F-value on whether it refers to a increase or a decrease in trait size (here: body mass).
+This means we wouldn't be able to see a negative effect size for this statistic. We have to go back and see what was exactly done in the original publication to add information to the F-value on whether it refers to an increase or a decrease in trait size (here: body mass).
 
-In compute.es we added "low" diet values as first and "high" values as second data points. This means that the program calculate low - high, leading to negative values, at least in the case of body mass, "high" diet leads to larger body size.
+In *compute.es* we added "low" diet values as first and "high" values as second data points. This means that the program calculated low - high, leading to negative values, at least in the case of body mass. Unsurprisingly, "high" diet leads to larger body size.
 O'Dea found the same. This means, to have the same direction of effect as in the other studies that used means and SD/SE, we have to change sign in that study.
 Before we do that, what about the other effect sizes that we calculated based on inferential test statistics?
 
@@ -523,14 +527,15 @@ Before we do that, what about the other effect sizes that we calculated based on
 No hints or solution necessary here.
 </codeblock>
 
-*t*-values can be negative (they are the difference between treatment and control means, divided by SE). However, are the means ordered in the same way as are our other mean to calculate the difference, i.e. mean(low treatment) - mean(high/control treatment)? We have to check in Evans 2017.
-It turns out that we have to change the sign of those effect sizes as well.
+*t*-values can be negative (they are the difference between treatment and control means, divided by SE). However, are the means ordered in the same way as are our other means to calculate the difference, i.e. mean(low treatment) - mean(high/control treatment)? We have to check in Evans 2017. They also found that high diets led to larger trait sizes than low diets, which means we have to change the sign of those effect sizes as well.
 
-We can do this like this:
+We can do this as follows:
 
 <codeblock id="fish_6">
 No hints or solution necessary here.
 </codeblock>
+
+Ok, great! The effect sizes are in the correct direction now.
 
 Now, let's start again and re-run the first meta-analysis. Let's also correct the labels (using the *slab* argument in the *rma* function call.
 
@@ -538,23 +543,39 @@ Now, let's start again and re-run the first meta-analysis. Let's also correct th
 No hints or solution necessary here.
 </codeblock>
 
-To see the results grouped by trait, instead of grouped by study, we can re-order the data and print (here without saving the data in the other format)
+We continue to ignore heterogeneity for now. The forest plot looks nice now. What we see is a grouping by study.
+
+To see the results grouped by trait category, instead of grouped by study, we can re-order the data and print (here without saving the data in the other format)
 
 <codeblock id="fish_8">
 No hints or solution necessary here.
 </codeblock>
 
-Add predictor / moderator variables. Here, we want to know whether traits in different *trait categories* respond differently to diet manipulation. We simply add: <code>mods = ~ trait_category</code>.
+This may be a more logical way to present our results. On top we the traits related to body size, then sperm length, followed by sperm swimming speed, number, and viability. 
+
+###Making a more meaningful model
+
+To account for non-independence of data, we add random effects for:
+* between different studies (<code>random = ~ 1 | study_id</code>), 
+* between different traits measured within the same study (<code>random = ~ 1 | effectsize_id</code>), and 
+* traits measured in different species (phylogenetic effects); we use *genus* as a simpler substitute (<code>random = ~ 1 | effectsize_id</code>)
+  
+    
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  If you are working with data from many taxa, you may want to add your phylogenetic tree here. Please see Chapter 4 for an introduction on how to make a phylogenetic tree.
 
 <codeblock id="fish_9">
 No hints or solution necessary here.
 </codeblock>
 
-Add nested random effects to account for non-independence of data, here due to traits having been measured in the same study. We add <code>random = ~ 1 | study_id</code>.
+###Effects of moderators
+
+In a next analysis,w e can ask whether potential predictor / moderator variables have an effect. Here, we want to know whether traits in different *trait categories* respond differently to diet manipulation. We simply add: <code>mods = ~ trait_category</code>.
 
 <codeblock id="fish_10">
 No hints or solution necessary here.
 </codeblock>
+
+###Publication bias
 
 Publication bias is commonly observed in academic research. This is due to the fact that studies with significant results are often more likely to be published than studies with null results (despite equal quality of execution and design).
 
