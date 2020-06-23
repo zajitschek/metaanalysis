@@ -10,7 +10,7 @@ id: 3
 
 <exercise id="1" title="Preparation & organisation"> 
 
-### _Based on Losia's data_extraction workshop material_
+### _Based on Losia's data-extraction workshop material_
      
 Once you have have a good collection of (neatly organised and stored) full-text papers (aim for at least 20 but no more than 200 to keep it manageable), you can start extracting the data. 
 
@@ -218,9 +218,11 @@ library(compute.es)
 
 Let's try to extract data from two of the selected papers:   
 
- 1. Figure 2a in the paper by Weil et al. 2006: Immune challenge retards seasonal reproductive regression in rodents: evidence for terminal investment (**[Weil2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/papers/Weil2006.pdf)**)
+ 1.Figure 2a in the paper by Weil et al. 2006: Immune challenge retards seasonal reproductive regression in rodents: evidence for terminal investment (**[Weil2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/papers/Weil2006.pdf)**)
  
- 2. Figure 2a in the paper by Sadd et al. 2006: Modulation of sexual signalling by immune challenged male mealworm beetles (*Tenebrio molitor*, L.): evidence for terminal investment and dishonesty (**[Sadd2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/Sadd2006.pdf)**)   
+ 2.Figure 2a in the paper by Sadd et al. 2006: Modulation of sexual signalling by immune challenged male mealworm beetles (*Tenebrio molitor*, L.): evidence for terminal investment and dishonesty (**[Sadd2006.pdf](https://github.com/SusZaj/metaanalysis/blob/master/Sadd2006.pdf)**)   
+
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  *Snapshots of Figures*   
 
 You will need to open the pdf files and take the snapshots of the relevant figures (for Mac OS the keyboard shortcut is easiest: press Command+Shift+4 and then select the screen fragment; for Windows see [here](https://www.windowscentral.com/how-take-windows-10-screenshot-7-best-techniques). Make sure you capture the axes and axes labels. Also, enlarge these figures to fill the screen before taking the snapshot to get a higher resolution image.   
 
@@ -243,8 +245,10 @@ We're back to organisational skills - and are placing our picture shots into a n
 To extract our two figures we need to provide the directory path name of the folder with the images to the *metaDigitise()* function, in our case:
 
 ``` 
-data <- metaDigitise(dir = "data/metaDigitise_figures/") 
+data <- metaDigitise(dir = "data/metaDigitise_figures/")
+
 ```
+
 
 Tell *metaDigitise* you would like to process new images by selecting option "1" (type 1 in the console, not in the script; hit the 'Enter'-key to enter input choices to *metaDigitise*).
 
@@ -427,7 +431,7 @@ This is all best done hands-on:
 
 # Worked Example
 
-Using a subset of data (we decided to only go for fish) from a recent meta-analysis that investigated the relationship of dietary intervention on sperm traits across the animal kingdom (MacCartney et al. 2018), we will go through the steps explained previously.
+Using a subset of data (we decided to only go for fish) from a recent meta-analysis that investigated the relationship of dietary intervention on sperm traits across the animal kingdom (Macartney et al. 2019), we will go through the steps explained previously.
 
 We are using the fish data that Erin had already collected - i.e. all relevant data have already been either extracted from the figures, or calculated from inferential statistics. This means we have a detailed datasheet available that contains a lot of information, but most importantly sample sizes, means and variances for control and treatment groups, for quite a range of different sperm traits. We have prepared this in such a way that we can use this to start from calculating effect sizes.
 
@@ -493,14 +497,15 @@ No hints or solution necessary here.
 This is the only study with a provided F-value test statistic. Since F values are the ratios of two variances, they have to be positive.
 This means we wouldn't be able to see a negative effect size for this statistic. We have to go back and see what was exactly done, and then tested in this study to add information to the F-value on whether it refers to a increase or a decrease in trait size (here: body mass).
 
-O'Dea did xxx, so to have the same direction of effect as in the other studies that used means and SD/SE, we have to change sign.
+In compute.es we added "low" diet values as first and "high" values as second data points. This means that the program calculate low - high, leading to negative values, at least in the case of body mass, "high" diet leads to larger body size.
+O'Dea found the same. This means, to have the same direction of effect as in the other studies that used means and SD/SE, we have to change sign in that study.
 Before we do that, what about the other effect sizes that we calculated based on inferential test statistics?
 
 <codeblock id="fish_5">
 No hints or solution necessary here.
 </codeblock>
 
-*t*-values can be negative (they are the difference between treatment and control means, divided by SE). However, are the means ordered in the same way as are our other mean to calculate teh difference, i.e. mean(low treatment) - mean(high/control treatment)? We have to check in Evans 2017.
+*t*-values can be negative (they are the difference between treatment and control means, divided by SE). However, are the means ordered in the same way as are our other mean to calculate the difference, i.e. mean(low treatment) - mean(high/control treatment)? We have to check in Evans 2017.
 It turns out that we have to change the sign of those effect sizes as well.
 
 We can do this like this:
