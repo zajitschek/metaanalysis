@@ -8,9 +8,15 @@ type: chapter
 id: 3
 ---
 
+<<<<<<< HEAD
 <exercise id="1" title="Preparation & organisation">   
 
 ***Based on Losia's data_extraction workshop material*** 
+=======
+<exercise id="1" title="Preparation & organisation"> 
+
+### _Based on Losia's data_extraction workshop material_
+>>>>>>> 7e05da8726b3ffa7b475953bee2884596fe74eef
      
 Once you have have a good collection of (neatly organised and stored) full-text papers (aim for at least 20 but no more than 200 to keep it manageable), you can start extracting the data. 
 
