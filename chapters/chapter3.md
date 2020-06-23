@@ -475,7 +475,6 @@ Most of the variables will be self explanatory. Some aren't. We describe the one
 | 4|    sperm movement (velocity, % motile)      |
 | 5|    sperm number      |
 | 6|    sperm viability (alive vs dead, normal vs abnormal)      |
-| 7|    seminal protein quantity and accessory gland size    |
 
 As said above, before we can analyse these data, we have to calculate the effect sizes. We will use the library *compute.es* to calculate SMD as *Cohen's d*. We have four different types of data to base our calculations on: 1) Descriptive statistics with SD, 2) Descriptive statistics with SE, 3) F-values (inferential statistic), and 4) t-values (inferential statistic). 
 
@@ -561,6 +560,7 @@ To account for non-independence of data, we add random effects for:
 * traits measured in different species (phylogenetic effects); we use *genus* as a simpler substitute (<code>random = ~ 1 | effectsize_id</code>)
   
     
+
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  If you are working with data from many taxa, you may want to add your phylogenetic tree here. Please see Chapter 4 for an introduction on how to make a phylogenetic tree.
 
 <codeblock id="fish_9">

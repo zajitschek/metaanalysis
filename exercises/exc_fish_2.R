@@ -55,13 +55,13 @@ fish.all <- left_join(fish,
                       arrange(., effect_size_id)) )  #order by effect_size_id
 
 #How many studies?
-print(past0("How many studies? ", length(unique(fish.all$study_id))))
+print(paste0("How many studies? ", length(unique(fish.all$study_id))))
 
 #Which species and how many traits per species?
 plot(fish.all$commonname_species, main= "Traits per species")
 
 #Overall mean of effect sizes
-print(past0("Overall mean: ", mean(fish.all$effect_size)))
+print(paste0("Overall mean: ", mean(fish.all$effect_size)))
 
 #Plot effect sizes per study (with variances as error bars)
 ggplot(fish.all, aes(x= effect_size_id, y= effect_size, fill= trait_category)) + 
