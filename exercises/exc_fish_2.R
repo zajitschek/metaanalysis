@@ -2,6 +2,7 @@
 library(magrittr)
 library(dplyr)
 library(compute.es)
+library(ggplot2)
 
 fish <- read.csv("./binder/data/Macartney2019_processed_fish.csv")
 
@@ -61,4 +62,11 @@ table(fish.all$commonname_species)
 
 #Overall mean of effect sizes
 mean(fish.all$effect_size)
+
+#Plot effect sizes per study (with variances as error bars)
+ggplot(fish.all, aes(x= effect_size_id, y= effect_size, fill= trait_category)) + 
+  geom_bar(stat="identity") +
+  geom_errorbar(aes(ymin= effect_size-variance/2, ymax= effect_size+variance/2),
+                width=.4) +
+  facet_wrap(~ study_id, scale="free")
 
