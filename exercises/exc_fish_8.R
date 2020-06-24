@@ -1,8 +1,8 @@
 ###CODEBLOCK 12###
 
 #Load libraries and data
-library(metafor)
-library(dplyr)
+suppressMessages(library(metafor))
+suppressMessages(library(dplyr))
 fish.all2 <- read.csv("./binder/data/Macartney2019_effectsize2_fish.csv")
 
 fish.all2 %>% 
