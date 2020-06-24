@@ -567,7 +567,36 @@ Because of non-independence of data, we add random effects:
 No hints or solution necessary here.
 </codeblock>
 
-###Effects of moderators
+Let's look at the results in more detail now. 
+
+We have a table **Variance components** with the estimates of our random effects (*study_id*, *effectsize_id*, *genus*). We see that *genus* is no source of variation (estimate = 0.00). This means we could drop the term from the model. Variation within studies, due to measuring different traits, is more than 6 times larger than variation between studies.
+
+The test for heterogeneity (Cochran’s Q-test: *Q* = 698.82, *df* = 36, *p* < 0.01) suggests substantial residual heterogeneity. Heterogeneity is the variability in our data, due to differences in experimental design, methods, data collection etc. We can look at heterogeneity using I^2, a measure that describes the amount of total variation explained by heterogeneity. For the multivariate *metafor* function *rma.mv*, there is unfortunately no I^2 summary output.
+Luckily, *metafor* creator Wolfgang Viechtbauer provides the following function to calculate I^2:
+<code>
+I2 <- function(model){
+    W <- solve(model$V) 
+    X <- model.matrix(model)
+    P <- W - W %*% X %*% solve(t(X) %*% W %*% X) %*% t(X) %*% W
+    I2_total <- sum(model$sigma2) / (sum(model$sigma2) + (model$k - model$p) / sum(diag(P)))
+    I2_each  <- model$sigma2 / (sum(model$sigma2) + (model$k - model$p) / sum(diag(P)))
+    names(I2_each) = paste0("I2_", model$s.names)
+​    I2s <- c(I2_total = I2_total, I2_each)
+​    I2s
+  }
+</code>
+
+Let's try this:
+<codeblock id="fish_10">
+No hints or solution necessary here.
+</codeblock>
+
+Our I^2 total is 95.4%. This is the sum of the heterogeneity due to between-study (13.3%), within-study (82.1%), and *genus* (with <0.001 negligible). If you run the model again without the specified random effects (using *rma* instead of *rma.mv*), you will see that I^2 (total heterogeneity / total variability) matches this value.
+
+###At last, the model results! 
+The estimate for mean effect size (across all studies, traits,...) is -0.8173. It is highly significant, as indicated by the *p*-value, the ci that do not overlap zero, and the three stars. This means that there is an overall strong effect of diet, leading to decreased trait values under low diet in fish.
+
+##Meta-regression: Effects of moderators
 
 In a next analysis,w e can ask whether potential predictor / moderator variables have an effect. Here, we want to know whether traits in different *trait categories* respond differently to diet manipulation. We simply add: <code>mods = ~ factor(trait_category)-1</code>.
 
