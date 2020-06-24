@@ -1,3 +1,5 @@
+###CODEBLOCK 7###
+
 #Load libraries and data that include calculated effect sizes
 library(metafor)
 fish.all <- read.csv("./binder/data/Macartney2019_effectsize_fish.csv")

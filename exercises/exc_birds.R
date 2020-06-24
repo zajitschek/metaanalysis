@@ -1,6 +1,8 @@
+###CODEBLOCK 17###
+
 #Load libraries
-#library(dplyr)
-#library(ape)
+library(dplyr)
+library(ape)
 
 
 birds <- unique(read.csv("./binder/data/bird_list.csv")$species_name)  #load our list of bird species, 
@@ -24,4 +26,4 @@ has.singles(pruned_birds_stree) #check for singles - the single nodes (i.e., wit
 #if you want to run this, delete the "#" in front of and pruned_birds_stree <- ... & run code!
 
 # And FINALLY: Plot the tree
-plot(pruned_birds_stree, cex=1.2) #plots with branch lengths, when available
+plot(pruned_birds_stree, cex= 0.7) #plots with branch lengths, when available

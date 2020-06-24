@@ -1,8 +1,9 @@
+###CODEBLOCK 6###
+
 ## Load libaries and data
 library(dplyr)
 library(compute.es)
 library(ggplot2)
-
 fish <- read.csv("./binder/data/Macartney2019_processed_fish.csv")
 
 # Calculation of Standardized Mean Difference (our Effect Size) as Cohen's d, 
@@ -33,7 +34,7 @@ fish.f <- fish %>%
     #We use function 'a.fes' instead of function 'fes' to be able to provide the data in our pipe; 
     #again, we have to specify 'id' to get the function to run
     a.fes(f = f, n.1 = n_low, n.2 = n_high, R= 0, q= 0, id= effectsize_id, data= .) %>%
-    select(effect_sizeid = id, effect_size = d, variance = var.d)
+    select(effectsize_id = id, effect_size = d, variance = var.d)
 
 ## For cases where only t-values are provided
 

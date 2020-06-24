@@ -1,4 +1,7 @@
+###CODEBLOCK 15###
+
 #Load libraries and data
+library(dplyr)
 library(metafor)
 fish.all2 <- read.csv("./binder/data/Macartney2019_effectsize2_fish.csv")
 fish.all2 <- fish.all2 %>% arrange(., trait_category) #re-order by trait category
