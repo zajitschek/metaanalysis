@@ -1,5 +1,4 @@
 #Load libraries and data
-library(magrittr)
 library(dplyr)
 fish.all <- read.csv("./binder/data/Macartney2019_effectsize_fish.csv")
 
@@ -10,5 +9,5 @@ fish.all2 <- bind_rows(fish.all %>%
   mutate(effect_size = effect_size * (-1)) ) %>%
   arrange(., study_id)
 
-options(max.print= 10000)
-fish.all2
+filter(fish.all2, es_method == "Inferential") %>%
+  select(author, year_published, study_id, genus, trait_measured, effect_size, es_method, t,f)
