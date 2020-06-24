@@ -1,5 +1,7 @@
 #Load libraries
-#library(tidyverse)
+#library(dplyr)
+#library(ape)
+
 
 birds <- unique(read.csv("./binder/data/bird_list.csv")$species_name)  #load our list of bird species, 
 # "unique" will make sure we're listing each species name only once
