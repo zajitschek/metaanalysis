@@ -72,9 +72,12 @@ No hints needed.
 </codeblock>
 
 
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) If you want to save this picture (or any other graph procuded with the codeblocks in this course), you can do this: right click and save image to save the .png locally on your computer.
+
+
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) **Note**: In this example all species had matches on the super-tree. Quite often there are no matches for some of the species, which could be due to typos or synonymous names. If no match can be found, a sister species may be used when a species is truly missing. [Remember to match the names on the final tree back to the original species list from the data set - how this is done will be shown for E. coli below in the rotl example!].
 
-f no existing phylogeny is readily usable, there are a few non-exclusive options depending on the range of species in the data set:  
+If no existing phylogeny is readily usable, there are a few non-exclusive options depending on the range of species in the data set:  
 
  - If the species are highly diverged (e.g. mixture of vertebrates and invertebrates), use the [NCBI Taxonomy Common Tree tool](http://www.ncbi.nlm.nih.gov/Taxonomy/CommonTree/wwwcmt.cgi). On the webpage, use the input box at the top of the page to search for each species name. Alternatively, you can upload your list of species names from a file. This list allows to generate a scaffold for a tree (i.e. the pattern of basal branching for the main clades).  
  
