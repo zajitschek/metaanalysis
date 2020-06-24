@@ -17,7 +17,9 @@ Thanks!
 
 # About this course
 
-Hi and welcome, I am **[Susi Zajitschek](https://www.ljmu.ac.uk/about-us/staff-profiles/faculty-of-science/school-of-biological-and-environmental-sciences/susanne-zajitschek), a Senior Lecturer in Animal Behaviour at Liverpool John Moores University**. This course is meant mainly as a primer for students who would like to know more about meta-analysis. I will give you an overview on what meta-analyses are and on why they are useful. I will include hands-on exercises and step-by-step examples on how to conduct meta-analyses. A large part of the content has been originally created as workshop material by my collaborators **[Shinichi Nakagawa](http://www.i-deel.org/shinichi-nakagawa.html)** and **[Malgorzata  Lagisz](https://mlagisz.weebly.com/)**. 
+Hi and welcome, I am **[Susi Zajitschek](https://www.ljmu.ac.uk/about-us/staff-profiles/faculty-of-science/school-of-biological-and-environmental-sciences/susanne-zajitschek), a Senior Lecturer in Animal Behaviour at Liverpool John Moores University**. This course is meant mainly as a primer for students who would like to know more about meta-analysis. I will give you an overview on what meta-analyses are and on why they are useful. I will include hands-on exercises and step-by-step examples on how to conduct meta-analyses. 
+
+A large part of the content has been originally created as workshop material by my collaborators **[Shinichi Nakagawa](http://www.i-deel.org/shinichi-nakagawa.html)** and **[Malgorzata  Lagisz](https://mlagisz.weebly.com/)**. 
 
 The actual statistical analyses will be performed in the [software R](https://www.r-project.org/about.html), and you will have the opportunity to run R software scripts right here, on this website, without the need to install software on your computer.
 
@@ -76,9 +78,7 @@ This combination of multiple test results can be achieved by qualitatively summa
 
 # Overview
 
-We will take the paper [Nakagawa et al. 2017](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7) as a blueprint to walk you through all the steps of a meta-analysis.
-
-However, as this is meant as a first step to get you started, we will provide some additional resources, exercises and guidelines (Chapters 2, 3 and 4). This includes a section on phylogenetic trees (which you may need if the question you're planning on tackling spans across different species - quite likely to happen if you're a evolutinary biologist, and the "question" is more important to you than a particular taxon. This will be covered in Chapter 4). To keep things simple initially, we will leave the phylogenies aside and go over the first steps: how  to narrow down your question, how to find relevant literature, how to make decisions on which studies to include, how to extract the relevant info from your selected papers, and run the actual meta-analysis. We'll explain how to interpret the output and plot your results. 
+This is meant as a first step to get you started.  We will provide an overview over the workflow, links to additional resources, exercises and guidelines (Chapters 2, 3 and 4). This includes a section on phylogenetic trees (which you may need if the question you're planning on tackling spans across different species - quite likely to happen if you're a evolutinary biologist, and the "question" is more important to you than a particular taxon. This will be covered in Chapter 4). To keep things simple initially, we will leave the phylogenies aside and go over the first steps: how  to narrow down your question, how to find relevant literature, how to make decisions on which studies to include, how to extract the relevant info from your selected papers, and run the actual meta-analysis. We'll explain how to interpret the output and plot your results. 
 
 We hope to also help to improve your organisational skills - as for all of the above it will be really important to carefully keep track & record of all your steps and decisions. This is necessary to make your meta-analysis reproducible and understandable, for whoever will be reading the resulting work. 
 
