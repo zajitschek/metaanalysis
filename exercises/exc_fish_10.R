@@ -1,4 +1,5 @@
 #Load libraries and data
+library(dplyr)
 library(metafor)
 fish.all2 <- read.csv("./binder/data/Macartney2019_effectsize2_fish.csv")
 fish.all2 <- fish.all2 %>% arrange(., trait_category) #re-order by trait category
@@ -13,8 +14,8 @@ I2 <- function(model){
     I2_total <- sum(model$sigma2) / (sum(model$sigma2) + (model$k - model$p) / sum(diag(P)))
     I2_each  <- model$sigma2 / (sum(model$sigma2) + (model$k - model$p) / sum(diag(P)))
     names(I2_each) = paste0("I2_", model$s.names)
-​    I2s <- c(I2_total = I2_total, I2_each)
-​    I2s
+    I2s <- c(I2_total = I2_total, I2_each)
+    I2s
   }
 
-I2(res.rand)
+print(I2(res.rand), digits= 3)
