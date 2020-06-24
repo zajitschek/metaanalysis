@@ -274,13 +274,13 @@ If the answer is **yes**, the study can be included for meta-analysis.
 It is often not explicitly stated, but without the full text it is impossible to extract all the necessary information about the study and the data. 
 It is a good practice to keep this in mind and use as one of your potential inclusion/exclusion criteria.
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  You can read more about how to come up with good decsicion trees on **[Losia's blog](http://www.i-deel.org/blog/around-meta-analysis-12-decision-trees)**
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  You can read more about how to come up with good decision trees on **[Losia's blog](http://www.i-deel.org/blog/around-meta-analysis-12-decision-trees)**
 
 <br>
 
 ##  Performing searches for relevant literature  
 
-Ideally, we attempt to do a fairly comprehensive literature search (a full systematic review). The reason for this is to gather as many relevant data points as possible, to increase the power of statistical analyses. In addition, we are making an effort to capture obscure studies that potentially are more likely to report non-significant results. This is importnat as it may help to reduce publication bias in our data set. 
+Ideally, we attempt to do a fairly comprehensive literature search (a full systematic review). The reason for this is to gather as many relevant data points as possible, to increase the power of statistical analyses. In addition, we are making an effort to capture obscure studies that potentially are more likely to report non-significant results. This is important as it may help to reduce publication bias in our data set. 
 <br>
 
 ### Search strategy
@@ -296,7 +296,7 @@ Scopus and Web of Science.
  * [Scopus](https://www.scopus.com/)   
  * [Web of Science (WoS)](http://apps.webofknowledge.com)   
 
-WoS coverage depends on the institutional subscription package purchased, so results of searches can vary among institutions (so make sure to log in via your libarry, if working from home). Also searching just core collection vs. all available databases can make a difference.     
+WoS coverage depends on the institutional subscription package purchased, so results of searches can vary among institutions (so make sure to log in via your library, if working from home). Also searching just core collection vs. all available databases can make a difference.     
 
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)   
@@ -340,15 +340,15 @@ We can easily translate our final search string from Scopus into Web of Science 
 Both Scopus and WoS allow exporting the found records (with limitations on the max. number per export, **remember to tick the boxes for exporting abstracts!**).  There are multiple file formats you can use, but .ris and .bib are most commonly used ones. You will need to figure out which ones work for your reference manager software \.
 
 ## Reference Managers
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  You will need to use referencin software.  Your institution may have a subscription for ReferenceManager or Endnote - common free editors are for example [Mendeley](https://www.mendeley.com/) or [Zotero](https://www.zotero.org/). Check in with your libary on the use of such software, if you're not sure how to use it. 
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  You will need to use referencing software.  Your institution may have a subscription for ReferenceManager or Endnote - common free editors are for example [Mendeley](https://www.mendeley.com/) or [Zotero](https://www.zotero.org/). Check in with your library on the use of such software, if you're not sure how to use it. 
 
 
 The next step is to download all your found records from your "final" search into the reference manager of your choice. Combine the references from two databases into a single project/folder and remove duplicates (most reference managers have this function, but it never works perfectly - do a visual check after sorting by titles!) before proceeding to the reference screening stage. 
 
 An R package *[revtools]* available [on cran](https://cran.rstudio.com/web/packages/revtools/) or [revtools.net](http://revtools.net/) can act as a reference manager and also has a good de-duplication function.      
 
-## Pre-registering your meta analysis
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  As we're aiming for maximum reprocicibility and transparancy, the gold standard would be to upload your meta-analysis protocol and pre-register your meta-analysis around this stage. If you want to know more about [pre-registration](https://en.wikipedia.org/wiki/Preregistration), consider signing up on  [OSF](https://osf.io/)!
+## Pre-registering your meta-analysis
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  As we're aiming for maximum reproducibility and transparency, the gold standard would be to upload your meta-analysis protocol and pre-register your meta-analysis around this stage. If you want to know more about [pre-registration](https://en.wikipedia.org/wiki/Preregistration), consider signing up on  [OSF](https://osf.io/)!
 
 </exercise>
 
@@ -359,7 +359,7 @@ Theoretically you could do screening in the database browser or your reference m
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  
 ## Why two?
->To avoid bias - we all have preferences and biases, so having two people to independently think about which studies should or should not be included - and importanly, discuss the discrepancies - is considered good practise. The effect of single vs double screening has even been tested in a [study](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-019-0782-0)
+>To avoid bias - we all have preferences and biases, so having two people to independently think about which studies should or should not be included - and importantly, discuss the discrepancies - is considered good practise. The effect of single vs double screening has even been tested in a [study](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-019-0782-0)
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  For more insight on gold standards take a looks at the *Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)* [resources](http://prisma-statement.org/).
 
@@ -377,8 +377,8 @@ We prepared a file (for download: [Scopus10.ris](https://github.com/SusZaj/metaa
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Sometimes the biblio-files with the same extension differ slightly in structure and across reference managers, which means that Rayyan may have problem opening them. Be aware that getting your files into exactly the right format may require some tweaking.   
 
-## Abstract screeing in RAYYAN
-We will use these ten references to practice title and abstract screening in Rayyan. Screening can be also done in Abstracker. (Rayyan is considered a little more reliable and more user-friendly, but may  be slow with updating the display).   
+## Abstract screening in RAYYAN
+We will use these ten references to practice title and abstract screening in Rayyan. Screening can be also done in Abstrackr. (Rayyan is considered a little more reliable and more user-friendly, but may  be slow with updating the display).   
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)    
 Create a new project in Rayyan:
@@ -422,7 +422,7 @@ Not quite.
 Unfortunately wrong.
 </opt>
 <opt text="Only include **Nielsen2012**" correct="true"> 
-YES! Include **Nielsen2012**, exlude **Ardia2005**. Why? Exclude due to the lack of a good control group.
+YES! Include **Nielsen2012**, exclude **Ardia2005**. Why? Exclude due to the lack of a good control group.
 </opt>
 <opt text="Only include _Ardia2005_"> 
 Why exclude _Nielsen2012_?

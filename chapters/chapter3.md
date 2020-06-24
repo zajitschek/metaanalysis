@@ -403,7 +403,7 @@ As an example, we will use the F-value, calculated above from [Weil2006.pdf](htt
 Remember: F = 4.6875, N treat = 28, N control = 10. "R"" is the covariate correlation and "q" the" number of covariates (we have none in ANOVA).
 </codeblock>
 
-The output shows all the different types of effect sizes function *a.fes* calculates. What we are interested in here is the top output for Cohen's d: we here get an effect size of 0.8 and a variance of 0.14.
+The output shows all the different types of effect sizes function *a.fes* calculates. What we are interested in here is the top output for Cohen's d: we get an effect size of 0.8 and a variance of 0.14.
 
 <br>
 <br>
@@ -652,7 +652,7 @@ Have a look again at the [PRISMA checklist](http://prisma-statement.org/document
     
 
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  It is worth noting that PRISMA was designed for medical systematic reviews, and some items are not very relevant or useful for Biological meta analyses.   
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  It is worth noting that PRISMA was designed for medical systematic reviews, and some items are not very relevant or useful for Biological meta-analyses.   
 <br>
 
 Although not mentioned in the original PRISMA checklist, it is important to share the collected data, meta-data and analysis code. Generally speaking, this is for transparency, reproducibility and giving back to the community.   
