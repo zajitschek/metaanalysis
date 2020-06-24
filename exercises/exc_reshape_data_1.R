@@ -3,7 +3,7 @@
 ## Exercise: substitute the underscores below. To execute the code script, press 'Run Code' below. 
 
 #Load libraries
-library(tidyverse)
+library(dplyr)
 
 data <- read.csv("./binder/data/data.csv")  #load the prepared data produced with metaDigitise. We name it 'data' here.
 

@@ -84,7 +84,7 @@ Run another Google Scholar quick search, including *reproduction* (not in quotes
 Try Google Scholar quick search:    *"terminal investment" "immune challenge"*    
 
 >This time you should get just over 400 records. Skim through the first three pages of the results to get a feel of the diversity of the studies found (e.g. what taxa are studied and what traits the studies might measure to evaluate reproductive investment) and note the wording of their titles. 
-In medical sciences, most meta-analyses (and systematic reviews) fit into the PICO (or related) question framework.   
+In medical sciences, most meta-analyses (and systematic reviews) fit into the **PICO** (or related) question framework.   
 
 <br>
 
@@ -96,17 +96,17 @@ In medical sciences, most meta-analyses (and systematic reviews) fit into the PI
 
 Broadly, this should help you identify the key paremeters that you will be working with. You can use the PICO framework for any research outset, even though we might be used to slighly different terminology:  "Population" defines the group  or species of interest, "Intervention" is your "treatment", "Comparision" is the "control" and "Outcome" refers to the traits that you are investigating. In the current situation for example you might like to know if hand washing helps to prevent the spread of COVID19. Here you may define PICO as follows:
 
-P = humans in COVID affected areas
-I = hand washing
-C = no wand washing
-O = reduced infection rates
+  P = humans in COVID affected areas   
+  I  = hand washing   
+  C = no wand washing   
+  O = reduced infection rates   
 
-To frame this in a biological context, perhaps using the (Macartney et al. 2019)](http://www.bonduriansky.net/Macartney_et_a_2019_Biological_Reviews.pdf) study we have mentioned in Chapter 1, the question if interest was to investigate if different diet interventions affect sperm traits. Here, a possible PICO would be 
+To frame this in a biological context, perhaps using the [Macartney et al. (2019)](http://www.bonduriansky.net/Macartney_et_a_2019_Biological_Reviews.pdf) study we have mentioned in Chapter 1, the question if interest was to investigate if different diet interventions affect sperm traits. Here, a possible PICO would be 
 
-P = animal species
-I = dietary treatment (either over- or underfeeding)
-C = normal / control diet
-O = sperm traits (swimming velocity, number, motility)
+  P = animal species   
+  I = dietary treatment (either over- or underfeeding)   
+  C = normal / control diet   
+  O = sperm traits (swimming velocity, number, motility)   
 
 Now try to frame our meta-analytic question "whether immune challenge can result in terminal investment" using PICO terms. Please reflect yourself and try to write down your own ideas of what you would define as "P" (Population), "I" (Intervention), "C" (Comparison/Control) and "O" (outcome) that fits this question before clicking on the sample solution below.
 
@@ -126,13 +126,14 @@ Now try to frame our meta-analytic question "whether immune challenge can result
 An extensive list of alternative systematic review formulation question frameworks can be found [here](https://www.networks.nhs.uk/nhs-networks/nwas-library-and-information-service/documents/alternative-question-structures-for-different-types-of-systematic-review)   
 <br>
 
-However, for your question framework you should in general define   
+However, for your 
+## question framework you should in general define   
    
 •	Variables of interest   
 •	research designs   
 •	historical, geographical, theoretical context   
    
-You will need to know what you're after and what you're not interested in, in order to discriminate relevant from irrelevant studies   
+You will need to know what you're after and what you're not interested in, in order to ***discriminate relevant from irrelevant studies***   
 
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) You should always be able to justify your question as important, relevant and timely. This holds true for other research questions as well, and will affect the likelihood of a meta-analysis you propose to perform to gain support (by an academic supervisor, a grant agency, in an academic and a non-academic environment), and its impact on the target audience. 
@@ -241,11 +242,11 @@ You can make your decision trees by hand, make a flow chart in Power Point or us
 
 The screening of literature is usually done in two stages:   
   1. abstract + title + keywords    
-  **(this will be done on the bulk of the papers found in your search)**
+  *This will be done on the bulk of the papers found in your search*
   2. full text + supplementary information   
-  **(this requires that you carefully go through your list of "included" studies obtained in step 1 and more details in the "bottom branches"" of your decison tree)**
+  *This requires that you carefully go through your list of "included" studies obtained in step 1 and more details in the "bottom branches"" of your decison tree*
 
-### We need two decision trees!
+## We need two decision trees!
 #### one for each stage: Abstract / Full text
 This is because abstracts, titles and keywords do not contain enough information to conclusively answer all of the inclusion criteria questions - you should be excluding every paper for which you cannot answer "yes" to all the questions. 
 
@@ -370,7 +371,8 @@ Theoretically you could do screening in the database browser or your reference m
    
    
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)   
-We prepared a file (for download: [Scopus10.ris](https://github.com/SusZaj/metaanalysis/blob/master/papers/Scopus10.ris)) with 10 references sampled from the set found using the search string in Scopus database (used *( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*" ) )  *) (same references came up in the equivalent search in WoS).    
+We prepared a file (for download: [Scopus10.ris](https://github.com/SusZaj/metaanalysis/blob/master/papers/scopus10.ris))
+ with 10 references sampled from the set found using the search string in Scopus database (used *( ( "terminal investment"  OR  "reproductive effort" )  AND  ( "immune challeng\*"  OR  "immunochalleng\*" ) )  *) (same references came up in the equivalent search in WoS).    
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Sometimes the biblio-files with the same extension differ slightly in structure and across reference managers, which means that Rayyan may have problem opening them. Be aware that getting your files into exactly the right format may require some tweaking.   
 
