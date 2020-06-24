@@ -1,5 +1,4 @@
 ## Load libaries and data
-library(magrittr)
 library(dplyr)
 library(compute.es)
 library(ggplot2)
@@ -17,15 +16,15 @@ fish.sd <- fish %>%
     filter(sd_low>0) %>%
     #when calculating more than one value, 'id' has to be specified 
     #(id is just an individual identifier of each effect size)
-    mes(m.1= mean_low, m.2= mean_high, sd.1= sd_low, sd.2= sd_high, n.1= n_low, n.2= n_high, id= effect_size_id, data= .) %>%
-    select(effect_size_id = id, effect_size = d, variance = var.d)
+    mes(m.1= mean_low, m.2= mean_high, sd.1= sd_low, sd.2= sd_high, n.1= n_low, n.2= n_high, id= effectsize_id, data= .) %>%
+    select(effectsize_id = id, effect_size = d, variance = var.d)
 
 ## For all cases where SE is provided: SD is calculated from SE as sd = se * sqrt(n)
 
 fish.se <- fish %>% 
     filter(is.na(sd_low) & is.na(f) & is.na(t)) %>%
-    mes(m.1= mean_low, m.2= mean_high, sd.1= se_low*sqrt(n_low), sd.2= se_high*sqrt(n_high), n.1= n_low, n.2= n_high, id= effect_size_id, data= .) %>%
-    select(effect_size_id = id, effect_size = d, variance = var.d)
+    mes(m.1= mean_low, m.2= mean_high, sd.1= se_low*sqrt(n_low), sd.2= se_high*sqrt(n_high), n.1= n_low, n.2= n_high, id= effectsize_id, data= .) %>%
+    select(effectsize_id = id, effect_size = d, variance = var.d)
 
 ## For one case where only an F-value is provided
 
@@ -33,8 +32,8 @@ fish.f <- fish %>%
     filter(is.na(sd_low) & !is.na(f) & is.na(t)) %>%
     #We use function 'a.fes' instead of function 'fes' to be able to provide the data in our pipe; 
     #again, we have to specify 'id' to get the function to run
-    a.fes(f = f, n.1 = n_low, n.2 = n_high, R= 0, q= 0, id= effect_size_id, data= .) %>%
-    select(effect_size_id = id, effect_size = d, variance = var.d)
+    a.fes(f = f, n.1 = n_low, n.2 = n_high, R= 0, q= 0, id= effectsize_id, data= .) %>%
+    select(effect_sizeid = id, effect_size = d, variance = var.d)
 
 ## For cases where only t-values are provided
 
@@ -42,8 +41,8 @@ fish.t <- fish %>%
   filter(is.na(sd_low) & is.na(f) & !is.na(t)) %>%
   #We use function 'a.tes' instead of function 'tes' 
   #and we have to specify 'id' to get the function to run
-  a.tes(t = t, n.1 = n_low, n.2 = n_high, R= 0, q= 0, id= effect_size_id, data= .) %>%
-  select(effect_size_id = id, effect_size = d, variance = var.d)
+  a.tes(t = t, n.1 = n_low, n.2 = n_high, R= 0, q= 0, id= effectsize_id, data= .) %>%
+  select(effectsize_id = id, effect_size = d, variance = var.d)
 
 ## Combine data
  #join/merge calculated data with previous data; 
@@ -52,7 +51,7 @@ fish.t <- fish %>%
 
 fish.all <- left_join(fish,  
                       (bind_rows(fish.sd, fish.se, fish.f, fish.t) %>%   #combine all data
-                      arrange(., effect_size_id)) )  #order by effect_size_id
+                      arrange(., effectsize_id)) )  #order by effectsize_id
 
 #How many studies?
 print(paste0("How many studies? ", length(unique(fish.all$study_id))))
@@ -64,7 +63,7 @@ plot(fish.all$commonname_species, main= "Traits per species")
 print(paste0("Overall mean: ", mean(fish.all$effect_size)))
 
 #Plot effect sizes per study (with variances as error bars)
-ggplot(fish.all, aes(x= effect_size_id, y= effect_size, fill= trait_category)) + 
+ggplot(fish.all, aes(x= effectsize_id, y= effect_size, fill= trait_category)) + 
   geom_bar(stat="identity") +
   geom_errorbar(aes(ymin= effect_size-variance/2, ymax= effect_size+variance/2),
                 width=.4) +
