@@ -12,7 +12,7 @@ id: 4
 
 # Introduction
 ***based on Losia's "Trees - making" workshop***   
-   
+
 Ecological and evolutionary meta-analyses often aggregate data across multiple species. Since species are more or less closely related, depending on evolutionary history, effect sizes of closely related species can be more similar to these of less-related species. This means that the level of relatedness between species will influence outcomes, and their non-independence  needs to be accounted for.
 We can add a random factor to multilevel meta-analytic models, which consists of a  correlation matrix of phylogenetic relatedness. 
 To create such a a relatedness matrix among species, we need a phylogenetic tree, specifically for the list of species that are occuring in our data set.  
@@ -45,8 +45,8 @@ You will usually start with species list from the meta-analytic data set (use bi
 ![Phylogenetic Tree workflow](https://github.com/SusZaj/metaanalysis/blob/master/images/guide.png?raw=true)
 
 First, check if there is any phylogenetic tree available that already contains all your species (e.g. a super-tree). Currently, the easiest way to build a custom phylogenetic tree usable for meta-analysis is by using an R package called *rotl*, 
-   
-   
+
+
 # Different Tools 
 
 I'll introduce how to use a "supertree" (i.e. a well establish phylogenetic tree, published and available), to create your own tree with a subset of species. Such supertrees are for example available for birds (as in the example below). 
@@ -80,9 +80,9 @@ No hints needed.
 If no existing phylogeny is readily usable, there are a few non-exclusive options depending on the range of species in the data set:  
 
  - If the species are highly diverged (e.g. mixture of vertebrates and invertebrates), use the [NCBI Taxonomy Common Tree tool](http://www.ncbi.nlm.nih.gov/Taxonomy/CommonTree/wwwcmt.cgi). On the webpage, use the input box at the top of the page to search for each species name. Alternatively, you can upload your list of species names from a file. This list allows to generate a scaffold for a tree (i.e. the pattern of basal branching for the main clades).  
- 
+
  - If few major clades are present, assemble together sub-trees created from bigger trees, if these exist for these clades.    
- 
+
  - Use [phyloGenerator](http://willpearse.github.io/phyloGenerator/) or other phylogenetic software to create phylogeny based on DNA sequences, if a shared sequence set exists for a given set of species (check if the resulting phylogeny makes sense).  
 
 If the resulting tree contains polytomies, these can be resolved at random, or based on information from more detailed trees (e.g. published phylogenies of specific lower taxa). You can also graft missing species on your tree. Be aware of species names problems: typos, scientific name synonyms, subspecies - have to be re-checked / corrected / substituted if generate errors at any stage. Again, your final tree must contain exactly the same list of species names as your meta-analytic data set.   
@@ -244,7 +244,7 @@ myspecies2 <- c("Gekko japonicus", "Geochelone sulcata", "Gopherus agassizii", "
 In some cases getting "perfect" tree may not be possible - but phylogenies are always just estimates of the species relationships, and as long as you get the key features right, the tree will be OK, and usually so will your analyses. Remember, the phylogeny will be added as a moderator - helping to explain differences across taxa. However, if the phenomenon you're interested in is highly conserved across taxa (i.e. the species react similarly to the treatment) the phylogeny will probably not play a significant role.
 
 ##  Further help   
-   
+
 - discussion list [R-sig-phylo archive](http://www.mail-archive.com/r-sig-phylo@r-project.org/)
 
 - [Tree manipulation in R](http://www.r-phylo.org/wiki/HowTo/DataTreeManipulation)
@@ -268,15 +268,15 @@ All of the freely available resources listed here provide much more detail, spec
 - Background on [OpenMEE](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12708)    
 
 - Balduzzi, Rücker  & Schwarzer (2019): [How to perform a meta-analysis with R: a practical tutorial](https://ebmh.bmj.com/content/22/4/153.long)
-   
+  
 - Basu's preprint tutorial on [PeerJ 2017](https://peerj.com/preprints/2978v1/)
-    
+  
 - Thomas Pollet's [online course](https://tvpollet.github.io/Meta-analysis_course)
-    
+  
 - A full online book by Mathias Harrer et al.: [Doing Meta-Analysis in R: A Hands-on Guide](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/)
 
 - Pim Cuijper's video course on [youtube](https://www.youtube.com/playlist?list=PL-h5cI5Bkvt0J-O0kq_9J9_aksWFPgR7s) (also availavle as free book, downloadable [here](https://indd.adobe.com/view/5fc8f9a0-bf1e-49d3-bf5f-a40bfe5409e0) )
-    
+  
 - Stephanie Kovalchik's [2013 tutorial](http://edii.uclm.es/~useR-2013/Tutorials/kovalchik/kovalchik_meta_tutorial.pdf)
 
 

@@ -1,9 +1,9 @@
 ###CODEBLOCK 6###
 
 ## Load libaries and data
-library(dplyr)
+suppressMessages(library(dplyr))
+suppressMessages(library(ggplot2))
 library(compute.es)
-library(ggplot2)
 fish <- read.csv("./binder/data/Macartney2019_processed_fish.csv")
 
 # Calculation of Standardized Mean Difference (our Effect Size) as Cohen's d, 

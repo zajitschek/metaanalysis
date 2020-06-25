@@ -25,26 +25,25 @@ The actual statistical analyses will be performed in the [software R](https://ww
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Please note, if you plan on actually doing a meta-analysis yourself, beyond just going through this exercise, you will have to download R or [R studio](https://rstudio.com/products/rstudio/download/), if you haven't already. 
 
-# How do use this resource
+# How to use this resource
 
 The main content has been split into three Chapters. In Chapters 2 and 3  I will explain the structure and processes involved in conducting a meta-analysis from conception to write-up. 
 
-Chapter 4 gives an overview over different methods to build your phylogeny, in case your meta analysis spans across different taxa. 
+Chapter 4 gives an overview over different methods to build your phylogeny, in case your meta-analysis spans across different taxa. 
 
 You will also have the opportunity to perform steps directly in R, without having to open it locally. This will look like this grey block below. Just click on the "Run Code" button and see what happens. 
-(You may need some patience first time you runa  code block - or sometimes it may fail to connect, so just re-run).
+(You may need some patience the first time you run a  code block - or sometimes it may fail to connect, so just re-run).
 
 <codeblock id="intro_1">
 Write your name where the dotted line is!
 </codeblock>
 
-You can also use the "Show hints", "Show solution" and "Reset" tabs. Don't worry about doing in anything "wrong" - you will not be breaking these code blocks! You can also use these blocks to calculate whatever else you think of - try for example writing "1+1", and run it again! (For advanced R users - you can't import your own datasets, but of course could add them manually!)
+You can also use the "Show hints", "Show solution" and "Reset" tabs. Don't worry about doing anything "wrong" - you will not be breaking these code blocks! You can also use these blocks to calculate whatever else you think of - try for example writing "1+1", and run it again! (For advanced R users - you can't import your own datasets, but of course could add them manually!)
 
-
-Each section may contain links to online resources, such as this [link to google scholar](https://scholar.google.com/), questions to answer (including feedback on getting it right or wrong), and tasks to do on your own - as indicated by this laptop icon  ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true). If we think we have a particuarly useful note or resource, you will see this pushpin  ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true).
+Each section may contain links to online resources, such as this [link to google scholar](https://scholar.google.com/), questions to answer (including feedback on getting it right or wrong), and tasks to do on your own - as indicated by this laptop icon  ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true). If we think we have a particularly useful note or resource, you will see this pushpin  ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true).
 <br>
 
-Please note, this is meant as a quick primer to give you some overview of how a meta-analysis is done.  Perhaps it will be a student project, but perhaps it may serve as a starting point for you if you're planning on doing your own, publishable and solid meta-analysis. If that's the case, we highly recommend to check out some of the additional resources that are out there. Our resources here is non-exhaustive, and also does not cover the full range of R packages that are available for meta-anayles - we here are focussing on the "metafor" package. For a small collection of freely available resources (that may be using other R packages) please see the relevant section in Chapter 4.
+Please note, this is meant as a quick primer to give you some overview of how a meta-analysis is done.  Perhaps it will be a student project, but perhaps it may serve as a starting point for you if you're planning on doing your own, publishable and solid meta-analysis. If that's the case, we highly recommend to check out some of the additional resources that are out there. Our resources here is non-exhaustive, and also does not cover the full range of R packages that are available for meta-analyses - we here are focussing on the "metafor" package. For a small collection of freely available resources (that may be using other R packages) please see the relevant section in Chapter 4.
 
 </exercise>
 
@@ -71,7 +70,7 @@ This self-guided course is mainly focussed on research in biological sciences. M
 
 We established that science works cumulatively. To gain support for specific hypothesis, we do not want to rely on the outcome of single studies. We can try to combine the knowledge gained in multiple studies which tested specific traits of interest. This can be achieved while still taking into account that studies differ in their quality and their size, for example, lending different levels of weights to their results. 
 
-This combination of multiple test results can be achieved by qualitatively summarising previous work on a specific subject. Classically, this was done in a literature review, for example at the beginning of a graduate or postgraduate degree. While this type of review has still its merit (especially if it is done ***systematically***), we want to introduce you here to the meta-analytical approach (which sctrictly specaking is a **quantitative systematic review**), which can provide a quantitative summary and test of specific research questions (the Greek prefix *meta* (μετά, "after" or "beyond") means *more comprehensive*).
+This combination of multiple test results can be achieved by qualitatively summarising previous work on a specific subject. Classically, this was done in a literature review, for example at the beginning of a graduate or postgraduate degree. While this type of review has still its merit (especially if it is done ***systematically***), we want to introduce you here to the meta-analytical approach (which strictly speaking is a **quantitative systematic review**), which can provide a quantitative summary and test of specific research questions (the Greek prefix *meta* (μετά, "after" or "beyond") means *more comprehensive*).
 
 </exercise>
 
@@ -79,11 +78,11 @@ This combination of multiple test results can be achieved by qualitatively summa
 
 # Overview
 
-This is meant as a first step to get you started.  We will provide an overview over the workflow, links to additional resources, exercises and guidelines (Chapters 2, 3 and 4). This includes a section on phylogenetic trees (which you may need if the question you're planning on tackling spans across different species - quite likely to happen if you're a evolutinary biologist, and the "question" is more important to you than a particular taxon. This will be covered in Chapter 4). To keep things simple initially, we will leave the phylogenies aside and go over the first steps: how  to narrow down your question, how to find relevant literature, how to make decisions on which studies to include, how to extract the relevant info from your selected papers, and run the actual meta-analysis. We'll explain how to interpret the output and plot your results. 
+This is meant as a first step to get you started.  We will provide an overview over the workflow, links to additional resources, exercises and guidelines (Chapters 2, 3 and 4). This includes a section on phylogenetic trees (which you may need if the question you're planning on tackling spans across different species - quite likely to happen if you're a evolutionary biologist, and the "question" is more important to you than a particular taxon. This will be covered in Chapter 4). To keep things simple initially, we will leave the phylogenies aside and go over the first steps: how  to narrow down your question, how to find relevant literature, how to make decisions on which studies to include, how to extract the relevant info from your selected papers, and run the actual meta-analysis. We'll explain how to interpret the output and plot your results. 
 
 We hope to also help to improve your organisational skills - as for all of the above it will be really important to carefully keep track & record of all your steps and decisions. This is necessary to make your meta-analysis reproducible and understandable, for whoever will be reading the resulting work. 
 
-Here is a list of the different parts of a meta-analysis, and where to find the respcetive bits in this book:
+Here is a list of the different parts of a meta-analysis, and where to find the respective bits in this course:
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/overview.png?raw=true)
 <br>
@@ -92,7 +91,9 @@ As just mentioned, all of these steps have to be described and laid out in a pro
 
 Protocols are necessary to minimize any bias that we might introduce - either knowingly, but most often unknowingly - into the decisions that have to be taken at each meta-analysis step. Bias might already be present in how the research question we want to tackle is phrased. Furthermore, bias can originate in the specific way we search for literature, both in where we search (for example, which databases we use, or whether we only include published results), and how we search (for example our choice of search terms).
 
-The following diagram (Figure 1 from Nakagawa et al. 2017) shows a more in depth overview over steps and quality control that are part of a well-conducted meta-analysis. The questions on the right hand side need to be answered in your final product to provide reproducibility, the flow chart on the left details the methods and options that have to be considered for each step. 
+The following diagram (Figure 1 from Nakagawa et al. 2017) shows a more in depth overview of steps and measures of quality control that are part of a well-conducted meta-analysis. The questions on the right hand side need to be answered in your final product to provide reproducibility, the flow chart on the left details the methods and options that have to be considered for each step. 
+
+   
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/Nakagawa_etal_Fig1.gif?raw=true)
 <br>

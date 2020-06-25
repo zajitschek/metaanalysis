@@ -1,7 +1,7 @@
 ###CODEBLOCK 7###
 
 #Load libraries and data that include calculated effect sizes
-library(metafor)
+suppressMessages(library(metafor))
 fish.all <- read.csv("./binder/data/Macartney2019_effectsize_fish.csv")
 
 #Run the first meta-analysis (a random-effects model using rma.uni() via rma())

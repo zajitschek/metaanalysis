@@ -329,6 +329,8 @@ We calculate these as follows:
 No hints needed.
 </codeblock>
 
+We get two 'A escalc: 2x2' outputs: the first one for SMD, the second one for ROM. 2x2 tells us that it's a 2x2 table, 2 rows and 2 columns (hint on the side: in R, cells are specified by location, always row number first, followed by column number -> mnemonic: <u>r</u>ailroad<u>c</u>ars). Here, yi are the calculated / observed effect sizes, and vi are the corresponding variances. The top row corresponds to the Weil2006 study, the bottom row to Sadd2006. Note that each set of 2 means have been collapsed to one effect size.
+
 The metafor code on its own looks like this:
 ```
 SMD <- metafor::escalc(measure = "SMD", data=data_new, m1i=mean.y, m2i = mean.x, 
@@ -400,6 +402,8 @@ As an example, we will use the F-value, calculated above from [Weil2006.pdf](htt
 <codeblock id="effect_sizes_2">
 Remember: F = 4.6875, N treat = 28, N control = 10. "R"" is the covariate correlation and "q" the" number of covariates (we have none in ANOVA).
 </codeblock>
+
+The output shows all the different types of effect sizes function *a.fes* calculates. What we are interested in here is the top output for Cohen's d: we get an effect size of 0.8 and a variance of 0.14.
 
 <br>
 <br>
@@ -551,7 +555,7 @@ No hints or solution necessary here.
 
 This may be a more logical way to present our results. On top we see the traits related to body size, then sperm length, followed by sperm swimming speed, number, and viability. 
 
-###Making a more meaningful model
+##Building a more meaningful model
 
 Because of non-independence of data, we add random effects:
 * between-study effects (<code>random = ~ 1 | study_id</code>), 
@@ -571,8 +575,9 @@ Let's look at the results in more detail now.
 We have a table **Variance components** with the estimates of our random effects (*study_id*, *effectsize_id*, *genus*). We see that *genus* is no source of variation (estimate = 0.00). This means we could drop the term from the model. Variation within studies, due to measuring different traits, is more than 6 times larger than variation between studies.
 
 The test for heterogeneity (Cochran’s Q-test: *Q* = 698.82, *df* = 36, *p* < 0.01) suggests substantial residual heterogeneity. Heterogeneity is the variability in our data, due to differences in experimental design, methods, data collection etc. We can look at heterogeneity using I^2, a measure that describes the amount of total variation explained by heterogeneity. For the multivariate *metafor* function *rma.mv*, there is unfortunately no I^2 summary output.
-Luckily, *metafor* creator Wolfgang Viechtbauer provides the following function to calculate I^2:
-<code>
+Luckily, *metafor* creator Wolfgang Viechtbauer provides the following function to calculate I^2 (you can read more from him about this [here](http://www.metafor-project.org/doku.php/tips:i2_multilevel_multivariate)):
+
+```
 I2 <- function(model){
     W <- solve(model$V) 
     X <- model.matrix(model)
@@ -580,46 +585,47 @@ I2 <- function(model){
     I2_total <- sum(model$sigma2) / (sum(model$sigma2) + (model$k - model$p) / sum(diag(P)))
     I2_each  <- model$sigma2 / (sum(model$sigma2) + (model$k - model$p) / sum(diag(P)))
     names(I2_each) = paste0("I2_", model$s.names)
-​    I2s <- c(I2_total = I2_total, I2_each)
-​    I2s
+    I2s <- c(I2_total = I2_total, I2_each)
+    I2s
   }
-</code>
+```
 
 Let's try this:
 <codeblock id="fish_10">
 No hints or solution necessary here.
 </codeblock>
 
-Our I^2 total is 95.4%. This is the sum of the heterogeneity due to between-study (13.3%), within-study (82.1%), and *genus* (with <0.001 negligible). If you run the model again without the specified random effects (using *rma* instead of *rma.mv*), you will see that I^2 (total heterogeneity / total variability) matches this value.
+As you can see right at the bottom, our I^2 total is 95.4%. This is the sum of the heterogeneity due to between-study (13.3%), within-study (82.1%), and *genus* (with <0.001 negligible). If you run the model again without the specified random effects (using *rma* instead of *rma.mv*), you will see that I^2 (total heterogeneity / total variability) matches this value.
 
 ###At last, the model results! 
 The estimate for mean effect size (across all studies, traits,...) is -0.8173. It is highly significant, as indicated by the *p*-value, the ci that do not overlap zero, and the three stars. This means that there is an overall strong effect of diet, leading to decreased trait values under low diet in fish.
 
 ##Meta-regression: Effects of moderators
 
-In a next analysis,w e can ask whether potential predictor / moderator variables have an effect. Here, we want to know whether traits in different *trait categories* respond differently to diet manipulation. We simply add: <code>mods = ~ factor(trait_category)-1</code>.
+In a next analysis, we can ask whether potential predictor / moderator variables have an effect. Here, we want to know whether traits in different *trait categories* respond differently to diet manipulation. We simply add: <code>mods = ~ factor(trait_category)-1</code>. 
 
-<codeblock id="fish_10">
-No hints or solution necessary here.
-</codeblock>
-
-###Publication bias
-
-Publication bias is commonly observed in academic research. This is due to the fact that studies with significant results are often more likely to be published than studies with null results (despite equal quality of execution and design).
-
-Publication bias can be assessed visually with funnel plots. If there is no indication of publication bias, studies (shown as single dots) will be plotted in a funnel shaped distribution. A deviation from this shape can indicate publication bias.
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Please note: if we wouldn't have used *factor()*, the variable trait category would be treated as an integer, i.e. the values of the different trait categories (1 to 6) would have been treated as numbers. We added the '-1' to the term above to remove the intercept. This results in an output that lists all trait categories (instead of the first one as the intercept).
 
 <codeblock id="fish_11">
 No hints or solution necessary here.
 </codeblock>
 
+In this output, we have a significant overall Test of Moderators. This means that we reject the null hypothesis that effects of diet at the same in all trait categories. Under Model Results, we see that 4 of the 6 trait categories are significantly influenced by diet. They grey polygons in the forest plot show the fitted values for each trait category.
+
+##Publication bias
+
+Publication bias is commonly observed in academic research. This is due to the fact that studies with significant results are often more likely to be published than studies with null results (despite equal quality of execution and design).
+
+Publication bias can be assessed visually with funnel plots. If there is no indication of publication bias, studies (shown as single dots) will be plotted in a funnel shaped distribution within the white funnel area. A deviation from this shape can indicate publication bias.
+
+Funnel plots are often reported in supplemental material.
+If you want to read more or conduct formal tests, see the [metafor options](http://www.metafor-project.org/doku.php/features#publication_bias). 
+
+<codeblock id="fish_12">
+No hints or solution necessary here.
+</codeblock>
 
 
-
-
-
-
-## 
 
 
 
@@ -637,16 +643,16 @@ Have a look again at the [PRISMA checklist](http://prisma-statement.org/document
 
 <choice id="1">
 <opt text="Answer" correct="true"> 
-Items 10: Data collection process: Describe method of data extraction from reports (e.g., piloted forms, independently, in duplicate) and any processes for obtaining and confirming data from investigators.   
-
-11: Data items: List and define all variables for which data were sought (e.g., PICOS, funding sources) and any assumptions and simplifications made;    
-18: Study characteristics: For each study, present characteristics for which data were extracted (e.g., study size, PICOS, follow-up period) and provide the citations; and we start started to have a stab at     
-20: Results of individual studies: For all outcomes considered (benefits or harms), present, for each study: (a) simple summary data for each intervention group (b) effect estimates and confidence intervals, ideally with a forest plot.
+*Items 10: Data collection process: Describe method of data extraction from reports (e.g., piloted forms, independently, in duplicate) and any processes for obtaining and confirming data from investigators.   
+*11: Data items: List and define all variables for which data were sought (e.g., PICOS, funding sources) and any assumptions and simplifications made;    
+*18: Study characteristics: For each study, present characteristics for which data were extracted (e.g., study size, PICOS, follow-up period) and provide the citations; and we start started to have a stab at     
+*20: Results of individual studies: For all outcomes considered (benefits or harms), present, for each study: (a) simple summary data for each intervention group (b) effect estimates and confidence intervals, ideally with a forest plot.
 </opt>
 </choice>
+    
 
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  It is worth noting that PRISMA was designed for medical systematic reviews, and some items are not very relevant or useful for Biological meta analyses.   
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  It is worth noting that PRISMA was designed for medical systematic reviews, and some items are not very relevant or useful for Biological meta-analyses.   
 <br>
 
 Although not mentioned in the original PRISMA checklist, it is important to share the collected data, meta-data and analysis code. Generally speaking, this is for transparency, reproducibility and giving back to the community.   
