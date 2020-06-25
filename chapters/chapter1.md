@@ -55,7 +55,7 @@ This combination of multiple test results can be achieved by qualitatively summa
 
 This is meant as a first step to get you started.  Here's an overview over the workflow:
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/overview.png?raw=true)
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/overview2.png?raw=true)
 <br>
 <br>
 As just mentioned, all of these steps have to be described and laid out in a protocol. 
