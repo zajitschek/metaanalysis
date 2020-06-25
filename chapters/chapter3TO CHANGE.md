@@ -5,7 +5,7 @@ description:
 prev: /chapter2
 next: /chapter4
 type: chapter
-id: 3
+id: #3
 ---
 
 <exercise id="1" title="Preparation & organisation"> 

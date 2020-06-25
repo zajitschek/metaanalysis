@@ -2,10 +2,10 @@
 title: 'Chapter 3: Meta-analysis'
 description:
   'Data organisation & extraction, meta analysis & quality checks'
-prev: /chapter2
-next: /chapter4
+prev: #/chapter2
+next: #/chapter4
 type: chapter
-id: 3
+id: #3
 ---
 
 <exercise id="1" title="Preparation & organisation"> 

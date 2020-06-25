@@ -2,8 +2,8 @@
 title: 'Chapter 2: Step-by-step: The structure of a Meta-analysis'
 description:
   'We will work through each specific step in a meta-analysis. Based on Losias papers_search material'
-prev: /chapter1
-next: /chapter3
+prev: #/chapter1
+next: #/chapter3
 type: chapter
 id: 2
 ---
