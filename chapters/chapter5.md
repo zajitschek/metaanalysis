@@ -1,5 +1,5 @@
 ---
-title: 'Chapter 4: Additional Resources'
+title: 'Chapter 5: Additional Resources'
 description:
   'Links to other resources on Meta-Analyses'
 prev: /chapter4
