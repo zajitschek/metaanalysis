@@ -3,7 +3,7 @@ title: 'Chapter 4: Additional Resources'
 description:
   'Links to other resources on Meta-Analyses'
 prev: /chapter4
-next: null
+next: /null
 type: chapter
 id: 5
 ---
