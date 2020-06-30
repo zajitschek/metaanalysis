@@ -88,7 +88,7 @@ As just mentioned, all of these steps have to be described and laid out in a pro
 
 Protocols are necessary to minimize any bias that we might introduce - either knowingly, but most often unknowingly - into the decisions that have to be taken at each meta-analysis step. Bias might already be present in how the research question we want to tackle is phrased. Furthermore, bias can originate in the specific way we search for literature, both in where we search (for example, which databases we use, or whether we only include published results), and how we search (for example our choice of search terms).
 
-The following diagram (Figure 1 from Nakagawa et al. 2017) shows a more in depth overview over steps and quality control that are part of a well-conducted meta-analysis. The questions on the right hand side need to be answered in your final product to provide reproducibility, the flow chart on the left details the methods and options that have to be considered for each step. 
+The following diagram (Figure 1 from Nakagawa et al. 2017)](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7) shows a more in depth overview over steps and quality control that are part of a well-conducted meta-analysis. The questions on the right hand side need to be answered in your final product to provide reproducibility, the flow chart on the left details the methods and options that have to be considered for each step. 
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/Nakagawa_etal_Fig1.gif?raw=true)
 <br>
@@ -97,20 +97,28 @@ The following diagram (Figure 1 from Nakagawa et al. 2017) shows a more in depth
 ## Some examples 
 If you haven't looked at many meta-analyses yet, you can have a glance and see what questions were asked and how the results are presented in the examples below. Especially the first in the list (Macartney et al. 2019) is a very good example, with protocols, data, and R code published and made freely available (see *Data & R Code* below). In fact, we'll use a subset of their data in our guided example in the data analysis parts in Chapter 3:
 
-- [Effects of nutrient limitation on sperm and seminal fluid: a systematic review and meta‐analysis (Macartney et al. 2019)](http://www.bonduriansky.net/Macartney_et_a_2019_Biological_Reviews.pdf) [Data & R code on osf.io](https://osf.io/aqw8u/)
+- [Effects of nutrient limitation on sperm and seminal fluid: a systematic review and meta‐analysis (Macartney et al. 2019)](http://www.bonduriansky.net/Macartney_et_a_2019_Biological_Reviews.pdf) [Data & R code on osf.io](https://osf.io/aqw8u/)    
+*Macartney, E.L., Crean, A.J., Nakagawa, S. and Bonduriansky, R. 2019. Effects of nutrient limitation on sperm and seminal fluid: a systematic review and meta-analysis. Biological Reviews 94:1722-1739*
 
-- [The repeatability of behaviour: a meta-analysis (Bell et al. 2009)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3972767/).
+- [The repeatability of behaviour: a meta-analysis (Bell et al. 2009)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3972767/).   
+*Bell, A. M., Hankison, S. J., & Laskowski, K. L. (2009). The repeatability of behaviour: a meta-analysis. Animal behaviour, 77(4), 771–783. https://doi.org/10.1016/j.anbehav.2008.12.022*
 
-- [Individual differences in behaviour explain variation in survival: a meta‐analysis (Niemelä & Dingemanse 2018)](https://royalsocietypublishing.org/doi/10.1098/rspb.2017.2823).
+- [Meta-analysis reveals weak associations between intrinsic state and personality (Niemelä & Dingemanse 2018)](https://royalsocietypublishing.org/doi/10.1098/rspb.2017.2823).    
+*Niemelä, P. T., & Dingemanse, N. J. (2018). Meta-analysis reveals weak associations between intrinsic state and personality. Proceedings. Biological sciences, 285(1873), 20172823. https://doi.org/10.1098/rspb.2017.2823*
 
-- [The effect of dietary restriction on reproduction: a meta-analytic perspective (Moatt et al. 2016)](https://bmcevolbiol.biomedcentral.com/articles/10.1186/s12862-016-0768-z).
+- [The effect of dietary restriction on reproduction: a meta-analytic perspective (Moatt et al. 2016)](https://bmcevolbiol.biomedcentral.com/articles/10.1186/s12862-016-0768-z).   
+*Moatt, J. P., Nakagawa, S., Lagisz, M., & Walling, C. A. (2016). The effect of dietary restriction on reproduction: a meta-analytic perspective. BMC evolutionary biology, 16(1), 199. https://doi.org/10.1186/s12862-016-0768-z*
 
 **Meta-analysis and research synthesis: an outlook**
 
-- [Research Weaving: Visualizing the Future of Research Synthesis (Nakagawa et al., 2018)](https://ecoevorxiv.org/ga2qz/)
+- [Research Weaving: Visualizing the Future of Research Synthesis (Nakagawa et al., 2018)](https://ecoevorxiv.org/ga2qz/)   
+*Nakagawa, S., Samarasinghe, G., Haddaway, N.R., Westgate, M.J., O’Dea, R.E., Noble, D.W.A., Lagisz, M., 2019. Research weaving: visualizing the future of research synthesis. Trends Ecol. Evol. 34, 224–238. https://doi.org/10.1016/j.tree.2018.11.007*
+
+
 
 **A key reference for how to conduct a meta-analysis**
 
-- [Meta-evaluation of meta-analysis: Ten appraisal questions for biologists (Nakagawa et al. 2017)](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7)
+- [Meta-evaluation of meta-analysis: Ten appraisal questions for biologists (Nakagawa et al. 2017)](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0357-7)   
+*Nakagawa, S., Noble, D. W., Senior, A. M., & Lagisz, M. (2017). Meta-evaluation of meta-analysis: ten appraisal questions for biologists. BMC biology, 15(1), 18. https://doi.org/10.1186/s12915-017-0357-7*
 
 </exercise>

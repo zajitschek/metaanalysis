@@ -80,17 +80,24 @@ data_all3 <- merge_columns(data_all2, data4)
 
 <exercise id="2" title="Systematic Review Frameworks">
 
-## Frameworks for systematic reviews
-### In general, your framework should in general define   
-   
-•	Variables of interest   
-•	research designs   
-•	historical, geographical, theoretical context   
-   
-You will need to know what you're after and what you're not interested in, in order to ***discriminate relevant from irrelevant studies***   
 
+## Different Frameworks & Protocols, an overview
 
-## Different Frameworks, an overview
+## Transparent and reproducible science
+
+In recent years, scientists have increasingly acknowledged that many fields of research are in a [reproducibility crisis](https://en.wikipedia.org/wiki/Replication_crisis). This means that many published studies that have shown major effects can not be reproduced. Obviously this is a problem, as it not only erodes public trust in science, but it makes it very hard to drive knowledge and scientific discovery in the "right" direction. This doesn't mean that most of the science that is out there is meaningless, it just means that in order to make it reproducible, exact methods, (raw) data, (detailed) analyses and code should be made available. 
+
+In addition, it has been traditinally much easier to get "significant" results published (compared to equally well-conducted null-results), especially in high-impact journals. Nowadays, *pre-registration* of your publication plan is an option (for meta-analysis, too!) to get your science published, regardless of outcome. Check out the ***[Center for Open Science](https://en.wikipedia.org/wiki/Center_for_Open_Science)*** and their platform [OSF](osf.io) for more details on reproducible and transparent research, and sign up to pre-register your next study.
+
+All this applies to all science, not just primary research, but just the same for systematic reviews and meta analyses. There a a mutitude of tools out there to not only quality-control meta-science, but to help achieve gold standards. The most important to mention is [PRISMA, Preferred Reporting Items for Systematic Reviews and Meta-Analyses](https://en.wikipedia.org/wiki/Preferred_Reporting_Items_for_Systematic_Reviews_and_Meta-Analyses).
+
+## PRISMA Checklist
+
+The [Prisma checklist](http://www.prisma-statement.org/PRISMAStatement/Checklist) gives a detailed account of the items that should be included in a meta-analysis, from title to acknowledgements. It may help structure the writing process and will help stay organised during all stages, from Literature search to data sextraction, so it is worth checking this out early on.
+
+## Frameworks for Literature searches
+
+An overview with examples for a range of different frameworks can be found [here](https://libguides.city.ac.uk/postgraduate_research/frameworks). Most relevant for biological questions may be the PICO, PEO, and SPICE approaches, which we will briefly introduce below.
 
 ## PICO   
 stands for:   
@@ -120,20 +127,59 @@ Here, a possible PICO would be...
 </choice>   
 <br>
 
+
+## PEO
+  * Population - who is my question focussed on?
+  * Exposure - what is the issue I'm interested in?
+  * Outcomes or themes - what, in relation to the issue, do I want to examine?
+  
+
+## SPICE (medically-related)
+  * Setting - where is the study set e.g. in a specific country, community, etc.
+  * Perspective - from whose perspective is the study done e.g. the patients, the health professionals., the carers etc.
+  * Intervention - what intervention is being examined?
+  * Comparison - is the intervention being compared with another?
+  *Evaluation - the outcome measures
+  
+## SPIDER
+  * Sample - the group of people being looked at, because qualitative research is not easy to generalize, sample is preferred over patient.
+Phenomenon of Interest -  reasons for behaviour and decisions, rather than an intervention.
+Design - the form of research used, such as interview or survey.
+Evaluation - outcome measures.
+Research type - qualitative, quantitative and/or mixed methods.
+
+## Create your own...
+These frameworks are not set in stone, and you can come up with your own, if that suits your questions better. In general, however, your framework should define   
+   
+•	Variables of interest   
+•	research designs   
+•	historical, geographical, theoretical context   
+   
+
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) 
+You will need to know what you're after and what you're not interested in, in order to ***discriminate relevant from irrelevant studies***   
+
 </exercise>
 
 <exercise id="3" title="Literature screening">
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  
+Ideally, the screening of the literature for inclusion should be conducted by two (or more) people.
 
 ## Why two?
->To avoid bias - we all have preferences and biases, so having two people to independently think about which studies should or should not be included - and importanly, discuss the discrepancies - is considered good practise. The effect of single vs double screening has even been tested in a [study](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-019-0782-0)
+>To avoid bias - we all have preferences and biases, so having two people to independently think about which studies should or should not be included - and importanly, discuss the discrepancies - is considered good practise. The effect of single vs double screening has even been tested in a [study](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-019-0782-0). 
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  For more insight on gold standards take a looks at the *Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)* [resources](http://prisma-statement.org/).
+A "systematic quantitiative review" aims for an objective summary of the evidence available at a given time. This may eventually include quite different papers to the ones that you are closely familiar with alreday, even though you may be an expert on the topic yourself. A meta-analysis should not just summarise the output produced by a dominant group in the field, but aim to consolidate all available evidence, as far as the question and search string allow.
+
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Remider: If you haven't already, for more insight on gold standards take a looks at the *Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)* [resources](http://prisma-statement.org/).
 
 ## Resources (free)
- * [Rayyan](https://rayyan.qcri.org/welcome), [see](http://libraryguides.mcgill.ca/rayyan/home)  
- * [Abstrackr](http://abstrackr.cebm.brown.edu/account/login) (requires registration)
-    
+
+To help you screen your collected literature lists for initial suitability for inclusion, there are free tools available:
+
+ * [Rayyan](https://rayyan.qcri.org/welcome), [see](http://libraryguides.mcgill.ca/rayyan/home). Downloadable app allows screeing on you mobile phone! 
+ * [Abstrackr](http://abstrackr.cebm.brown.edu/account/login) Requires registration. Simple interface, relatively self explanatory use. 
+ 
+
 
 </exercise>

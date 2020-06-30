@@ -10,11 +10,13 @@ id: 3
 
 <exercise id="1" title="Getting the data from the literature">
 
-So what happens after you have collected all the papers you would like to get started?
+So what happens after you have collected all the papers, and you would like to get started with data collection?
 
 What information do you need to extract?
 
 And how can you do it?
+
+1. Think about all the information you would like to transfer into your spreadsheet. Don't just go for basic paper identifiers, the more information you extract now, the easier it will be to actually to back if you need to double check outliers at a later stage. Have a look for example at Maccartneys excel spreadsheet (LINK) 
 
 
 Ideally, means and SD or SE as well as sampe sizes for your traits of interest are are provided in the paper that you are examining, and can simply be transcribed into your data collection sheet. More often, however, these results are represented in figures. At the most basic, you can enlarge the figure on your screen and measure means and SE's with a ruler (don't forget to convert your measurements according to the Figure's axes!), and add the crude results into your spreadsheet. This may be sufficient for the exercise here, but assuming that you will have many Figures from many studies, for your own meta analysis we recommend to use the R package *metaDigitise*.
