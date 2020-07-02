@@ -51,6 +51,15 @@ It that's not enough or you would like to checkout more, browse [Wikipedia's lis
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  We like BASE a lot: you can select and export all citations of a search at once (check the left bottom corner for this option), something you can't do as easily in Goggle Scholar or Microsoft Academic (there, you'd have to add each citation to your library or your citations, using the star symbol (google) or the quotation mark(MS), and then export them from *My library* or *Citations*). In *Dimensions, you have to get a Readcube account in order to save your search results, 1-by-1, to a library that can be exported.
 
+## How to fine-tune your search
+
+Bolean Characters - what are they, how to use them?
+
+What follows - perefecting your search string
+
+Identifying key parameters for your inclusion decisions - see Frameworks below.
+
+
 ## Merging search results from different search engines
 
 What all search engines have in common, though, is the option to export to RIS / RefMan format. Therefore, we recommend to do that, in order to merge citation lists from different search engines in the next step. If you use a local or web-based reference manager, such as Endnote or Zotero, it might be easiest to employ their merging and de-duplicating functions, i.e. load your search results from different search engines into your reference manager software and merge them there.
@@ -85,11 +94,12 @@ data_all3 <- merge_columns(data_all2, data4)
 
 ## Transparent and reproducible science
 
-In recent years, scientists have increasingly acknowledged that many fields of research are in a [reproducibility crisis](https://en.wikipedia.org/wiki/Replication_crisis). This means that many published studies that have shown major effects can not be reproduced. Obviously this is a problem, as it not only erodes public trust in science, but it makes it very hard to drive knowledge and scientific discovery in the "right" direction. This doesn't mean that most of the science that is out there is meaningless, it just means that in order to make it reproducible, exact methods, (raw) data, (detailed) analyses and code should be made available. 
+In recent years, scientists have increasingly acknowledged that many fields of research are in a [reproducibility crisis](https://en.wikipedia.org/wiki/Replication_crisis). This means that many published studies that have shown major effects can not be reproduced. Obviously this is a problem, as it not only erodes public trust in science, but it makes it very hard to drive knowledge and scientific discovery in the "right" direction. This doesn't mean that most of the science that is out there is meaningless, it just means that in order to make it reproducible, exact methods, (raw) data, (detailed) analyses and code should be made available. Read a recent opionin and summary on this crisis on social scienes and psychology [here](http://proust.ui.ac.id/index.php/journal/article/view/85). 
 
-In addition, it has been traditinally much easier to get "significant" results published (compared to equally well-conducted null-results), especially in high-impact journals. Nowadays, *pre-registration* of your publication plan is an option (for meta-analysis, too!) to get your science published, regardless of outcome. Check out the ***[Center for Open Science](https://en.wikipedia.org/wiki/Center_for_Open_Science)*** and their platform [OSF](osf.io) for more details on reproducible and transparent research, and sign up to pre-register your next study.
+In addition, it has been traditinally much easier to get "significant" results published (compared to equally well-conducted null-results), especially in high-impact journals. Meta-analysis actually aims to check for this publication bias (not that you can do much about it, but if it's decteced it has to be reported, and may point towards the need for more research to investigate... This will be briefly covered towards the end of Chapter 4).
+Nowadays, *pre-registration* of your publication plan is an option (for meta-analysis, too!) to get your science published, regardless of outcome. Check out the ***[Center for Open Science](https://en.wikipedia.org/wiki/Center_for_Open_Science)*** and their platform [OSF](osf.io) for more details on reproducible and transparent research, and sign up to pre-register your next study.
 
-All this applies to all science, not just primary research, but just the same for systematic reviews and meta analyses. There a a mutitude of tools out there to not only quality-control meta-science, but to help achieve gold standards. The most important to mention is [PRISMA, Preferred Reporting Items for Systematic Reviews and Meta-Analyses](https://en.wikipedia.org/wiki/Preferred_Reporting_Items_for_Systematic_Reviews_and_Meta-Analyses).
+The quest for reproducibility and trasparency applies to all science, not just primary research, but just the same to systematic reviews and meta analyses. There a a mutitude of tools out there to not only quality-control meta-science, but to help achieve gold standards. The most important to mention here is [PRISMA, Preferred Reporting Items for Systematic Reviews and Meta-Analyses](https://en.wikipedia.org/wiki/Preferred_Reporting_Items_for_Systematic_Reviews_and_Meta-Analyses).
 
 ## PRISMA Checklist
 
@@ -149,7 +159,7 @@ Evaluation - outcome measures.
 Research type - qualitative, quantitative and/or mixed methods.
 
 ## Create your own...
-These frameworks are not set in stone, and you can come up with your own, if that suits your questions better. In general, however, your framework should define   
+These frameworks are not set in stone and you can come up with your own, if that suits your questions better. In general, however, your framework should define   
    
 •	Variables of interest   
 •	research designs   
@@ -158,6 +168,8 @@ These frameworks are not set in stone, and you can come up with your own, if tha
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) 
 You will need to know what you're after and what you're not interested in, in order to ***discriminate relevant from irrelevant studies***   
+
+Having clearly defined critera is essential to decide which papers should get included (or excluded) during the screening process.
 
 </exercise>
 
@@ -180,6 +192,13 @@ To help you screen your collected literature lists for initial suitability for i
  * [Rayyan](https://rayyan.qcri.org/welcome), [see](http://libraryguides.mcgill.ca/rayyan/home). Downloadable app allows screeing on you mobile phone! 
  * [Abstrackr](http://abstrackr.cebm.brown.edu/account/login) Requires registration. Simple interface, relatively self explanatory use. 
  
+## Screening stages
 
+Once you've got reduced your list of "possibly-include" papers after abstract screening, It is time to verify that they're indeed matching your criteria by having a look at the full-texts. 
+
+Make sure to take note of the reasons why you're excluding any given paper, ideally you will provide a diagram like this [template from PRISMA](http://prisma-statement.org/PRISMAStatement/FlowDiagram) into your meta-research, providing both reasons and numbers excluded for each step of the way.
+
+
+  
 
 </exercise>
