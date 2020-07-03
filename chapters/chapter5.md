@@ -32,17 +32,60 @@ All of the freely available resources listed here provide much more detail, spec
   
 - Stephanie Kovalchik's [2013 tutorial](http://edii.uclm.es/~useR-2013/Tutorials/kovalchik/kovalchik_meta_tutorial.pdf)
 
+
+## Building phylogenies
+
+While not covered here at all, it is quite likely that as biologist one finds him- or herself in the situation of having to deal with a wide range of species. While using some taxonomic descriptor (such as genus) is the easy workaround, it may be more appropriate to actually include a phylogenetc tree as random factor in your meta-analytic model, especially if your questions spans across a wide range of species. 
+
+[This blog here outlines a range of different methods, using olive oil microbes as example....](https://taylorreiter.github.io/2017-07-28-Taxonomy-from-Species-Name-in-R/)
+
+
 </exercise>
 
 <exercise id="2" title="Other: R resources">
 
 ## Some links to how to use R
 
+![R Logo](/img/Rlogo.png){:.align-right}    
+## Intro to R / R studio
 
-### Building phylogenies
+- excellent resource to get started, gives overview and intro to R studio:
+[Environmental Computing](http://environmentalcomputing.net/)
+    
+- R studio [cheat sheets](https://www.rstudio.com/resources/cheatsheets/)    
 
-https://taylorreiter.github.io/2017-07-28-Taxonomy-from-Species-Name-in-R/
+- [tips & tricks](https://appsilon.com/r-studio-shortcuts-and-tips/?nabe=4825491004194816:1) for R studio  
 
-***coming soon***
+## R markdown
+
+- [R studio markdown](https://rmarkdown.rstudio.com/)
+
+- all you need to know about [markdown](https://bookdown.org/yihui/rmarkdown/)
+
+- Examples what markdown can do – and [further resources!](https://rmarkdown.rstudio.com/gallery.html)  
+
+
+## R tidyverse
+
+- Intro to the [tidyverse](https://datacarpentry.org/R-ecology-lesson/03-dplyr.html)     
+   
+- And a great interactive online [bootcamp](https://r-bootcamp.netlify.app/)
+    
+   
+
+## Understanding your stats in R
+
+- R for [data science](https://r4ds.had.co.nz/)        
+
+
+
+## Pretty plots in R
+
+- [R graph gallery](http://r-graph-gallery.com/)
+
+- adding fancy images / [magick](https://cran.r-project.org/web/packages/magick/vignettes/intro.html)
+
+
+
 
 </exercise>
