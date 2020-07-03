@@ -1,7 +1,7 @@
 ---
 title: 'Chapter 4: Meta-analysis'
 description:
-  'The meta analysis & quality checks'
+  'The meta-analysis & quality checks'
 prev: /chapter3
 next: /chapter5
 type: chapter
