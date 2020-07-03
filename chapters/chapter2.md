@@ -66,7 +66,7 @@ What all search engines have in common, though, is the option to export to RIS /
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  In contrast to R, these managers allow you to easily visually double check for duplicates by sorting a few different ways (most revealing: including title of the paper).
 
-### R
+### Merging bibliographic data in R
 If you prefer to go straight to R, this is how your next step could look like. Here, we show an example using the package revtools, with  4 different .ris search result files from 4 different search engines:
 
 library(revtools)
@@ -88,9 +88,6 @@ data_all3 <- merge_columns(data_all2, data4)
 </exercise>
 
 <exercise id="2" title="Systematic Review Frameworks">
-
-
-## Different Frameworks & Protocols, an overview
 
 ## Transparent and reproducible science
 
@@ -189,14 +186,16 @@ A "systematic quantitiative review" aims for an objective summary of the evidenc
 
 To help you screen your collected literature lists for initial suitability for inclusion, there are free tools available:
 
- * [Rayyan](https://rayyan.qcri.org/welcome), [see](http://libraryguides.mcgill.ca/rayyan/home). Downloadable app allows screeing on you mobile phone! 
+ * [Rayyan](https://rayyan.qcri.org/welcome), see also this [page](http://libraryguides.mcgill.ca/rayyan/home). Downloadable app allows screeing on you mobile phone! 
  * [Abstrackr](http://abstrackr.cebm.brown.edu/account/login) Requires registration. Simple interface, relatively self explanatory use. 
  
 ## Screening stages
 
-Once you've got reduced your list of "possibly-include" papers after abstract screening, It is time to verify that they're indeed matching your criteria by having a look at the full-texts. 
+Your initally very long list of papers should have been reduced considerably after you have finished abstract screening.  It is now time to verify that the"possibly-include" papers are indeed matching your inclusion criteria, by having a look at the full-texts. 
 
 Make sure to take note of the reasons why you're excluding any given paper, ideally you will provide a diagram like this [template from PRISMA](http://prisma-statement.org/PRISMAStatement/FlowDiagram) into your meta-research, providing both reasons and numbers excluded for each step of the way.
+
+It is part of the transparent reporing, but also necessary for yourself while you are screening your papers to have a carefully worked out list with inclusion / exclusion criteria (that gets further defined the closer you get to your final set of papers that will be included in your dataset).
 
 
   

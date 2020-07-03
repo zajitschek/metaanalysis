@@ -1,7 +1,7 @@
-###CODEBLOCK 6a###
+###CODEBLOCK 3###
 
 ## Load libaries and data
-
+library(dplyr)
 library(metafor)
 fish <- read.csv("./binder/data/Macartney2019_processed_fish.csv")
 
@@ -11,8 +11,13 @@ fish <- read.csv("./binder/data/Macartney2019_processed_fish.csv")
 
 #calculate standardized mean difference
 SMD <- escalc(measure = "SMD", data=fish, m1i=mean_high, m2i = mean_low, sd1i=sd_high, sd2i= sd_low, n1i = n_high, n2i=n_high, append = FALSE) 
-SMD
+
 #calculate ratio of means
 ROM <- escalc(measure = "ROM", data=fish, m1i=mean_high, m2i = mean_low, sd1i=sd_high, sd2i= sd_low, n1i = n_high, n2i=n_high, append = FALSE) 
-ROM
 
+#combine the new information into your dataset
+fish2 <- bind_cols(fish, SMD, ROM) 
+ 
+# Have look at only the guppy's effect sizes that we just calculated
+filter(fish2, genus == "Poecilia") %>%
+  select(es_method, yi, vi,yi1, vi1)
