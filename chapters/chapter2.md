@@ -31,20 +31,20 @@ Researchers might be very meticulous in protocolling and reporting their search 
 
 The most important tools (most comprehensive, flexible and stable) for your full search are search engines that require subscription, so make sure to log in via your instution's library:
 
-* [Web of Science (WoS)](http://apps.webofknowledge.com)  
-* [Scopus](https://www.scopus.com/)   
+  * [Web of Science (WoS)](http://apps.webofknowledge.com)  
+  * [Scopus](https://www.scopus.com/)   
  
 
 Excellent free options include 
-*[BASE (Bielefeld Academic Search Engine, provided by the University of Bielefeld,  Germany)](https://www.base-search.net/)
-*[Dimensions](https://app.dimensions.ai/) 
-*[Microsoft Academic](https://academic.microsoft.com/), and 
-*[Goggle Scholar](https://scholar.google.com/).\
+  * [BASE (Bielefeld Academic Search Engine, provided by the University of Bielefeld,  Germany)](https://www.base-search.net/)  
+  * [Dimensions](https://app.dimensions.ai/)   
+  * [Microsoft Academic](https://academic.microsoft.com/), and  
+  * [Goggle Scholar](https://scholar.google.com/).   
 
 Other honourable mentions are
-*[pubmed](https://pubmed.ncbi.nlm.nih.gov/)
-*[Open Science Directory](http://www.opensciencedirectory.net/)
-*[Directory of Open Access Journals](https://www.doaj.org/)
+  * [pubmed](https://pubmed.ncbi.nlm.nih.gov/)  
+  * [Open Science Directory](http://www.opensciencedirectory.net/)  
+  * [Directory of Open Access Journals](https://www.doaj.org/)  
 
 It that's not enough or you would like to checkout more, browse [Wikipedia's list of databases & search engines](https://en.wikipedia.org/wiki/List_of_academic_databases_and_search_engines)
 
