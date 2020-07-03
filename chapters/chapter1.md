@@ -10,7 +10,7 @@ id: 1
 
 <exercise id="1" title="Preface & Disclaimer">
 
-I am continously improving and updating this resource, please get in touch if you have some great suggestions, resources or feedback.
+I am continuously improving and updating this resource, please get in touch if you have some great suggestions, resources or feedback.
 
 # About this course
 
@@ -20,12 +20,12 @@ All the actual statistical analyses are performed in the [software R](https://ww
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Please note, if you plan on actually doing a meta-analysis yourself, beyond just going through this exercise, you will have to download R or [R studio](https://rstudio.com/products/rstudio/download/), if you haven't already. 
 
-# How do use this resource
+# How to use this resource
 
-We are going through the sparate steps involved in a meta-analysis, from getting started and fraimng a question, to performing literature searches, to extracting information from your selected papers, data manipulation and preparation, and the actual meta-analysis.
+We are going through the separate steps involved in a meta-analysis, from getting started and framing a question, to performing literature searches, to extracting information from your selected papers, data manipulation and preparation, and the actual meta-analysis.
 
 You will also have the opportunity to perform steps directly in R, without having to open it locally. This will look like this grey block below. Just click on the "Run Code" button and see what happens. 
-(You may need some patience first time you runa  code block - or sometimes it may fail to connect, so just re-run).
+(You may need some patience first time you run a  code block - or sometimes it may fail to connect, so just re-run).
 
 <codeblock id="intro_1">
 Write your name where the dotted line is!
@@ -33,11 +33,10 @@ Write your name where the dotted line is!
 
 You can also use the "Show hints", "Show solution" and "Reset" tabs. Don't worry about doing in anything "wrong" - you will not be breaking these code blocks! You can also use these blocks to calculate whatever else you think of - try for example writing "1+1", and run it again! (For advanced R users - you can't import your own datasets, but of course could add them manually!)
 
-
-Each section may contain links to online resources, such as this [link to google scholar](https://scholar.google.com/), questions to answer (including feedback on getting it right or wrong), and tasks to do on your own - as indicated by this laptop icon  ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true). If we think we have a particuarly useful note or resource, you will see this pushpin  ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true).
+Each section may contain links to online resources, such as this [link to google scholar](https://scholar.google.com/), questions to answer (including feedback on getting it right or wrong), and tasks to do on your own - as indicated by this laptop icon  ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true). If we think we have a particularly useful note or resource, you will see this pushpin  ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true).
 <br>
 
-Please note, this is meant as a quick primer to give you some overview of how a meta-analysis is done. Perhaps it will be a student project, but perhaps it may serve as a starting point for you if you're planning on doing your own, publishable and solid meta-analysis. If that's the case, we highly recommend to check out some of the additional resources that are out there. Our resources here is only a starting point, and also does not cover the full range of R packages that are available for meta-anayles.
+Please note, this is meant as a quick primer to give you some overview of how a meta-analysis is done. Perhaps it will be a student project, but perhaps it may serve as a starting point for you if you're planning on doing your own, publishable and solid meta-analysis. If that's the case, we highly recommend to check out some of the additional resources that are out there. Our resource here is only a starting point, and also does not cover the full range of R packages that are available for meta-analyses.
 
 We are here are focussing on the "metafor" package. For a small collection of freely available resources (that may be using other R packages) please see Chapter 5.
 
@@ -66,7 +65,7 @@ This self-guided course is mainly focussed on research in biological sciences. M
 
 We established that science works cumulatively. To gain support for specific hypothesis, we do not want to rely on the outcome of single studies. We can try to combine the knowledge gained in multiple studies which tested specific traits of interest. This can be achieved while still taking into account that studies differ in their quality and their size, for example, lending different levels of weights to their results. 
 
-This combination of multiple test results can be achieved by qualitatively summarising previous work on a specific subject. Classically, this was done in a literature review, for example at the beginning of a graduate or postgraduate degree. While this type of review has still its merit (especially if it is done ***systematically***), we want to introduce you here to the meta-analytical approach (which sctrictly specaking is a **quantitative systematic review**), which can provide a quantitative summary and test of specific research questions (the Greek prefix *meta* (μετά, "after" or "beyond") means *more comprehensive*).
+This combination of multiple test results can be achieved by qualitatively summarising previous work on a specific subject. Classically, this was done in a literature review, for example at the beginning of a graduate or postgraduate degree. While this type of review has still its merit (especially if it is done ***systematically***), we want to introduce you here to the meta-analytical approach (which strictly speaking is a **quantitative systematic review**), which can provide a quantitative summary and test of specific research questions (the Greek prefix *meta* (μετά, "after" or "beyond") means *more comprehensive*).
 
 </exercise>
 
@@ -74,7 +73,7 @@ This combination of multiple test results can be achieved by qualitatively summa
 
 # Overview
 
-This is meant as a first step to get you started.  Here's an overview over the workflow:
+This is meant as a first step to get you started.  Here's an overview of the workflow:
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/overview2.png?raw=true)
 <br>
