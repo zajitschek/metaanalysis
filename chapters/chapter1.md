@@ -10,18 +10,13 @@ id: 1
 
 <exercise id="1" title="Preface & Disclaimer">
 
-We are currently restructuring this - which means this course will not be online & working for some time. Apologies to those who participated in the online workshop this morning - please get in touch and I will send you the material I introduced! s.r.zajitschek[@]ljum.ac.uk
-
-Thanks!
+I am continously improving and updating this resource, please get in touch if you have some great suggestions, resources or feedback.
 
 # About this course
 
-Hi and welcome, I am **[Susi Zajitschek](https://www.ljmu.ac.uk/about-us/staff-profiles/faculty-of-science/school-of-biological-and-environmental-sciences/susanne-zajitschek), a Senior Lecturer in Animal Behaviour at Liverpool John Moores University**. This course is meant mainly as a primer for students who would like to know more about meta-analysis. I will give you an overview on what meta-analyses are and on why they are useful. I will include hands-on exercises and step-by-step examples on how to conduct meta-analyses. 
+Hi and welcome, I am **[Susi Zajitschek](https://www.ljmu.ac.uk/about-us/staff-profiles/faculty-of-science/school-of-biological-and-environmental-sciences/susanne-zajitschek), a Senior Lecturer in Animal Behaviour at Liverpool John Moores University**. This course is meant mainly as a primer for students who would like to know more about meta-analysis. I will give you an overview on what meta-analyses are and on why they are useful. I have included hands-on exercises and step-by-step examples on how to conduct meta-analyses. 
 
-**please get in touch and I can provide associated material while this is not running! s.r.zajitschek[@]ljum.ac.uk**
-
-
-Eventually, all the actual statistical analyses will be performed in the [software R](https://www.r-project.org/about.html), and you will have the opportunity to run R software scripts right here, on this website, without the need to install software on your computer.
+All the actual statistical analyses are performed in the [software R](https://www.r-project.org/about.html), and you will have the opportunity to run R software scripts right here, on this website, without the need to install software on your computer.
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Please note, if you plan on actually doing a meta-analysis yourself, beyond just going through this exercise, you will have to download R or [R studio](https://rstudio.com/products/rstudio/download/), if you haven't already. 
 
