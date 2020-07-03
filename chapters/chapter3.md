@@ -23,6 +23,8 @@ Assuming that you will have many Figures from many studies, for your own meta an
 
 However, possible online alternatives are also available, for example [WebPlotDigitizer](https://automeris.io/WebPlotDigitizer/), that may be either downloaded and used locally or as a web-based resource (perhaps this may be the way to go if you only have very few Figures to measure?). Here, you upload your figure file, specifiy the chart type & define your axes, and may manually add datapoints on an enlarged subsection. This gives you very accurate estimates for your selected datapoints.
 
+For more information and an overview and pros and cons of the most common image-digitsing tools have a look at Table 1 in the original [*metaDigitise* publication](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13118): Pick, J. L., Nakagawa, S., & Noble, D. W. (2019). Reproducible, flexible and high‐throughput data extraction from primary literature: The metaDigitise r package. Methods in Ecology and Evolution, 10(3), 426-431.
+
 </exercise>
 
 <exercise id="2" title="Preparing your data for Meta-analysis">
@@ -35,16 +37,24 @@ If you have a few data points extracted (either form Figures or Tables), you can
 >A common effect size measure is the <u>s</u>tandardized <u>m</u>ean <u>d</u>ifference (SMD), calculated as the difference in means, standardized (divided) most commonly by the pooled SD of the two compared sets of data values (treatment and control). SMD comes in two versions: *Cohen's d* and *Hedges' g*. *Hedges' g* is an unbiased version of *Cohen's d*, but gives very similar results. If you have small sample sizes, use of  *Hedges' g* might be recommended.
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/computertaskicon.svg?raw=true)  
-We canw use the *escalc* function from the **metafor** package to calculate effect sizes. This function allows to calculate various effect sizes or outcome measures (and the corresponding sampling variances) that are commonly used in meta-analyses, including two effect sizes that are relevant to our data and question:   
+We can calculate different types of effect sizes in the R package **metafor**. The function *escalc* allows us to call "SMD" (Standardised Mean Difference, Hedges' *g* in *metafor*) or "ROM" (log transformed ratio of means). Which one you use is up to your preference; overall theu should give consistent answers. Read more about their respective difference in a clinical context [here](https://www.cebm.net/2020/04/tip-for-data-extraction-for-meta-analysis-29/).
 
- * "SMD" stands for standardised mean difference, in *metafor* only available as Hedges' *g* (potentially also "SMDH" for heteroscedastic variances).   
+```
+library(metafor)
+#calculate standardized mean difference
+SMD <- escalc(measure = "SMD", data=YourData, m1i=TreatMean, m2i = ControlMean, sd1i=TreatSD, sd2i= ControlSD, n1i = NTreat, n2i=NControl, append = FALSE) 
 
- * "ROM" for the log transformed ratio of means (Hedges et al., 1999; Lajeunesse, 2011), also named lnRR.   
+#calculate ratio of means
+ROM <- metafor::escalc(measure = "ROM", data=YourData, m1i=TreatMean, m2i = ControlMean, sd1i=TreatSD, sd2i= ControlSD, n1i = NTreat, n2i=NControl, append = FALSE
+```
 
-We calculate these as follows:   
+Let's give this a go using Mcartney's data.
 
-***coming soon***
+<codeblock id="fish_2a">
+No hints or solution necessary here.
+</codeblock>
 
+Note that there will be quite a few missing data in this list. This may be due to the fact that perhaps no standard deviation is provided, only standard errors. In this case you have different options - calculate yourself SD from SE's for example, or use a different package - see Chapter 4 for how to use **compute.es**. Another reason why no effect sizes are calculated in this step might be perhaps no information on means and variances is provided, only inferential statistics.
 
 ## Calculating effect sizes from inferential statistics
 

@@ -1,4 +1,4 @@
-###CODEBLOCK 6###
+###CODEBLOCK 6b###
 
 ## Load libaries and data
 suppressMessages(library(dplyr))

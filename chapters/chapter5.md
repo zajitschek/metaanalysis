@@ -39,7 +39,7 @@ All of the freely available resources listed here provide much more detail, spec
 ## Some links to how to use R
 
 
-## Building phylogenies
+### Building phylogenies
 
 https://taylorreiter.github.io/2017-07-28-Taxonomy-from-Species-Name-in-R/
 
