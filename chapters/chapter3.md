@@ -23,6 +23,8 @@ Assuming that you will have many Figures from many studies, for your own meta an
 
 However, possible online alternatives are also available, for example [WebPlotDigitizer](https://automeris.io/WebPlotDigitizer/), that may be either downloaded and used locally or as a web-based resource (perhaps this may be the way to go if you only have very few Figures to measure?). Here, you upload your figure file, specifiy the chart type & define your axes, and may manually add datapoints on an enlarged subsection. This gives you very accurate estimates for your selected datapoints.
 
+For more information and an overview and pros and cons of the most common image-digitsing tools have a look at Table 1 in the original [*metaDigitise* publication](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13118): Pick, J. L., Nakagawa, S., & Noble, D. W. (2019). Reproducible, flexible and high‐throughput data extraction from primary literature: The metaDigitise r package. Methods in Ecology and Evolution, 10(3), 426-431.
+
 </exercise>
 
 <exercise id="2" title="Preparing your data for Meta-analysis">
