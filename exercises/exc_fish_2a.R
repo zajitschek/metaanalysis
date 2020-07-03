@@ -1,8 +1,7 @@
 ###CODEBLOCK 6a###
 
 ## Load libaries and data
-suppressMessages(library(dplyr))
-suppressMessages(library(ggplot2))
+
 library(metafor)
 fish <- read.csv("./binder/data/Macartney2019_processed_fish.csv")
 
@@ -16,6 +15,4 @@ SMD
 #calculate ratio of means
 ROM <- escalc(measure = "ROM", data=fish, m1i=mean_high, m2i = mean_low, sd1i=sd_high, sd2i= sd_low, n1i = n_high, n2i=n_high, append = FALSE) 
 ROM
-
-
 

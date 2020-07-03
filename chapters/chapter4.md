@@ -62,7 +62,7 @@ As said above, before we can analyse these data, we have to calculate the effect
 Different packages have different requirements in input variables and in syntax. *compute.es* requires SD and doesn't take SE. That's why we have to calculate SD from SE in one of the steps (you can find the simple formula in the code below - ). 
 It also turns out that *compute.es* needs an id variable to do calculations for more than one provided value, which we provide (id= effectsize_id). You'll find yourselves in situations where something might not work immediately. Even the R package manual might not be able to help. Due to the huge R user base, you can often find solutions to very specific problems by googling them. Sometimes you have to find the solution yourself, by trying out possible versions. This was the case for us with the need to provide the id-argument in the following code (you can try what happens when you leave it out).
 
-<codeblock id="fish_2">
+<codeblock id="fish_2b">
 No hints or solution necessary here.
 </codeblock>
 
