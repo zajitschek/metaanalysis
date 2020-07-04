@@ -18,22 +18,21 @@ There are different protocols for how to gather the literature for a systematic 
 ## How to get started
 
 It is a good idea to check on [Google Scholar](https://scholar.google.com) what is already out there on the question that you are investigating.
- 
-Ideally, literature searches should be conducted within a range of different search engines, to provide you with the most comprehensive range of avaiable resources.   
-   
+
+Ideally, literature searches should be conducted within a range of different search engines, to provide you with the most comprehensive range of available resources.   
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) ***Note***   
-One problem with all searchable databases for scientific literature that exist at present is that their results depend not only on internal search algorithms, but also on the operator's choice of literature that is searchable. Internal search algorithms should probably improve and get us better results, i.e. citations that are closer to what we try the software to search for. While this is a good development, it is not optimal for the larger endeavour of reproducible research. Any changes to the pool of literature that is made searchable by the operator of the search engine or by your institution is a more evident problem. This sounds as if it should not be an issue with ever decreasing cost of electronic storage. Unfortunately it is. For example, the lower year limit of Web of Scinece depends on your institution's subscription. Be also aware that the description that you find on your library's homepage might be outdated, since this is apparently a dynamic field of development. All this means:
+One problem with all searchable databases for scientific literature that exist at present is that their results depend not only on internal search algorithms, but also on the operator's choice of literature that is searchable. Internal search algorithms should probably improve and get us better results, i.e. citations that are closer to what we try the software to search for. While this is a good development, it is not optimal for the larger endeavour of reproducible research. Any changes to the pool of literature that is made searchable by the operator of the search engine or by your institution is a more evident problem. This sounds as if it should not be an issue with ever decreasing cost of electronic storage. Unfortunately it is. For example, the lower year limit of Web of Science depends on your institution's subscription. Be also aware that the description that you find on your library's homepage might be outdated, since this is apparently a dynamic field of development. All this means:
 
-Researchers might be very meticulous in protocolling and reporting their search engine, the exact search string and when performed the search. It might still be that their literature search can't be excatly replicated even a year later. This problem will probably persist and you should be aware of it. This doesn't mean that we should stop and not use systematic literature search at all. It means that we should pay attention of what might have changed (e.g. being aware that you might not find any publications prior to e.g. 1970), and it means that we have to try and use several search engines to make up for potential deficiencies in some search engines.
+Researchers might be very meticulous in protocolling and reporting their search engine, the exact search string and when performed the search. It might still be that their literature search can't be exactly replicated even a year later. This problem will probably persist and you should be aware of it. This doesn't mean that we should stop and not use systematic literature search at all. It means that we should pay attention of what might have changed (e.g. being aware that you might not find any publications prior to e.g. 1970), and it means that we have to try and use several search engines to make up for potential deficiencies in some search engines.
 
 ## TOOLS
 
-The most important tools (most comprehensive, flexible and stable) for your full search are search engines that require subscription, so make sure to log in via your instution's library:
+The most important tools (most comprehensive, flexible and stable) for your full search are search engines that require subscription, so make sure to log in via your institution's library:
 
   * [Web of Science (WoS)](http://apps.webofknowledge.com)  
   * [Scopus](https://www.scopus.com/)   
- 
+
 
 Excellent free options include 
   * [BASE (Bielefeld Academic Search Engine, provided by the University of Bielefeld,  Germany)](https://www.base-search.net/)  
@@ -49,13 +48,13 @@ Other honourable mentions are
 It that's not enough or you would like to checkout more, browse [Wikipedia's list of databases & search engines](https://en.wikipedia.org/wiki/List_of_academic_databases_and_search_engines)
 
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  We like BASE a lot: you can select and export all citations of a search at once (check the left bottom corner for this option), something you can't do as easily in Goggle Scholar or Microsoft Academic (there, you'd have to add each citation to your library or your citations, using the star symbol (google) or the quotation mark(MS), and then export them from *My library* or *Citations*). In *Dimensions, you have to get a Readcube account in order to save your search results, 1-by-1, to a library that can be exported.
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  We like BASE a lot: you can select and export all citations of a search at once (check the left bottom corner for this option), something you can't do as easily in Goggle Scholar or Microsoft Academic (there, you'd have to add each citation to your library or your citations, using the star symbol (google) or the quotation mark(MS), and then export them from *My library* or *Citations*). In Dimensions, you have to get a Readcube account in order to save your search results, 1-by-1, to a library that can be exported.
 
 ## How to fine-tune your search
 
-Bolean Characters - what are they, how to use them?
+Boolean Characters - what are they, how to use them?
 
-What follows - perefecting your search string
+What follows - perfecting your search string
 
 Identifying key parameters for your inclusion decisions - see Frameworks below.
 
@@ -91,16 +90,16 @@ data_all3 <- merge_columns(data_all2, data4)
 
 ## Transparent and reproducible science
 
-In recent years, scientists have increasingly acknowledged that many fields of research are in a [reproducibility crisis](https://en.wikipedia.org/wiki/Replication_crisis). This means that many published studies that have shown major effects can not be reproduced. Obviously this is a problem, as it not only erodes public trust in science, but it makes it very hard to drive knowledge and scientific discovery in the "right" direction. This doesn't mean that most of the science that is out there is meaningless, it just means that in order to make it reproducible, exact methods, (raw) data, (detailed) analyses and code should be made available. Read a recent opionin and summary on this crisis on social scienes and psychology [here](http://proust.ui.ac.id/index.php/journal/article/view/85). 
+In recent years, scientists have increasingly acknowledged that many fields of research are in a [reproducibility crisis](https://en.wikipedia.org/wiki/Replication_crisis). This means that many published studies that have shown major effects can not be reproduced. Obviously this is a problem, as it not only erodes public trust in science, but it makes it very hard to drive knowledge and scientific discovery in the "right" direction. This doesn't mean that most of the science that is out there is meaningless, it just means that in order to make it reproducible, exact methods, (raw) data, (detailed) analyses and code should be made available. Read a recent opinion and summary on this crisis in social sciences and psychology [here](http://proust.ui.ac.id/index.php/journal/article/view/85). 
 
-In addition, it has been traditinally much easier to get "significant" results published (compared to equally well-conducted null-results), especially in high-impact journals. Meta-analysis actually aims to check for this publication bias (not that you can do much about it, but if it's decteced it has to be reported, and may point towards the need for more research to investigate... This will be briefly covered towards the end of Chapter 4).
+In addition, it has been traditionally much easier to get "significant" results published (compared to equally well-conducted null-results), especially in high-impact journals. Meta-analysis actually aims to check for this publication bias (not that you can do much about it, but if it's detected it has to be reported, and may point towards the need for more research to investigate... This will be briefly covered towards the end of Chapter 4).
 Nowadays, *pre-registration* of your publication plan is an option (for meta-analysis, too!) to get your science published, regardless of outcome. Check out the ***[Center for Open Science](https://en.wikipedia.org/wiki/Center_for_Open_Science)*** and their platform [OSF](osf.io) for more details on reproducible and transparent research, and sign up to pre-register your next study.
 
-The quest for reproducibility and trasparency applies to all science, not just primary research, but just the same to systematic reviews and meta analyses. There a a mutitude of tools out there to not only quality-control meta-science, but to help achieve gold standards. The most important to mention here is [PRISMA, Preferred Reporting Items for Systematic Reviews and Meta-Analyses](https://en.wikipedia.org/wiki/Preferred_Reporting_Items_for_Systematic_Reviews_and_Meta-Analyses).
+The quest for reproducibility and transparency applies to all science, not just primary research, but just the same to systematic reviews and meta analyses. There a a multitude of tools out there to not only quality-control meta-science, but to help achieve gold standards. The most important to mention here is [PRISMA, Preferred Reporting Items for Systematic Reviews and Meta-Analyses](https://en.wikipedia.org/wiki/Preferred_Reporting_Items_for_Systematic_Reviews_and_Meta-Analyses).
 
 ## PRISMA Checklist
 
-The [Prisma checklist](http://www.prisma-statement.org/PRISMAStatement/Checklist) gives a detailed account of the items that should be included in a meta-analysis, from title to acknowledgements. It may help structure the writing process and will help stay organised during all stages, from Literature search to data sextraction, so it is worth checking this out early on.
+The [Prisma checklist](http://www.prisma-statement.org/PRISMAStatement/Checklist) gives a detailed account of the items that should be included in a meta-analysis, from title to acknowledgements. It may help structure the writing process and will help stay organised during all stages, from literature search to data extraction, so it is worth checking this out early on.
 
 ## Frameworks for Literature searches
 
@@ -113,7 +112,7 @@ stands for:
   * C = Comparison/Control group   
   * O = Outcome   
 
-Broadly, this framework will help you identify the key paremeters that you will be working with. You can use the PICO framework for any research outset, even though we might be used to slighly different terminology:  "Population" defines the group  or species of interest, "Intervention" is your "treatment", "Comparision" is the "control" and "Outcome" refers to the traits that you are investigating. In the current situation for example you might like to know if hand washing helps to prevent the spread of COVID19. Here you may define PICO as follows:
+Broadly, this framework will help you identify the key parameters that you will be working with. You can use the PICO framework for any research outset, even though we might be used to slightly different terminology:  "Population" defines the group  or species of interest, "Intervention" is your "treatment", "Comparison" is the "control" and "Outcome" refers to the traits that you are investigating. In the current situation for example you might like to know if hand washing helps to prevent the spread of COVID19. Here you may define PICO as follows:
 
   P = humans in COVID affected areas   
   I = hand washing   
@@ -139,15 +138,15 @@ Here, a possible PICO would be...
   * Population - who is my question focussed on?
   * Exposure - what is the issue I'm interested in?
   * Outcomes or themes - what, in relation to the issue, do I want to examine?
-  
+
 
 ## SPICE (medically-related)
   * Setting - where is the study set e.g. in a specific country, community, etc.
   * Perspective - from whose perspective is the study done e.g. the patients, the health professionals., the carers etc.
   * Intervention - what intervention is being examined?
   * Comparison - is the intervention being compared with another?
-  *Evaluation - the outcome measures
-  
+    *Evaluation - the outcome measures
+
 ## SPIDER
   * Sample - the group of people being looked at, because qualitative research is not easy to generalize, sample is preferred over patient.
 Phenomenon of Interest -  reasons for behaviour and decisions, rather than an intervention.
@@ -157,16 +156,16 @@ Research type - qualitative, quantitative and/or mixed methods.
 
 ## Create your own...
 These frameworks are not set in stone and you can come up with your own, if that suits your questions better. In general, however, your framework should define   
-   
+
 •	Variables of interest   
 •	research designs   
 •	historical, geographical, theoretical context   
-   
+
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) 
 You will need to know what you're after and what you're not interested in, in order to ***discriminate relevant from irrelevant studies***   
 
-Having clearly defined critera is essential to decide which papers should get included (or excluded) during the screening process.
+Having clearly defined criteria is essential to decide which papers should get included (or excluded) during the screening process.
 
 </exercise>
 
@@ -176,28 +175,28 @@ Having clearly defined critera is essential to decide which papers should get in
 Ideally, the screening of the literature for inclusion should be conducted by two (or more) people.
 
 ## Why two?
->To avoid bias - we all have preferences and biases, so having two people to independently think about which studies should or should not be included - and importanly, discuss the discrepancies - is considered good practise. The effect of single vs double screening has even been tested in a [study](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-019-0782-0). 
+>To avoid bias - we all have preferences and biases, so having two people to independently think about which studies should or should not be included - and importantly, discuss the discrepancies - is considered good practise. The effect of single vs double screening has even been tested in a [study](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-019-0782-0). 
 
-A "systematic quantitiative review" aims for an objective summary of the evidence available at a given time. This may eventually include quite different papers to the ones that you are closely familiar with alreday, even though you may be an expert on the topic yourself. A meta-analysis should not just summarise the output produced by a dominant group in the field, but aim to consolidate all available evidence, as far as the question and search string allow.
+A "systematic quantitative review" aims for an objective summary of the evidence available at a given time. This may eventually include quite different papers to the ones that you are closely familiar with already, even though you may be an expert on the topic yourself. A meta-analysis should not just summarise the output produced by a dominant group in the field, but aim to consolidate all available evidence, as far as the question and search string allow.
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Remider: If you haven't already, for more insight on gold standards take a looks at the *Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)* [resources](http://prisma-statement.org/).
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) Reminder: If you haven't already, for more insight on gold standards take a looks at the *Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)* [resources](http://prisma-statement.org/).
 
 ## Resources (free)
 
 To help you screen your collected literature lists for initial suitability for inclusion, there are free tools available:
 
- * [Rayyan](https://rayyan.qcri.org/welcome), see also this [page](http://libraryguides.mcgill.ca/rayyan/home). Downloadable app allows screeing on you mobile phone! 
+ * [Rayyan](https://rayyan.qcri.org/welcome), see also this [page](http://libraryguides.mcgill.ca/rayyan/home). Downloadable app allows screening on you mobile phone! 
  * [Abstrackr](http://abstrackr.cebm.brown.edu/account/login) Requires registration. Simple interface, relatively self explanatory use. 
- 
+
 ## Screening stages
 
-Your initally very long list of papers should have been reduced considerably after you have finished abstract screening.  It is now time to verify that the"possibly-include" papers are indeed matching your inclusion criteria, by having a look at the full-texts. 
+Your initially very long list of papers should have been reduced considerably after you have finished abstract screening.  It is now time to verify that the"possibly-include" papers are indeed matching your inclusion criteria, by having a look at the full-texts. 
 
 Make sure to take note of the reasons why you're excluding any given paper, ideally you will provide a diagram like this [template from PRISMA](http://prisma-statement.org/PRISMAStatement/FlowDiagram) into your meta-research, providing both reasons and numbers excluded for each step of the way.
 
-It is part of the transparent reporing, but also necessary for yourself while you are screening your papers to have a carefully worked out list with inclusion / exclusion criteria (that gets further defined the closer you get to your final set of papers that will be included in your dataset).
+It is part of the transparent reporting, but also necessary for yourself while you are screening your papers to have a carefully worked out list with inclusion / exclusion criteria (that gets further defined the closer you get to your final set of papers that will be included in your dataset).
 
 
-  
+
 
 </exercise>

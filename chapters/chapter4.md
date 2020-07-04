@@ -1,7 +1,7 @@
 ---
 title: 'Chapter 4: Meta-analysis'
 description:
-  'The meta analysis & quality checks'
+  'The meta-analysis & quality checks'
 prev: /chapter3
 next: /chapter5
 type: chapter
@@ -206,7 +206,7 @@ No hints or solution necessary here.
 # Writing it up
 
 
-The [PRISMA checklist](http://prisma-statement.org/documents/PRISMA%202009%20checklist.pdf), which we used as our farmework for conducting a systematic review, will give a good overview of all the things you need to report in or alongside your manuscript. 
+The [PRISMA checklist](http://prisma-statement.org/documents/PRISMA%202009%20checklist.pdf), which we used as our framework for conducting a systematic review, will give a good overview of all the things you need to report in or alongside your manuscript. 
 
 The full-text screening of your included studies should have given you a very solid overview over the general background of your research question - so summarising this into a polished paper should be easy
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/wink.png?raw=true) 
