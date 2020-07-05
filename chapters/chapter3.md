@@ -71,7 +71,7 @@ The R package *compute.es* allows us to not only compute various effect sizes fr
 
 This example calculates the effect size for an Anova (using F statistics). To calculate this based on a T-test, specify *a.tes* instead of *a.fes*, and *t = t*
 
-Try this by rewriting the relevant bits in the codeblock above! You might need to check out the hint to get it to work.
+Try this by rewriting the relevant bits in the codeblock below! You might need to check out the hint to get it to work.
 
 <codeblock id="fish_es">
 The exclamation mark "!" in R code specifies "not" - so you will have to switch it around in the second line of code, to apply it to it to the right subset of data. It's a little twisted here, we give a double negative command: !is.na(t) means: do not use (!) the rows that show na (is.na) in column "t" 
