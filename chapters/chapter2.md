@@ -52,16 +52,42 @@ It that's not enough or you would like to checkout more, browse [Wikipedia's lis
 
 ## How to fine-tune your search
 
-Boolean Characters - what are they, how to use them?
+Identifying a research area and question that you're interested in is one thing, but how do you go about finding the right papers now? Searching and finding the perfectly matching literature requires a fair bit of fine tuning.
+The aim is to find a "SEARCH STRING" that best caputures your needs. 
 
-What follows - perfecting your search string
+  * Identify key parameters for your inclusion decisions
+  * replace general search terms with more specific terms
+  * make use of Boolean logic to combine, connect and exclude terms
 
-Identifying key parameters for your inclusion decisions - see Frameworks below.
+**Example search string from Macartney 2019**
+> (condition OR diet* OR nutrient* OR food OR resource*) AND (sperm* OR semen OR ejaculate OR testis OR test?s)
+
+### Boolean Characters - what are they, how to use them?
+
+Boolean logc combines, add or excludes search terms, using connector words: AND, OR, NOT 
+
+  * AND between terms returns only records that contain all of the search terms
+  * OR between terms returns all records that contain any of the search terms
+  * NOT between search terms returns only records that contain the first term and not the second
+  
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/bolean.png?raw=true) 
+
+
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  Handy hint for R: check out [this link](https://r4ds.had.co.nz/transform.html), especially section "5.2.2 Logical operators" on how Boolean Logic can be applied in R, for filtering / selecting specific data
+
+
+But there's is more! Going back to Macarney's search string, we can see that "*" has added to the end of some words. The asterix will truncate terms, and the search will include all terms that begin with your string of characters. For diet* this means that diet / diets / dieting /... are included.
+
+The "?" in "test?s" is used to replace a letter. This is particularly useful if spelling variations are possible (e.g. behavio?r will find behaviour or behavior).
+
+Read more about literature search strategies and examples on some excellent library guides from [MIT](https://libguides.mit.edu/c.php?g=175963&p=1158594) and [University of Leeds](https://library.leeds.ac.uk/info/1404/literature_searching/14/literature_searching_explained/4)
 
 
 ## Merging search results from different search engines
 
-What all search engines have in common, though, is the option to export to RIS / RefMan format. Therefore, we recommend to do that, in order to merge citation lists from different search engines in the next step. If you use a local or web-based reference manager, such as Endnote or Zotero, it might be easiest to employ their merging and de-duplicating functions, i.e. load your search results from different search engines into your reference manager software and merge them there.
+Here, we assume you have found your perfect search string, and collected results in different search engines. 
+
+The next step is to export all your citations, and merge them into a combined list. What all search engines have in common is the option to export to RIS / RefMan format. Therefore, we recommend to do that, in order to merge citation lists from different search engines in the next step. If you use a local or web-based reference manager, such as Endnote or Zotero, it might be easiest to employ their merging and de-duplicating functions, i.e. load your search results from different search engines into your reference manager software and merge them there.
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  In contrast to R, these managers allow you to easily visually double check for duplicates by sorting a few different ways (most revealing: including title of the paper).
 

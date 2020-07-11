@@ -74,7 +74,7 @@ This example calculates the effect size for an Anova (using F statistics). To ca
 Try this by rewriting the relevant bits in the codeblock below! You might need to check out the hint to get it to work.
 
 <codeblock id="fish_es">
-The exclamation mark "!" in R code specifies "not" - so you will have to switch it around in the second line of code, to apply it to it to the right subset of data. It's a little twisted here, we give a double negative command: !is.na(t) means: do not use (!) the rows that show na (is.na) in column "t" 
+The exclamation mark "!" in R code specifies "not" - so you will have to switch it around in the second line of code, to apply it to it to the right subset of data. It's a little twisted here, we give a double negative command: !is.na(t) means: do not use (!) the rows that show na (is.na) in column "t". For more info check section 5.2.2. [here](https://r4ds.had.co.nz/transform.html) 
 </codeblock>
 
 
