@@ -78,6 +78,8 @@ Boolean logc combines, add or excludes search terms, using connector words: AND,
 
 But there's is more! Going back to Macarney's search string, we can see that "\*\" has added to the end of some words. The asterix will truncate terms, and the search will include all terms that begin with your string of characters. For diet* this means that diet / diets / dieting /... are included.
 
+But there's is more! Going back to Macarney's search string, we can see that "\*" has added to the end of some words. The asterix will truncate terms, and the search will include all terms that begin with your string of characters. For diet* this means that diet / diets / dieting /... are included.
+
 The "?" in "test?s" is used to replace a letter. This is particularly useful if spelling variations are possible (e.g. behavio?r will find behaviour or behavior).
 
 Read more about literature search strategies and examples on some excellent library guides from [MIT](https://libguides.mit.edu/c.php?g=175963&p=1158594) and [University of Leeds](https://library.leeds.ac.uk/info/1404/literature_searching/14/literature_searching_explained/4)
