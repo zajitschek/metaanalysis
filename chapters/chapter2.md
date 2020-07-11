@@ -76,7 +76,7 @@ Boolean logc combines, add or excludes search terms, using connector words: AND,
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  Handy hint for R: check out [this link](https://r4ds.had.co.nz/transform.html), especially section "5.2.2 Logical operators" on how Boolean Logic can be applied in R, for filtering / selecting specific data
 
 
-But there's is more! Going back to Macarney's search string, we can see that "*" has added to the end of some words. The asterix will truncate terms, and the search will include all terms that begin with your string of characters. For diet* this means that diet / diets / dieting /... are included.
+But there's is more! Going back to Macarney's search string, we can see that "\*\" has added to the end of some words. The asterix will truncate terms, and the search will include all terms that begin with your string of characters. For diet* this means that diet / diets / dieting /... are included.
 
 The "?" in "test?s" is used to replace a letter. This is particularly useful if spelling variations are possible (e.g. behavio?r will find behaviour or behavior).
 
