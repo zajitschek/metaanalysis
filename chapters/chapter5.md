@@ -1,7 +1,7 @@
 ---
 title: 'Chapter 5: Additional Resources'
 description:
-  'Links to other resources on Meta-Analyses'
+  'Links to other resources on meta-analyses'
 prev: /chapter4
 next: null
 type: chapter
@@ -46,7 +46,7 @@ While not covered here at all, it is quite likely that as biologist one finds hi
 
 ## Some links to how to use R
 
-  
+
 ## Intro to R / R studio
 
 - Excellent resource to get started, gives overview and intro to R studio:

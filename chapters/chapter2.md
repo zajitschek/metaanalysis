@@ -53,7 +53,7 @@ It that's not enough or you would like to checkout more, browse [Wikipedia's lis
 ## How to fine-tune your search
 
 Identifying a research area and question that you're interested in is one thing, but how do you go about finding the right papers now? Searching and finding the perfectly matching literature requires a fair bit of fine tuning.
-The aim is to find a "SEARCH STRING" that best caputures your needs. 
+The aim is to find a "SEARCH STRING" that best captures your needs. 
 
   * Identify key parameters for your inclusion decisions
   * replace general search terms with more specific terms
@@ -64,21 +64,19 @@ The aim is to find a "SEARCH STRING" that best caputures your needs.
 
 ### Boolean Characters - what are they, how to use them?
 
-Boolean logc combines, add or excludes search terms, using connector words: AND, OR, NOT 
+Boolean logic combines, adds or excludes search terms, using connector words: AND, OR, NOT 
 
   * AND between terms returns only records that contain all of the search terms
   * OR between terms returns all records that contain any of the search terms
   * NOT between search terms returns only records that contain the first term and not the second
-  
+
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/bolean.png?raw=true) 
 
 
-![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  Handy hint for R: check out [this link](https://r4ds.had.co.nz/transform.html), especially section "5.2.2 Logical operators" on how Boolean Logic can be applied in R, for filtering / selecting specific data
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  Handy hint for R: check out [this link](https://r4ds.had.co.nz/transform.html), especially section "5.2.2 Logical operators" on how Boolean Logic can be applied in R, for filtering / selecting specific data.
 
 
-But there's is more! Going back to Macarney's search string, we can see that "\*\" has added to the end of some words. The asterix will truncate terms, and the search will include all terms that begin with your string of characters. For diet* this means that diet / diets / dieting /... are included.
-
-But there's is more! Going back to Macarney's search string, we can see that "\*" has added to the end of some words. The asterix will truncate terms, and the search will include all terms that begin with your string of characters. For diet* this means that diet / diets / dieting /... are included.
+But there's is more! Going back to Macartney's search string, we can see that "\*\" has added to the end of some words. The asterisk will truncate terms, and the search will include all terms that begin with your string of characters. For diet* this means that diet / diets / dieting /... are included.
 
 The "?" in "test?s" is used to replace a letter. This is particularly useful if spelling variations are possible (e.g. behavio?r will find behaviour or behavior).
 
@@ -191,7 +189,7 @@ These frameworks are not set in stone and you can come up with your own, if that
 
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true) 
-You will need to know what you're after and what you're not interested in, in order to ***discriminate relevant from irrelevant studies***   
+You will need to know what you're after and what you're not interested in, in order to ***discriminate relevant from irrelevant studies***.   
 
 Having clearly defined criteria is essential to decide which papers should get included (or excluded) during the screening process.
 
