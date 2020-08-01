@@ -63,11 +63,12 @@ Note that there will be quite a few missing data in this list. This may be due t
 
 ## Calculating effect sizes from inferential statistics
 
-This is necessary, when means & variances are not reported, and not available in a figure, but overall statistics indicate outcomes (and are fully disclosed, i.e. type of test, degrees of freedom, test statistic are available). 
+This is necessary when means & variances are not reported, and not available in a figure, but overall statistics indicate outcomes (and are fully disclosed, i.e. type of test, degrees of freedom, test statistic are available). 
 
 ![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  ***Note:*** If this is incomplete, but the study highly relevant for inclusion, your last resort is to write to the authors and ask for the missing information. Ideally they can then provide the means and variances that you're after...
 
-The R package *compute.es* allows us to not only compute various effect sizes from descriptive statistics, but also from inferential statistics. We will go over this using Macartney's data (also part of the **Worked Example** in Chapter 4).
+![](https://github.com/SusZaj/metaanalysis/blob/master/images/pushpin.svg?raw=true)  ***Online Calculators*** In case you have only very few instances of inferential statistics to calculate your effect size from, there's the option to use an online calculator to do this (or you could do that to conform your R results!). A good resource is provided by the [Campbell Collaboration](https://campbellcollaboration.org/research-resources/effect-size-calculator.html).
+
 
 This example calculates the effect size for an Anova (using F statistics). To calculate this based on a T-test, specify *a.tes* instead of *a.fes*, and *t = t*
 
