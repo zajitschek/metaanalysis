@@ -192,7 +192,7 @@ These frameworks are not set in stone and you can come up with your own, if that
 You will need to know what you're after and what you're not interested in, in order to ***discriminate relevant from irrelevant studies***.   
 
 Having clearly defined criteria is essential to decide which papers should get included (or excluded) during the screening process.
-For this, some visual flowchart, also known as "decision tree", may be particularly helpful. For advice on how to create one and examples check out this excellen t blog by [Losia Lagisz](http://www.i-deel.org/blog/archives/06-2020).
+For this, some visual flowchart, also known as "decision tree", may be particularly helpful. For advice on how to create one and examples check out this excellent blog entry by [Losia Lagisz](http://www.i-deel.org/blog/archives/06-2020).
 
 </exercise>
 
