@@ -219,7 +219,8 @@ To help you screen your collected literature lists for initial suitability for i
 
 Your initially very long list of papers should have been reduced considerably after you have finished abstract screening.  It is now time to verify that the"possibly-include" papers are indeed matching your inclusion criteria, by having a look at the full-texts. 
 
-Make sure to take note of the reasons why you're excluding any given paper, ideally you will provide a diagram like this [template from PRISMA](http://prisma-statement.org/PRISMAStatement/FlowDiagram) into your meta-research, providing both reasons and numbers excluded for each step of the way.
+Make sure to take note of the reasons why you're excluding any given paper, ideally you will provide a diagram like this [template from PRISMA](http://prisma-statement.org/PRISMAStatement/FlowDiagram) into your meta-research, providing both reasons and numbers excluded for each step of the way. There's even a shiny-app that can create [this flow diagram / decision tree] (https://www.eshackathon.org/software/PRISMA2020.html) for you, or use this link to get directly to the tool: https://estech.shinyapps.io/prisma_flowdiagram/)
+
 
 It is part of the transparent reporting, but also necessary for yourself while you are screening your papers to have a carefully worked out list with inclusion / exclusion criteria (that gets further defined the closer you get to your final set of papers that will be included in your dataset).
 
